@@ -39,15 +39,15 @@
       "logoAndProgressLogoFadeInDelay": 0.2,
       "minDuration": 1.5,
       "progressBarColor": 16777215,
-      "progressBarHeight": 20,
-      "progressBarMaxWidth": 200,
-      "progressBarMinWidth": 40,
-      "progressBarWidthPercent": 30,
-      "showGDevelopSplash": true,
+      "progressBarHeight": 16,
+      "progressBarMaxWidth": 1280,
+      "progressBarMinWidth": 64,
+      "progressBarWidthPercent": 100,
+      "showGDevelopSplash": false,
       "showProgressBar": true
     },
     "watermark": {
-      "placement": "bottom-left",
+      "placement": "bottom-right",
       "showWatermark": true
     },
     "authorIds": [],
