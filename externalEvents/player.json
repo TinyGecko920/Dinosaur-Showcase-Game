@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "Untitled scene",
+  "associatedLayout": "Game",
   "lastChangeTimeStamp": 0,
   "name": "Player",
   "events": [
@@ -34,75 +34,6 @@
               "parameters": [
                 "",
                 "\"Untitled scene\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "TempPlayer",
-                "Health",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Untitled scene\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Parallax",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.25)",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterY"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraY(), TempPlayer.Y(), 0.25)",
-                "",
                 ""
               ]
             }
