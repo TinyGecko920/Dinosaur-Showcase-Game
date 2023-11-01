@@ -66,6 +66,15 @@
     "resources": [
       {
         "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/TempPlayer.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -85,7 +94,12 @@
       "referenceTo": "/layouts/untitled-scene"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
