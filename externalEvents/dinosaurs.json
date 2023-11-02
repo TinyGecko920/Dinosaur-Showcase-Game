@@ -182,6 +182,72 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::Health"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                "!=",
+                "Dinosaurs.Health::MaxHealth()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "DinosaurHealth",
+                "Dinosaurs.PointX(\"Center\")",
+                "Dinosaurs.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "DinosaurHealth",
+                "Scale",
+                "=",
+                "0.7"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "DinosaurHealth",
+                "=",
+                "Dinosaurs.PointX(\"Health\")",
+                "=",
+                "Dinosaurs.PointY(\"Health\")"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []

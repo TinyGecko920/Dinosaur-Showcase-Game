@@ -90,7 +90,7 @@
         "alwaysLoaded": false,
         "file": "assets/Wood Bar Border.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Wood Bar Border.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Wood Bar Border.png",
         "smoothed": false,
         "userAdded": false,
@@ -134,6 +134,50 @@
         "name": "Attack2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Walk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk.png\"}",
+        "name": "Walk",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Flat Bar White Border.png2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -161,6 +205,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/gamepads"
