@@ -25,17 +25,6 @@
                 "Dinosaurs.AgroDistanceInPixels",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "PathfindingBehavior::Speed"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Pathfinding",
-                "=",
-                "0"
-              ]
             }
           ],
           "actions": [
@@ -44,7 +33,7 @@
                 "value": "PathfindingBehavior::SetDestination"
               },
               "parameters": [
-                "TempDinosaur",
+                "Dinosaurs",
                 "Pathfinding",
                 "",
                 "TempPlayer.X()",
@@ -85,7 +74,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Attacking",
+                "_Attacking",
                 ""
               ]
             }
@@ -97,7 +86,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Attacking",
+                "_Attacking",
                 "True"
               ]
             },
@@ -119,7 +108,7 @@
               "parameters": [
                 "TempPlayer",
                 "Health",
-                "RandomInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
+                "RandomFloatInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
                 "",
                 "",
                 ""
@@ -130,7 +119,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "RandomFloatInRange(Dinosaurs.MinAttackCooldown, Dinosaurs.MaxAttackCooldown)"
               ]
             },
             {
@@ -139,7 +128,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Attacking",
+                "_Attacking",
                 "False"
               ]
             }
