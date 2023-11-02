@@ -40,6 +40,24 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Swords",
+            "=",
+            "TempPlayer.PointX(\"RightHand\")",
+            "=",
+            "TempPlayer.PointY(\"RightHand\")"
+          ]
+        }
+      ]
     }
   ]
 }

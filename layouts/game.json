@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000013,
+    "zoomFactor": 0.3925161175488232,
     "windowMask": false
   },
   "objectsGroups": [
@@ -43,14 +43,15 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 209,
       "layer": "",
       "name": "TempPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
-      "width": 0,
+      "width": 209,
       "x": 380,
-      "y": 556,
+      "y": 411,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -179,7 +180,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "TempPlayer",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 41.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -314,14 +321,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 31,
+                    "y": 52
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "customCollisionMask": [
                     [
@@ -356,7 +363,14 @@
       "name": "TempDinosaur",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 20
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -388,6 +402,8 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -398,10 +414,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -496,6 +510,13 @@
         "includeConfig": 0
       },
       "target": "Player"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Swords"
     }
   ],
   "layers": [
