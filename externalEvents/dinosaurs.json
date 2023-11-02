@@ -119,7 +119,7 @@
               "parameters": [
                 "TempPlayer",
                 "Health",
-                "Dinosaurs.Damage",
+                "RandomInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
                 "",
                 "",
                 ""

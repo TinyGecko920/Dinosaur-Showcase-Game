@@ -367,9 +367,15 @@
       "variables": [
         {
           "folded": true,
-          "name": "Damage",
+          "name": "MinDamage",
           "type": "number",
           "value": 20
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 32
         },
         {
           "name": "AgroDistanceInPixels",
