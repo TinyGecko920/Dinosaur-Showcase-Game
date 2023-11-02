@@ -155,7 +155,7 @@
               "parameters": [
                 "Dinosaurs",
                 "Health",
-                "Swords.Damage",
+                "RandomFloatInRange(Swords.MinDamage, Swords.MaxDamage)",
                 "",
                 "",
                 ""
