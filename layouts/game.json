@@ -62,7 +62,7 @@
       "customSize": true,
       "depth": 32,
       "height": 75,
-      "layer": "UserInterface",
+      "layer": "UI",
       "name": "HealthBar",
       "persistentUuid": "5d3f9a10-f823-497b-b88d-421926d182fb",
       "width": 540,
@@ -153,16 +153,16 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "acceleration": 9999,
+          "deceleration": 9999,
+          "ignoreDefaultControls": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "allowDiagonals": true,
           "rotateObject": false,
-          "acceleration": 400,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
@@ -378,6 +378,18 @@
           "value": 32
         },
         {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 2.5
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 3.1
+        },
+        {
           "name": "AgroDistanceInPixels",
           "type": "number",
           "value": 1000
@@ -390,7 +402,7 @@
         },
         {
           "folded": true,
-          "name": "Attacking",
+          "name": "_Attacking",
           "type": "boolean",
           "value": false
         }
@@ -637,7 +649,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": true,
-      "name": "UserInterface",
+      "name": "UI",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
