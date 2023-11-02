@@ -1,0 +1,25 @@
+{
+  "associatedLayout": "Game",
+  "lastChangeTimeStamp": 0,
+  "name": "Swords",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Swords",
+            "Dinosaurs",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": []
+    }
+  ]
+}

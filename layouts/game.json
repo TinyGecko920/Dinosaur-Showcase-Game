@@ -18,10 +18,23 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5290357402156849,
+    "zoomFactor": 0.4633111824513986,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Swords",
+      "objects": [
+        {
+          "name": "TempSword"
+        }
+      ]
+    },
+    {
+      "name": "Dinosaurs",
+      "objects": []
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -256,7 +269,14 @@
       "name": "TempSword",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 5
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
