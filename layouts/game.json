@@ -169,6 +169,16 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "name": "TopDownGamepadMapper",
+          "type": "Gamepads::TopDownGamepadMapper",
+          "TopDownMovement": "TopDownMovement",
+          "GamepadIdentifier": 1,
+          "UseArrows": true,
+          "UseLeftStick": true,
+          "UseRightStick": false,
+          "StickMode": "Analog"
+        },
+        {
           "acceleration": 9999,
           "deceleration": 9999,
           "ignoreDefaultControls": true,
@@ -772,6 +782,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "TopDownGamepadMapper",
+      "type": "Gamepads::TopDownGamepadMapper"
     },
     {
       "name": "TopDownMovement",
