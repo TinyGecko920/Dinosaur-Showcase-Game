@@ -68,7 +68,7 @@
         "alwaysLoaded": false,
         "file": "assets/TempPlayer.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/TempPlayer.png\"}",
         "name": "TempPlayer",
         "smoothed": false,
         "userAdded": true
@@ -125,6 +125,15 @@
         "name": "Attack",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Attack2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack2",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -145,10 +154,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/player"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/swords"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
