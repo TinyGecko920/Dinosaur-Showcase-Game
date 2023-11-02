@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845352564,
+    "zoomFactor": 0.4633111824513987,
     "windowMask": false
   },
   "objectsGroups": [
@@ -99,6 +99,22 @@
       "width": 179,
       "x": 1220,
       "y": 432,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 179,
+      "layer": "",
+      "name": "TempDinosaur",
+      "persistentUuid": "e188c599-63aa-42ac-997f-c2f96071e419",
+      "width": 179,
+      "x": 1293,
+      "y": 8,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -223,6 +239,61 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack2",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 55
+                      },
+                      {
+                        "x": 21,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -301,7 +372,7 @@
           "folded": true,
           "name": "Damage",
           "type": "number",
-          "value": 5
+          "value": 50
         }
       ],
       "effects": [],
@@ -577,13 +648,6 @@
         "includeConfig": 0
       },
       "target": "Player"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Swords"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
