@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210186,
+    "zoomFactor": 0.47893418845352564,
     "windowMask": false
   },
   "objectsGroups": [
@@ -43,14 +43,15 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 185,
       "layer": "",
       "name": "TempPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
-      "width": 0,
+      "width": 185,
       "x": 380,
-      "y": 556,
+      "y": 435,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -180,7 +181,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "TempPlayer",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -315,8 +322,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 31,
+                    "y": 52
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -373,7 +380,7 @@
           "folded": true,
           "name": "AttackRange",
           "type": "number",
-          "value": 300
+          "value": 150
         },
         {
           "folded": true,
@@ -414,8 +421,8 @@
         },
         {
           "name": "Pathfinding",
-          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -431,7 +438,56 @@
       ],
       "animations": [
         {
-          "name": "TempDinosaur",
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempDinosaur",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 54
+                      },
+                      {
+                        "x": 7,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -441,7 +497,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "TempDinosaur",
+                  "image": "Attack",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
