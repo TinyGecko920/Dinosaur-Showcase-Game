@@ -61,7 +61,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "TempPlayer",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -105,10 +104,10 @@
           "Topdown": "TopDownMovement"
         },
         {
-          "allowDiagonals": true,
           "name": "TopDownMovement",
-          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "allowDiagonals": true,
+          "rotateObject": false,
           "acceleration": 400,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -175,7 +174,6 @@
     {
       "assetStoreId": "d68a7f09fb9a6a3b183e43e1132b13d6ef13a5cc0988dd148dd22819876a463c",
       "name": "HealthBar",
-      "tags": "",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
       "effects": [],
@@ -238,6 +236,17 @@
       }
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "TempPlayer"
+      },
+      {
+        "objectName": "HealthBar"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Link",

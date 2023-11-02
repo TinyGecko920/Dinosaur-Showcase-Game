@@ -187,6 +187,9 @@
     "resourceFolders": []
   },
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "objectsGroups": [],
   "variables": [],
   "layouts": [
