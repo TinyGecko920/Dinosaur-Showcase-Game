@@ -43,15 +43,14 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 209,
+      "customSize": false,
+      "height": 0,
       "layer": "",
       "name": "TempPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
-      "width": 209,
+      "width": 0,
       "x": 380,
-      "y": 411,
+      "y": 556,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -181,13 +180,7 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "TempPlayer",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 33,
-                      "y": 41.5
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -322,14 +315,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31,
-                    "y": 52
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 32,
-                    "y": 32
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [

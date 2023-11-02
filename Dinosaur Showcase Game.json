@@ -66,94 +66,10 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/TempPlayer.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "TempPlayer",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Bronze bar background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Bronze bar background.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/243af986cfe00f54732f8c0800fb77bc516087c6bc96893f0f83e5dacbca0f13_Bronze bar background.png",
-          "name": "Bronze bar background.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Brown LCD Bar Fill.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Brown LCD Bar Fill.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/dedf79e6421b8ab3ba5ede3a90bef87412c248afcd4eb4881cd94dada5538140_Brown LCD Bar Fill.png",
-          "name": "Brown LCD Bar Fill.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Green LCD Bar Fill.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Green LCD Bar Fill.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/55034bb02ed0cbeede3da64dcf05d3590abee4a8fa69657ed5d461f31d2f1df0_Green LCD Bar Fill.png",
-          "name": "Green LCD Bar Fill.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Bronze bar background.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Bronze bar background.png2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Brown LCD Bar Fill.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Brown LCD Bar Fill.png2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Green LCD Bar Fill.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Green LCD Bar Fill.png2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/floor.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "floor",
         "smoothed": false,
         "userAdded": true
       },
