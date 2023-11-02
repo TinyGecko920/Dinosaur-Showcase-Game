@@ -17,9 +17,29 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "type": {
+            "value": "Health::Health::Hit"
+          },
+          "parameters": [
+            "TempDinosaur",
+            "Health",
+            "Swords.Damage",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
     }
   ]
 }

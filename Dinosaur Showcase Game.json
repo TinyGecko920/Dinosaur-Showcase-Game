@@ -191,6 +191,15 @@
         "name": "NewSprite2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TempDinosaur.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TempDinosaur",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
