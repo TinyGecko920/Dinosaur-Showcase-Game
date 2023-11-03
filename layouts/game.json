@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4335774304702383,
+    "zoomFactor": 0.419433978275907,
     "windowMask": false
   },
   "objectsGroups": [
@@ -119,6 +119,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "GoldAmount",
+      "persistentUuid": "12da6f8f-7c43-4684-973e-6125b804f140",
+      "width": 0,
+      "x": 704,
+      "y": 887,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -128,7 +143,14 @@
       "name": "TempPlayer",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Gold",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -179,6 +201,7 @@
           "StickMode": "Analog"
         },
         {
+          "movementAngleOffset": 0,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 9999,
@@ -190,8 +213,17 @@
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
           "maxSpeed": 200,
-          "movementAngleOffset": 0,
           "viewpoint": "TopDown"
+        },
+        {
+          "name": "TopDownMovementAnimator",
+          "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+          "TopDownMovement": "TopDownMovement",
+          "IsScalingAnimation": true,
+          "AnimationName": "Walk",
+          "DirectionCount": 0,
+          "AngleOffset": 0,
+          "AnimationDirection": 0
         }
       ],
       "animations": [
@@ -609,6 +641,18 @@
         },
         {
           "folded": true,
+          "name": "MinGoldDrop",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "MaxGoldDrop",
+          "type": "string",
+          "value": "100"
+        },
+        {
+          "folded": true,
           "name": "_Attacking",
           "type": "boolean",
           "value": false
@@ -849,6 +893,27 @@
         "g": 0,
         "r": 255
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "GoldAmount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "100 Gold",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 32,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -881,6 +946,9 @@
       {
         "folderName": "Gui",
         "children": [
+          {
+            "objectName": "GoldAmount"
+          },
           {
             "objectName": "DamageAmount"
           },
@@ -1016,6 +1084,12 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "TopDownMovementAnimator",
+      "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+      "NewAnimationDirection": 0,
+      "AnimationFrame": 0
     }
   ]
 }

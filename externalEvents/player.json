@@ -155,7 +155,7 @@
               "parameters": [
                 "Dinosaurs",
                 "Health",
-                "RandomFloatInRange(Swords.MinDamage, Swords.MaxDamage)",
+                "RandomInRange(Swords.MinDamage, Swords.MaxDamage)",
                 "",
                 "",
                 ""
@@ -312,6 +312,35 @@
                 "Animation",
                 "=",
                 "\"Idle\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Gold",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "GoldAmount",
+                "Text",
+                "=",
+                "ToString(TempPlayer.Gold) + \" Gold\""
               ]
             }
           ]
