@@ -169,6 +169,17 @@
                 "Dinosaurs",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Gold",
+                "+",
+                "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
+              ]
             }
           ]
         }
