@@ -244,13 +244,11 @@
           "conditions": [
             {
               "type": {
-                "value": "PathfindingBehavior::Speed"
+                "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
                 "TempPlayer",
-                "Pathfinding",
-                ">",
-                "0"
+                "TopDownMovement"
               ]
             },
             {

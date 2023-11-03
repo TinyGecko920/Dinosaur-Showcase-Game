@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4335774304702383,
+    "zoomFactor": 0.41943397827590695,
     "windowMask": false
   },
   "objectsGroups": [
@@ -316,7 +316,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "TempPlayer2",
+                  "image": "Run",
                   "points": [
                     {
                       "name": "RightHand",
@@ -857,6 +857,9 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "objectName": "TempPlayer"
+      },
+      {
         "folderName": "Dinosaurs",
         "children": [
           {
@@ -876,9 +879,6 @@
             ]
           }
         ]
-      },
-      {
-        "objectName": "TempPlayer"
       },
       {
         "folderName": "Gui",
