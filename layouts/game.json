@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4633111824513987,
+    "zoomFactor": 0.4335774304702383,
     "windowMask": false
   },
   "objectsGroups": [
@@ -537,10 +537,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 9999,
-          "maxSpeed": 80,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 9999,
+          "maxSpeed": 80,
           "rotateObject": false,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -665,71 +665,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "3d6c54e76a9a06cbd7629c1e78388d4ab808bbf36d644c61d6a14c9ad34d4f89",
-      "name": "DinosaurHealth",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": true,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "MaxValue": 100,
-        "InitialValue": 100
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 6,
-          "height": 34,
-          "leftMargin": 4,
-          "rightMargin": 4,
-          "texture": "Flat Bar White Border.png",
-          "tiled": true,
-          "topMargin": 6,
-          "width": 224
-        },
-        "Buffer": {
-          "bottomMargin": 0,
-          "height": 24,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Flat Bar Red Fill Bar.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 24
-        },
-        "FillBar": {
-          "bottomMargin": 0,
-          "height": 24,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Flat Bar Red Fill Bar.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 24
-        },
-        "Label": {
-          "bold": true,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "100 / 100",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 12,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        }
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -761,9 +696,6 @@
       },
       {
         "objectName": "HealthBar"
-      },
-      {
-        "objectName": "DinosaurHealth"
       }
     ]
   },
