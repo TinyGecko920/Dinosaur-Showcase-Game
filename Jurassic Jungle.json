@@ -48,7 +48,7 @@
     },
     "watermark": {
       "placement": "bottom-right",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
