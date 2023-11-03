@@ -130,7 +130,7 @@
         "alwaysLoaded": false,
         "file": "assets/Attack2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Attack2.png\"}",
         "name": "Attack2",
         "smoothed": false,
         "userAdded": true
@@ -187,6 +187,24 @@
         "name": "TempDinosaur2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Walk2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TempPlayer2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TempPlayer2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
