@@ -251,6 +251,116 @@
           ]
         },
         {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Walk2",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 55
+                      },
+                      {
+                        "x": 21,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempPlayer2",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 13
+                      },
+                      {
+                        "x": 37,
+                        "y": 55
+                      },
+                      {
+                        "x": 21,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Attack",
           "useMultipleDirections": false,
           "directions": [
@@ -610,6 +720,61 @@
           ]
         },
         {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempDinosaur2",
+                  "points": [
+                    {
+                      "name": "Health",
+                      "x": 14,
+                      "y": 10.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 54
+                      },
+                      {
+                        "x": 7,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Attack",
           "useMultipleDirections": false,
           "directions": [
@@ -665,6 +830,27 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DamageAmount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "-10",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 32,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -695,7 +881,15 @@
         "objectName": "TempPlayer"
       },
       {
-        "objectName": "HealthBar"
+        "folderName": "Gui",
+        "children": [
+          {
+            "objectName": "DamageAmount"
+          },
+          {
+            "objectName": "HealthBar"
+          }
+        ]
       }
     ]
   },
@@ -812,6 +1006,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownGamepadMapper",

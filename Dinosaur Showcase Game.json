@@ -121,7 +121,7 @@
         "alwaysLoaded": false,
         "file": "assets/Attack.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Attack.png\"}",
         "name": "Attack",
         "smoothed": false,
         "userAdded": true
@@ -178,6 +178,15 @@
         "name": "Flat Bar White Border.png2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/TempDinosaur2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TempDinosaur2",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
