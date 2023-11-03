@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.41943397827590695,
+    "zoomFactor": 0.4335774304702383,
     "windowMask": false
   },
   "objectsGroups": [
@@ -200,7 +200,7 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
@@ -255,13 +255,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Walk2",
+                  "image": "assets\\Walk3.png",
                   "points": [
                     {
                       "name": "RightHand",
@@ -310,13 +309,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Run",
+                  "image": "assets\\Run.png",
                   "points": [
                     {
                       "name": "RightHand",
@@ -857,9 +855,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "TempPlayer"
-      },
-      {
         "folderName": "Dinosaurs",
         "children": [
           {
@@ -879,6 +874,9 @@
             ]
           }
         ]
+      },
+      {
+        "objectName": "TempPlayer"
       },
       {
         "folderName": "Gui",

@@ -269,10 +269,49 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "Dinosaurs",
+                "TempPlayer",
                 "Animation",
                 "=",
                 "\"Walk\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TempPlayer",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Animation",
+                "!=",
+                "\"Attack\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Animation",
+                "=",
+                "\"Idle\""
               ]
             }
           ]

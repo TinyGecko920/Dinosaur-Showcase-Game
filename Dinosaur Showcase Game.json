@@ -130,7 +130,7 @@
         "alwaysLoaded": false,
         "file": "assets/Attack2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Attack2.png\"}",
+        "metadata": "{\"extension\":\".png\"}",
         "name": "Attack2",
         "smoothed": false,
         "userAdded": true
@@ -185,42 +185,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "TempDinosaur2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Walk2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/TempPlayer2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "TempPlayer2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Walk3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Walk3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Run.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Run.png",
         "smoothed": false,
         "userAdded": true
       }
