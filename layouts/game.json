@@ -201,9 +201,9 @@
           "StickMode": "Analog"
         },
         {
-          "movementAngleOffset": 0,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "movementAngleOffset": 0,
           "acceleration": 9999,
           "deceleration": 9999,
           "ignoreDefaultControls": true,
@@ -1090,6 +1090,10 @@
       "type": "TopDownMovementAnimator::TopDownMovementAnimator",
       "NewAnimationDirection": 0,
       "AnimationFrame": 0
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

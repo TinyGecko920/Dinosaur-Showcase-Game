@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Intro",
   "name": "Intro",
-  "r": 209,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
-  "v": 209,
+  "title": "Jurassic Jungle",
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,27 +18,25 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3526904934771225,
+    "zoomFactor": 0.49138775453293565,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
-  "instances": [
+  "variables": [
     {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Drop",
-      "persistentUuid": "3e69b412-5cd9-42fb-b59c-1166fbbdaae8",
-      "width": 0,
-      "x": -72,
-      "y": -77,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
+      "folded": true,
+      "name": "MaxLogoHeightScale",
+      "type": "number",
+      "value": 0.75
     },
+    {
+      "folded": true,
+      "name": "MaxLogoWidthScale",
+      "type": "number",
+      "value": 0.75
+    }
+  ],
+  "instances": [
     {
       "angle": 0,
       "customSize": false,
@@ -55,31 +53,9 @@
       "initialVariables": []
     }
   ],
-  "objects": [
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Drop",
-      "rightMargin": 0,
-      "texture": "Drop",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    }
-  ],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "Drop"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "events": [
     {
@@ -88,47 +64,13 @@
       "actions": [
         {
           "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "Drop",
-            "=",
-            "-100",
-            "=",
-            "-100"
-          ]
-        },
-        {
-          "type": {
             "value": "ResizableCapability::ResizableBehavior::SetSize"
           },
           "parameters": [
-            "Drop",
-            "Resizable",
-            "SceneWindowWidth() * 2",
-            "SceneWindowHeight() * 2"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-          },
-          "parameters": [
             "JurassicJungle",
             "Resizable",
-            "=",
-            "SceneWindowHeight() * 0.8"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-          },
-          "parameters": [
-            "JurassicJungle",
-            "Resizable",
-            "=",
-            "JurassicJungle.Height()"
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoWidthScale",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoHeightScale"
           ]
         },
         {
