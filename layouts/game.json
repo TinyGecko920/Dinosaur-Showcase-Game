@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.419433978275907,
+    "zoomFactor": 1.1343715797160976,
     "windowMask": false
   },
   "objectsGroups": [
@@ -703,6 +703,10 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -875,27 +879,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "DamageAmount",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "-10",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 32,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 255
-      }
-    },
-    {
-      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "GoldAmount",
@@ -913,6 +896,48 @@
         "b": 0,
         "g": 0,
         "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DamageNumber",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "folded": true,
+          "name": "CenterX",
+          "type": "number",
+          "value": -9999
+        },
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "folded": true,
+          "name": "Spacing",
+          "type": "number",
+          "value": 32
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
       }
     }
   ],
@@ -947,10 +972,10 @@
         "folderName": "Gui",
         "children": [
           {
-            "objectName": "GoldAmount"
+            "objectName": "DamageNumber"
           },
           {
-            "objectName": "DamageAmount"
+            "objectName": "GoldAmount"
           },
           {
             "objectName": "HealthBar"
@@ -1002,6 +1027,38 @@
         }
       ],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Billboards",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 200,

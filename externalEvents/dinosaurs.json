@@ -151,6 +151,126 @@
           "conditions": [
             {
               "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "DamageNumber",
+                "-9999",
+                "-9999",
+                "\"Billboards\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "DamageNumber",
+                "Damage",
+                "=",
+                "floor(Dinosaurs.Health::PreviousDamageTaken())"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "DamageNumber",
+                "=",
+                "Dinosaurs.CenterX() + RandomInRange(-16, 16)",
+                "=",
+                "Dinosaurs.Y() + RandomInRange(-16, 16)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "DamageNumber",
+                "CenterX",
+                "=",
+                "DamageNumber.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectVariableTween2"
+              },
+              "parameters": [
+                "DamageNumber",
+                "Tween",
+                "\"spacing\"",
+                "Spacing",
+                "4",
+                "\"easeOutQuad\"",
+                "400",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "DamageNumber",
+                "Tween",
+                "\"levitate\"",
+                "DamageNumber.CenterY() - 300",
+                "\"easeInQuad\"",
+                "RandomInRange(800, 1200)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectOpacityTween"
+              },
+              "parameters": [
+                "DamageNumber",
+                "Tween",
+                "\"fade\"",
+                "0",
+                "\"easeOutCubic\"",
+                "500",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
@@ -323,6 +443,32 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "DamageNumber",
+            "=",
+            "\"[b][outline=black][spacing=\" + ToString(floor(DamageNumber.Spacing)) + \"]\" + ToString(round(DamageNumber.Damage)) + \"[/spacing][/outline][/b]\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "DamageNumber",
+            "=",
+            "DamageNumber.CenterX"
+          ]
+        }
+      ]
     }
   ]
 }

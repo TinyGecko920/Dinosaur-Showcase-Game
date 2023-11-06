@@ -199,6 +199,13 @@
         "name": "assets\\JurassicJungle.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "ChelseaMarket-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ChelseaMarket-Regular.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
