@@ -26,6 +26,16 @@
                 "TempPlayer.Health::Health()",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "HealthAmount",
+                "=",
+                "\"[b][outline=black][spacing=8]\" + ToString(ceil(TempPlayer.Health::Health())) + \"/\" + ToString(TempPlayer.Health::MaxHealth()) + \"[/spacing][/outline][/b]\""
+              ]
             }
           ]
         },
@@ -374,13 +384,12 @@
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
                 "GoldAmount",
-                "Text",
                 "=",
-                "ToString(TempPlayer.Gold) + \" Gold\""
+                "\"[b][outline=black][spacing=8]\" + ToString(TempPlayer.Gold) + \" Gold[/spacing][/outline][/b]\""
               ]
             }
           ]

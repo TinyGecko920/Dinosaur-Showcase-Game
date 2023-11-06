@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.1343715797160976,
+    "zoomFactor": 0.5843784410740955,
     "windowMask": false
   },
   "objectsGroups": [
@@ -64,13 +64,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 32,
-      "height": 75,
+      "height": 50,
       "layer": "UI",
       "name": "HealthBar",
       "persistentUuid": "5d3f9a10-f823-497b-b88d-421926d182fb",
-      "width": 540,
-      "x": 652,
-      "y": 939,
+      "width": 434,
+      "x": 151,
+      "y": 931,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -110,21 +110,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "GoldAmount",
-      "persistentUuid": "12da6f8f-7c43-4684-973e-6125b804f140",
-      "width": 0,
-      "x": 704,
-      "y": 887,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 3,
       "height": 179,
@@ -132,9 +117,56 @@
       "name": "TempDinosaur",
       "persistentUuid": "42d33764-45fd-4e07-9baf-3399ec112768",
       "width": 179,
-      "x": 43,
-      "y": 826,
+      "x": 1643,
+      "y": 329,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 106,
+      "layer": "UI",
+      "name": "GoldAmount",
+      "persistentUuid": "ed05b7ba-001e-43ae-a37a-8c95ea3c53b0",
+      "width": 361,
+      "x": 707,
+      "y": 858,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "HealthAmount",
+      "persistentUuid": "90bf45d0-b271-41f6-862d-a97ef89f6000",
+      "width": 0,
+      "x": 195,
+      "y": 885,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 88,
+      "layer": "UI",
+      "name": "Heart",
+      "persistentUuid": "212d52c2-28ba-4315-976f-21a49f24e93d",
+      "width": 88,
+      "x": 91,
+      "y": 912,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -471,45 +503,47 @@
         "BarRightPadding": 10,
         "BarBottomPadding": 8,
         "BarLeftPadding": 10,
-        "PreviousHighValueDuration": 0
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "EasingDuration": -4.75
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 8,
-          "height": 35,
-          "leftMargin": 10,
-          "rightMargin": 10,
-          "texture": "Wood Bar Border.png",
+          "bottomMargin": 21,
+          "height": 92,
+          "leftMargin": 26,
+          "rightMargin": 26,
+          "texture": "Wood Bar Border.png2",
           "tiled": true,
-          "topMargin": 8,
-          "width": 397
+          "topMargin": 21,
+          "width": 1044
         },
         "Buffer": {
           "bottomMargin": 0,
           "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
+          "texture": "Shaded Red Fill Bar.png2",
+          "tiled": true,
           "topMargin": 0,
           "width": 32
         },
         "FillBar": {
-          "bottomMargin": 9,
-          "height": 19,
+          "bottomMargin": 4,
+          "height": 50,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
+          "texture": "assets\\ProgressBarThing.png3",
+          "tiled": true,
           "topMargin": 9,
-          "width": 19
+          "width": 50
         },
         "Label": {
           "bold": true,
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "100 / 100",
+          "string": "",
           "font": "",
           "textAlignment": "center",
           "characterSize": 32,
@@ -532,7 +566,7 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 50
+          "value": 30
         },
         {
           "folded": true,
@@ -889,27 +923,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "GoldAmount",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "100 Gold",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 32,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      }
-    },
-    {
-      "assetStoreId": "",
       "name": "DamageNumber",
       "type": "BBText::BBText",
       "variables": [
@@ -961,13 +974,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 50
+          "value": 60
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 50
+          "value": 70
         },
         {
           "folded": true,
@@ -1035,6 +1048,53 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "GoldAmount",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black][spacing=8]100 Gold[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 32,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "HealthAmount",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Heart",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -1071,15 +1131,21 @@
         "folderName": "Gui",
         "children": [
           {
-            "objectName": "DamageNumber"
+            "objectName": "GoldAmount"
           },
           {
-            "objectName": "GoldAmount"
+            "objectName": "HealthAmount"
+          },
+          {
+            "objectName": "DamageNumber"
           },
           {
             "objectName": "HealthBar"
           }
         ]
+      },
+      {
+        "objectName": "Heart"
       }
     ]
   },
@@ -1168,7 +1234,7 @@
       "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "UI",
       "renderingType": "",
       "visibility": true,
@@ -1228,10 +1294,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownGamepadMapper",
