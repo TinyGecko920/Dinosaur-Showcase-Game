@@ -440,6 +440,62 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Pathfinding",
+                "0",
+                "89"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "TempDinosaur",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Pathfinding",
+                "-180",
+                "89"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "TempDinosaur",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []

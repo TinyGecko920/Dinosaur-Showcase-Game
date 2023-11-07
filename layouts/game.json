@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.22336005893811559,
+    "zoomFactor": 0.3111974942445226,
     "windowMask": false
   },
   "objectsGroups": [
@@ -53,8 +53,8 @@
       "name": "TempPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
       "width": 185,
-      "x": 409,
-      "y": 191,
+      "x": 784,
+      "y": 278,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -85,8 +85,8 @@
       "name": "TempDinosaur",
       "persistentUuid": "04d9ff41-d5a0-46dc-8b02-8054e68f838e",
       "width": 179,
-      "x": 1220,
-      "y": 432,
+      "x": 160,
+      "y": 467,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -194,7 +194,7 @@
       "name": "Foreground1",
       "persistentUuid": "64f36fa7-e89e-4c91-b150-58e75ad6600b",
       "width": 0,
-      "x": 2195,
+      "x": 2202,
       "y": 104,
       "zOrder": 11,
       "numberProperties": [],
@@ -1108,7 +1108,7 @@
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "center",
+        "align": "left",
         "wordWrap": true
       }
     },
@@ -1500,6 +1500,69 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "UpgradeButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 1,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Idle.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Upgrade",
+          "font": "Roboto-Bold.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1570,6 +1633,9 @@
       {
         "folderName": "Gui",
         "children": [
+          {
+            "objectName": "UpgradeButton"
+          },
           {
             "objectName": "Heart"
           },
