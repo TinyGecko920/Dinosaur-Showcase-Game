@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.419433978275907,
+    "zoomFactor": 0.3553434558817012,
     "windowMask": false
   },
   "objectsGroups": [
@@ -27,6 +27,9 @@
       "objects": [
         {
           "name": "TempSword"
+        },
+        {
+          "name": "TempSword2"
         }
       ]
     },
@@ -50,8 +53,8 @@
       "name": "TempPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
       "width": 185,
-      "x": 380,
-      "y": 435,
+      "x": 784,
+      "y": 278,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -61,29 +64,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 32,
-      "height": 75,
+      "height": 50,
       "layer": "UI",
       "name": "HealthBar",
       "persistentUuid": "5d3f9a10-f823-497b-b88d-421926d182fb",
-      "width": 540,
-      "x": 652,
-      "y": 939,
+      "width": 434,
+      "x": 151,
+      "y": 931,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "TempSword",
-      "persistentUuid": "9a040c66-9a6a-4d99-a7f1-19fc693ea399",
-      "width": 0,
-      "x": 1538,
-      "y": 455,
-      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -97,8 +85,8 @@
       "name": "TempDinosaur",
       "persistentUuid": "04d9ff41-d5a0-46dc-8b02-8054e68f838e",
       "width": 179,
-      "x": 1220,
-      "y": 432,
+      "x": 160,
+      "y": 467,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -122,15 +110,108 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 179,
+      "layer": "",
+      "name": "TempDinosaur",
+      "persistentUuid": "42d33764-45fd-4e07-9baf-3399ec112768",
+      "width": 179,
+      "x": 1643,
+      "y": 329,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 106,
+      "layer": "UI",
+      "name": "GoldAmount",
+      "persistentUuid": "ed05b7ba-001e-43ae-a37a-8c95ea3c53b0",
+      "width": 361,
+      "x": 148,
+      "y": 798,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
-      "name": "GoldAmount",
-      "persistentUuid": "12da6f8f-7c43-4684-973e-6125b804f140",
+      "layer": "UI",
+      "name": "HealthAmount",
+      "persistentUuid": "90bf45d0-b271-41f6-862d-a97ef89f6000",
       "width": 0,
-      "x": 704,
-      "y": 887,
-      "zOrder": 6,
+      "x": 195,
+      "y": 885,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 88,
+      "layer": "UI",
+      "name": "Heart",
+      "persistentUuid": "212d52c2-28ba-4315-976f-21a49f24e93d",
+      "width": 88,
+      "x": 91,
+      "y": 912,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Background",
+      "name": "Backround1",
+      "persistentUuid": "794a22ed-d156-4d40-a3c8-09cc2c1e2010",
+      "width": 0,
+      "x": 2192,
+      "y": 100,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Foreground",
+      "name": "Foreground1",
+      "persistentUuid": "64f36fa7-e89e-4c91-b150-58e75ad6600b",
+      "width": 0,
+      "x": 2202,
+      "y": 104,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Middleground",
+      "name": "Trees",
+      "persistentUuid": "d5ee16ea-98e1-42a0-be68-9742c9fdb685",
+      "width": 0,
+      "x": 2197,
+      "y": 102,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -149,6 +230,12 @@
           "name": "Gold",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "EquippedSword",
+          "type": "string",
+          "value": "TempSword2"
         }
       ],
       "effects": [],
@@ -461,45 +548,47 @@
         "BarRightPadding": 10,
         "BarBottomPadding": 8,
         "BarLeftPadding": 10,
-        "PreviousHighValueDuration": 0
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "EasingDuration": -4.75
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 8,
-          "height": 35,
-          "leftMargin": 10,
-          "rightMargin": 10,
-          "texture": "Wood Bar Border.png",
+          "bottomMargin": 21,
+          "height": 92,
+          "leftMargin": 26,
+          "rightMargin": 26,
+          "texture": "Wood Bar Border.png2",
           "tiled": true,
-          "topMargin": 8,
-          "width": 397
+          "topMargin": 21,
+          "width": 1044
         },
         "Buffer": {
           "bottomMargin": 0,
           "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
+          "texture": "Shaded Red Fill Bar.png2",
+          "tiled": true,
           "topMargin": 0,
           "width": 32
         },
         "FillBar": {
-          "bottomMargin": 9,
-          "height": 19,
+          "bottomMargin": 4,
+          "height": 50,
           "leftMargin": 6,
           "rightMargin": 6,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
+          "texture": "assets\\ProgressBarThing.png3",
+          "tiled": true,
           "topMargin": 9,
-          "width": 19
+          "width": 50
         },
         "Label": {
           "bold": true,
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "100 / 100",
+          "string": "",
           "font": "",
           "textAlignment": "center",
           "characterSize": 32,
@@ -522,7 +611,7 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 50
+          "value": 30
         },
         {
           "folded": true,
@@ -703,6 +792,10 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -875,50 +968,644 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "DamageAmount",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "DamageNumber",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "folded": true,
+          "name": "CenterX",
+          "type": "number",
+          "value": -9999
+        },
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "folded": true,
+          "name": "Spacing",
+          "type": "number",
+          "value": 32
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TempSword2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "TempSword2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempSword2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31,
+                    "y": 52.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 60
+                      },
+                      {
+                        "x": 21,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "GoldAmount",
+      "type": "BBText::BBText",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "-10",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 32,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 255
+      "content": {
+        "text": "[b][outline=black][spacing=8]100 Gold[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 32,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
       }
     },
     {
       "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "GoldAmount",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "HealthAmount",
+      "type": "BBText::BBText",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "100 Gold",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 32,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+      "content": {
+        "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Heart",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Backround1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1294.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Background2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1309.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Background3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1288.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Background4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1358.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Trees",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1295.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Foreground1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1296.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "UpgradeButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 1,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Idle.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Upgrade",
+          "font": "Roboto-Bold.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 6,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "On Screen Controls Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 192
+        }
       }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Scenes",
+        "children": [
+          {
+            "folderName": "Foreground",
+            "children": [
+              {
+                "objectName": "Foreground1"
+              }
+            ]
+          },
+          {
+            "folderName": "Middleground",
+            "children": [
+              {
+                "objectName": "Trees"
+              }
+            ]
+          },
+          {
+            "folderName": "Background",
+            "children": [
+              {
+                "objectName": "Background4"
+              },
+              {
+                "objectName": "Background3"
+              },
+              {
+                "objectName": "Background2"
+              },
+              {
+                "objectName": "Backround1"
+              }
+            ]
+          }
+        ]
+      },
       {
         "folderName": "Dinosaurs",
         "children": [
@@ -935,27 +1622,39 @@
             "children": [
               {
                 "objectName": "TempSword"
+              },
+              {
+                "objectName": "TempSword2"
               }
             ]
           }
         ]
       },
       {
-        "objectName": "TempPlayer"
-      },
-      {
         "folderName": "Gui",
         "children": [
+          {
+            "objectName": "UpgradeButton"
+          },
+          {
+            "objectName": "Heart"
+          },
           {
             "objectName": "GoldAmount"
           },
           {
-            "objectName": "DamageAmount"
+            "objectName": "HealthAmount"
+          },
+          {
+            "objectName": "DamageNumber"
           },
           {
             "objectName": "HealthBar"
           }
         ]
+      },
+      {
+        "objectName": "TempPlayer"
       }
     ]
   },
@@ -976,6 +1675,102 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Middleground",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Foreground",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 0,
       "ambientLightColorG": 8042920,
@@ -1009,10 +1804,42 @@
       "ambientLightColorR": 200,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Billboards",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "UI",
       "renderingType": "",
       "visibility": true,
@@ -1072,10 +1899,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownGamepadMapper",

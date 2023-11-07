@@ -26,6 +26,16 @@
                 "TempPlayer.Health::Health()",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "HealthAmount",
+                "=",
+                "\"[b][outline=black][spacing=8]\" + ToString(ceil(TempPlayer.Health::Health())) + \"/\" + ToString(TempPlayer.Health::MaxHealth()) + \"[/spacing][/outline][/b]\""
+              ]
             }
           ]
         },
@@ -64,7 +74,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Attack",
+      "name": "Sword",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -73,91 +83,24 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "MouseButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Button_pressed"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"RT\"",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "DepartScene"
               },
               "parameters": [
-                "TempPlayer",
-                "Animation",
-                "=",
-                "\"Attack\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "TempPlayer",
-                "Animation",
-                "=",
-                "\"Attack\""
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Swords",
-                "Dinosaurs",
-                "",
-                "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Health::Health::Hit"
+                "value": "CreateByName"
               },
               "parameters": [
-                "Dinosaurs",
-                "Health",
-                "RandomInRange(Swords.MinDamage, Swords.MaxDamage)",
                 "",
-                "",
+                "Swords",
+                "TempPlayer.EquippedSword",
+                "0",
+                "0",
                 ""
               ]
             }
@@ -172,7 +115,7 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "TempSword",
+                "Swords",
                 "=",
                 "TempPlayer.PointX(\"RightHand\")",
                 "=",
@@ -180,6 +123,113 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Attack",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"RT\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "TempPlayer",
+                    "Animation",
+                    "=",
+                    "\"Attack\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "TempPlayer",
+                    "Animation",
+                    "=",
+                    "\"Attack\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Dinosaurs",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Health",
+                    "RandomInRange(Swords.MinDamage, Swords.MaxDamage)",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -315,6 +365,98 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "a"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Axis_pushed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Left\"",
+                    "\"Left\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Axis_pushed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Left\"",
+                    "\"Right\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -334,13 +476,12 @@
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "BBText::SetBBText"
               },
               "parameters": [
                 "GoldAmount",
-                "Text",
                 "=",
-                "ToString(TempPlayer.Gold) + \" Gold\""
+                "\"[b][outline=black][spacing=8]\" + ToString(TempPlayer.Gold) + \" Gold[/spacing][/outline][/b]\""
               ]
             }
           ]
