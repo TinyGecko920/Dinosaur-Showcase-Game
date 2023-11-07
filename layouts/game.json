@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740955,
+    "zoomFactor": 0.5117784035210198,
     "windowMask": false
   },
   "objectsGroups": [
@@ -133,8 +133,8 @@
       "name": "GoldAmount",
       "persistentUuid": "ed05b7ba-001e-43ae-a37a-8c95ea3c53b0",
       "width": 361,
-      "x": 707,
-      "y": 858,
+      "x": 148,
+      "y": 798,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -1131,6 +1131,9 @@
         "folderName": "Gui",
         "children": [
           {
+            "objectName": "Heart"
+          },
+          {
             "objectName": "GoldAmount"
           },
           {
@@ -1143,9 +1146,6 @@
             "objectName": "HealthBar"
           }
         ]
-      },
-      {
-        "objectName": "Heart"
       }
     ]
   },
