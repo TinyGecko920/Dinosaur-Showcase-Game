@@ -295,6 +295,60 @@
         "name": "assets\\Heart2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1296.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1296.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1294.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1294.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1309.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1309.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1288.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1288.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1358.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1358.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1295.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1295.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -384,6 +438,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/armory"
     }
   ],
   "externalEvents": [
