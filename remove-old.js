@@ -12,7 +12,6 @@ const projectFiles = projectDirContents.filter(
 if (projectFiles.length > 0) {
   // Assume first JSON file is project file
   const projectFile = projectFiles[0];
-  fs.readFileSync;
   console.log(`found ${projectFile}`);
   if (fs.existsSync(assetsDir) && fs.lstatSync(assetsDir).isDirectory()) {
     const assetsFiles = fs.readdirSync(assetsDir);
