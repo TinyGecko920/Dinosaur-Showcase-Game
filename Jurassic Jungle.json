@@ -399,6 +399,60 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
           "name": "Roboto-Regular.ttf"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1290.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1290.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1291.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1291.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1292.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1292.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1293.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1293.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ground.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ground",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1289.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1289.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -468,6 +522,178 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TempSword",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 30
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "TempSword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31,
+                    "y": 52
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 60
+                      },
+                      {
+                        "x": 21,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TempSword2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "TempSword2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempSword2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31,
+                    "y": 52.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 5
+                      },
+                      {
+                        "x": 42,
+                        "y": 60
+                      },
+                      {
+                        "x": 21,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -475,10 +701,33 @@
     "children": [
       {
         "objectName": "JurassicJungle"
+      },
+      {
+        "folderName": "Swords",
+        "children": [
+          {
+            "objectName": "TempSword2"
+          },
+          {
+            "objectName": "TempSword"
+          }
+        ]
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Swords",
+      "objects": [
+        {
+          "name": "TempSword"
+        },
+        {
+          "name": "TempSword2"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "layouts": [
     {
@@ -488,6 +737,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level1"
     }
   ],
   "externalEvents": [

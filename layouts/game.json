@@ -18,21 +18,10 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3553434558817012,
+    "zoomFactor": 0.20220707303602034,
     "windowMask": false
   },
   "objectsGroups": [
-    {
-      "name": "Swords",
-      "objects": [
-        {
-          "name": "TempSword"
-        },
-        {
-          "name": "TempSword2"
-        }
-      ]
-    },
     {
       "name": "Dinosaurs",
       "objects": [
@@ -194,9 +183,9 @@
       "name": "Foreground1",
       "persistentUuid": "64f36fa7-e89e-4c91-b150-58e75ad6600b",
       "width": 0,
-      "x": 2202,
+      "x": 2187,
       "y": 104,
-      "zOrder": 11,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -209,9 +198,9 @@
       "name": "Trees",
       "persistentUuid": "d5ee16ea-98e1-42a0-be68-9742c9fdb685",
       "width": 0,
-      "x": 2197,
-      "y": 102,
-      "zOrder": 12,
+      "x": 2181,
+      "y": 96,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -603,92 +592,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TempSword",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 30
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 0.3
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 0.7
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "TempSword",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31,
-                    "y": 52
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 60
-                      },
-                      {
-                        "x": 21,
-                        "y": 60
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "TempDinosaur",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1007,92 +910,6 @@
         "align": "center",
         "wordWrap": true
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "TempSword2",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 60
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 70
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 0.3
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 0.7
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "TempSword2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempSword2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31,
-                    "y": 52.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 60
-                      },
-                      {
-                        "x": 21,
-                        "y": 60
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "",
@@ -1611,22 +1428,6 @@
         "children": [
           {
             "objectName": "TempDinosaur"
-          }
-        ]
-      },
-      {
-        "folderName": "Weapons",
-        "children": [
-          {
-            "folderName": "Swords",
-            "children": [
-              {
-                "objectName": "TempSword"
-              },
-              {
-                "objectName": "TempSword2"
-              }
-            ]
           }
         ]
       },
