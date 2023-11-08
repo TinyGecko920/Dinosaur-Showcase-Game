@@ -798,9 +798,9 @@
           "HealToBeApplied": 0
         },
         {
-          "allowDiagonals": false,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "allowDiagonals": false,
           "acceleration": 9999,
           "maxSpeed": 80,
           "rotateObject": false,
