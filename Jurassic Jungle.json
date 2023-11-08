@@ -574,13 +574,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 31,
-                    "y": 52
+                    "y": 52.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 31,
+                    "y": 52.5
                   },
                   "customCollisionMask": [
                     [
@@ -663,10 +663,10 @@
                     "y": 52.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 31,
+                    "y": 52.5
                   },
                   "customCollisionMask": [
                     [

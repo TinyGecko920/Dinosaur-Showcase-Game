@@ -216,6 +216,12 @@
           "name": "EquippedSword",
           "type": "string",
           "value": "TempSword2"
+        },
+        {
+          "folded": true,
+          "name": "_Attacking",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
