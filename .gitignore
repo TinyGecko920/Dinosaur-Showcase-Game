@@ -1,3 +1,4 @@
 *.json.autosave
 assets/Wood Bar Border.png
-export/
+export/*
+!export/buildResources/

@@ -73,7 +73,7 @@
       "progressBarMinWidth": 64,
       "progressBarWidthPercent": 100,
       "showGDevelopSplash": false,
-      "showProgressBar": true
+      "showProgressBar": false
     },
     "watermark": {
       "placement": "bottom-right",
