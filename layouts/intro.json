@@ -27,13 +27,13 @@
       "folded": true,
       "name": "MaxLogoHeightScale",
       "type": "number",
-      "value": 0.667
+      "value": 0.75
     },
     {
       "folded": true,
       "name": "MaxLogoWidthScale",
       "type": "number",
-      "value": 0.667
+      "value": 0.75
     }
   ],
   "instances": [
@@ -58,51 +58,6 @@
     "folderName": "__ROOT"
   },
   "events": [
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-          },
-          "parameters": [
-            "JurassicJungle",
-            "Tween",
-            "\"fadeOut\"",
-            "0",
-            "\"easeOutQuad\"",
-            "0.5",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        }
-      ]
-    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],

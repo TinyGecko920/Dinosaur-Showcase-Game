@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.1816906597848627,
+    "zoomFactor": 0.35269049347712383,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -143,7 +143,7 @@
       "layer": "",
       "name": "Ground",
       "persistentUuid": "27221e22-cc70-4885-9fe0-628af0fa6430",
-      "width": 1920,
+      "width": 6000,
       "x": 0,
       "y": 1048,
       "zOrder": 11,
@@ -753,19 +753,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.1)",
-                "\"Layer1\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.2)",
+                "lerp(CameraX(), TempPlayer.X(), 0.3)",
                 "\"Layer2\"",
                 ""
               ]
@@ -777,7 +765,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.3)",
+                "lerp(CameraX(), TempPlayer.X(), 0.2)",
                 "\"Layer3\"",
                 ""
               ]
@@ -789,7 +777,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.4)",
+                "lerp(CameraX(), TempPlayer.X(), 0.15)",
                 "\"Layer4\"",
                 ""
               ]
@@ -801,7 +789,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.5)",
+                "lerp(CameraX(), TempPlayer.X(), 0.1)",
                 "\"Layer5\"",
                 ""
               ]
