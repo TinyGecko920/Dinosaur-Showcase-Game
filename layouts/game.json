@@ -18,19 +18,10 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20220707303602034,
+    "zoomFactor": 0.26364576737708223,
     "windowMask": false
   },
-  "objectsGroups": [
-    {
-      "name": "Dinosaurs",
-      "objects": [
-        {
-          "name": "TempDinosaur"
-        }
-      ]
-    }
-  ],
+  "objectsGroups": [],
   "variables": [],
   "instances": [
     {

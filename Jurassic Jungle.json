@@ -726,6 +726,14 @@
           "name": "TempSword2"
         }
       ]
+    },
+    {
+      "name": "Dinosaurs",
+      "objects": [
+        {
+          "name": "TempDinosaur"
+        }
+      ]
     }
   ],
   "variables": [],

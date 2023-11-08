@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.35269049347712383,
+    "zoomFactor": 0.4753585087126949,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -122,14 +122,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 4,
-      "height": 254,
+      "depth": 7,
+      "height": 421,
       "layer": "",
       "name": "TempPlayer",
       "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
-      "width": 254,
-      "x": 303,
-      "y": 798,
+      "width": 421,
+      "x": 289,
+      "y": 680,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -163,6 +163,22 @@
       "x": 0,
       "y": 0,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 329,
+      "layer": "",
+      "name": "TempDinosaur",
+      "persistentUuid": "02cba5c0-4445-4f50-8841-85d9626582f6",
+      "width": 329,
+      "x": 1529,
+      "y": 747,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -689,6 +705,286 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TempDinosaur",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 20
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 32
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 2.5
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 3.1
+        },
+        {
+          "name": "AgroDistanceInPixels",
+          "type": "number",
+          "value": 1000
+        },
+        {
+          "folded": true,
+          "name": "AttackRange",
+          "type": "number",
+          "value": 150
+        },
+        {
+          "folded": true,
+          "name": "MinGoldDrop",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "MaxGoldDrop",
+          "type": "string",
+          "value": "100"
+        },
+        {
+          "folded": true,
+          "name": "_Attacking",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 100,
+          "CurrentHealth": 0,
+          "MaxHealth": 100,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
+          "allowDiagonals": false,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 9999,
+          "maxSpeed": 80,
+          "rotateObject": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempDinosaur",
+                  "points": [
+                    {
+                      "name": "Health",
+                      "x": 14,
+                      "y": 10.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 54
+                      },
+                      {
+                        "x": 7,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TempDinosaur2",
+                  "points": [
+                    {
+                      "name": "Health",
+                      "x": 14,
+                      "y": 10.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 54
+                      },
+                      {
+                        "x": 7,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack",
+                  "points": [
+                    {
+                      "name": "Health",
+                      "x": 14,
+                      "y": 10.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 17
+                      },
+                      {
+                        "x": 51,
+                        "y": 54
+                      },
+                      {
+                        "x": 7,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -696,6 +992,14 @@
     "children": [
       {
         "objectName": "TempPlayer"
+      },
+      {
+        "folderName": "Dinosaurs",
+        "children": [
+          {
+            "objectName": "TempDinosaur"
+          }
+        ]
       },
       {
         "folderName": "Layers",
@@ -734,6 +1038,13 @@
       "target": "Player"
     },
     {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dinosaurs"
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -754,6 +1065,18 @@
                 "",
                 "=",
                 "lerp(CameraX(), TempPlayer.X(), 0.3)",
+                "\"Layer1\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraX(), TempPlayer.X(), 0.25)",
                 "\"Layer2\"",
                 ""
               ]
@@ -810,7 +1133,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer5",
       "renderingType": "",
       "visibility": true,
@@ -842,7 +1165,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer4",
       "renderingType": "",
       "visibility": true,
@@ -874,7 +1197,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer3",
       "renderingType": "",
       "visibility": true,
@@ -906,7 +1229,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer2",
       "renderingType": "",
       "visibility": true,
@@ -981,7 +1304,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer1",
       "renderingType": "",
       "visibility": true,
@@ -1025,6 +1348,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "Platform",
