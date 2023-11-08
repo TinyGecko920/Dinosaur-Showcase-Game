@@ -195,6 +195,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Bob",
+      "persistentUuid": "d8cc5f1e-d63e-4f43-a6d2-f57498d2384b",
+      "width": 0,
+      "x": 1190,
+      "y": 770,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -216,12 +231,6 @@
           "name": "EquippedSword",
           "type": "string",
           "value": "TempSword2"
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
         }
       ],
       "effects": [],
@@ -1377,6 +1386,342 @@
           "width": 192
         }
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bob",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.16,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bob_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 43,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 149
+                      },
+                      {
+                        "x": 43,
+                        "y": 149
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bob_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 43,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 149
+                      },
+                      {
+                        "x": 43,
+                        "y": 149
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bob_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 43,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 149
+                      },
+                      {
+                        "x": 43,
+                        "y": 149
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bob_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 43,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 4
+                      },
+                      {
+                        "x": 124,
+                        "y": 149
+                      },
+                      {
+                        "x": 43,
+                        "y": 149
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "WhiteWoman",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.16,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\whitewoman_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 78,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 300
+                      },
+                      {
+                        "x": 78,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\whitewoman_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 78,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 300
+                      },
+                      {
+                        "x": 78,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\whitewoman_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 78,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 300
+                      },
+                      {
+                        "x": 78,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\whitewoman_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 78,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 18
+                      },
+                      {
+                        "x": 256,
+                        "y": 300
+                      },
+                      {
+                        "x": 78,
+                        "y": 300
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1453,6 +1798,12 @@
       },
       {
         "objectName": "TempPlayer"
+      },
+      {
+        "objectName": "Bob"
+      },
+      {
+        "objectName": "WhiteWoman"
       }
     ]
   },

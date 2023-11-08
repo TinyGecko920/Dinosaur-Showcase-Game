@@ -985,6 +985,25 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBitmapText",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "This text use the default bitmap font.\nUse a custom Bitmap Font to create your own texts.",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "",
+        "textureAtlasResourceName": "",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1026,6 +1045,9 @@
       },
       {
         "objectName": "Sun"
+      },
+      {
+        "objectName": "NewBitmapText"
       }
     ]
   },
@@ -1376,6 +1398,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",
