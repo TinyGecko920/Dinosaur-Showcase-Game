@@ -1,30 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 
-// Get the current working directory
-const workingDir = process.cwd();
+const assetsDir = path.join(__dirname, 'assets');
 
-// Read the contents of the working directory
-fs.readdir(workingDir, (err, files) => {
-    if (err) {
-        console.error('Error reading directory:', err);
-        return;
-    }
+const projectDirContents = fs.readdirSync(__dirname);
 
-    // Find the first JSON file in the directory
-    const jsonFile = files.find(file => path.extname(file) === '.json');
+const projectFiles = projectDirContents.filter(
+  (filePath) => path.extname(filePath) === '.json'
+);
 
-    if (jsonFile) {
-        // Read the contents of the JSON file
-        fs.readFile(path.join(workingDir, jsonFile), 'utf8', (err, data) => {
-            if (err) {
-                console.error('Error reading file:', err);
-                return;
-            }
-            const jsonData = JSON.parse(data);
-            console.log('JSON data:', jsonData);
-        });
-    } else {
-        console.log('No JSON file found in the directory');
-    }
-});
+if (projectFiles.length > 0) {
+  // Assume first JSON file is project file
+  const projectFile = projectFiles[0];
+  fs.readFileSync;
+  console.log(`found ${projectFile}`);
+  if (fs.existsSync(assetsDir) && fs.lstatSync(assetsDir).isDirectory()) {
+    const assetsFiles = fs.readdirSync(assetsDir);
+    assetsFiles.forEach((filePath) => {});
+  }
+}
