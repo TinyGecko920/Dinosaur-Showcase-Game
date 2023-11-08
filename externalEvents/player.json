@@ -163,16 +163,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "TempPlayer",
-                    "_Attacking",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -185,16 +175,6 @@
                     "Animation",
                     "=",
                     "\"Attack\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "TempPlayer",
-                    "_Attacking",
-                    "True"
                   ]
                 }
               ],
@@ -258,16 +238,6 @@
                         "=",
                         "lerp(Swords.Angle(), 0, 0.25)"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "TempPlayer",
-                        "_Attacking",
-                        "True"
-                      ]
                     }
                   ]
                 },
@@ -330,16 +300,6 @@
                         "Swords",
                         "=",
                         "lerp(Swords.Angle(), 0, 0.25)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "TempPlayer",
-                        "_Attacking",
-                        "True"
                       ]
                     }
                   ]

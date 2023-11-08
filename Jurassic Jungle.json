@@ -453,6 +453,78 @@
         "name": "assets\\IMG_1289.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bob_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bob_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bob_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bob_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bob_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bob_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bob_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bob_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/whitewoman_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\whitewoman_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/whitewoman_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\whitewoman_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/whitewoman_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\whitewoman_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/whitewoman_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\whitewoman_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
