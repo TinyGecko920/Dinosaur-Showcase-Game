@@ -60,6 +60,93 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::IsNativeDesktopApp"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "JurassicJungle",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "0.4",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
@@ -83,61 +170,6 @@
             "SceneWindowWidth() / 2",
             "=",
             "SceneWindowHeight() / 2"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-          },
-          "parameters": [
-            "JurassicJungle",
-            "Tween",
-            "\"fadeOut\"",
-            "0",
-            "\"easeOutQuad\"",
-            "0.4",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Game\"",
-            ""
           ]
         }
       ]
