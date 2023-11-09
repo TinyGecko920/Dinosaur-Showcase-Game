@@ -2,3 +2,4 @@
 assets/Wood Bar Border.png
 export/*
 !export/buildResources/
+!export/package.json
