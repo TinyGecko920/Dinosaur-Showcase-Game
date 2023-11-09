@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2636457673770823,
+    "zoomFactor": 0.3381136170589551,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -36,69 +36,6 @@
       "x": 708,
       "y": 256,
       "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 50,
-      "layer": "UI",
-      "name": "HealthBar",
-      "persistentUuid": "5d3f9a10-f823-497b-b88d-421926d182fb",
-      "width": 434,
-      "x": 151,
-      "y": 931,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 106,
-      "layer": "UI",
-      "name": "GoldAmount",
-      "persistentUuid": "ed05b7ba-001e-43ae-a37a-8c95ea3c53b0",
-      "width": 361,
-      "x": 148,
-      "y": 798,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "UI",
-      "name": "HealthAmount",
-      "persistentUuid": "90bf45d0-b271-41f6-862d-a97ef89f6000",
-      "width": 0,
-      "x": 195,
-      "y": 885,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 88,
-      "layer": "UI",
-      "name": "Heart",
-      "persistentUuid": "212d52c2-28ba-4315-976f-21a49f24e93d",
-      "width": 88,
-      "x": 91,
-      "y": 912,
-      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -467,72 +404,6 @@
       ]
     },
     {
-      "assetStoreId": "d68a7f09fb9a6a3b183e43e1132b13d6ef13a5cc0988dd148dd22819876a463c",
-      "name": "HealthBar",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "InitialValue": 100,
-        "MaxValue": 100,
-        "BarTopPadding": 8,
-        "BarRightPadding": 10,
-        "BarBottomPadding": 8,
-        "BarLeftPadding": 10,
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "EasingDuration": -4.75
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 21,
-          "height": 92,
-          "leftMargin": 26,
-          "rightMargin": 26,
-          "texture": "Wood Bar Border.png2",
-          "tiled": true,
-          "topMargin": 21,
-          "width": 1044
-        },
-        "Buffer": {
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Shaded Red Fill Bar.png2",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 32
-        },
-        "FillBar": {
-          "bottomMargin": 4,
-          "height": 50,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "assets\\ProgressBarThing.png3",
-          "tiled": true,
-          "topMargin": 9,
-          "width": 50
-        },
-        "Label": {
-          "bold": true,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 32,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        }
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "TempDinosaur",
@@ -871,35 +742,6 @@
         "align": "left",
         "wordWrap": true
       }
-    },
-    {
-      "assetStoreId": "",
-      "name": "HealthAmount",
-      "type": "BBText::BBText",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
-        "opacity": 255,
-        "fontSize": 24,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "center",
-        "wordWrap": true
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Heart",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": []
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -1717,19 +1559,10 @@
             "objectName": "UpgradeButton"
           },
           {
-            "objectName": "Heart"
-          },
-          {
             "objectName": "GoldAmount"
           },
           {
-            "objectName": "HealthAmount"
-          },
-          {
             "objectName": "DamageNumber"
-          },
-          {
-            "objectName": "HealthBar"
           }
         ]
       },

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2796226521839386,
+    "zoomFactor": 0.5250860067782527,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -194,6 +194,38 @@
       "x": 0,
       "y": 0,
       "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 60,
+      "layer": "UI",
+      "name": "HealthBar",
+      "persistentUuid": "3768b10e-1a2c-49e8-ba57-e95cb072c152",
+      "width": 400,
+      "x": 75,
+      "y": 965,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 42,
+      "layer": "UI",
+      "name": "HealthAmount",
+      "persistentUuid": "c73781c0-14c1-4f63-ae47-eac177bafaff",
+      "width": 192,
+      "x": 109,
+      "y": 916,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1000,25 +1032,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "NewBitmapText",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "This text use the default bitmap font.\nUse a custom Bitmap Font to create your own texts.",
-        "opacity": 255,
-        "scale": 1,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "",
-        "textureAtlasResourceName": "",
-        "align": "left",
-        "wordWrap": true
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -1036,8 +1049,11 @@
         ]
       },
       {
-        "folderName": "Layers",
+        "folderName": "Scenery",
         "children": [
+          {
+            "objectName": "Sun"
+          },
           {
             "objectName": "Layer1"
           },
@@ -1057,12 +1073,6 @@
       },
       {
         "objectName": "Ground"
-      },
-      {
-        "objectName": "Sun"
-      },
-      {
-        "objectName": "NewBitmapText"
       }
     ]
   },
@@ -1363,6 +1373,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -1413,10 +1455,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",
