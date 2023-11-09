@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.54279208024733,
+    "zoomFactor": 0.4027225833325933,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -226,6 +226,22 @@
       "x": 109,
       "y": 916,
       "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 52,
+      "layer": "UI",
+      "name": "GoldAmount",
+      "persistentUuid": "b85282b3-8646-4b73-acfe-52090899b704",
+      "width": 283,
+      "x": 75,
+      "y": 840,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -845,11 +861,11 @@
           "HealToBeApplied": 0
         },
         {
+          "maxSpeed": 200,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
           "allowDiagonals": false,
           "acceleration": 9999,
-          "maxSpeed": 80,
           "rotateObject": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -1111,7 +1127,19 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.3)",
+                "lerp(CameraX(), TempPlayer.X(), 0.25)",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "TempPlayer.X() / 0.95",
                 "\"Layer1\"",
                 ""
               ]
@@ -1123,7 +1151,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.25)",
+                "TempPlayer.X() / 1.1",
                 "\"Layer2\"",
                 ""
               ]
@@ -1135,7 +1163,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.2)",
+                "TempPlayer.X() / 1.35",
                 "\"Layer3\"",
                 ""
               ]
@@ -1147,20 +1175,8 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.15)",
+                "TempPlayer.X() / 3",
                 "\"Layer4\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.1)",
-                "\"Layer5\"",
                 ""
               ]
             }
