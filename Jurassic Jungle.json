@@ -785,6 +785,66 @@
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "GoldAmount",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black][spacing=8]100 Gold[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 32,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DamageNumber",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "folded": true,
+          "name": "CenterX",
+          "type": "number",
+          "value": -9999
+        },
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "folded": true,
+          "name": "Spacing",
+          "type": "number",
+          "value": 32
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -808,10 +868,21 @@
         "folderName": "Gui",
         "children": [
           {
-            "objectName": "HealthBar"
+            "folderName": "Player",
+            "children": [
+              {
+                "objectName": "GoldAmount"
+              },
+              {
+                "objectName": "HealthAmount"
+              },
+              {
+                "objectName": "HealthBar"
+              }
+            ]
           },
           {
-            "objectName": "HealthAmount"
+            "objectName": "DamageNumber"
           }
         ]
       }
