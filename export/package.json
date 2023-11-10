@@ -2,11 +2,10 @@
   "name": "jurassic_32jungle",
   "main": "main.js",
   "productName": "Jurassic Jungle",
-  "description": "Jurassic Jungle",
+  "description": "",
   "author": "",
   "version": "1.0.0",
   "dependencies": {
-    
     "@electron/remote": "^2.0.8"
   },
   "scripts": {
@@ -18,7 +17,7 @@
     "electron-builder": "22.11.11"
   },
   "build": {
-    "appId": "com.example.gamename",
+    "appId": "com.jurassicjungle.game",
     "directories": {
       "buildResources": "buildResources"
     }
