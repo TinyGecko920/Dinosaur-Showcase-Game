@@ -877,9 +877,9 @@
           "HealToBeApplied": 0
         },
         {
-          "maxSpeed": 200,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "maxSpeed": 200,
           "allowDiagonals": false,
           "acceleration": 9999,
           "rotateObject": false,
@@ -1075,10 +1075,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": false,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],

@@ -192,33 +192,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/assets_ProgressBarThing.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/assets_ProgressBarThing.png3.png\"}",
-        "name": "assets\\ProgressBarThing.png3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Shaded Red Fill Bar.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Shaded Red Fill Bar.png2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Bar Border.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Wood Bar Border.png2.png\"}",
-        "name": "Wood Bar Border.png2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/IMG_1296.png",
         "kind": "image",
         "metadata": "",
@@ -270,45 +243,6 @@
         "name": "assets\\IMG_1295.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/On Screen Controls Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "On Screen Controls Button_Hovered.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/16e804dda11f82902d6b7469420d7b3b81d68ef00af71783070dd284114e8cdc_On Screen Controls Button_Hovered.png",
-          "name": "On Screen Controls Button_Hovered.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/On Screen Controls Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "On Screen Controls Button_Idle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/174644b98156cc55e10a4eb991aebb06e0a2c9f98915abb1422cababc3124de3_On Screen Controls Button_Idle.png",
-          "name": "On Screen Controls Button_Idle.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/On Screen Controls Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "On Screen Controls Button_Pressed.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5a44f1cb97ef7da59c97179346b71d3f5b913af0208795784707c062fc20749f_On Screen Controls Button_Pressed.png",
-          "name": "On Screen Controls Button_Pressed.png"
-        }
       },
       {
         "alwaysLoaded": false,
@@ -524,6 +458,42 @@
         "name": "NewSprite",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LoadingScreenBg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LoadingScreenBg1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LoadingScreenBg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LoadingScreenBg2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LoadingScreenBg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LoadingScreenBg3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LoadingScreenBg4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LoadingScreenBg4.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1002,6 +972,8 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -1012,10 +984,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -1384,6 +1354,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/backgrounds"
     }
   ],
   "externalLayouts": [],
