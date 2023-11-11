@@ -39,6 +39,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 144,
+      "layer": "UI",
+      "name": "Cursor",
+      "persistentUuid": "0399bde8-cee2-45c5-ad02-cdd15f04b37c",
+      "width": 144,
+      "x": 2376,
+      "y": 922,
+      "zOrder": 9999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1558,6 +1574,10 @@
     {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }

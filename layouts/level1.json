@@ -1613,6 +1613,10 @@
     {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }
