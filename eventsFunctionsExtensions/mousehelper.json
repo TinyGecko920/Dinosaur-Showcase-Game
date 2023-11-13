@@ -82,6 +82,14 @@
               "actions": [
                 {
                   "type": {
+                    "value": "CacheSouris"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ScalableCapability::ScalableBehavior::SetValue"
                   },
                   "parameters": [
