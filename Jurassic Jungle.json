@@ -515,30 +515,12 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/IslaNublar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\IslaNublar.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/IMG_1385.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\IMG_1385.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Coin.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Coin.png",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -681,15 +663,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Walk",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Run2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Run",
         "smoothed": true,
         "userAdded": true
       },
@@ -2082,10 +2055,10 @@
         ]
       },
       {
-        "objectName": "Tooltip"
+        "objectName": ""
       },
       {
-        "objectName": "GoldAmount"
+        "objectName": ""
       },
       {
         "objectName": "HealthAmount"
