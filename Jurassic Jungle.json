@@ -515,6 +515,12 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/IslaNublar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IslaNublar.png"
+      },
+      {
         "file": "assets/IMG_1385.png",
         "kind": "image",
         "metadata": "",
@@ -524,6 +530,12 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Coin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin.png"
+      },
+      {
         "file": "assets/IMG_1310.png",
         "kind": "image",
         "metadata": "",
@@ -533,6 +545,12 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Coins.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coins.png"
+      },
+      {
         "file": "assets/IMG_1311.png",
         "kind": "image",
         "metadata": "",
@@ -1001,24 +1019,6 @@
         "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
         "opacity": 255,
         "fontSize": 24,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
-    },
-    {
-      "assetStoreId": "",
-      "name": "GoldAmount",
-      "type": "BBText::BBText",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black][spacing=8]100 Gold[/spacing][/outline][/b]",
-        "opacity": 255,
-        "fontSize": 32,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "ChelseaMarket-Regular.ttf",
@@ -2065,34 +2065,27 @@
         ]
       },
       {
-        "folderName": "Gui",
-        "children": [
-          {
-            "folderName": "Player",
-            "children": [
-              {
-                "objectName": "GoldAmount"
-              },
-              {
-                "objectName": "HealthAmount"
-              },
-              {
-                "objectName": "HealthBar"
-              }
-            ]
-          },
-          {
-            "objectName": "DamageNumber"
-          }
-        ]
-      },
-      {
         "folderName": "Dinosaurs",
         "children": [
           {
             "objectName": "Tyrannosaurus"
           }
         ]
+      },
+      {
+        "objectName": "Tooltip"
+      },
+      {
+        "objectName": "GoldAmount"
+      },
+      {
+        "objectName": "HealthAmount"
+      },
+      {
+        "objectName": "HealthBar"
+      },
+      {
+        "objectName": "DamageNumber"
       },
       {
         "objectName": "Cursor"
@@ -2213,6 +2206,15 @@
       "referenceTo": "/eventsFunctionsExtensions/backgrounds"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/menu-ui"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/game-ui"
+    }
+  ],
   "externalSourceFiles": []
 }

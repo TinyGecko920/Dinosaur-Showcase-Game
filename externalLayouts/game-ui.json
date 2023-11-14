@@ -1,0 +1,68 @@
+{
+  "associatedLayout": "Game",
+  "name": "Game UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "layer": "UI",
+      "name": "Coins",
+      "persistentUuid": "6063027c-b3b5-4211-88d1-5bd358b35f3c",
+      "width": 78,
+      "x": 51,
+      "y": 792,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "GoldAmount",
+      "persistentUuid": "4817ad92-3e27-4638-96b4-703eda28b1fa",
+      "width": 0,
+      "x": 96,
+      "y": 816,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Tooltip",
+      "persistentUuid": "fcd606f6-3ef3-44b1-af4a-50385dbd1a3e",
+      "width": 0,
+      "x": 804,
+      "y": 842,
+      "zOrder": 9998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Cursor",
+      "persistentUuid": "707a2337-3fc8-4a17-97d5-73d2c6ca331b",
+      "width": 0,
+      "x": 713,
+      "y": 824,
+      "zOrder": 9999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {}
+}

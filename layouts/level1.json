@@ -233,22 +233,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 52,
-      "layer": "UI",
-      "name": "GoldAmount",
-      "persistentUuid": "b85282b3-8646-4b73-acfe-52090899b704",
-      "width": 283,
-      "x": 75,
-      "y": 840,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 3,
       "height": 520,
       "layer": "",
