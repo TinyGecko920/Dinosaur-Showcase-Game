@@ -611,18 +611,7 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "GoldAmount",
-                "=",
-                "\"[b][outline=black][spacing=8]\" + ToString(TempPlayer.Gold) + \" Gold[/spacing][/outline][/b]\""
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "parameters": []
