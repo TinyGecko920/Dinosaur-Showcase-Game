@@ -30,7 +30,7 @@
       "depth": 3,
       "height": 421,
       "layer": "",
-      "name": "TempPlayer",
+      "name": "TopDownPlayer",
       "persistentUuid": "a4447be9-0574-4ad4-a29f-598971a25a3f",
       "width": 421,
       "x": 708,
@@ -61,7 +61,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TempPlayer",
+      "name": "TopDownPlayer",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1461,7 +1461,7 @@
         ]
       },
       {
-        "objectName": "TempPlayer"
+        "objectName": "TopDownPlayer"
       },
       {
         "objectName": "Bob"
