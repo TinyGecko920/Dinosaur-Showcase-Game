@@ -518,9 +518,12 @@
         "file": "assets/IslaNublar.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\IslaNublar.png"
+        "name": "assets\\IslaNublar.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/IMG_1385.png",
         "kind": "image",
         "metadata": "",
@@ -533,9 +536,12 @@
         "file": "assets/Coin.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Coin.png"
+        "name": "assets\\Coin.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/IMG_1310.png",
         "kind": "image",
         "metadata": "",
@@ -548,9 +554,12 @@
         "file": "assets/Coins.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Coins.png"
+        "name": "assets\\Coins.png",
+        "smoothed": false,
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/IMG_1311.png",
         "kind": "image",
         "metadata": "",
@@ -1420,7 +1429,12 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tooltip",
+          "type": "Tooltip::Tooltip"
+        }
+      ],
       "content": {
         "text": "[outline=black]I am a tooltip[/outline]",
         "opacity": 255,
@@ -1583,6 +1597,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/backgrounds"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tooltip"
     }
   ],
   "externalLayouts": [
@@ -1593,6 +1611,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/game-ui"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/cursor"
     }
   ],
   "externalSourceFiles": []

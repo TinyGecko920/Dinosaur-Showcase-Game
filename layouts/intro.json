@@ -117,22 +117,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 144,
-      "layer": "UI",
-      "name": "Cursor",
-      "persistentUuid": "3920c30b-90c0-4d4f-a053-a2ff8eb0489b",
-      "width": 144,
-      "x": 1664,
-      "y": -384,
-      "zOrder": 9999,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -455,6 +439,18 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"Cursor\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "ChangeColor"
@@ -821,6 +817,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Tooltip",
+      "type": "Tooltip::Tooltip"
     },
     {
       "name": "Tween",
