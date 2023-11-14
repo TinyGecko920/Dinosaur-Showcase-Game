@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.25314140012986225,
+    "zoomFactor": 0.2368956372544658,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1011,6 +1011,18 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "PlatformerGamepadMapper",
+      "type": "Gamepads::PlatformerGamepadMapper"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForPlatformer",
+      "type": "BehaviorRemapper::RemapForPlatformer"
     },
     {
       "name": "Resizable",
