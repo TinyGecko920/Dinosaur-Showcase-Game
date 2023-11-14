@@ -106,22 +106,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 7,
-      "height": 421,
-      "layer": "",
-      "name": "TempPlayer",
-      "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
-      "width": 421,
-      "x": 289,
-      "y": 680,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 32,
       "layer": "",
@@ -227,6 +211,22 @@
       "x": 0,
       "y": 0,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 7,
+      "height": 300,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "327656c6-b79f-4594-b3fe-c0fdea03da3b",
+      "width": 300,
+      "x": 298,
+      "y": 737,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1144,84 +1144,6 @@
                 "Resizable",
                 "64",
                 "1080"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Parallax",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.25)",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 0.95",
-                "\"Layer1\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 1.1",
-                "\"Layer2\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 1.35",
-                "\"Layer3\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 3",
-                "\"Layer4\"",
-                ""
               ]
             }
           ]

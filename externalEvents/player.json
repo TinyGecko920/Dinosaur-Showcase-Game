@@ -23,7 +23,7 @@
               "parameters": [
                 "HealthBar",
                 "=",
-                "TempPlayer.Health::Health()",
+                "Player.Health::Health()",
                 ""
               ]
             },
@@ -34,7 +34,7 @@
               "parameters": [
                 "HealthAmount",
                 "=",
-                "\"[b][outline=black][spacing=8]\" + ToString(ceil(TempPlayer.Health::Health())) + \"/\" + ToString(TempPlayer.Health::MaxHealth()) + \"[/spacing][/outline][/b]\""
+                "\"[b][outline=black][spacing=8]\" + ToString(ceil(Player.Health::Health())) + \"/\" + ToString(Player.Health::MaxHealth()) + \"[/spacing][/outline][/b]\""
               ]
             }
           ]
@@ -47,7 +47,7 @@
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Health",
                 ""
               ]
@@ -98,7 +98,7 @@
               "parameters": [
                 "",
                 "Swords",
-                "TempPlayer.EquippedSword",
+                "Player.EquippedSword",
                 "0",
                 "0",
                 ""
@@ -128,9 +128,9 @@
               "parameters": [
                 "Swords",
                 "=",
-                "TempPlayer.PointX(\"RightHand\")",
+                "Player.PointX(\"RightHand\")",
                 "=",
-                "TempPlayer.PointY(\"RightHand\")"
+                "Player.PointY(\"RightHand\")"
               ]
             }
           ]
@@ -182,7 +182,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "TempPlayer",
+                    "Player",
                     "Animation",
                     "=",
                     "\"Attack\""
@@ -198,7 +198,7 @@
                         "value": "FlippableCapability::FlippableBehavior::FlippedX"
                       },
                       "parameters": [
-                        "TempPlayer",
+                        "Player",
                         "Flippable"
                       ]
                     }
@@ -261,7 +261,7 @@
                         "value": "FlippableCapability::FlippableBehavior::FlippedX"
                       },
                       "parameters": [
-                        "TempPlayer",
+                        "Player",
                         "Flippable"
                       ]
                     }
@@ -325,7 +325,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "TempPlayer",
+                    "Player",
                     "Animation",
                     "=",
                     "\"Attack\""
@@ -389,7 +389,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Animation",
                 "=",
                 "\"Attack\""
@@ -406,7 +406,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
                   },
                   "parameters": [
-                    "TempPlayer",
+                    "Player",
                     "Animation"
                   ]
                 }
@@ -417,7 +417,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "TempPlayer",
+                    "Player",
                     "Animation",
                     "=",
                     "\"Idle\""
@@ -435,7 +435,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "TopDownMovement"
               ]
             },
@@ -444,7 +444,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Animation",
                 "!=",
                 "\"Attack\""
@@ -457,7 +457,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Animation",
                 "=",
                 "\"Walk\""
@@ -474,7 +474,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "TopDownMovement"
               ]
             },
@@ -483,7 +483,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Animation",
                 "!=",
                 "\"Attack\""
@@ -496,7 +496,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Animation",
                 "=",
                 "\"Idle\""
@@ -543,7 +543,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Flippable",
                 "yes"
               ]
@@ -589,7 +589,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Flippable",
                 "no"
               ]
@@ -619,7 +619,85 @@
               "parameters": [
                 "GoldAmount",
                 "=",
-                "\"[b][outline=black][spacing=8]\" + ToString(TempPlayer.Gold) + \" Gold[/spacing][/outline][/b]\""
+                "\"[b][outline=black][spacing=8]\" + ToString(TopDownPlayer.Gold) + \" Gold[/spacing][/outline][/b]\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Parallax",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraX(), Player.X(), 0.25)",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Player.X() / 0.95",
+                "\"Layer1\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Player.X() / 1.1",
+                "\"Layer2\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Player.X() / 1.35",
+                "\"Layer3\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Player.X() / 3",
+                "\"Layer4\"",
+                ""
               ]
             }
           ]
