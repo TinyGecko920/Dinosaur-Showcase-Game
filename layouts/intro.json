@@ -40,6 +40,12 @@
       "name": "CameraCenterY",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "RawChangelog",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -406,6 +412,29 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Changelog",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[outline=black][b][size=64]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
+        "opacity": 255,
+        "fontSize": 32,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -422,6 +451,9 @@
       },
       {
         "objectName": "LoadingScreenBg4"
+      },
+      {
+        "objectName": "Changelog"
       }
     ]
   },
@@ -446,6 +478,18 @@
           "parameters": [
             "",
             "\"Cursor\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"Intro UI\"",
             "0",
             "0",
             "0"
@@ -550,6 +594,17 @@
       "actions": [
         {
           "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Changelog",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
@@ -591,6 +646,28 @@
             "\"easeInOutCubic\"",
             "2"
           ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Changelog",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.25",
+            ""
+          ]
         }
       ]
     },
@@ -631,6 +708,131 @@
             "SceneWindowWidth() / 2",
             "=",
             "SceneWindowHeight() / 2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Changelog functionality"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Changelog",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Cursor",
+            "Animation",
+            "=",
+            "\"Active\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tooltip",
+            "=",
+            "\"[outline=black]Open in browser[/outline]\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Tooltip",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LaunchFile"
+              },
+              "parameters": [
+                "\"https://github.com/TinyGecko920/Dinosaur-Showcase-Game\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "Changelog",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Tooltip"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Cursor",
+            "Animation",
+            "=",
+            "\"Idle\""
           ]
         }
       ]

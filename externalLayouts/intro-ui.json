@@ -1,0 +1,35 @@
+{
+  "associatedLayout": "Intro",
+  "name": "Intro UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 947,
+      "layer": "",
+      "name": "Changelog",
+      "persistentUuid": "a35e0287-5035-4b15-b5a8-280d806068ab",
+      "width": 897,
+      "x": 76,
+      "y": 63,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.4163025217733325,
+    "windowMask": false
+  }
+}

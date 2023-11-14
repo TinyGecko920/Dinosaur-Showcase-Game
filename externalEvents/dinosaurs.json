@@ -21,7 +21,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Player",
+                "TempPlayer",
                 "Dinosaurs.AgroDistanceInPixels",
                 ""
               ]
@@ -36,7 +36,7 @@
                 "Dinosaurs",
                 "Pathfinding",
                 "",
-                "Player.X()",
+                "TempPlayer.X()",
                 "Dinosaurs.Y()"
               ]
             }
@@ -63,7 +63,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Player",
+                "TempPlayer",
                 "Dinosaurs.AttackRange",
                 ""
               ]
@@ -106,7 +106,7 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "Player",
+                "TempPlayer",
                 "Health",
                 "RandomFloatInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
                 "",
@@ -295,7 +295,7 @@
                 "value": "ModVarObjet"
               },
               "parameters": [
-                "TopDownPlayer",
+                "TempPlayer",
                 "Gold",
                 "+",
                 "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
@@ -462,7 +462,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "Dinosaurs",
+                "TempDinosaur",
                 "Flippable",
                 "yes"
               ]
@@ -490,7 +490,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "Dinosaurs",
+                "TempDinosaur",
                 "Flippable",
                 "no"
               ]
