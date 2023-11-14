@@ -1107,6 +1107,12 @@
         },
         {
           "folded": true,
+          "name": "IsABoss",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
           "name": "_Attacking",
           "type": "boolean",
           "value": false
@@ -1522,6 +1528,12 @@
           "name": "EquippedSword",
           "type": "string",
           "value": "TempSword2"
+        },
+        {
+          "folded": true,
+          "name": "Level",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [],
