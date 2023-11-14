@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Level1",
-  "name": "Level1",
+  "mangledName": "Level2",
+  "name": "Level2",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20746499616301498,
+    "zoomFactor": 0.2796226521839395,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -51,22 +51,6 @@
       "x": -2,
       "y": 3,
       "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "cae8d05c-3661-4145-b300-b5a4050133fc",
-      "width": 6000,
-      "x": 0,
-      "y": 0,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -154,22 +138,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer5",
-      "name": "Sun",
-      "persistentUuid": "ed2c2522-3dc4-4656-a8e1-e8aa3cd86a10",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 5,
       "height": 329,
       "layer": "",
@@ -179,21 +147,6 @@
       "x": 3000,
       "y": 771,
       "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer5",
-      "name": "Sun",
-      "persistentUuid": "9b2a6ecc-a003-4ea0-95bb-9b26b5720f09",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -233,6 +186,22 @@
     {
       "angle": 0,
       "customSize": true,
+      "depth": 1,
+      "height": 52,
+      "layer": "UI",
+      "name": "GoldAmount",
+      "persistentUuid": "b85282b3-8646-4b73-acfe-52090899b704",
+      "width": 283,
+      "x": 75,
+      "y": 840,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
       "depth": 3,
       "height": 520,
       "layer": "",
@@ -242,6 +211,22 @@
       "x": 2000,
       "y": 630,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer3",
+      "name": "Layer3",
+      "persistentUuid": "826716fe-4997-471b-8414-eca0bb66c9f5",
+      "width": 6000,
+      "x": 0,
+      "y": 0,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -255,7 +240,7 @@
       "leftMargin": 0,
       "name": "Layer5",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1288.png",
+      "texture": "assets\\IMG_1294.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -285,25 +270,9 @@
       "bottomMargin": 0,
       "height": 32,
       "leftMargin": 0,
-      "name": "Layer3",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1291.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
       "name": "Layer2",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1292.png",
+      "texture": "assets\\IMG_1296.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -712,66 +681,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Sun",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Sun",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\IMG_1289.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 657,
-                        "y": 145
-                      },
-                      {
-                        "x": 1100,
-                        "y": 145
-                      },
-                      {
-                        "x": 1100,
-                        "y": 593
-                      },
-                      {
-                        "x": 657,
-                        "y": 593
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "TempDinosaur",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1117,6 +1026,22 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "Layer3",
+      "rightMargin": 0,
+      "texture": "assets\\IMG_1385.png",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1136,9 +1061,6 @@
       {
         "folderName": "Scenery",
         "children": [
-          {
-            "objectName": "Sun"
-          },
           {
             "objectName": "Layer1"
           },
@@ -1353,7 +1275,7 @@
       "isLocked": true,
       "name": "Layer4",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -1492,7 +1414,7 @@
       "isLocked": true,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
