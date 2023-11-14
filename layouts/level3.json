@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Level1",
-  "name": "Level1",
+  "mangledName": "Level3",
+  "name": "Level3",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20746499616301498,
+    "zoomFactor": 0.27962265218393967,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -51,22 +51,6 @@
       "x": -2,
       "y": 3,
       "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "cae8d05c-3661-4145-b300-b5a4050133fc",
-      "width": 6000,
-      "x": 0,
-      "y": 0,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -128,41 +112,9 @@
       "name": "TempPlayer",
       "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
       "width": 421,
-      "x": 289,
-      "y": 680,
+      "x": 297,
+      "y": 681,
       "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 32,
-      "layer": "",
-      "name": "Ground",
-      "persistentUuid": "27221e22-cc70-4885-9fe0-628af0fa6430",
-      "width": 6000,
-      "x": 0,
-      "y": 1048,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer5",
-      "name": "Sun",
-      "persistentUuid": "ed2c2522-3dc4-4656-a8e1-e8aa3cd86a10",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -176,24 +128,9 @@
       "name": "TempDinosaur",
       "persistentUuid": "02cba5c0-4445-4f50-8841-85d9626582f6",
       "width": 329,
-      "x": 3000,
-      "y": 771,
+      "x": 2997,
+      "y": 769,
       "zOrder": 13,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer5",
-      "name": "Sun",
-      "persistentUuid": "9b2a6ecc-a003-4ea0-95bb-9b26b5720f09",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -255,9 +192,41 @@
       "name": "Tyrannosaurus",
       "persistentUuid": "406c251a-a3c4-4c5f-9ff5-bedb44f0c8f6",
       "width": 520,
-      "x": 2000,
-      "y": 630,
+      "x": 2003,
+      "y": 624,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer3",
+      "name": "Layer3",
+      "persistentUuid": "826716fe-4997-471b-8414-eca0bb66c9f5",
+      "width": 6000,
+      "x": 0,
+      "y": 0,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "Ground",
+      "persistentUuid": "68e789f0-d7fe-43a3-b88e-27e9a3b134cb",
+      "width": 6000,
+      "x": 0,
+      "y": 1048,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -271,7 +240,7 @@
       "leftMargin": 0,
       "name": "Layer5",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1288.png",
+      "texture": "assets\\IMG_1309.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -287,23 +256,7 @@
       "leftMargin": 0,
       "name": "Layer4",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1290.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer3",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1291.png",
+      "texture": "assets\\IMG_1310.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -319,7 +272,7 @@
       "leftMargin": 0,
       "name": "Layer2",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1292.png",
+      "texture": "assets\\IMG_1312.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -335,7 +288,7 @@
       "leftMargin": 0,
       "name": "Layer1",
       "rightMargin": 0,
-      "texture": "assets\\IMG_1293.png",
+      "texture": "assets\\IMG_1313.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -684,7 +637,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
+                  "hasCustomCollisionMask": false,
                   "image": "Ground",
                   "points": [],
                   "originPoint": {
@@ -715,66 +668,6 @@
                       {
                         "x": 0,
                         "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Sun",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Sun",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\IMG_1289.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 657,
-                        "y": 145
-                      },
-                      {
-                        "x": 1100,
-                        "y": 145
-                      },
-                      {
-                        "x": 1100,
-                        "y": 593
-                      },
-                      {
-                        "x": 657,
-                        "y": 593
                       }
                     ]
                   ]
@@ -1133,6 +1026,22 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "Layer3",
+      "rightMargin": 0,
+      "texture": "assets\\IMG_1311.png",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1152,9 +1061,6 @@
       {
         "folderName": "Scenery",
         "children": [
-          {
-            "objectName": "Sun"
-          },
           {
             "objectName": "Layer1"
           },

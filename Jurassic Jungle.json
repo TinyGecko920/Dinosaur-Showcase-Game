@@ -512,6 +512,51 @@
         "name": "CursorActive.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1385.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1385.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1310.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1310.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1311.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1311.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1312.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1312.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1313.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1313.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1437,6 +1482,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
