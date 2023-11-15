@@ -1595,6 +1595,10 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "Tooltip",
+      "type": "Tooltip::Tooltip"
+    },
+    {
       "name": "Tween",
       "type": "Tween::TweenBehavior"
     },

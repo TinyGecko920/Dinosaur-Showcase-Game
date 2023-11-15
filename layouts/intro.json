@@ -529,6 +529,7 @@
             },
             {
               "type": {
+                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -643,7 +644,7 @@
             "\"slideOut\"",
             "CameraCenterY",
             "SceneWindowHeight() / 2",
-            "\"easeInOutCubic\"",
+            "\"easeInOutQuart\"",
             "2"
           ]
         },
@@ -737,6 +738,17 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::Value"
+          },
+          "parameters": [
+            "Changelog",
+            "Opacity",
+            ">",
+            "0"
+          ]
         }
       ],
       "actions": [
@@ -758,7 +770,7 @@
           "parameters": [
             "Tooltip",
             "=",
-            "\"[outline=black]Open in browser[/outline]\""
+            "\"[outline=black]View GitHub[/outline]\""
           ]
         },
         {

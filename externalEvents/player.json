@@ -607,13 +607,7 @@
       "name": "Gold",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
+      "events": [],
       "parameters": []
     }
   ]

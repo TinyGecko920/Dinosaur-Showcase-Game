@@ -1621,6 +1621,10 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "Tooltip",
+      "type": "Tooltip::Tooltip"
+    },
+    {
       "name": "TopDownGamepadMapper",
       "type": "Gamepads::TopDownGamepadMapper"
     },
