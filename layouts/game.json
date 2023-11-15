@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2055970116651805,
+    "zoomFactor": 0.1988903629758561,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1607,18 +1607,6 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
-    },
-    {
-      "name": "PlatformerGamepadMapper",
-      "type": "Gamepads::PlatformerGamepadMapper"
-    },
-    {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
-    },
-    {
-      "name": "RemapForPlatformer",
-      "type": "BehaviorRemapper::RemapForPlatformer"
     },
     {
       "name": "RemapForTopdown",

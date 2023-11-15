@@ -825,12 +825,6 @@
         },
         {
           "folded": true,
-          "name": "IsABoss",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "folded": true,
           "name": "_Attacking",
           "type": "boolean",
           "value": false
