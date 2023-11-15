@@ -289,18 +289,6 @@
           ],
           "hidden": false,
           "name": "Scalable"
-        },
-        {
-          "value": "",
-          "type": "Behavior",
-          "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [
-            "AnimatableCapability::AnimatableBehavior"
-          ],
-          "hidden": false,
-          "name": "Animatable"
         }
       ],
       "sharedPropertyDescriptors": []

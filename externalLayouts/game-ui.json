@@ -27,7 +27,7 @@
       "persistentUuid": "4817ad92-3e27-4638-96b4-703eda28b1fa",
       "width": 0,
       "x": 96,
-      "y": 827,
+      "y": 816,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -44,7 +44,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.662295566550638,
+    "zoomFactor": 0.5800155239904858,
     "windowMask": false
   }
 }

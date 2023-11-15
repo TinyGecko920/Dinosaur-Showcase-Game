@@ -21,8 +21,19 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "TempPlayer",
+                "Player",
                 "Dinosaurs.AgroDistanceInPixels",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
                 ""
               ]
             }
@@ -36,7 +47,7 @@
                 "Dinosaurs",
                 "Pathfinding",
                 "",
-                "TempPlayer.X()",
+                "Player.X()",
                 "Dinosaurs.Y()"
               ]
             }
@@ -63,7 +74,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "TempPlayer",
+                "Player",
                 "Dinosaurs.AttackRange",
                 ""
               ]
@@ -75,6 +86,17 @@
               "parameters": [
                 "Dinosaurs",
                 "_Attacking",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
                 ""
               ]
             }
@@ -106,7 +128,7 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "TempPlayer",
+                "Player",
                 "Health",
                 "RandomFloatInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
                 "",
@@ -283,22 +305,115 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Dinosaurs",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarObjet"
               },
               "parameters": [
-                "TempPlayer",
+                "TopDownPlayer",
                 "Gold",
                 "+",
                 "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "IsABoss",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Opacity",
+                    "=",
+                    "lerp(Dinosaurs.Opacity::Value(), 0, 0.025)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Level2\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "IsABoss",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -462,7 +577,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "TempDinosaur",
+                "Dinosaurs",
                 "Flippable",
                 "yes"
               ]
@@ -490,7 +605,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "TempDinosaur",
+                "Dinosaurs",
                 "Flippable",
                 "no"
               ]
