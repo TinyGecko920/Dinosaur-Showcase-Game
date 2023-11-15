@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2055970116651805,
+    "zoomFactor": 0.32708422889652405,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -59,6 +59,22 @@
       "x": 2376,
       "y": 922,
       "zOrder": 9999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 190,
+      "layer": "UI",
+      "name": "WhiteWomanSayingWords",
+      "persistentUuid": "bab92a08-1bfd-4c55-9007-f620ea544366",
+      "width": 1300,
+      "x": 600,
+      "y": 850,
+      "zOrder": 10001,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1628,6 +1644,42 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "WhiteWomanSayingWords",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "_Triggered",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Text_AutoTyping",
+          "type": "AutoTyping::Text_AutoTyping",
+          "Interval": 0.05,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "string": "wgyu hg24oh2uo 222gugn ihg2442  YUH",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1690,6 +1742,14 @@
       },
       {
         "objectName": "Coins"
+      },
+      {
+        "folderName": "Dialogue",
+        "children": [
+          {
+            "objectName": "WhiteWomanSayingWords"
+          }
+        ]
       }
     ]
   },
@@ -1707,6 +1767,13 @@
         "includeConfig": 0
       },
       "target": "Dinosaurs"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialogue"
     }
   ],
   "layers": [
@@ -1850,6 +1917,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Text_AutoTyping",
+      "type": "AutoTyping::Text_AutoTyping"
     },
     {
       "name": "TopDownGamepadMapper",

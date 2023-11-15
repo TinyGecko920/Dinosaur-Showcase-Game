@@ -2147,6 +2147,14 @@
           "name": "Tyrannosaurus"
         }
       ]
+    },
+    {
+      "name": "Dialogue",
+      "objects": [
+        {
+          "name": "WhiteWomanSpeakingWords"
+        }
+      ]
     }
   ],
   "variables": [],
@@ -2188,9 +2196,17 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dinosaurs"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/dialogue"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/mousehelper"
