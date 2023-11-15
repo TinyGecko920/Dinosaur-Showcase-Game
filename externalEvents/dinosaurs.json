@@ -183,6 +183,17 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -308,7 +319,7 @@
                 "value": "ModVarObjet"
               },
               "parameters": [
-                "TopDownPlayer",
+                "Player",
                 "Gold",
                 "+",
                 "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
@@ -333,17 +344,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PathfindingBehavior::Speed"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    "Pathfinding",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "OpacityCapability::OpacityBehavior::SetValue"
                   },
                   "parameters": [
@@ -351,6 +351,26 @@
                     "Opacity",
                     "=",
                     "lerp(Dinosaurs.Opacity::Value(), 0, 0.025)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "Dinosaurs"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "0"
                   ]
                 },
                 {
@@ -380,11 +400,22 @@
                 },
                 {
                   "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Level",
+                    "=",
+                    "clamp(Level + 1, 0, 4)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
                     "",
-                    "\"Level2\"",
+                    "\"Level\" + ToString(Player.Level)",
                     ""
                   ]
                 }

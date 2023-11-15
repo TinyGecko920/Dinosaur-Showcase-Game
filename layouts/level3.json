@@ -18,11 +18,18 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2705012603962572,
+    "zoomFactor": 0.23689563725446752,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Level",
+      "type": "number",
+      "value": 3
+    }
+  ],
   "instances": [
     {
       "angle": 0,

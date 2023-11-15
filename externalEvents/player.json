@@ -604,6 +604,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
       "name": "Gold",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
