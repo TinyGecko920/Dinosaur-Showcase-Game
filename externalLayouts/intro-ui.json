@@ -54,7 +54,7 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "name": "TransitionPainter",
       "persistentUuid": "43f7b346-e03d-4933-94f2-3e6468b2863d",
       "width": 0,
@@ -76,7 +76,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6406912462476477,
+    "zoomFactor": 0.5427920802473274,
     "windowMask": false
   }
 }

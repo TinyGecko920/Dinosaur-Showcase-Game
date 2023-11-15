@@ -21,19 +21,8 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Player",
+                "TempPlayer",
                 "Dinosaurs.AgroDistanceInPixels",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Health",
                 ""
               ]
             }
@@ -47,7 +36,7 @@
                 "Dinosaurs",
                 "Pathfinding",
                 "",
-                "Player.X()",
+                "TempPlayer.X()",
                 "Dinosaurs.Y()"
               ]
             }
@@ -74,7 +63,7 @@
               },
               "parameters": [
                 "Dinosaurs",
-                "Player",
+                "TempPlayer",
                 "Dinosaurs.AttackRange",
                 ""
               ]
@@ -86,17 +75,6 @@
               "parameters": [
                 "Dinosaurs",
                 "_Attacking",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Health",
                 ""
               ]
             }
@@ -128,7 +106,7 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "Player",
+                "TempPlayer",
                 "Health",
                 "RandomFloatInRange(Dinosaurs.MinDamage, Dinosaurs.MaxDamage)",
                 "",
@@ -174,17 +152,6 @@
             {
               "type": {
                 "value": "Health::Health::IsJustDamaged"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Health",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Health::Health::IsDead"
               },
               "parameters": [
                 "Dinosaurs",
@@ -316,135 +283,22 @@
           "actions": [
             {
               "type": {
-                "value": "ModVarObjet"
+                "value": "Delete"
               },
               "parameters": [
-                "Player",
-                "Gold",
-                "+",
-                "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    "IsABoss",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "OpacityCapability::OpacityBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    "Opacity",
-                    "=",
-                    "lerp(Dinosaurs.Opacity::Value(), 0, 0.025)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AjoutObjConcern"
-                  },
-                  "parameters": [
-                    "",
-                    "Dinosaurs"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PathfindingBehavior::Speed"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    "Pathfinding",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Level",
-                    "=",
-                    "clamp(Level + 1, 0, 4)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Level\" + ToString(Player.Level)",
-                    ""
-                  ]
-                }
+                "Dinosaurs",
+                ""
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    "IsABoss",
-                    "False"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Dinosaurs",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "TempPlayer",
+                "Gold",
+                "+",
+                "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
               ]
             }
           ]
@@ -608,7 +462,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "Dinosaurs",
+                "TempDinosaur",
                 "Flippable",
                 "yes"
               ]
@@ -636,7 +490,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
-                "Dinosaurs",
+                "TempDinosaur",
                 "Flippable",
                 "no"
               ]

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2368956372544658,
+    "zoomFactor": 0.25314140012986225,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -40,6 +40,12 @@
       "name": "CameraCenterY",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Transitioning",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -406,6 +412,193 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Changelog",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
+        "opacity": 255,
+        "fontSize": 28,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "PlayButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 21,
+          "height": 42,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 42
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Play",
+          "font": "ChelseaMarket-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 64,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CreditsButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "HoveredFadeOutDuration": 0,
+        "PressedLabelOffsetY": 0,
+        "TopPadding": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 21,
+          "height": 42,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 42
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Credits",
+          "font": "ChelseaMarket-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 48,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TransitionPainter",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [
+        {
+          "folded": true,
+          "name": "OutlineSize",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "fillOpacity": 0,
+      "outlineSize": 100,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "high"
     }
   ],
   "objectsFolderStructure": {
@@ -422,6 +615,18 @@
       },
       {
         "objectName": "LoadingScreenBg4"
+      },
+      {
+        "objectName": "Changelog"
+      },
+      {
+        "objectName": "PlayButton"
+      },
+      {
+        "objectName": "CreditsButton"
+      },
+      {
+        "objectName": "TransitionPainter"
       }
     ]
   },
@@ -446,6 +651,18 @@
           "parameters": [
             "",
             "\"Cursor\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"Intro UI\"",
             "0",
             "0",
             "0"
@@ -485,6 +702,7 @@
             },
             {
               "type": {
+                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -550,6 +768,33 @@
       "actions": [
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "PlayButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CreditsButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Changelog",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
@@ -588,8 +833,48 @@
             "\"slideOut\"",
             "CameraCenterY",
             "SceneWindowHeight() / 2",
-            "\"easeInOutCubic\"",
+            "\"easeInOutQuart\"",
             "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Changelog",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.25",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "PlayButton",
+            "Tween"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "CreditsButton",
+            "Tween"
           ]
         }
       ]
@@ -608,6 +893,18 @@
             "CameraCenterY",
             "\"Background Layers\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
           ]
         },
         {
@@ -632,8 +929,475 @@
             "=",
             "SceneWindowHeight() / 2"
           ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::OutlineSize"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "TransitionPainter.OutlineSize"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::Circle"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "0",
+            "0",
+            "SceneWindowWidth() / 2"
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "PlayButton",
+            "=",
+            "SceneWindowWidth() - PlayButton.Width() - 80",
+            "=",
+            "SceneWindowHeight() - PlayButton.Height() - 224"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "CreditsButton",
+            "=",
+            "SceneWindowWidth() - CreditsButton.Width() - 80",
+            "=",
+            "SceneWindowHeight() - CreditsButton.Height() - 80"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "OutlineSize",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Tween::Exists"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "Tween",
+            "\"zoomIn\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "Tween",
+            "\"zoomIn\"",
+            "OutlineSize",
+            "SceneWindowWidth()",
+            "\"easeOutCirc\"",
+            "0.667",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Functionality",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "PlayButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "CreditsButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "CreditsButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "CreditsButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Changelog"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "Changelog",
+                "Opacity",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "Animation",
+                    "=",
+                    "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]View on GitHub[/outline]\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LaunchFile"
+                  },
+                  "parameters": [
+                    "\"https://github.com/TinyGecko920/Dinosaur-Showcase-Game\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Pressed\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "PlayButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                "True"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -809,18 +1573,6 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
-    },
-    {
-      "name": "PlatformerGamepadMapper",
-      "type": "Gamepads::PlatformerGamepadMapper"
-    },
-    {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
-    },
-    {
-      "name": "RemapForPlatformer",
-      "type": "BehaviorRemapper::RemapForPlatformer"
     },
     {
       "name": "Resizable",
