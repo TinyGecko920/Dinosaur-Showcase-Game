@@ -18,16 +18,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetObjectVariableAsBoolean"
-          },
-          "parameters": [
-            "Dinosaurs",
-            "_Triggered",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -59,13 +49,23 @@
       "actions": [
         {
           "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"TRIGGERED\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
             "",
             "WhiteWoman",
-            "10000",
-            "10000",
+            "-100",
+            "550",
             "\"UI\""
           ]
         },
@@ -78,18 +78,6 @@
             "Resizable",
             "700",
             "700"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "WhiteWoman",
-            "=",
-            "-100",
-            "=",
-            "550"
           ]
         },
         {

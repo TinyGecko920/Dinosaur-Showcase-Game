@@ -1759,14 +1759,14 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "Dinosaurs"
+      "target": "Dialogue"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
       },
-      "target": "Dialogue"
+      "target": "Dinosaurs"
     }
   ],
   "layers": [
