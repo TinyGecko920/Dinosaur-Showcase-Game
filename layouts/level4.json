@@ -22,14 +22,7 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "folded": true,
-      "name": "Level",
-      "type": "number",
-      "value": 4
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
