@@ -43,9 +43,9 @@
     },
     {
       "folded": true,
-      "name": "RawChangelog",
-      "type": "string",
-      "value": ""
+      "name": "Transitioning",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -568,11 +568,23 @@
       "assetStoreId": "",
       "name": "TransitionPainter",
       "type": "PrimitiveDrawing::Drawer",
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "OutlineSize",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
-      "behaviors": [],
-      "fillOpacity": 255,
-      "outlineSize": 9999,
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "fillOpacity": 0,
+      "outlineSize": 100,
       "outlineOpacity": 255,
       "fillColor": {
         "b": 255,
@@ -690,6 +702,7 @@
             },
             {
               "type": {
+                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -884,6 +897,18 @@
         },
         {
           "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
             "value": "ResizableCapability::ResizableBehavior::SetSize"
           },
           "parameters": [
@@ -903,6 +928,27 @@
             "SceneWindowWidth() / 2",
             "=",
             "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::OutlineSize"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "TransitionPainter.OutlineSize"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::Circle"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "0",
+            "0",
+            "SceneWindowWidth() / 2"
           ]
         }
       ]
@@ -933,6 +979,75 @@
             "SceneWindowWidth() - CreditsButton.Width() - 80",
             "=",
             "SceneWindowHeight() - CreditsButton.Height() - 80"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "OutlineSize",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Tween::Exists"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "Tween",
+            "\"zoomIn\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "Tween",
+            "\"zoomIn\"",
+            "OutlineSize",
+            "SceneWindowWidth()",
+            "\"easeOutCirc\"",
+            "0.667",
+            ""
           ]
         }
       ]
@@ -1098,50 +1213,56 @@
                 ">",
                 "0"
               ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Visible"
-              },
-              "parameters": [
-                "Tooltip"
-              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Cursor",
-                "Animation",
-                "=",
-                "\"Active\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BBText::SetBBText"
-              },
-              "parameters": [
-                "Tooltip",
-                "=",
-                "\"[outline=black]View on GitHub[/outline]\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Tooltip",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "Animation",
+                    "=",
+                    "\"Active\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]View on GitHub[/outline]\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -1238,6 +1359,39 @@
                 "Animation",
                 "=",
                 "\"Pressed\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "PlayButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                "True"
               ]
             }
           ]
