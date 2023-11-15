@@ -593,6 +593,24 @@
         "name": "assets\\CursorPressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ButtonPrimary.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ButtonPrimary.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ButtonSecondary.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ButtonSecondary.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1471,7 +1489,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b][outline=black][spacing=8]100000[/spacing][/outline][/b]",
+        "text": "[b][outline=black][spacing=8]999999[/spacing][/outline][/b]",
         "opacity": 255,
         "fontSize": 40,
         "visible": true,

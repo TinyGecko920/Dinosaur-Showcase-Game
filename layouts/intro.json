@@ -426,15 +426,167 @@
         }
       ],
       "content": {
-        "text": "[outline=black][b][size=64]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
+        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
         "opacity": 255,
-        "fontSize": 32,
+        "fontSize": 28,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "PlayButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 21,
+          "height": 42,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 42
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Play",
+          "font": "ChelseaMarket-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 64,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CreditsButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "HoveredFadeOutDuration": 0,
+        "PressedLabelOffsetY": 0,
+        "TopPadding": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 21,
+          "height": 42,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 42
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Credits",
+          "font": "ChelseaMarket-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 48,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 21,
+          "height": 32,
+          "leftMargin": 21,
+          "rightMargin": 21,
+          "texture": "ButtonSecondary.png",
+          "tiled": false,
+          "topMargin": 21,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TransitionPainter",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "fillOpacity": 255,
+      "outlineSize": 9999,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "high"
     }
   ],
   "objectsFolderStructure": {
@@ -454,6 +606,15 @@
       },
       {
         "objectName": "Changelog"
+      },
+      {
+        "objectName": "PlayButton"
+      },
+      {
+        "objectName": "CreditsButton"
+      },
+      {
+        "objectName": "TransitionPainter"
       }
     ]
   },
@@ -529,7 +690,6 @@
             },
             {
               "type": {
-                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -593,6 +753,22 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "PlayButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CreditsButton"
+          ]
+        },
         {
           "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
@@ -669,6 +845,24 @@
             "0.25",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "PlayButton",
+            "Tween"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "CreditsButton",
+            "Tween"
+          ]
         }
       ]
     },
@@ -714,88 +908,319 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Changelog functionality"
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "SourisSurObjet"
-          },
-          "parameters": [
-            "Changelog",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::Value"
-          },
-          "parameters": [
-            "Changelog",
-            "Opacity",
-            ">",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+            "value": "MettreXY"
           },
           "parameters": [
-            "Cursor",
-            "Animation",
+            "PlayButton",
             "=",
-            "\"Active\""
+            "SceneWindowWidth() - PlayButton.Width() - 80",
+            "=",
+            "SceneWindowHeight() - PlayButton.Height() - 224"
           ]
         },
         {
           "type": {
-            "value": "BBText::SetBBText"
+            "value": "MettreXY"
           },
           "parameters": [
-            "Tooltip",
+            "CreditsButton",
             "=",
-            "\"[outline=black]View GitHub[/outline]\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Tooltip",
-            ""
+            "SceneWindowWidth() - CreditsButton.Width() - 80",
+            "=",
+            "SceneWindowHeight() - CreditsButton.Height() - 80"
           ]
         }
-      ],
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Functionality",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonReleased"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "PlayButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "CreditsButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "CreditsButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Active\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "PlayButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "CreditsButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Changelog"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "Changelog",
+                "Opacity",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Active\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "Tooltip",
+                "=",
+                "\"[outline=black]View on GitHub[/outline]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Tooltip",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LaunchFile"
+                  },
+                  "parameters": [
+                    "\"https://github.com/TinyGecko920/Dinosaur-Showcase-Game\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Changelog",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
               },
               "parameters": [
                 "",
@@ -806,60 +1231,19 @@
           "actions": [
             {
               "type": {
-                "value": "LaunchFile"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "\"https://github.com/TinyGecko920/Dinosaur-Showcase-Game\"",
-                ""
+                "Cursor",
+                "Animation",
+                "=",
+                "\"Pressed\""
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "SourisSurObjet"
-          },
-          "parameters": [
-            "Changelog",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Tooltip"
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Cursor",
-            "Animation",
-            "=",
-            "\"Idle\""
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
