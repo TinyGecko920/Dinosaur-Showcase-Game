@@ -181,12 +181,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "TempPlayer",
+                  "image": "assets\\player_idle_0.png",
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 100
                     }
                   ],
                   "originPoint": {
@@ -203,20 +203,230 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 13
+                        "x": 9,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 13
+                        "x": 100,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 55
+                        "x": 100,
+                        "y": 150
                       },
                       {
-                        "x": 21,
-                        "y": 55
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 100
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 100
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 100
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 100
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_5.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 100
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
                       }
                     ]
                   ]
@@ -231,16 +441,17 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Walk3.png",
+                  "image": "Walk",
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 100
                     }
                   ],
                   "originPoint": {
@@ -257,20 +468,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 13
+                        "x": 9,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 13
+                        "x": 100,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 55
+                        "x": 100,
+                        "y": 150
                       },
                       {
-                        "x": 21,
-                        "y": 55
+                        "x": 9,
+                        "y": 150
                       }
                     ]
                   ]
@@ -285,16 +496,17 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Run.png",
+                  "image": "Run",
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 100
                     }
                   ],
                   "originPoint": {
@@ -311,20 +523,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 13
+                        "x": 9,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 13
+                        "x": 100,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 55
+                        "x": 100,
+                        "y": 150
                       },
                       {
-                        "x": 21,
-                        "y": 55
+                        "x": 9,
+                        "y": 150
                       }
                     ]
                   ]
@@ -344,12 +556,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Attack2",
+                  "image": "Attack3",
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 100
                     }
                   ],
                   "originPoint": {
@@ -366,20 +578,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 13
+                        "x": 9,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 13
+                        "x": 100,
+                        "y": 1
                       },
                       {
-                        "x": 37,
-                        "y": 55
+                        "x": 100,
+                        "y": 150
                       },
                       {
-                        "x": 21,
-                        "y": 55
+                        "x": 9,
+                        "y": 150
                       }
                     ]
                   ]
@@ -1686,6 +1898,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Text_AutoTyping",
+      "type": "AutoTyping::Text_AutoTyping"
     },
     {
       "name": "Tooltip",

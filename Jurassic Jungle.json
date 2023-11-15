@@ -611,6 +611,87 @@
         "name": "ButtonSecondary.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_idle_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Walk5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Attack4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
