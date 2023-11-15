@@ -12,7 +12,7 @@
       "width": 0,
       "x": 1090,
       "y": 640,
-      "zOrder": 9998,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -27,7 +27,7 @@
       "width": 0,
       "x": 999,
       "y": 622,
-      "zOrder": 9999,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []

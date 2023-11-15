@@ -18,11 +18,18 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20746499616301498,
+    "zoomFactor": 0.3088741216342675,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Level",
+      "type": "number",
+      "value": 1
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -123,13 +130,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 7,
-      "height": 421,
+      "height": 300,
       "layer": "",
-      "name": "TempPlayer",
+      "name": "Player",
       "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
-      "width": 421,
-      "x": 289,
-      "y": 680,
+      "width": 300,
+      "x": 341,
+      "y": 744,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -331,318 +338,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TempPlayer",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "Gold",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "folded": true,
-          "name": "EquippedSword",
-          "type": "string",
-          "value": "TempSword2"
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "PlatformerGamepadMapper",
-          "type": "Gamepads::PlatformerGamepadMapper",
-          "PlatformerCharacter": "PlatformerObject",
-          "GamepadIdentifier": 1,
-          "UseArrows": true,
-          "UseLeftStick": true,
-          "UseRightStick": false,
-          "JumpButton": "A or Cross"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": true,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
-          "deceleration": 1500,
-          "gravity": 1000,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 600,
-          "jumpSustainTime": 0.2,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 700,
-          "maxSpeed": 250,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        },
-        {
-          "name": "RemapForPlatformer",
-          "type": "BehaviorRemapper::RemapForPlatformer",
-          "Up": "w",
-          "Left": "a",
-          "Down": "s",
-          "Right": "d",
-          "Jump": "",
-          "Platformer": "PlatformerObject"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempPlayer",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 33,
-                      "y": 42
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 55
-                      },
-                      {
-                        "x": 21,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Walk",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Walk3.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 33,
-                      "y": 42
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 55
-                      },
-                      {
-                        "x": 21,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Run.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 33,
-                      "y": 42
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 55
-                      },
-                      {
-                        "x": 21,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Attack",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Attack2",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 33,
-                      "y": 42
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 13
-                      },
-                      {
-                        "x": 37,
-                        "y": 55
-                      },
-                      {
-                        "x": 21,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "Ground",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -822,6 +517,12 @@
           "name": "MaxGoldDrop",
           "type": "string",
           "value": "100"
+        },
+        {
+          "folded": true,
+          "name": "IsABoss",
+          "type": "boolean",
+          "value": false
         },
         {
           "folded": true,
@@ -1123,9 +824,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "TempPlayer"
-      },
-      {
         "folderName": "Dinosaurs",
         "children": [
           {
@@ -1222,84 +920,6 @@
                 "Resizable",
                 "64",
                 "1080"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Parallax",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.25)",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 0.95",
-                "\"Layer1\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 1.1",
-                "\"Layer2\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 1.35",
-                "\"Layer3\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "TempPlayer.X() / 3",
-                "\"Layer4\"",
-                ""
               ]
             }
           ]
@@ -1593,10 +1213,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Tooltip",
-      "type": "Tooltip::Tooltip"
     },
     {
       "name": "Tween",
