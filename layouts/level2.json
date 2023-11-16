@@ -1171,7 +1171,7 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), TempPlayer.X(), 0.25)",
+                "lerp(CameraX(), Player.X(), 0.25)",
                 "",
                 ""
               ]
@@ -1183,7 +1183,7 @@
               "parameters": [
                 "",
                 "=",
-                "TempPlayer.X() / 0.95",
+                "Player.X() / 0.95",
                 "\"Layer1\"",
                 ""
               ]
@@ -1195,7 +1195,7 @@
               "parameters": [
                 "",
                 "=",
-                "TempPlayer.X() / 1.1",
+                "Player.X() / 1.1",
                 "\"Layer2\"",
                 ""
               ]
@@ -1207,7 +1207,7 @@
               "parameters": [
                 "",
                 "=",
-                "TempPlayer.X() / 1.35",
+                "Player.X() / 1.35",
                 "\"Layer3\"",
                 ""
               ]
@@ -1219,7 +1219,7 @@
               "parameters": [
                 "",
                 "=",
-                "TempPlayer.X() / 3",
+                "Player.X() / 3",
                 "\"Layer4\"",
                 ""
               ]

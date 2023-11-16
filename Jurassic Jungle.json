@@ -1800,8 +1800,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -1842,8 +1842,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -1884,8 +1884,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -1926,8 +1926,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -1968,8 +1968,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2010,8 +2010,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2056,7 +2056,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.16,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2064,8 +2064,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 94,
+                      "y": 97.5
                     }
                   ],
                   "originPoint": {
@@ -2106,8 +2106,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 93.5,
+                      "y": 97.5
                     }
                   ],
                   "originPoint": {
@@ -2148,8 +2148,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 95.5,
+                      "y": 94.5
                     }
                   ],
                   "originPoint": {
@@ -2190,8 +2190,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 107.5,
+                      "y": 86.5
                     }
                   ],
                   "originPoint": {
@@ -2232,8 +2232,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 97,
+                      "y": 95
                     }
                   ],
                   "originPoint": {
@@ -2286,8 +2286,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2328,8 +2328,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2370,8 +2370,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2412,8 +2412,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2466,8 +2466,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
@@ -2521,8 +2521,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 33,
-                      "y": 42
+                      "x": 92.5,
+                      "y": 99.5
                     }
                   ],
                   "originPoint": {
