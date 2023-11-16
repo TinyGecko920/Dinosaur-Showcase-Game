@@ -1080,6 +1080,15 @@
               "parameters": [
                 "PlayButton"
               ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -1114,6 +1123,15 @@
               },
               "parameters": [
                 "CreditsButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
               ]
             }
           ],
@@ -1165,6 +1183,17 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "!=",
+                "\"Idle\""
+              ]
             }
           ],
           "actions": [
@@ -1212,6 +1241,15 @@
                 "Opacity",
                 ">",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
               ]
             }
           ],
