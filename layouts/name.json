@@ -95,12 +95,30 @@
       "customSize": false,
       "height": 0,
       "layer": "Background Layers",
+      "locked": true,
       "name": "NameSelectBg",
       "persistentUuid": "003bf09a-d9ac-43b3-ac12-06e20382e2b3",
+      "sealed": true,
       "width": 0,
       "x": -18,
       "y": 66,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 29,
+      "layer": "",
+      "name": "NameRequirements",
+      "persistentUuid": "dfff0360-55aa-4f95-957f-2b1e5a8c27bc",
+      "width": 691,
+      "x": 679,
+      "y": 942,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -288,6 +306,32 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NameRequirements",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Must contain alphanumeric and whitespace characters.",
+      "font": "ChelseaMarket-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -304,6 +348,9 @@
       },
       {
         "objectName": "NameSelectBg"
+      },
+      {
+        "objectName": "NameRequirements"
       }
     ]
   },
@@ -366,6 +413,17 @@
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
+            "NameRequirements",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
             "NameSelectBg",
             "Opacity",
             "=",
@@ -400,7 +458,7 @@
             "NameSelectBg",
             "Tween",
             "\"fadeIn\"",
-            "12",
+            "15",
             "\"easeOutQuad\"",
             "1",
             ""
@@ -437,6 +495,20 @@
             "Tween",
             "\"fadeIn\"",
             "255",
+            "\"easeOutQuad\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "NameRequirements",
+            "Tween",
+            "\"fadeIn\"",
+            "190",
             "\"easeOutQuad\"",
             "1",
             ""
@@ -482,6 +554,18 @@
             "NameInput.X() + NameInput.Width() - NameSubmitButton.Width()",
             "=",
             "NameInput.Y() + NameSubmitButton.Height() + 24"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "NameRequirements",
+            "=",
+            "NameInput.X()",
+            "=",
+            "SceneWindowHeight() / 1.6"
           ]
         }
       ]
@@ -603,22 +687,14 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
+            "value": "RegEx::HasPattern"
           },
           "parameters": [
-            "StrLength(NameInput.Text())",
-            ">",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "StrLength(NameInput.Text())",
-            "<=",
-            "MaxCharacterLimit"
+            "",
+            "\"^[a-z0-9 ]{1,\" + ToString(Variable(MaxCharacterLimit)) + \"}$\"",
+            "\"i\"",
+            "NameInput.Text()",
+            ""
           ]
         },
         {
@@ -675,30 +751,15 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Or"
+            "inverted": true,
+            "value": "RegEx::HasPattern"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::CompareNumbers"
-              },
-              "parameters": [
-                "StrLength(NameInput.Text())",
-                "<=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::CompareNumbers"
-              },
-              "parameters": [
-                "StrLength(NameInput.Text())",
-                ">",
-                "MaxCharacterLimit"
-              ]
-            }
+          "parameters": [
+            "",
+            "\"^[a-z0-9 ]{1,\" + ToString(Variable(MaxCharacterLimit)) + \"}$\"",
+            "\"i\"",
+            "NameInput.Text()",
+            ""
           ]
         },
         {
@@ -768,26 +829,6 @@
           "parameters": [
             "NameSubmitButton"
           ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "StrLength(NameInput.Text())",
-            ">",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::CompareNumbers"
-          },
-          "parameters": [
-            "StrLength(NameInput.Text())",
-            "<=",
-            "MaxCharacterLimit"
-          ]
         }
       ],
       "actions": [
@@ -799,16 +840,6 @@
             "InputtedName",
             "True"
           ]
-        }
-      ],
-      "events": [
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "// make sure name is GOOD",
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
         }
       ]
     },
@@ -848,6 +879,14 @@
           },
           "parameters": [
             "NameQuestion"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "NameRequirements"
           ]
         }
       ]

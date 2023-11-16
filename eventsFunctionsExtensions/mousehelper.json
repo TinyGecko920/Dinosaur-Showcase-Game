@@ -51,6 +51,29 @@
                   "parameters": [
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Scalable",
+                    "=",
+                    "Object.Behavior::PropertyScale()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "CursorX()",
+                    "=",
+                    "CursorY()"
+                  ]
                 }
               ]
             }
