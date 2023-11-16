@@ -782,6 +782,24 @@
         "name": "assets\\player_fall_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Attack5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2458,11 +2476,12 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Run.png",
+                  "image": "Run2",
                   "points": [
                     {
                       "name": "RightHand",
@@ -2517,7 +2536,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Attack2",
+                  "image": "Attack4",
                   "points": [
                     {
                       "name": "RightHand",
@@ -2687,6 +2706,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialogue"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/level"
     }
   ],
   "eventsFunctionsExtensions": [
