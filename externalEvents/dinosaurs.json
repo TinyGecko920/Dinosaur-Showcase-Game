@@ -25,19 +25,78 @@
                 "Dinosaurs.AgroDistanceInPixels",
                 ""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "PathfindingBehavior::SetDestination"
+                "inverted": true,
+                "value": "Distance"
               },
               "parameters": [
                 "Dinosaurs",
-                "Pathfinding",
-                "",
-                "Player.X()",
-                "Dinosaurs.Y()"
+                "Player",
+                "Player.Width() + 30",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    ">=",
+                    "Dinosaurs.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "",
+                    "Player.X() - (Player.Width())",
+                    "Dinosaurs.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "<",
+                    "Dinosaurs.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "",
+                    "Player.X() + (Player.Width())",
+                    "Dinosaurs.Y()"
+                  ]
+                }
               ]
             }
           ]
@@ -366,6 +425,81 @@
           "conditions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Animation",
+                "!=",
+                "\"Attack\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "0",
+                    "89"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "-180",
+                    "89"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PathfindingBehavior::Speed"
               },
               "parameters": [
@@ -437,62 +571,6 @@
                 "Animation",
                 "=",
                 "\"Idle\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Pathfinding",
-                "0",
-                "89"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Flippable",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Pathfinding",
-                "-180",
-                "89"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Flippable",
-                "no"
               ]
             }
           ]

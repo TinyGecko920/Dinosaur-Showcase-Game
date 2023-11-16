@@ -1298,7 +1298,8 @@
         {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
+          "acceleration": 240,
+          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -1307,7 +1308,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
@@ -2629,13 +2629,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 15
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 25
         },
         {
           "folded": true,
@@ -2713,7 +2713,8 @@
         {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
+          "acceleration": 450,
+          "maxSpeed": 300,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -2722,7 +2723,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
