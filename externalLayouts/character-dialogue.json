@@ -1,0 +1,81 @@
+{
+  "associatedLayout": "Game",
+  "name": "Character Dialogue",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 290,
+      "layer": "UI",
+      "name": "DialogueBackground",
+      "persistentUuid": "d6982a7f-250c-4b9c-b524-c38ac4897b5b",
+      "width": 1040,
+      "x": 416,
+      "y": 765,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "DialogueCharacter",
+      "persistentUuid": "053dc51d-a7da-452b-9fd2-da6d4d2cf9b8",
+      "width": 0,
+      "x": -29,
+      "y": 435,
+      "zOrder": 101,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 204,
+      "layer": "UI",
+      "name": "DialogueText",
+      "persistentUuid": "0da8924a-e8b1-4fc7-ad58-5e503a4a0917",
+      "width": 787,
+      "x": 561,
+      "y": 808,
+      "zOrder": 102,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "DialogueSpeakerText",
+      "persistentUuid": "317f2d4f-3dff-4f12-a614-ca7d27cc0fa1",
+      "width": 0,
+      "x": 556,
+      "y": 736,
+      "zOrder": 103,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.4163025217733326,
+    "windowMask": false
+  }
+}

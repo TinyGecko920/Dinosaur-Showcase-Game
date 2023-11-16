@@ -436,6 +436,18 @@
           },
           "parameters": [
             "",
+            "\"Character Dialogue\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
             "\"Cursor\"",
             "0",
             "0",

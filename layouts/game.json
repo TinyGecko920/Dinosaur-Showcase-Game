@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2771049706994325,
+    "zoomFactor": 0.2864490417782923,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -62,7 +62,7 @@
       "depth": 1,
       "height": 190,
       "layer": "UI",
-      "name": "Dialogue",
+      "name": "WhiteWomanSayingWords",
       "persistentUuid": "bab92a08-1bfd-4c55-9007-f620ea544366",
       "width": 1300,
       "x": 600,
@@ -1426,11 +1426,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.16,
+              "timeBetweenFrames": 0.11,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\whitewoman_0.png",
+                  "image": "assets\\Eli1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1446,27 +1446,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 78,
-                        "y": 18
+                        "x": 234,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 18
+                        "x": 768,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 300
+                        "x": 768,
+                        "y": 900
                       },
                       {
-                        "x": 78,
-                        "y": 300
+                        "x": 234,
+                        "y": 900
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\whitewoman_1.png",
+                  "image": "assets\\Eli2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1482,27 +1482,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 78,
-                        "y": 18
+                        "x": 234,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 18
+                        "x": 768,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 300
+                        "x": 768,
+                        "y": 900
                       },
                       {
-                        "x": 78,
-                        "y": 300
+                        "x": 234,
+                        "y": 900
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\whitewoman_2.png",
+                  "image": "assets\\Eli3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1518,27 +1518,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 78,
-                        "y": 18
+                        "x": 234,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 18
+                        "x": 768,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 300
+                        "x": 768,
+                        "y": 900
                       },
                       {
-                        "x": 78,
-                        "y": 300
+                        "x": 234,
+                        "y": 900
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\whitewoman_3.png",
+                  "image": "assets\\Eli4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1554,20 +1554,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 78,
-                        "y": 18
+                        "x": 234,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 18
+                        "x": 768,
+                        "y": 54
                       },
                       {
-                        "x": 256,
-                        "y": 300
+                        "x": 768,
+                        "y": 900
                       },
                       {
-                        "x": 78,
-                        "y": 300
+                        "x": 234,
+                        "y": 900
                       }
                     ]
                   ]
@@ -1642,7 +1642,7 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "Dialogue",
+      "name": "WhiteWomanSayingWords",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1659,7 +1659,7 @@
         {
           "name": "Text_AutoTyping",
           "type": "AutoTyping::Text_AutoTyping",
-          "Interval": 0.05,
+          "Interval": 0.02,
           "CharacterJustAdded": false,
           "CurrentCharacter": ""
         }
@@ -1672,6 +1672,252 @@
         "b": 0,
         "g": 0,
         "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 21,
+      "height": 42,
+      "leftMargin": 21,
+      "name": "DialogueBackground",
+      "rightMargin": 21,
+      "texture": "ButtonPrimary.png",
+      "tiled": false,
+      "topMargin": 21,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 42,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DialogBoxBackGround",
+          "type": "DialogBox::DialogBoxBackGround",
+          "Interval": 0.04,
+          "Se": "",
+          "Tween": "Tween",
+          "Duration": 250
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueCharacter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Eli",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[outline=black]Lorem ipsum[/outline]",
+        "opacity": 255,
+        "fontSize": 36,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueSpeakerText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black]Eli Sattler[/outline][/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
       }
     }
   ],
@@ -1737,7 +1983,19 @@
         "objectName": "Coins"
       },
       {
-        "objectName": "Dialogue"
+        "objectName": "WhiteWomanSayingWords"
+      },
+      {
+        "objectName": "DialogueBackground"
+      },
+      {
+        "objectName": "DialogueCharacter"
+      },
+      {
+        "objectName": "DialogueText"
+      },
+      {
+        "objectName": "DialogueSpeakerText"
       }
     ]
   },
@@ -1861,6 +2119,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
