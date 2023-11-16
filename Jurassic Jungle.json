@@ -692,6 +692,15 @@
         "name": "Attack3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NameSelectBg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NameSelectBg.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1706,6 +1715,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/isla-nublar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/name"
     }
   ],
   "externalEvents": [
