@@ -2653,14 +2653,6 @@
           "name": "Tyrannosaurus"
         }
       ]
-    },
-    {
-      "name": "Dialogue",
-      "objects": [
-        {
-          "name": "WhiteWomanSpeakingWords"
-        }
-      ]
     }
   ],
   "variables": [],

@@ -18,10 +18,12 @@
       "actions": [
         {
           "type": {
-            "value": "Cache"
+            "value": "DebuggerTools::ConsoleLog"
           },
           "parameters": [
-            "Dialogue"
+            "\"HIDING\"",
+            "",
+            ""
           ]
         }
       ]
@@ -29,16 +31,6 @@
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
-        {
-          "type": {
-            "value": "ObjectVariableAsBoolean"
-          },
-          "parameters": [
-            "Dialogue",
-            "_Triggered",
-            "True"
-          ]
-        },
         {
           "type": {
             "value": "BuiltinCommonInstructions::Once"
@@ -78,15 +70,6 @@
             "Resizable",
             "700",
             "700"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Dialogue",
-            ""
           ]
         }
       ]
