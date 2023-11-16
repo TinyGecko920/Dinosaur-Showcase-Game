@@ -1298,7 +1298,8 @@
         {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
+          "acceleration": 240,
+          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -1307,7 +1308,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
