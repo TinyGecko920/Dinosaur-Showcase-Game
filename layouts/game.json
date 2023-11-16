@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2864490417782923,
+    "zoomFactor": 0.2771049706994325,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -62,7 +62,7 @@
       "depth": 1,
       "height": 190,
       "layer": "UI",
-      "name": "WhiteWomanSayingWords",
+      "name": "Dialogue",
       "persistentUuid": "bab92a08-1bfd-4c55-9007-f620ea544366",
       "width": 1300,
       "x": 600,
@@ -1642,7 +1642,7 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "WhiteWomanSayingWords",
+      "name": "Dialogue",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1737,12 +1737,7 @@
         "objectName": "Coins"
       },
       {
-        "folderName": "Dialogue",
-        "children": [
-          {
-            "objectName": "WhiteWomanSayingWords"
-          }
-        ]
+        "objectName": "Dialogue"
       }
     ]
   },

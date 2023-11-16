@@ -1,0 +1,23 @@
+{
+  "associatedLayout": "Game",
+  "name": "Dialogue",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 190,
+      "layer": "UI",
+      "name": "Dialogue2",
+      "persistentUuid": "877454a9-6710-4761-bb7e-037ee2fc2a86",
+      "width": 1300,
+      "x": 600,
+      "y": 850,
+      "zOrder": 10001,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {}
+}
