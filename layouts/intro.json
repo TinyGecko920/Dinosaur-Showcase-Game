@@ -27,13 +27,13 @@
       "folded": true,
       "name": "MaxLogoHeightScale",
       "type": "number",
-      "value": 0.75
+      "value": 0.667
     },
     {
       "folded": true,
       "name": "MaxLogoWidthScale",
       "type": "number",
-      "value": 0.75
+      "value": 0.667
     },
     {
       "folded": true,
@@ -1089,6 +1089,17 @@
                 "Transitioning",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "!=",
+                "\"Active\""
+              ]
             }
           ],
           "actions": [
@@ -1132,6 +1143,17 @@
               "parameters": [
                 "Transitioning",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Cursor",
+                "Animation",
+                "!=",
+                "\"Active\""
               ]
             }
           ],
