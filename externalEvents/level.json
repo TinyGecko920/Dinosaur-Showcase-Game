@@ -8,7 +8,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Invisible Wall",
+      "name": "Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [

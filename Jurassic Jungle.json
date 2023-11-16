@@ -836,6 +836,16 @@
         "name": "assets\\triceraptos_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/Jurassic Par.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Jurassic Par.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3008,10 +3018,6 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/dialogue"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/level"
     }
   ],
@@ -3089,6 +3095,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/intro-ui"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/dialogue"
     }
   ],
   "externalSourceFiles": []

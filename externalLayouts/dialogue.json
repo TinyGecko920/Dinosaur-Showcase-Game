@@ -8,8 +8,8 @@
       "depth": 1,
       "height": 190,
       "layer": "UI",
-      "name": "Dialogue2",
-      "persistentUuid": "877454a9-6710-4761-bb7e-037ee2fc2a86",
+      "name": "Dialogue",
+      "persistentUuid": "3023fd98-7b47-424d-9c0b-f5d571c7d8cb",
       "width": 1300,
       "x": 600,
       "y": 850,
@@ -17,7 +17,35 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 700,
+      "layer": "",
+      "name": "WhiteWoman",
+      "persistentUuid": "953d4f1a-d1c1-4408-9712-1b048d346427",
+      "width": 700,
+      "x": -75,
+      "y": 539,
+      "zOrder": 10002,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
-  "editionSettings": {}
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.29879853636069037,
+    "windowMask": false
+  }
 }

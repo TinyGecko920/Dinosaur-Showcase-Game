@@ -21,7 +21,19 @@
     "zoomFactor": 0.2771049706994325,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "NPCs",
+      "objects": [
+        {
+          "name": "WhiteWoman"
+        },
+        {
+          "name": "Bob"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -52,22 +64,6 @@
       "x": 2376,
       "y": 922,
       "zOrder": 9999,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 190,
-      "layer": "UI",
-      "name": "Dialogue",
-      "persistentUuid": "bab92a08-1bfd-4c55-9007-f620ea544366",
-      "width": 1300,
-      "x": 600,
-      "y": 850,
-      "zOrder": 10001,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1664,7 +1660,7 @@
           "CurrentCharacter": ""
         }
       ],
-      "string": "wgyu hg24oh2uo 222gugn ihg2442  YUH",
+      "string": "Lorem Ipsum",
       "font": "",
       "textAlignment": "left",
       "characterSize": 50,
@@ -1754,14 +1750,88 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "Dialogue"
+      "target": "Dinosaurs"
     },
     {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
       },
-      "target": "Dinosaurs"
+      "comment": "Testing Dialogue\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\"",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "NPCs"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Dialogue"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Dialogue",
+            "_Triggered",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Dialogue",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
