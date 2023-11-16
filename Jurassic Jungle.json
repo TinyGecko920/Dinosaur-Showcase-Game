@@ -701,6 +701,87 @@
         "name": "assets\\NameSelectBg.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_walk_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_walk_0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_walk_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_walk_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_walk_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_walk_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_walk_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_walk_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_walk_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_walk_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_fall_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_fall_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_fall_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_fall_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_fall_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_fall_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_fall_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_fall_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1711,7 +1792,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.16,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1975,11 +2056,359 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.16,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Walk3.png",
+                  "image": "assets\\player_walk_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.16,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 33,
+                      "y": 42
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_3.png",
                   "points": [
                     {
                       "name": "RightHand",
