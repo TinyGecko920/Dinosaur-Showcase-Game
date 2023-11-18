@@ -1,0 +1,32 @@
+{
+  "author": "Maury Developer",
+  "description": "Methods:\nOnLine (String Expression)",
+  "extensionNamespace": "",
+  "fullName": "OnLine",
+  "name": "Interact_OnLine",
+  "shortDescription": "Extension to check if it is online.",
+  "tags": "online",
+  "version": "0.0.1",
+  "eventsFunctions": [
+    {
+      "description": "Returns a string representing the preferred language of the user",
+      "fullName": "OnLine",
+      "functionType": "Condition",
+      "name": "OnLine",
+      "sentence": "Online status of the browser",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = navigator.onLine;",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}
