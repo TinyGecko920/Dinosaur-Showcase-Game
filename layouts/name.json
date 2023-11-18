@@ -742,7 +742,7 @@
           "parameters": [
             "YesButton",
             "=",
-            "(SceneWindowWidth() / 2) - YesButton.Width() - 180",
+            "(SceneWindowWidth() / 2) - YesButton.Width() - (SceneWindowWidth() / 10)",
             "=",
             "SceneWindowHeight() / 2"
           ]
@@ -754,7 +754,7 @@
           "parameters": [
             "NoButton",
             "=",
-            "(SceneWindowWidth() / 2) + 180",
+            "(SceneWindowWidth() / 2) + (SceneWindowWidth() / 10)",
             "=",
             "SceneWindowHeight() / 2"
           ]
@@ -1183,6 +1183,41 @@
       "conditions": [
         {
           "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "StrLength(NameInput.Text())",
+            ">",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "MadeFirstInput",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "MadeFirstInput",
+            "True"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "RegEx::HasPattern"
           },
           "parameters": [
@@ -1204,15 +1239,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetSceneVariableAsBoolean"
-          },
-          "parameters": [
-            "MadeFirstInput",
-            "True"
-          ]
-        },
         {
           "type": {
             "value": "TextInput::TextInputObject::SetBorderColor"
@@ -1666,20 +1692,20 @@
         },
         {
           "type": {
-            "inverted": true,
-            "value": "Visible"
-          },
-          "parameters": [
-            "NoButton"
-          ]
-        },
-        {
-          "type": {
             "value": "SceneVariableAsBoolean"
           },
           "parameters": [
             "DidChooseName",
             "False"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Visible"
+          },
+          "parameters": [
+            "NoButton"
           ]
         }
       ],
@@ -1759,19 +1785,19 @@
         },
         {
           "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "NoButton"
-          ]
-        },
-        {
-          "type": {
             "value": "SceneVariableAsBoolean"
           },
           "parameters": [
             "DidChooseName",
             "False"
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "NoButton"
           ]
         }
       ],
@@ -1782,15 +1808,6 @@
           },
           "parameters": [
             "NameInput",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "NameSubmitButton",
             ""
           ]
         },
