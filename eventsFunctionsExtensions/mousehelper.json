@@ -74,6 +74,17 @@
                     "=",
                     "CursorY()"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Animatable",
+                    "=",
+                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
                 }
               ]
             }
@@ -121,6 +132,35 @@
                     "=",
                     "Object.Behavior::PropertyScale()"
                   ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Animatable",
+                    "=",
+                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
                 },
                 {
                   "type": {
@@ -132,23 +172,6 @@
                     "CursorX()",
                     "=",
                     "CursorY()"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Object",
-                    "Animatable",
-                    "=",
-                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
                   ]
                 }
               ]
@@ -177,6 +200,51 @@
                     "Animatable",
                     "=",
                     "Object.Behavior::PropertyGamepadCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Gamepads::StickForce"
+                      },
+                      "parameters": [
+                        "",
+                        ">",
+                        "0",
+                        "1",
+                        "\"Right\"",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Gamepads::StickAngle(1, \"Right\")",
+                        "Gamepads::StickForce(1, \"Right\") * SceneWindowWidth()",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "clamp(Object.CenterX(), 0, SceneWindowWidth())",
+                        "=",
+                        "clamp(Object.CenterY(), 0, SceneWindowHeight())"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -339,7 +407,7 @@
           "fullName": "Change icon",
           "functionType": "Action",
           "name": "ChangeIcon",
-          "sentence": "Change the icon for _PARAM0_ to _PARAM2_.",
+          "sentence": "Change the icon for _PARAM0_ to _PARAM2_",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -380,12 +448,12 @@
           "objectGroups": []
         },
         {
-          "description": "The icon suffix of the cursor object.",
+          "description": "The icon of the cursor object.",
           "fullName": "Icon suffix",
           "functionType": "ExpressionAndCondition",
           "group": "Cursor configuration",
           "name": "IconSuffix",
-          "sentence": "Icon suffix",
+          "sentence": "Icon",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",

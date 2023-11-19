@@ -74,9 +74,171 @@
                   "parameters": [
                     "Object",
                     "=",
-                    "clamp(CursorX(\"UI\", 0) + 15, 0, SceneWindowWidth() - Object.Width())",
+                    "clamp(Object.Behavior::CursorXPosition() + 15, 0, SceneWindowWidth() - Object.Width())",
                     "=",
-                    "CursorY(\"UI\", 0) - 40"
+                    "clamp(Object.Behavior::CursorYPosition() - 40, 0, SceneWindowHeight())"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Tooltip::Tooltip",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the cursor x position of the object.",
+          "fullName": "Cursor X Position",
+          "functionType": "ExpressionAndCondition",
+          "group": "Tooltip configuration",
+          "name": "CursorXPosition",
+          "sentence": "the cursor x position",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyCursorXPosition()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Tooltip::Tooltip",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "CursorXPosition",
+          "name": "SetCursorXPosition",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tooltip::Tooltip::SetPropertyCursorXPosition"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Tooltip::Tooltip",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the cursor y position of the object.",
+          "fullName": "Cursor Y Position",
+          "functionType": "ExpressionAndCondition",
+          "group": "Tooltip configuration",
+          "name": "CursorYPosition",
+          "sentence": "the cursor y position",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyCursorYPosition()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Tooltip::Tooltip",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "CursorYPosition",
+          "name": "SetCursorYPosition",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tooltip::Tooltip::SetPropertyCursorYPosition"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
                   ]
                 }
               ]
@@ -98,7 +260,28 @@
           "objectGroups": []
         }
       ],
-      "propertyDescriptors": [],
+      "propertyDescriptors": [
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Cursor X Position",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "CursorXPosition"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Cursor Y Position",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "CursorYPosition"
+        }
+      ],
       "sharedPropertyDescriptors": []
     }
   ],

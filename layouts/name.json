@@ -310,7 +310,7 @@
       "behaviors": [
         {
           "name": "Background_ParallaxMouse",
-          "type": "Backgrounds::Background_ParallaxMouse",
+          "type": "Backgrounds::Background_ParallaxFromPosition",
           "Scale": 1.06,
           "Intensity": -0.03,
           "L_t": 0.07
@@ -2058,7 +2058,7 @@
     },
     {
       "name": "Background_ParallaxMouse",
-      "type": "Backgrounds::Background_ParallaxMouse"
+      "type": "Backgrounds::Background_ParallaxFromPosition"
     },
     {
       "name": "Effect",

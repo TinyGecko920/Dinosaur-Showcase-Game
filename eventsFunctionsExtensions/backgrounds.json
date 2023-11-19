@@ -79,10 +79,51 @@
     },
     {
       "description": "",
-      "fullName": "Background with Mouse Parallax",
-      "name": "Background_ParallaxMouse",
+      "fullName": "Background with Parallax from Position",
+      "name": "Background_ParallaxFromPosition",
       "objectType": "Sprite",
       "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onCreated",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() / 2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
         {
           "fullName": "",
           "functionType": "Action",
@@ -144,9 +185,9 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "lerp(Object.CenterX(), (SceneWindowWidth() / 2) + (CursorX() * Object.Behavior::PropertyIntensity()), Object.Behavior::PropertyL_t())",
+                        "lerp(Object.CenterX(), (SceneWindowWidth() / 2) + (Object.Behavior::PropertyXPosition() * Object.Behavior::PropertyIntensity()), Object.Behavior::PropertyProgress())",
                         "=",
-                        "lerp(Object.CenterY(), (SceneWindowHeight() / 2) + (CursorY() * Object.Behavior::PropertyIntensity()), Object.Behavior::PropertyL_t())"
+                        "lerp(Object.CenterY(), (SceneWindowHeight() / 2) + (Object.Behavior::PropertyYPosition() * Object.Behavior::PropertyIntensity()), Object.Behavior::PropertyProgress())"
                       ]
                     }
                   ]
@@ -164,7 +205,173 @@
             {
               "description": "Behavior",
               "name": "Behavior",
-              "supplementaryInformation": "Backgrounds::Background_ParallaxMouse",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the x position of the object.",
+          "fullName": "X Position",
+          "functionType": "ExpressionAndCondition",
+          "group": "Background with Position Parallax configuration",
+          "name": "XPosition",
+          "sentence": "the x position",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyXPosition()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "XPosition",
+          "name": "SetXPosition",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Backgrounds::Background_ParallaxFromPosition::SetPropertyXPosition"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the y position of the object.",
+          "fullName": "Y Position",
+          "functionType": "ExpressionAndCondition",
+          "group": "Background with Position Parallax configuration",
+          "name": "YPosition",
+          "sentence": "the y position",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyYPosition()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "YPosition",
+          "name": "SetYPosition",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Backgrounds::Background_ParallaxFromPosition::SetPropertyYPosition"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Backgrounds::Background_ParallaxFromPosition",
               "type": "behavior"
             }
           ],
@@ -175,7 +382,7 @@
         {
           "value": "1.25",
           "type": "Number",
-          "label": "Background scale",
+          "label": "Background Scale",
           "description": "",
           "group": "",
           "extraInformation": [],
@@ -185,7 +392,7 @@
         {
           "value": "0.5",
           "type": "Number",
-          "label": "Parallax intensity",
+          "label": "Parallax Intensity",
           "description": "",
           "group": "",
           "extraInformation": [],
@@ -195,12 +402,32 @@
         {
           "value": "0.1",
           "type": "Number",
-          "label": "L_t",
+          "label": "Lerp Progress",
           "description": "",
           "group": "",
           "extraInformation": [],
           "hidden": false,
-          "name": "L_t"
+          "name": "Progress"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "X Position",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "XPosition"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Y Position",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "YPosition"
         }
       ],
       "sharedPropertyDescriptors": []

@@ -1581,7 +1581,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Cursor",
       "type": "Sprite",
@@ -1767,20 +1767,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 70,
-                        "y": 70
+                        "x": 51,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 70
+                        "x": 93,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 125
+                        "x": 93,
+                        "y": 93
                       },
                       {
-                        "x": 70,
-                        "y": 125
+                        "x": 51,
+                        "y": 93
                       }
                     ]
                   ]
@@ -1815,20 +1815,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 70,
-                        "y": 70
+                        "x": 51,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 70
+                        "x": 93,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 125
+                        "x": 93,
+                        "y": 93
                       },
                       {
-                        "x": 70,
-                        "y": 125
+                        "x": 51,
+                        "y": 93
                       }
                     ]
                   ]
@@ -1863,20 +1863,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 70,
-                        "y": 70
+                        "x": 51,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 70
+                        "x": 93,
+                        "y": 51
                       },
                       {
-                        "x": 125,
-                        "y": 125
+                        "x": 93,
+                        "y": 93
                       },
                       {
-                        "x": 70,
-                        "y": 125
+                        "x": 51,
+                        "y": 93
                       }
                     ]
                   ]
@@ -2993,6 +2993,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tooltip"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/lastinput"
     }
   ],
   "externalLayouts": [
