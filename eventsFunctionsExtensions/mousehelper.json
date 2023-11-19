@@ -138,6 +138,51 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Animatable",
+                    "=",
+                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Animatable",
+                    "=",
+                    "Object.Behavior::PropertyGamepadCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -288,6 +333,92 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "Change the cursor icon",
+          "fullName": "Change icon",
+          "functionType": "Action",
+          "name": "ChangeIcon",
+          "sentence": "Change the icon for _PARAM0_ to _PARAM2_.",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::SetPropertyIconSuffix"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"IconSuffix\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            },
+            {
+              "description": "Icon suffix",
+              "name": "IconSuffix",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "The icon suffix of the cursor object.",
+          "fullName": "Icon suffix",
+          "functionType": "ExpressionAndCondition",
+          "group": "Cursor configuration",
+          "name": "IconSuffix",
+          "sentence": "Icon suffix",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyIconSuffix()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -324,6 +455,36 @@
           ],
           "hidden": false,
           "name": "Animatable"
+        },
+        {
+          "value": "Cursor",
+          "type": "String",
+          "label": "Cursor Icon Prefix",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "CursorIconPrefix"
+        },
+        {
+          "value": "GamepadCursor",
+          "type": "String",
+          "label": "Gamepad Cursor Icon Prefix",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "GamepadCursorIconPrefix"
+        },
+        {
+          "value": "Idle",
+          "type": "String",
+          "label": "Icon suffix",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "IconSuffix"
         }
       ],
       "sharedPropertyDescriptors": []

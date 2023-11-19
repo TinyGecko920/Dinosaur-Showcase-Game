@@ -855,6 +855,24 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GamepadCursorIdle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\GamepadCursorIdle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GamepadCursorPressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\GamepadCursorPressed.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1580,7 +1598,7 @@
       ],
       "animations": [
         {
-          "name": "Idle",
+          "name": "CursorIdle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1628,7 +1646,7 @@
           ]
         },
         {
-          "name": "Active",
+          "name": "CursorActive",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1676,7 +1694,7 @@
           ]
         },
         {
-          "name": "Pressed",
+          "name": "CursorPressed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1686,6 +1704,150 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\CursorPressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 70,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 125
+                      },
+                      {
+                        "x": 70,
+                        "y": 125
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GamepadCursorIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\GamepadCursorIdle.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 70,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 125
+                      },
+                      {
+                        "x": 70,
+                        "y": 125
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GamepadCursorActive",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\GamepadCursorPressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 70,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 70
+                      },
+                      {
+                        "x": 125,
+                        "y": 125
+                      },
+                      {
+                        "x": 70,
+                        "y": 125
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GamepadCursorPressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\GamepadCursorPressed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2768,6 +2930,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/interact_online"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/dialogbox"

@@ -753,6 +753,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Multiple \"At the beginning of the scene\" conditions are used to mimic asynchronous operation while using the Wait action."
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1170,26 +1182,27 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                "value": "MouseHelper::cursor::IconSuffix"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
+                "cursor",
                 "!=",
-                "\"Active\""
+                "\"Active\"",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "MouseHelper::cursor::ChangeIcon"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
-                "=",
-                "\"Active\""
+                "cursor",
+                "\"Active\"",
+                ""
               ]
             }
           ]
@@ -1231,26 +1244,27 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                "value": "MouseHelper::cursor::IconSuffix"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
+                "cursor",
                 "!=",
-                "\"Idle\""
+                "\"Idle\"",
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "MouseHelper::cursor::ChangeIcon"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
-                "=",
-                "\"Idle\""
+                "cursor",
+                "\"Idle\"",
+                ""
               ]
             }
           ]
@@ -1397,13 +1411,13 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "MouseHelper::cursor::ChangeIcon"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
-                "=",
-                "\"Idle\""
+                "cursor",
+                "\"Idle\"",
+                ""
               ]
             }
           ]
@@ -1413,24 +1427,54 @@
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonPressed"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Left"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"RT\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"R2\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                "value": "MouseHelper::cursor::ChangeIcon"
               },
               "parameters": [
                 "Cursor",
-                "Animation",
-                "=",
-                "\"Pressed\""
+                "cursor",
+                "\"Pressed\"",
+                ""
               ]
             }
           ]
@@ -1562,13 +1606,13 @@
               "actions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "MouseHelper::cursor::ChangeIcon"
                   },
                   "parameters": [
                     "Cursor",
-                    "Animation",
-                    "=",
-                    "\"Active\""
+                    "cursor",
+                    "\"Active\"",
+                    ""
                   ]
                 }
               ]
@@ -1578,26 +1622,27 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                    "value": "MouseHelper::cursor::IconSuffix"
                   },
                   "parameters": [
                     "Cursor",
-                    "Animation",
+                    "cursor",
                     "=",
-                    "\"Pressed\""
+                    "\"Pressed\"",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "MouseHelper::cursor::ChangeIcon"
                   },
                   "parameters": [
                     "Cursor",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
+                    "cursor",
+                    "\"Idle\"",
+                    ""
                   ]
                 }
               ]
