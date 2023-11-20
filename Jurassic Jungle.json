@@ -1593,7 +1593,8 @@
           "name": "cursor",
           "type": "MouseHelper::cursor",
           "Scalable": "Scale",
-          "Animatable": "Animation"
+          "Animatable": "Animation",
+          "GamepadScale": 0.5
         }
       ],
       "animations": [
@@ -2880,7 +2881,14 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "_LastInput",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2932,7 +2940,7 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/interact_online"
+      "referenceTo": "/eventsFunctionsExtensions/internetconnectivity"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

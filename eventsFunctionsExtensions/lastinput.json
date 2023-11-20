@@ -2,7 +2,7 @@
   "author": "",
   "category": "",
   "extensionNamespace": "",
-  "fullName": "",
+  "fullName": "Last Input",
   "helpPath": "",
   "iconUrl": "",
   "name": "LastInput",
@@ -11,9 +11,297 @@
   "version": "",
   "description": "",
   "tags": [],
-  "authorIds": [],
+  "authorIds": [
+    "0LbfRM60csSpktCyyZUSiCcoHAz1"
+  ],
   "dependencies": [],
-  "eventsFunctions": [],
+  "eventsFunctions": [
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onFirstSceneLoaded",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "gdjs.evtTools.lastInput = {",
+            "    cursorX: -1,",
+            "    cursorY: -1,",
+            "    lastReceivedInput: \"MouseKeyboard\",",
+            "};"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onScenePreEvents",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Gamepads::C_Any_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_any_button_released"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Axis_pushed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Left\"",
+                    "\"Any\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Axis_pushed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Right\"",
+                    "\"Any\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lastInput = gdjs.evtTools.lastInput;\r",
+                "const inputManager = runtimeScene.getGame().getInputManager();\r",
+                "\r",
+                "if (lastInput.lastReceivedInput !== \"Gamepad\") {\r",
+                "    lastInput.cursorX = inputManager.getCursorX();\r",
+                "    lastInput.cursorY = inputManager.getCursorY();\r",
+                "    lastInput.lastReceivedInput = \"Gamepad\";\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnyKeyReleased"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Middle"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Back"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Forward"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Middle"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Back"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Forward"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const lastInput = gdjs.evtTools.lastInput;\r",
+                "\r",
+                "if (lastInput.lastReceivedInput !== \"MouseKeyboard\") {\r",
+                "    lastInput.lastReceivedInput = \"MouseKeyboard\";\r",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Monitor mouse movement and update last received input based on whether the mouse moved or not",
+            "",
+            "const lastInput = gdjs.evtTools.lastInput;",
+            "const inputManager = runtimeScene.getGame().getInputManager();",
+            "",
+            "if (((inputManager.getCursorX() !== lastInput.cursorX) || (inputManager.getCursorY() !== lastInput.cursorY)) && lastInput.lastReceivedInput !== \"MouseKeyboard\") {",
+            "    lastInput.lastReceivedInput = \"MouseKeyboard\";",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Check if the last received input was from a gamepad or mouse and keyboard.",
+      "fullName": "Last input was from...",
+      "functionType": "Condition",
+      "name": "LastInputWasFrom",
+      "sentence": "Last received input was from _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = eventsFunctionContext.getArgument(\"Type\") === ((\"lastInput\" in gdjs.evtTools) ? gdjs.evtTools.lastInput.lastReceivedInput : \"MouseKeyboard\");",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Input type",
+          "name": "Type",
+          "supplementaryInformation": "[\"MouseKeyboard\",\"Gamepad\"]",
+          "type": "stringWithSelector"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
   "eventsBasedBehaviors": [],
   "eventsBasedObjects": []
 }

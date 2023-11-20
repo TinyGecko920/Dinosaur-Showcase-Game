@@ -702,6 +702,7 @@
             },
             {
               "type": {
+                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -1173,6 +1174,16 @@
           "conditions": [
             {
               "type": {
+                "value": "LastInput::LastInputWasFrom"
+              },
+              "parameters": [
+                "",
+                "\"Gamepad\"",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Gamepads::C_Controller_X_is_connected"
               },
               "parameters": [
@@ -1492,7 +1503,7 @@
                           "parameters": [
                             "",
                             "1",
-                            "\"RT\"",
+                            "\"A\"",
                             ""
                           ]
                         },
@@ -1503,7 +1514,7 @@
                           "parameters": [
                             "",
                             "1",
-                            "\"R2\"",
+                            "\"Cross\"",
                             ""
                           ]
                         }
@@ -1587,7 +1598,7 @@
                       "parameters": [
                         "",
                         "1",
-                        "\"RT\"",
+                        "\"A\"",
                         ""
                       ]
                     },
@@ -1598,7 +1609,7 @@
                       "parameters": [
                         "",
                         "1",
-                        "\"R2\"",
+                        "\"Cross\"",
                         ""
                       ]
                     }
@@ -1776,12 +1787,11 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "Gamepads::C_Controller_X_is_connected"
+                "value": "LastInput::LastInputWasFrom"
               },
               "parameters": [
                 "",
-                "1",
+                "\"MouseKeyboard\"",
                 ""
               ]
             }
@@ -2335,7 +2345,7 @@
                   "parameters": [
                     "",
                     "1",
-                    "\"RT\"",
+                    "\"A\"",
                     ""
                   ]
                 },
@@ -2346,7 +2356,7 @@
                   "parameters": [
                     "",
                     "1",
-                    "\"R2\"",
+                    "\"Cross\"",
                     ""
                   ]
                 }
@@ -2372,11 +2382,107 @@
           "conditions": [
             {
               "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "PlayButton",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "PlayButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "PlayButton",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {

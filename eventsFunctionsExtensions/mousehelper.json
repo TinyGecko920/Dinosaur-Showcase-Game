@@ -51,6 +51,34 @@
                   "parameters": [
                     ""
                   ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Animatable",
+                    "=",
+                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
                 },
                 {
                   "type": {
@@ -74,7 +102,34 @@
                     "=",
                     "CursorY()"
                   ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
                 },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -83,7 +138,30 @@
                     "Object",
                     "Animatable",
                     "=",
-                    "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                    "Object.Behavior::PropertyGamepadCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Scalable",
+                    "=",
+                    "Object.Behavior::PropertyGamepadScale()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "SceneWindowWidth() / 2",
+                    "=",
+                    "SceneWindowHeight() / 2"
                   ]
                 }
               ]
@@ -121,17 +199,6 @@
                   "parameters": [
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Object",
-                    "Scalable",
-                    "=",
-                    "Object.Behavior::PropertyScale()"
-                  ]
                 }
               ]
             },
@@ -140,12 +207,11 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Gamepads::C_Controller_X_is_connected"
+                    "value": "LastInput::LastInputWasFrom"
                   },
                   "parameters": [
                     "",
-                    "1",
+                    "\"MouseKeyboard\"",
                     ""
                   ]
                 }
@@ -160,6 +226,17 @@
                     "Animatable",
                     "=",
                     "Object.Behavior::PropertyCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Scalable",
+                    "=",
+                    "Object.Behavior::PropertyScale()"
                   ]
                 },
                 {
@@ -179,6 +256,16 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Gamepads::C_Controller_X_is_connected"
@@ -201,9 +288,57 @@
                     "=",
                     "Object.Behavior::PropertyGamepadCursorIconPrefix() + Object.Behavior::PropertyIconSuffix()"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Scalable",
+                    "=",
+                    "Object.Behavior::PropertyGamepadScale()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "clamp(Object.CenterX(), 0, SceneWindowWidth())",
+                    "=",
+                    "clamp(Object.CenterY(), 0, SceneWindowHeight())"
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -229,20 +364,8 @@
                       "parameters": [
                         "Object",
                         "Gamepads::StickAngle(1, \"Right\")",
-                        "Gamepads::StickForce(1, \"Right\") * SceneWindowWidth()",
+                        "Gamepads::StickForce(1, \"Right\") * (SceneWindowWidth() * 1.5)",
                         "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "clamp(Object.CenterX(), 0, SceneWindowWidth())",
-                        "=",
-                        "clamp(Object.CenterY(), 0, SceneWindowHeight())"
                       ]
                     }
                   ]
@@ -282,6 +405,16 @@
                     "value": "IsMouseInsideCanvas"
                   },
                   "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
                     ""
                   ]
                 }
@@ -553,6 +686,16 @@
           "extraInformation": [],
           "hidden": true,
           "name": "IconSuffix"
+        },
+        {
+          "value": "0.5",
+          "type": "Number",
+          "label": "Cursor scale (gamepad)",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "GamepadScale"
         }
       ],
       "sharedPropertyDescriptors": []
