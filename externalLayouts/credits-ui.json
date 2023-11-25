@@ -1,0 +1,34 @@
+{
+  "associatedLayout": "Intro",
+  "name": "Credits UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Credits",
+      "name": "CreditsText",
+      "persistentUuid": "de4840ab-38b9-4883-9b93-ce7d4c211a5b",
+      "width": 0,
+      "x": 155,
+      "y": 822,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.3645833333333333,
+    "windowMask": false
+  }
+}

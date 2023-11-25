@@ -46,6 +46,56 @@
       "name": "Transitioning",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "ShowingCredits",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Credits",
+      "type": "array",
+      "children": [
+        {
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Developer"
+            },
+            {
+              "folded": true,
+              "persistentUuid": "666e3db8-753e-45e7-9c21-7331a7c2ad8b",
+              "type": "string",
+              "value": "Tyler Fursman"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Paul Ziolkowski"
+            }
+          ]
+        },
+        {
+          "persistentUuid": "17d8bf7c-c50c-4eee-a370-17e774a9d0f8",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "Artist"
+            },
+            {
+              "folded": true,
+              "persistentUuid": "41d20186-8809-4864-8e14-ce44b2a8777f",
+              "type": "string",
+              "value": "Karolyn Young"
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -599,6 +649,55 @@
       "absoluteCoordinates": false,
       "clearBetweenFrames": true,
       "antialiasing": "high"
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CreditsText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Jurassic Jungle is a showcase project for the Center for Advanced Research and Technology (2023)",
+      "font": "ChelseaMarket-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Credit",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[size=24]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -627,6 +726,12 @@
       },
       {
         "objectName": "TransitionPainter"
+      },
+      {
+        "objectName": "CreditsText"
+      },
+      {
+        "objectName": "Credit"
       }
     ]
   },
@@ -662,10 +767,31 @@
           },
           "parameters": [
             "",
+            "\"Credits UI\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
             "\"Intro UI\"",
             "0",
             "0",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Credits\""
           ]
         },
         {
@@ -778,6 +904,28 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "CreditsText",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Credit",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "Cache"
@@ -1058,6 +1206,18 @@
             "0",
             "SceneWindowWidth() / 2"
           ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "CreditsText",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 1.25"
+          ]
         }
       ]
     },
@@ -1092,6 +1252,48 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Repeat",
+      "repeatExpression": "VariableChildCount(Credits)",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Credits\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "CreditsText",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1101,6 +1303,17 @@
           "parameters": [
             "Transitioning",
             "False"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarObjet"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "OutlineSize",
+            "!=",
+            "0"
           ]
         }
       ],
@@ -1156,6 +1369,130 @@
             "\"easeOutCirc\"",
             "0.667",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "ShowingCredits",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "Changelog",
+            "Tween",
+            "\"fadeIn\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Changelog",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "0.25",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "PlayButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CreditsButton"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenSceneVariableNumber3"
+          },
+          "parameters": [
+            "",
+            "\"slideOut\"",
+            "CameraCenterY",
+            "- (SceneWindowHeight() / 2) * 1.12",
+            "\"easeInQuart\"",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectColorTween2"
+          },
+          "parameters": [
+            "LoadingScreenBg1",
+            "Tween",
+            "\"fadeOut\"",
+            "\"4;14;41\"",
+            "\"easeOutQuad\"",
+            "2",
+            "",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1.75"
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Credits\""
           ]
         }
       ]
@@ -1312,6 +1649,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "MouseHelper::cursor::IconSuffix"
                   },
                   "parameters": [
@@ -1446,6 +1792,15 @@
                   },
                   "parameters": [
                     "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
                     ""
                   ]
                 }
@@ -1732,6 +2087,15 @@
                         "Transitioning",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ShowingCredits",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
@@ -1908,6 +2272,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "MouseHelper::cursor::IconSuffix"
                   },
                   "parameters": [
@@ -2034,6 +2407,15 @@
                   },
                   "parameters": [
                     "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
                     ""
                   ]
                 }
@@ -2270,6 +2652,15 @@
                         "Transitioning",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ShowingCredits",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
@@ -2501,6 +2892,15 @@
                 "Transitioning",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ShowingCredits",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2549,6 +2949,153 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "CreditsButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "CreditsButton",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "CreditsButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ShowingCredits",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ShowingCredits",
+                "True"
               ]
             }
           ]
@@ -2696,6 +3243,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Credits",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -2750,6 +3329,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tooltip",

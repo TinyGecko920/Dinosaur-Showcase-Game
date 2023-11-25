@@ -22,52 +22,7 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "Credits",
-      "type": "array",
-      "children": [
-        {
-          "type": "array",
-          "children": [
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Developer"
-            },
-            {
-              "folded": true,
-              "persistentUuid": "666e3db8-753e-45e7-9c21-7331a7c2ad8b",
-              "type": "string",
-              "value": "Tyler Fursman"
-            },
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Paul Ziolkowski"
-            }
-          ]
-        },
-        {
-          "persistentUuid": "17d8bf7c-c50c-4eee-a370-17e774a9d0f8",
-          "type": "array",
-          "children": [
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Artist"
-            },
-            {
-              "folded": true,
-              "persistentUuid": "41d20186-8809-4864-8e14-ce44b2a8777f",
-              "type": "string",
-              "value": "Karolyn Young"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "variables": [],
   "instances": [],
   "objects": [],
   "objectsFolderStructure": {
