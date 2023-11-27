@@ -451,7 +451,8 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ]
+      ],
+      "content": {}
     },
     {
       "assetStoreId": "",
@@ -661,7 +662,8 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ]
+      ],
+      "content": {}
     },
     {
       "adaptCollisionMaskAutomatically": true,

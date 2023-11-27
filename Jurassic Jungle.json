@@ -882,6 +882,42 @@
         "name": "Back.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ankylosaurus_idle_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ankylosaurus_idle_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ankylosaurus_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ankylosaurus_idle_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ankylosaurus_idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ankylosaurus_idle_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ankylosaurus_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ankylosaurus_idle_3.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1195,7 +1231,8 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "content": {}
     },
     {
       "assetStoreId": "",
@@ -1227,7 +1264,8 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ]
+      ],
+      "content": {}
     },
     {
       "adaptCollisionMaskAutomatically": false,
@@ -1883,7 +1921,8 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "content": {}
     },
     {
       "assetStoreId": "",
@@ -1896,7 +1935,8 @@
           "name": "Tooltip",
           "type": "Tooltip::Tooltip"
         }
-      ]
+      ],
+      "content": {}
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -2768,6 +2808,219 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ankylosaurus",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 100,
+          "CurrentHealth": 0,
+          "MaxHealth": 100,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ankylosaurus_idle_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 135
+                      },
+                      {
+                        "x": 18,
+                        "y": 135
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ankylosaurus_idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 135
+                      },
+                      {
+                        "x": 18,
+                        "y": 135
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ankylosaurus_idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 135
+                      },
+                      {
+                        "x": 18,
+                        "y": 135
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ankylosaurus_idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 22
+                      },
+                      {
+                        "x": 174,
+                        "y": 135
+                      },
+                      {
+                        "x": 18,
+                        "y": 135
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2790,6 +3043,9 @@
       {
         "folderName": "Dinosaurs",
         "children": [
+          {
+            "objectName": "Ankylosaurus"
+          },
           {
             "objectName": "Tyrannosaurus"
           }
@@ -2838,6 +3094,9 @@
         },
         {
           "name": "Tyrannosaurus"
+        },
+        {
+          "name": "Ankylosaurus"
         }
       ]
     },

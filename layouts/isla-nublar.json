@@ -47,7 +47,8 @@
       "type": "Scene3D::Cube3DObject",
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
