@@ -1125,6 +1125,42 @@
         "name": "assets\\otheniasaurus_idle_3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stegosaurus_idle_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stegosaurus_idle_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stegosaurus_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stegosaurus_idle_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stegosaurus_idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stegosaurus_idle_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stegosaurus_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stegosaurus_idle_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4855,6 +4891,274 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Stegosaurus",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 20
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 32
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 2.5
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 3.1
+        },
+        {
+          "folded": true,
+          "name": "AgroDistanceInPixels",
+          "type": "number",
+          "value": 1800
+        },
+        {
+          "folded": true,
+          "name": "AttackRange",
+          "type": "number",
+          "value": 550
+        },
+        {
+          "folded": true,
+          "name": "MinGoldDrop",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "MaxGoldDrop",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "folded": true,
+          "name": "_Attacking",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 100,
+          "CurrentHealth": 0,
+          "MaxHealth": 100,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 240,
+          "maxSpeed": 120,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.16,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\stegosaurus_idle_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 124
+                      },
+                      {
+                        "x": 11,
+                        "y": 124
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\stegosaurus_idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 124
+                      },
+                      {
+                        "x": 11,
+                        "y": 124
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\stegosaurus_idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 124
+                      },
+                      {
+                        "x": 11,
+                        "y": 124
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\stegosaurus_idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 1
+                      },
+                      {
+                        "x": 175,
+                        "y": 124
+                      },
+                      {
+                        "x": 11,
+                        "y": 124
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4894,6 +5198,9 @@
           },
           {
             "objectName": "Otheniasaurus"
+          },
+          {
+            "objectName": "Stegosaurus"
           },
           {
             "objectName": "Cearadactylus"
