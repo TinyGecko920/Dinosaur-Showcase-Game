@@ -200,22 +200,7 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ],
-      "content": {
-        "initialValue": "",
-        "placeholder": "Maximum 12 characters",
-        "fontResourceName": "ChelseaMarket-Regular.ttf",
-        "fontSize": 40,
-        "inputType": "text",
-        "textColor": "255;255;255",
-        "fillColor": "26;29;32",
-        "fillOpacity": 255,
-        "borderColor": "255;255;255",
-        "borderOpacity": 255,
-        "borderWidth": 3,
-        "readOnly": false,
-        "disabled": false
-      }
+      ]
     },
     {
       "assetStoreId": "",

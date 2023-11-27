@@ -47,34 +47,7 @@
       "type": "Scene3D::Cube3DObject",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {
-        "width": 100,
-        "height": 100,
-        "depth": 100,
-        "enableTextureTransparency": true,
-        "facesOrientation": "Y",
-        "frontFaceResourceName": "",
-        "backFaceResourceName": "",
-        "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "",
-        "rightFaceResourceName": "",
-        "topFaceResourceName": "",
-        "bottomFaceResourceName": "",
-        "frontFaceVisible": false,
-        "backFaceVisible": false,
-        "leftFaceVisible": false,
-        "rightFaceVisible": false,
-        "topFaceVisible": true,
-        "bottomFaceVisible": false,
-        "frontFaceResourceRepeat": false,
-        "backFaceResourceRepeat": false,
-        "leftFaceResourceRepeat": false,
-        "rightFaceResourceRepeat": false,
-        "topFaceResourceRepeat": false,
-        "bottomFaceResourceRepeat": false,
-        "materialType": "Basic"
-      }
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {

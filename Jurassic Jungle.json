@@ -1195,17 +1195,7 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
-        "opacity": 255,
-        "fontSize": 24,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
+      "behaviors": []
     },
     {
       "assetStoreId": "",
@@ -1237,17 +1227,7 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ],
-      "content": {
-        "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
-        "opacity": 255,
-        "fontSize": 24,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "center",
-        "wordWrap": true
-      }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": false,
@@ -1903,17 +1883,7 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black][spacing=8]999999[/spacing][/outline][/b]",
-        "opacity": 255,
-        "fontSize": 40,
-        "visible": true,
-        "color": "255;178;93",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
+      "behaviors": []
     },
     {
       "assetStoreId": "",
@@ -1926,17 +1896,7 @@
           "name": "Tooltip",
           "type": "Tooltip::Tooltip"
         }
-      ],
-      "content": {
-        "text": "[outline=black]I am a tooltip[/outline]",
-        "opacity": 255,
-        "fontSize": 20,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": false
-      }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,

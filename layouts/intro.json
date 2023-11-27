@@ -451,17 +451,7 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ],
-      "content": {
-        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
-        "opacity": 255,
-        "fontSize": 28,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
+      ]
     },
     {
       "assetStoreId": "",
@@ -671,17 +661,7 @@
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
-      ],
-      "content": {
-        "text": "[size=24]Developer\n\n[/size]\n[b]John Doe[/b]\n[b]Jane Doe[/b]",
-        "opacity": 255,
-        "fontSize": 52,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "center",
-        "wordWrap": false
-      }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,

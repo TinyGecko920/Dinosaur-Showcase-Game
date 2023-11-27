@@ -1886,17 +1886,7 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[outline=black]Lorem ipsum[/outline]",
-        "opacity": 255,
-        "fontSize": 36,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
+      "behaviors": []
     },
     {
       "assetStoreId": "",
@@ -1904,17 +1894,7 @@
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black]Eli Sattler[/outline][/b]",
-        "opacity": 255,
-        "fontSize": 40,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
