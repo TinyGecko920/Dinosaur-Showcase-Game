@@ -24,6 +24,11 @@
   "objectsGroups": [],
   "variables": [
     {
+      "name": "__i",
+      "type": "number",
+      "value": 0
+    },
+    {
       "folded": true,
       "name": "MaxLogoHeightScale",
       "type": "number",
@@ -58,42 +63,14 @@
       "type": "array",
       "children": [
         {
-          "type": "array",
-          "children": [
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Developer"
-            },
-            {
-              "folded": true,
-              "persistentUuid": "666e3db8-753e-45e7-9c21-7331a7c2ad8b",
-              "type": "string",
-              "value": "Tyler Fursman"
-            },
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Paul Ziolkowski"
-            }
-          ]
+          "folded": true,
+          "type": "string",
+          "value": "[size=24]Developer\n\n[/size]\n[b]Tyler Fursman[/b]\n[b]Paul Ziolkowski[/b]"
         },
         {
-          "persistentUuid": "17d8bf7c-c50c-4eee-a370-17e774a9d0f8",
-          "type": "array",
-          "children": [
-            {
-              "folded": true,
-              "type": "string",
-              "value": "Artist"
-            },
-            {
-              "folded": true,
-              "persistentUuid": "41d20186-8809-4864-8e14-ce44b2a8777f",
-              "type": "string",
-              "value": "Karolyn Young"
-            }
-          ]
+          "folded": true,
+          "type": "string",
+          "value": "[size=24]Artist\n\n[/size]\n[b]Karolyn Young[/b]"
         }
       ]
     }
@@ -680,7 +657,14 @@
       "assetStoreId": "",
       "name": "Credit",
       "type": "BBText::BBText",
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "CenterXScale",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -689,15 +673,80 @@
         }
       ],
       "content": {
-        "text": "[size=24]",
+        "text": "[size=24]Developer\n\n[/size]\n[b]John Doe[/b]\n[b]Jane Doe[/b]",
         "opacity": 255,
-        "fontSize": 40,
+        "fontSize": 52,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CreditsBack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Back.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 10
+                      },
+                      {
+                        "x": 77,
+                        "y": 10
+                      },
+                      {
+                        "x": 77,
+                        "y": 68
+                      },
+                      {
+                        "x": 1,
+                        "y": 68
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -732,6 +781,9 @@
       },
       {
         "objectName": "Credit"
+      },
+      {
+        "objectName": "CreditsBack"
       }
     ]
   },
@@ -909,7 +961,7 @@
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
-            "CreditsText",
+            "CreditsBack",
             "Opacity",
             "=",
             "0"
@@ -920,7 +972,7 @@
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
-            "Credit",
+            "CreditsText",
             "Opacity",
             "=",
             "0"
@@ -1035,6 +1087,79 @@
           "parameters": [
             "CreditsButton",
             "Tween"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "VariableChildCount(Credits)",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Credit",
+                "-9999",
+                "-9999",
+                "\"Credits\""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Credit",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "Credit",
+                "=",
+                "Credits[__i]"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Credit",
+                "=",
+                "__i + 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Credit",
+                "CenterXScale",
+                "=",
+                "((__i + 1) / (VariableChildCount(Credits) + 1))"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "__i",
+                "+",
+                "1"
+              ]
+            }
           ]
         }
       ]
@@ -1218,6 +1343,30 @@
             "=",
             "SceneWindowHeight() / 1.25"
           ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "Credit",
+            "=",
+            "Credit.CenterXScale * SceneWindowWidth()",
+            "=",
+            "SceneWindowHeight() / 2.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "CreditsBack",
+            "=",
+            "SceneWindowWidth() - CreditsBack.Width() - 40",
+            "=",
+            "SceneWindowHeight() - CreditsBack.Height() - 40"
+          ]
         }
       ]
     },
@@ -1252,12 +1401,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Repeat",
-      "repeatExpression": "VariableChildCount(Credits)",
-      "conditions": [],
-      "actions": []
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1283,6 +1426,43 @@
           },
           "parameters": [
             "CreditsText",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AjoutObjConcern"
+          },
+          "parameters": [
+            "",
+            "Credit"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Credit",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "CreditsBack",
             "Tween",
             "\"fadeIn\"",
             "255",
@@ -1439,7 +1619,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "1"
+            "0.25"
           ]
         },
         {
@@ -1493,6 +1673,15 @@
           "parameters": [
             "",
             "\"Credits\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "ShowingCredits",
+            ""
           ]
         }
       ]
@@ -1635,6 +1824,45 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "CreditsBack",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "CreditsBack"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::Value"
+                          },
+                          "parameters": [
+                            "CreditsBack",
+                            "Opacity",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -1688,41 +1916,144 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Cursor",
-                    "PlayButton",
-                    "",
-                    "",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "PlayButton"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "PlayButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Cursor",
-                    "CreditsButton",
-                    "",
-                    "",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "CreditsButton"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "CreditsButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Cursor",
-                    "Changelog",
-                    "",
-                    "",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Changelog"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "Opacity",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Changelog",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "CreditsBack"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "CreditsBack",
+                        "Opacity",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "CreditsBack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2076,6 +2407,45 @@
                               ]
                             }
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Cursor",
+                                "CreditsBack",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "CreditsBack"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "OpacityCapability::OpacityBehavior::Value"
+                              },
+                              "parameters": [
+                                "CreditsBack",
+                                "Opacity",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -2258,6 +2628,44 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "CreditsBack",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "CreditsBack"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::Value"
+                          },
+                          "parameters": [
+                            "CreditsBack",
+                            "Opacity",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -2311,34 +2719,136 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "PlayButton",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "PlayButton"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+                      },
+                      "parameters": [
+                        "PlayButton",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "CreditsButton",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "CreditsButton"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+                      },
+                      "parameters": [
+                        "CreditsButton",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Changelog",
-                    "",
-                    "",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Changelog"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "Opacity",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "CreditsBack"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "CreditsBack",
+                        "Opacity",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "CreditsBack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2635,6 +3145,44 @@
                               },
                               "parameters": [
                                 "Changelog",
+                                "Opacity",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "CreditsBack",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "CreditsBack"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "OpacityCapability::OpacityBehavior::Value"
+                              },
+                              "parameters": [
+                                "CreditsBack",
                                 "Opacity",
                                 ">",
                                 "0"
@@ -3222,7 +3770,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "UI",
+      "name": "Credits",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -3254,7 +3802,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Credits",
+      "name": "UI",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

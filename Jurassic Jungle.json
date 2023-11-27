@@ -873,6 +873,15 @@
         "name": "assets\\GamepadCursorPressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Back.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

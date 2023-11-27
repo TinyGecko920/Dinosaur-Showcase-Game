@@ -16,6 +16,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Credits",
+      "name": "CreditsBack",
+      "persistentUuid": "2bed7c22-06e3-4cec-9530-8f8a1a60509f",
+      "width": 0,
+      "x": 1760,
+      "y": 920,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -28,7 +43,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.5800155239904858,
     "windowMask": false
   }
 }
