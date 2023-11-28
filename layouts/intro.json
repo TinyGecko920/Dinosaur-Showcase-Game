@@ -793,7 +793,7 @@
           "type": "Backgrounds::Background_ParallaxFromPosition",
           "Scale": 1.333,
           "Intensity": -0.166,
-          "Progress": 0.005,
+          "Progress": 0.003,
           "XPosition": 0,
           "YPosition": 0
         },
@@ -874,7 +874,7 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.05,
+              "timeBetweenFrames": 0.04,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2444,6 +2444,17 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "Constellation",
+            "Tween",
+            "\"fadeIn\"",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "AjoutObjConcern"
