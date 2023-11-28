@@ -746,6 +746,30 @@
       "actions": [
         {
           "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
+          },
+          "parameters": [
+            "NameSelectBg",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
+          },
+          "parameters": [
+            "NameSelectBg",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -1031,7 +1055,7 @@
           "parameters": [
             "DialogueNext",
             "=",
-            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 56",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
             "=",
             "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
           ]

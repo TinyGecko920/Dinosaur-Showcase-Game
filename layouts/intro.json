@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.23689563725446586,
+    "zoomFactor": 0.2216924727500518,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -101,7 +101,7 @@
       "width": 0,
       "x": 146,
       "y": 118,
-      "zOrder": 1,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -147,6 +147,22 @@
       "x": 446,
       "y": 268,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1440,
+      "layer": "Credits Background",
+      "name": "Constellation",
+      "persistentUuid": "d52f0c1c-6b52-48a5-af7d-93181c1c9ba1",
+      "width": 2560,
+      "x": -259,
+      "y": -1492,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -747,6 +763,80 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Constellation",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Background_ParallaxFromPosition",
+          "type": "Backgrounds::Background_ParallaxFromPosition",
+          "Scale": 1.333,
+          "Intensity": -0.166,
+          "Progress": 0.005,
+          "XPosition": 0,
+          "YPosition": 0
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Constellation.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 38,
+                        "y": 0
+                      },
+                      {
+                        "x": 1216,
+                        "y": 0
+                      },
+                      {
+                        "x": 1216,
+                        "y": 720
+                      },
+                      {
+                        "x": 38,
+                        "y": 720
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -784,6 +874,9 @@
       },
       {
         "objectName": "CreditsBack"
+      },
+      {
+        "objectName": "Constellation"
       }
     ]
   },
@@ -839,6 +932,17 @@
         },
         {
           "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Constellation",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "HideLayer"
           },
           "parameters": [
@@ -880,7 +984,6 @@
             },
             {
               "type": {
-                "inverted": true,
                 "value": "SystemInfo::IsPreview"
               },
               "parameters": [
@@ -1242,6 +1345,30 @@
         },
         {
           "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
+          },
+          "parameters": [
+            "Constellation",
+            "Background_ParallaxFromPosition",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
+          },
+          "parameters": [
+            "Constellation",
+            "Background_ParallaxFromPosition",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Tooltip::Tooltip::SetCursorXPosition"
           },
           "parameters": [
@@ -1470,6 +1597,20 @@
             "1",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Constellation",
+            "Tween",
+            "\"fadeIn\"",
+            "127",
+            "\"easeOutQuad\"",
+            "7",
+            ""
+          ]
         }
       ]
     },
@@ -1534,6 +1675,20 @@
             "Opacity",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Constellation",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "1",
+            ""
           ]
         }
       ]
@@ -3884,6 +4039,38 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
+      "name": "Credits Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "Credits",
       "renderingType": "",
       "visibility": true,
@@ -3983,6 +4170,10 @@
     {
       "name": "Background",
       "type": "Backgrounds::Background"
+    },
+    {
+      "name": "Background_ParallaxFromPosition",
+      "type": "Backgrounds::Background_ParallaxFromPosition"
     },
     {
       "name": "Background_ParallaxMouse",
