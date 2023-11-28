@@ -6102,10 +6102,37 @@
       "name": "Dinosaurs",
       "objects": [
         {
-          "name": "TempDinosaur"
+          "name": "Tyrannosaurus"
         },
         {
-          "name": "Tyrannosaurus"
+          "name": "Ankylosaurus"
+        },
+        {
+          "name": "Apatosaurus"
+        },
+        {
+          "name": "Cearadactylus"
+        },
+        {
+          "name": "Dilophosaurus"
+        },
+        {
+          "name": "Euoplocephalus"
+        },
+        {
+          "name": "Maiasaura"
+        },
+        {
+          "name": "Othnielosaurus"
+        },
+        {
+          "name": "Stegosaurus"
+        },
+        {
+          "name": "Velociraptor"
+        },
+        {
+          "name": "Triceratops"
         }
       ]
     },
