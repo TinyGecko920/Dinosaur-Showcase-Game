@@ -309,6 +309,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 404,
+      "layer": "",
+      "name": "Cearadactylus",
+      "persistentUuid": "8d51f616-322d-4bb3-9d6d-adaf0ede90e2",
+      "width": 454,
+      "x": 1463,
+      "y": 336,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -658,7 +674,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer5",
       "renderingType": "",
       "visibility": true,
@@ -690,7 +706,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer4",
       "renderingType": "",
       "visibility": true,
@@ -722,7 +738,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer3",
       "renderingType": "",
       "visibility": true,
@@ -754,7 +770,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer2",
       "renderingType": "",
       "visibility": true,
@@ -832,7 +848,7 @@
       "isLocked": false,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
