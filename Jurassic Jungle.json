@@ -4123,19 +4123,19 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 12
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 22
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 2.3
         },
         {
           "folded": true,
@@ -4153,19 +4153,19 @@
           "folded": true,
           "name": "AttackRange",
           "type": "number",
-          "value": 550
+          "value": 650
         },
         {
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 20
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 30
         },
         {
           "folded": true,
@@ -4205,10 +4205,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 800,
+          "maxSpeed": 400,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5009,10 +5009,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 1000,
+          "maxSpeed": 500,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 600,
-          "maxSpeed": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
