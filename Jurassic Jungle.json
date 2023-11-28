@@ -95,73 +95,10 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/TempPlayer.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/TempPlayer.png\"}",
-        "name": "TempPlayer",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
         "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/TempDinosaur.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/TempDinosaur.png\"}",
-        "name": "TempDinosaur",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Attack.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Attack.png\"}",
-        "name": "Attack",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Attack2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Attack2.png\"}",
-        "name": "Attack2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/TempDinosaur2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "TempDinosaur2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Walk3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Walk3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Run.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Run.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -336,42 +273,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/whitewoman_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\whitewoman_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/whitewoman_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\whitewoman_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/whitewoman_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\whitewoman_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/whitewoman_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\whitewoman_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Shaded Red Fill Bar2.png",
         "kind": "image",
         "metadata": "",
@@ -515,30 +416,12 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/IslaNublar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\IslaNublar.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/IMG_1385.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\IMG_1385.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Coin.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Coin.png",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -665,33 +548,6 @@
         "name": "assets\\player_idle_5.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Walk5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Run4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Run",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Attack4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Attack3",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -844,16 +700,6 @@
         "metadata": "{\"localFilePath\":\"assets/triceraptos_3.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_3.png",
         "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/Jurassic Par.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\Jurassic Par.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
         "userAdded": true
       },
       {
