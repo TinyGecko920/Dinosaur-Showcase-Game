@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.05883403629421835,
+    "zoomFactor": 0.2616774116992173,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -143,7 +143,7 @@
       "layer": "",
       "name": "Ground",
       "persistentUuid": "27221e22-cc70-4885-9fe0-628af0fa6430",
-      "width": 6000,
+      "width": 10000,
       "x": 0,
       "y": 1048,
       "zOrder": 11,
@@ -163,22 +163,6 @@
       "x": 0,
       "y": 0,
       "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 5,
-      "height": 329,
-      "layer": "",
-      "name": "TempDinosaur",
-      "persistentUuid": "02cba5c0-4445-4f50-8841-85d9626582f6",
-      "width": 329,
-      "x": 3000,
-      "y": 771,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -233,15 +217,47 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 3,
-      "height": 520,
+      "depth": 4,
+      "height": 757,
       "layer": "",
       "name": "Tyrannosaurus",
       "persistentUuid": "406c251a-a3c4-4c5f-9ff5-bedb44f0c8f6",
-      "width": 520,
-      "x": 2000,
-      "y": 630,
+      "width": 757,
+      "x": 7767,
+      "y": 427,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 1082,
+      "layer": "",
+      "name": "Apatosaurus",
+      "persistentUuid": "d3d51180-72a4-4884-9da8-850b0fb1af40",
+      "width": 1217,
+      "x": 3730,
+      "y": 70,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 810,
+      "layer": "",
+      "name": "Euoplocephalus",
+      "persistentUuid": "3b2116e4-7d21-4baa-871c-39d23c556b89",
+      "width": 911,
+      "x": 1640,
+      "y": 402,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -460,286 +476,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TempDinosaur",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1000
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 150
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "string",
-          "value": "100"
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "maxSpeed": 200,
-          "allowDiagonals": false,
-          "acceleration": 9999,
-          "rotateObject": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempDinosaur",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempDinosaur2",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Attack",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Attack",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "InvisibleWall",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -810,14 +546,6 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "folderName": "Dinosaurs",
-        "children": [
-          {
-            "objectName": "TempDinosaur"
-          }
-        ]
-      },
       {
         "folderName": "Scenery",
         "children": [
@@ -1056,7 +784,7 @@
       "isLocked": false,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
