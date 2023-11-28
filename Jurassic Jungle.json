@@ -1088,6 +1088,177 @@
         "name": "assets\\Constellation.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0000_Layer-19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0000_Layer-19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0001_Layer-18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0001_Layer-18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0002_Layer-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0002_Layer-17.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0003_Layer-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0003_Layer-16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0004_Layer-15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0004_Layer-15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0005_Layer-14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0005_Layer-14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0006_Layer-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0006_Layer-13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0007_Layer-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0007_Layer-12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0008_Layer-11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0008_Layer-11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0009_Layer-10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0009_Layer-10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0010_Layer-9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0010_Layer-9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0011_Layer-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0011_Layer-8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0012_Layer-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0012_Layer-7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0013_Layer-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0013_Layer-6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0014_Layer-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0014_Layer-5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0015_Layer-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0015_Layer-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0016_Layer-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0016_Layer-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0017_Layer-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0017_Layer-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios_0018_Layer-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios_0018_Layer-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

@@ -166,6 +166,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "BitByBit",
+      "persistentUuid": "6efee10e-63ea-4773-bc91-1457e1c9294f",
+      "width": 0,
+      "x": -1414,
+      "y": -583,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -837,6 +852,719 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BitByBit",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0018_Layer-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0017_Layer-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0016_Layer-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0015_Layer-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0014_Layer-5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0013_Layer-6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0012_Layer-7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0011_Layer-8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0010_Layer-9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0009_Layer-10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0008_Layer-11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0007_Layer-12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0006_Layer-13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0005_Layer-14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0004_Layer-15.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0003_Layer-16.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0002_Layer-17.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0001_Layer-18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\BitByBitStudios_0000_Layer-19.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 60,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 450
+                      },
+                      {
+                        "x": 1470,
+                        "y": 780
+                      },
+                      {
+                        "x": 60,
+                        "y": 780
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -877,6 +1605,9 @@
       },
       {
         "objectName": "Constellation"
+      },
+      {
+        "objectName": "BitByBit"
       }
     ]
   },
@@ -927,6 +1658,17 @@
             "\"Intro UI\"",
             "0",
             "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Opacity",
+            "=",
             "0"
           ]
         },
@@ -1008,6 +1750,50 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "BitByBit",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "0.5",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.75"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "JurassicJungle",
+                "Tween",
+                "\"fadeIn\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.5",
+                "no"
+              ]
+            },
             {
               "type": {
                 "value": "Wait"
@@ -1113,7 +1899,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "1"
+            "3"
           ]
         },
         {
@@ -1420,10 +2206,33 @@
             "value": "ResizableCapability::ResizableBehavior::SetSize"
           },
           "parameters": [
+            "BitByBit",
+            "Resizable",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoWidthScale",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoHeightScale"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
             "JurassicJungle",
             "Resizable",
             "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoWidthScale",
             "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoHeightScale"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "BitByBit",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
           ]
         },
         {
