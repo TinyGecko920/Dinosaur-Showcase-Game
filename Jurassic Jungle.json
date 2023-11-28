@@ -1224,6 +1224,15 @@
         "name": "assets\\velociraptor_idle_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Forward.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Forward.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1538,7 +1547,16 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {}
+      "content": {
+        "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     },
     {
       "assetStoreId": "",
@@ -1571,7 +1589,16 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "content": {}
+      "content": {
+        "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 24,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": true
+      }
     },
     {
       "adaptCollisionMaskAutomatically": false,
@@ -2228,7 +2255,16 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {}
+      "content": {
+        "text": "[b][outline=black][spacing=8]999999[/spacing][/outline][/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;178;93",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     },
     {
       "assetStoreId": "",
@@ -2242,7 +2278,16 @@
           "type": "Tooltip::Tooltip"
         }
       ],
-      "content": {}
+      "content": {
+        "text": "[outline=black]I am a tooltip[/outline]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": false
+      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -3208,6 +3253,8 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -3218,15 +3265,301 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueSpeakerText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black]Eli Sattler[/outline][/b]",
+        "opacity": 254,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BBText_AutoTyping",
+          "type": "AutoTyping::BBText_AutoTyping",
+          "Interval": 0.03,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "[outline=black]Lorem ipsum[/outline]",
+        "opacity": 255,
+        "fontSize": 36,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueCharacter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
         {
-          "name": "Idle",
+          "name": "Eli",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 21,
+      "height": 42,
+      "leftMargin": 21,
+      "name": "DialogueBackground",
+      "rightMargin": 21,
+      "texture": "ButtonPrimary.png",
+      "tiled": false,
+      "topMargin": 21,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 42,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DialogBoxBackGround",
+          "type": "DialogBox::DialogBoxBackGround",
+          "Interval": 0.04,
+          "Se": "",
+          "Tween": "Tween",
+          "Duration": 250
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueNext",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement",
+          "Width": 8,
+          "Height": 0,
+          "Clockwise": true,
+          "HorizontalEdgeDuration": 0.25,
+          "VerticalEdgeDuration": 0,
+          "Left": 1,
+          "Top": 1,
+          "Progress": 1,
+          "OldX": 1,
+          "OldY": 1,
+          "Easing": "easeInOutSine",
+          "InitialPosition": "Top-left corner",
+          "ToogleClockwise": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -3235,7 +3568,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ankylosaurus_idle_0.png",
+                  "image": "Forward.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3251,2504 +3584,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 22
+                        "x": 1,
+                        "y": 10
                       },
                       {
-                        "x": 174,
-                        "y": 22
+                        "x": 77,
+                        "y": 10
                       },
                       {
-                        "x": 174,
-                        "y": 135
+                        "x": 77,
+                        "y": 68
                       },
                       {
-                        "x": 18,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\ankylosaurus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 18,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 18,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\ankylosaurus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 18,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 18,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\ankylosaurus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 18,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 22
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 18,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "Apatosaurus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\apatosaurus_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 165
-                      },
-                      {
-                        "x": 19,
-                        "y": 165
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\apatosaurus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 165
-                      },
-                      {
-                        "x": 19,
-                        "y": 165
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\apatosaurus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 165
-                      },
-                      {
-                        "x": 19,
-                        "y": 165
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\apatosaurus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 20
-                      },
-                      {
-                        "x": 184,
-                        "y": 165
-                      },
-                      {
-                        "x": 19,
-                        "y": 165
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Cearadactylus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Fly",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\cearadactylus_fly_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 116
-                      },
-                      {
-                        "x": 4,
-                        "y": 116
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\cearadactylus_fly_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 116
-                      },
-                      {
-                        "x": 4,
-                        "y": 116
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\cearadactylus_fly_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 0
-                      },
-                      {
-                        "x": 177,
-                        "y": 116
-                      },
-                      {
-                        "x": 4,
-                        "y": 116
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Dilophosaurus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\dilophosaurus_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 22,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 134
-                      },
-                      {
-                        "x": 22,
-                        "y": 134
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\dilophosaurus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 22,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 134
-                      },
-                      {
-                        "x": 22,
-                        "y": 134
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\dilophosaurus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 22,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 134
-                      },
-                      {
-                        "x": 22,
-                        "y": 134
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\dilophosaurus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 22,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 5
-                      },
-                      {
-                        "x": 164,
-                        "y": 134
-                      },
-                      {
-                        "x": 22,
-                        "y": 134
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Euoplocephalus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\euoplocephalus_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 24,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 24,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\euoplocephalus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 24,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 24,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\euoplocephalus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 24,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 24,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\euoplocephalus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 24,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 28
-                      },
-                      {
-                        "x": 174,
-                        "y": 135
-                      },
-                      {
-                        "x": 24,
-                        "y": 135
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Maiasaura",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\maiasaura_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 161
-                      },
-                      {
-                        "x": 19,
-                        "y": 161
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\maiasaura_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 161
-                      },
-                      {
-                        "x": 19,
-                        "y": 161
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\maiasaura_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 161
-                      },
-                      {
-                        "x": 19,
-                        "y": 161
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\maiasaura_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 19,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 5
-                      },
-                      {
-                        "x": 189,
-                        "y": 161
-                      },
-                      {
-                        "x": 19,
-                        "y": 161
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Otheniasaurus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\otheniasaurus_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 141
-                      },
-                      {
-                        "x": 7,
-                        "y": 141
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\otheniasaurus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 141
-                      },
-                      {
-                        "x": 7,
-                        "y": 141
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\otheniasaurus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 141
-                      },
-                      {
-                        "x": 7,
-                        "y": 141
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\otheniasaurus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 15
-                      },
-                      {
-                        "x": 180,
-                        "y": 141
-                      },
-                      {
-                        "x": 7,
-                        "y": 141
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Stegosaurus",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\stegosaurus_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 124
-                      },
-                      {
-                        "x": 11,
-                        "y": 124
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\stegosaurus_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 124
-                      },
-                      {
-                        "x": 11,
-                        "y": 124
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\stegosaurus_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 124
-                      },
-                      {
-                        "x": 11,
-                        "y": 124
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\stegosaurus_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 1
-                      },
-                      {
-                        "x": 175,
-                        "y": 124
-                      },
-                      {
-                        "x": 11,
-                        "y": 124
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Triceratops",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 119
-                      },
-                      {
-                        "x": 11,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 119
-                      },
-                      {
-                        "x": 11,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 119
-                      },
-                      {
-                        "x": 11,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 39
-                      },
-                      {
-                        "x": 142,
-                        "y": 119
-                      },
-                      {
-                        "x": 11,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Velociraptor",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "folded": true,
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1800
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.16,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\velociraptor_idle_0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 126
-                      },
-                      {
-                        "x": 11,
-                        "y": 126
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\velociraptor_idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 126
-                      },
-                      {
-                        "x": 11,
-                        "y": 126
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\velociraptor_idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 126
-                      },
-                      {
-                        "x": 11,
-                        "y": 126
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\velociraptor_idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 19
-                      },
-                      {
-                        "x": 194,
-                        "y": 126
-                      },
-                      {
-                        "x": 11,
-                        "y": 126
+                        "x": 1,
+                        "y": 68
                       }
                     ]
                   ]
@@ -5785,33 +3634,6 @@
           },
           {
             "objectName": "Tyrannosaurus"
-          },
-          {
-            "objectName": "Velociraptor"
-          },
-          {
-            "objectName": "Dilophosaurus"
-          },
-          {
-            "objectName": "Euoplocephalus"
-          },
-          {
-            "objectName": "Maiasaura"
-          },
-          {
-            "objectName": "Otheniasaurus"
-          },
-          {
-            "objectName": "Stegosaurus"
-          },
-          {
-            "objectName": "Triceratops"
-          },
-          {
-            "objectName": "Cearadactylus"
-          },
-          {
-            "objectName": "Apatosaurus"
           }
         ]
       },
@@ -5835,6 +3657,26 @@
       },
       {
         "objectName": "Player"
+      },
+      {
+        "folderName": "Dialogue",
+        "children": [
+          {
+            "objectName": "DialogueBackground"
+          },
+          {
+            "objectName": "DialogueCharacter"
+          },
+          {
+            "objectName": "DialogueText"
+          },
+          {
+            "objectName": "DialogueSpeakerText"
+          },
+          {
+            "objectName": "DialogueNext"
+          }
+        ]
       }
     ]
   },
@@ -5930,6 +3772,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/internetconnectivity"

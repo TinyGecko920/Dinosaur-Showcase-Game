@@ -1352,6 +1352,14 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -1382,6 +1390,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
     },
     {
       "name": "RemapForPlatformer",

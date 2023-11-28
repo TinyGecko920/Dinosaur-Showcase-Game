@@ -201,7 +201,21 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "content": {}
+      "content": {
+        "initialValue": "",
+        "placeholder": "Maximum 12 characters",
+        "fontResourceName": "ChelseaMarket-Regular.ttf",
+        "fontSize": 40,
+        "inputType": "text",
+        "textColor": "255;255;255",
+        "fillColor": "26;29;32",
+        "fillOpacity": 255,
+        "borderColor": "255;255;255",
+        "borderOpacity": 255,
+        "borderWidth": 3,
+        "readOnly": false,
+        "disabled": false
+      }
     },
     {
       "assetStoreId": "",
@@ -633,6 +647,15 @@
         },
         {
           "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
@@ -804,6 +827,350 @@
             "=",
             "SceneWindowHeight() / 1.6"
           ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "DialogueBackground",
+            "=",
+            "SceneWindowWidth() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "DialogueBackground",
+            "=",
+            "SceneWindowHeight() - DialogueBackground.Height() - 40"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "=",
+            "DialogueBackground.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterY"
+          },
+          "parameters": [
+            "DialogueSpeakerText",
+            "=",
+            "DialogueBackground.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "DialogueSpeakerText",
+            "=",
+            "DialogueBackground.X() + 160"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "DialogueText",
+            "=",
+            "DialogueSpeakerText.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "DialogueText",
+            "=",
+            "DialogueBackground.Y() + 40"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"jumpOut\"",
+            "DialogueBackground.CenterY() - (DialogueCharacter.Height() / 2)",
+            "\"easeOutBack\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AutoTyping::BBText_AutoTyping::StartAtBeginning"
+          },
+          "parameters": [
+            "DialogueText",
+            "BBText_AutoTyping",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"fadeIn\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"jumpOut\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterY"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "=",
+            "DialogueBackground.Y() + DialogueBackground.Height()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "DialogueNext",
+            "=",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 56",
+            "=",
+            "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+          },
+          "parameters": [
+            "DialogueText",
+            "BBText_AutoTyping",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "DialogueNext"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "DialogueNext",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+          },
+          "parameters": [
+            "DialogueText",
+            "BBText_AutoTyping",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "DialogueNext"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueNext"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -925,6 +1292,34 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "DialogueNext"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -992,6 +1387,19 @@
               "parameters": [
                 "Cursor",
                 "NoButton",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "DialogueNext",
                 "",
                 "",
                 ""
@@ -1152,6 +1560,34 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "DialogueNext",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "DialogueNext"
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1307,6 +1743,33 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "DialogueNext"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -1369,6 +1832,18 @@
               },
               "parameters": [
                 "NoButton",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DialogueNext",
                 "",
                 "",
                 ""
@@ -1500,6 +1975,33 @@
                           },
                           "parameters": [
                             "NoButton"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "DialogueNext",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "DialogueNext"
                           ]
                         }
                       ]
@@ -2940,6 +3442,25 @@
               "parameters": [
                 "NoButton"
               ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "DialogueText",
+                "=",
+                "\"[outline=black]Hello, [b]\" + VariableString(ChosenName) + \"[/b] and welcome to [b]Jurassic Park[/b] and [b]Isla Nublar[/b][/outline]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
             }
           ]
         }
@@ -3053,6 +3574,70 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialogue",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Cursor",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -3061,8 +3646,16 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
+    },
+    {
       "name": "Background_ParallaxMouse",
       "type": "Backgrounds::Background_ParallaxFromPosition"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
@@ -3091,6 +3684,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
     },
     {
       "name": "RemapForPlatformer",

@@ -452,7 +452,16 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "content": {}
+      "content": {
+        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
+        "opacity": 255,
+        "fontSize": 28,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     },
     {
       "assetStoreId": "",
@@ -663,7 +672,16 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "content": {}
+      "content": {
+        "text": "[size=24]Developer\n\n[/size]\n[b]John Doe[/b]\n[b]Jane Doe[/b]",
+        "opacity": 255,
+        "fontSize": 52,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -1460,6 +1478,71 @@
       "conditions": [
         {
           "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Credits\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AjoutObjConcern"
+          },
+          "parameters": [
+            "",
+            "Credit"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Credit",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "CreditsBack",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "CreditsText",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "SceneVariableAsBoolean"
           },
           "parameters": [
@@ -1898,144 +1981,54 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "CollisionNP"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "PlayButton"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "PlayButton",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Cursor",
+                    "PlayButton",
+                    "",
+                    "",
+                    "yes"
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "CollisionNP"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "CreditsButton"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "CreditsButton",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Cursor",
+                    "CreditsButton",
+                    "",
+                    "",
+                    "yes"
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "CollisionNP"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "Changelog"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "Opacity",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Changelog",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Cursor",
+                    "Changelog",
+                    "",
+                    "",
+                    "yes"
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "CollisionNP"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "CreditsBack"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "CreditsBack",
-                        "Opacity",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "CreditsBack",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Cursor",
+                    "CreditsBack",
+                    "",
+                    "",
+                    "yes"
                   ]
                 },
                 {
@@ -2701,136 +2694,46 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "PlayButton"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-                      },
-                      "parameters": [
-                        "PlayButton",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "PlayButton",
+                    ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "CreditsButton"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-                      },
-                      "parameters": [
-                        "CreditsButton",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "CreditsButton",
+                    ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "SourisSurObjet"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "Changelog"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "Opacity",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "Changelog",
+                    "",
+                    "",
+                    ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "inverted": true,
+                    "value": "SourisSurObjet"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "CreditsBack"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "CreditsBack",
-                        "Opacity",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "CreditsBack",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
+                  "parameters": [
+                    "CreditsBack",
+                    "",
+                    "",
+                    ""
                   ]
                 },
                 {
@@ -3629,6 +3532,235 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "CreditsBack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "CreditsBack",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "CreditsBack",
+                "Opacity",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ShowingCredits",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectColorTween2"
+              },
+              "parameters": [
+                "LoadingScreenBg1",
+                "Tween",
+                "\"fadeOut\"",
+                "\"255;255;255\"",
+                "\"easeOutQuad\"",
+                "2",
+                "",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenSceneVariableNumber3"
+              },
+              "parameters": [
+                "",
+                "\"slideOut\"",
+                "CameraCenterY",
+                "SceneWindowHeight() / 2",
+                "\"easeInOutQuart\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Changelog",
+                "Tween",
+                "\"fadeIn\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "PlayButton",
+                "Tween"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "CreditsButton",
+                "Tween"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -3805,6 +3937,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Cursor",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -3813,12 +3977,20 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
+    },
+    {
       "name": "Background",
       "type": "Backgrounds::Background"
     },
     {
       "name": "Background_ParallaxMouse",
       "type": "Backgrounds::Background_ParallaxFromPosition"
+    },
+    {
+      "name": "DialogBoxBackGround",
+      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
@@ -3847,6 +4019,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
     },
     {
       "name": "RemapForPlatformer",

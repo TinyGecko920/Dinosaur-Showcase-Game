@@ -1887,7 +1887,16 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {}
+      "content": {
+        "text": "[outline=black]Lorem ipsum[/outline]",
+        "opacity": 255,
+        "fontSize": 36,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     },
     {
       "assetStoreId": "",
@@ -1896,8 +1905,16 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {}
-    },
+      "content": {
+        "text": "[b][outline=black]Eli Sattler[/outline][/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -2193,12 +2210,48 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialogue",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "BBText_AutoTyping",
+      "type": "AutoTyping::BBText_AutoTyping"
     },
     {
       "name": "DialogBoxBackGround",
@@ -2231,6 +2284,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RectangleMovement",
+      "type": "RectangleMovement::RectangleMovement"
     },
     {
       "name": "RemapForPlatformer",
