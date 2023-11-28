@@ -13,6 +13,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -97,6 +98,36 @@
                     "Dinosaurs.Y()"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Player",
+                "Dinosaurs.AgroDistanceInPixels",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Pathfinding",
+                "",
+                "Player.X()",
+                "Dinosaurs.Y()"
               ]
             }
           ]
@@ -460,7 +491,7 @@
                   "parameters": [
                     "Dinosaurs",
                     "Flippable",
-                    "yes"
+                    "no"
                   ]
                 }
               ]
@@ -488,7 +519,7 @@
                   "parameters": [
                     "Dinosaurs",
                     "Flippable",
-                    "no"
+                    "yes"
                   ]
                 }
               ]

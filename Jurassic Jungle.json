@@ -301,7 +301,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_0.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_0.png",
         "smoothed": true,
         "userAdded": true
@@ -310,7 +310,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_1.png",
         "smoothed": true,
         "userAdded": true
@@ -319,7 +319,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_2.png",
         "smoothed": true,
         "userAdded": false
@@ -328,7 +328,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_3.png",
         "smoothed": true,
         "userAdded": false
@@ -337,7 +337,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_4.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_4.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_4.png",
         "smoothed": true,
         "userAdded": false
@@ -346,7 +346,7 @@
         "alwaysLoaded": false,
         "file": "assets/trex_idle_5.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/trex_idle_5.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_5.png",
         "smoothed": true,
         "userAdded": false
@@ -940,7 +940,7 @@
         "alwaysLoaded": false,
         "file": "assets/otheniasaurus_idle_0.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_0.png",
         "smoothed": true,
         "userAdded": true
@@ -949,7 +949,7 @@
         "alwaysLoaded": false,
         "file": "assets/otheniasaurus_idle_1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_1.png",
         "smoothed": true,
         "userAdded": true
@@ -958,7 +958,7 @@
         "alwaysLoaded": false,
         "file": "assets/otheniasaurus_idle_2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_2.png",
         "smoothed": true,
         "userAdded": true
@@ -967,7 +967,7 @@
         "alwaysLoaded": false,
         "file": "assets/otheniasaurus_idle_3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_3.png",
         "smoothed": true,
         "userAdded": false
@@ -1012,7 +1012,7 @@
         "alwaysLoaded": false,
         "file": "assets/triceraptos_0.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/triceraptos_0.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_0.png",
         "smoothed": true,
         "userAdded": false
@@ -1021,7 +1021,7 @@
         "alwaysLoaded": false,
         "file": "assets/triceraptos_1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/triceraptos_1.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_1.png",
         "smoothed": true,
         "userAdded": true
@@ -1030,7 +1030,7 @@
         "alwaysLoaded": false,
         "file": "assets/triceraptos_2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/triceraptos_2.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_2.png",
         "smoothed": true,
         "userAdded": false
@@ -1039,7 +1039,7 @@
         "alwaysLoaded": false,
         "file": "assets/velociraptor_idle_0.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_0.png",
         "smoothed": true,
         "userAdded": false
@@ -1048,7 +1048,7 @@
         "alwaysLoaded": false,
         "file": "assets/velociraptor_idle_1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_1.png",
         "smoothed": true,
         "userAdded": false
@@ -1057,7 +1057,7 @@
         "alwaysLoaded": false,
         "file": "assets/velociraptor_idle_2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_2.png",
         "smoothed": true,
         "userAdded": true
@@ -1066,7 +1066,7 @@
         "alwaysLoaded": false,
         "file": "assets/velociraptor_idle_3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_3.png",
         "smoothed": true,
         "userAdded": true
@@ -1742,6 +1742,7 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.16,
               "sprites": [
                 {
@@ -3722,13 +3723,37 @@
       "name": "Dinosaurs",
       "objects": [
         {
-          "name": "TempDinosaur"
-        },
-        {
           "name": "Tyrannosaurus"
         },
         {
           "name": "Ankylosaurus"
+        },
+        {
+          "name": "Apatosaurus"
+        },
+        {
+          "name": "Cearadactylus"
+        },
+        {
+          "name": "Dilophosaurus"
+        },
+        {
+          "name": "Euoplocephalus"
+        },
+        {
+          "name": "Maiasaura"
+        },
+        {
+          "name": "Othnielosaurus"
+        },
+        {
+          "name": "Stegosaurus"
+        },
+        {
+          "name": "Velociraptor"
+        },
+        {
+          "name": "Triceratops"
         }
       ]
     },
