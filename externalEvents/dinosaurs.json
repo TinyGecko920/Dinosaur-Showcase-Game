@@ -491,7 +491,7 @@
                   "parameters": [
                     "Dinosaurs",
                     "Flippable",
-                    "yes"
+                    "no"
                   ]
                 }
               ]
@@ -519,7 +519,7 @@
                   "parameters": [
                     "Dinosaurs",
                     "Flippable",
-                    "no"
+                    "yes"
                   ]
                 }
               ]
