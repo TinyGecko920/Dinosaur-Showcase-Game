@@ -1279,7 +1279,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0000_Layer-7.png",
         "kind": "image",
         "metadata": "",
@@ -1297,7 +1297,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0001_Layer-6.png",
         "kind": "image",
         "metadata": "",
@@ -1387,7 +1387,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0003_Layer-4.png",
         "kind": "image",
         "metadata": "",
@@ -2526,8 +2526,8 @@
           "MaxHealth": 100,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
+          "HealthRegenRate": 5,
+          "HealthRegenDelay": 7,
           "AllowOverHealing": false,
           "HitAtLeastOnce": false,
           "IsJustHealed": false,
@@ -5339,9 +5339,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 3000,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 3000,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -6795,22 +6795,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 },
                 {
@@ -6829,22 +6817,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 },
                 {
@@ -6863,22 +6839,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 }
               ]
@@ -7081,6 +7045,7 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\spinosaurus_idle_2.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
