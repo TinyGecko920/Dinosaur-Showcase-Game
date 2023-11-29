@@ -319,8 +319,8 @@
       "name": "Cearadactylus",
       "persistentUuid": "8d51f616-322d-4bb3-9d6d-adaf0ede90e2",
       "width": 454,
-      "x": 1463,
-      "y": 336,
+      "x": 1495,
+      "y": 211,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -848,7 +848,7 @@
       "isLocked": false,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

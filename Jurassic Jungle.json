@@ -3921,7 +3921,7 @@
           "folded": true,
           "name": "AttackRange",
           "type": "number",
-          "value": 200
+          "value": 100
         },
         {
           "folded": true,
@@ -3937,6 +3937,12 @@
         },
         {
           "folded": true,
+          "name": "Flys",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
           "name": "_Attacking",
           "type": "boolean",
           "value": false
@@ -3947,9 +3953,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 300,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 300,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -3973,14 +3979,14 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 600,
+          "angleOffset": 180,
+          "maxSpeed": 300,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "allowDiagonals": true,
           "angularMaxSpeed": 180,
-          "name": "Pathfinding",
-          "rotateObject": false,
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
-          "angleOffset": 0,
           "cellHeight": 20,
           "cellWidth": 20,
           "extraBorder": 0,
@@ -4205,10 +4211,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 800,
-          "maxSpeed": 400,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 800,
+          "maxSpeed": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5009,10 +5015,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 1000,
-          "maxSpeed": 500,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 1000,
+          "maxSpeed": 500,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,

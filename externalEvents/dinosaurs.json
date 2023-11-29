@@ -117,17 +117,113 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "PathfindingBehavior::SetDestination"
-              },
-              "parameters": [
-                "Dinosaurs",
-                "Pathfinding",
-                "",
-                "Player.X()",
-                "Dinosaurs.Y()"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "_Attacking",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "",
+                    "Player.X()",
+                    "Player.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "_Attacking",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "",
+                    "Player.X()",
+                    "Player.Y() - 600"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "",
+                    "Player.X()",
+                    "Dinosaurs.Y()"
+                  ]
+                }
               ]
             }
           ]
