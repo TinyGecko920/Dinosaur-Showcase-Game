@@ -141,9 +141,31 @@
                     "_Attacking",
                     "False"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "0"
+                  ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "600"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PathfindingBehavior::SetDestination"
@@ -180,6 +202,17 @@
                     "_Attacking",
                     "True"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "0"
+                  ]
                 }
               ],
               "actions": [
@@ -192,7 +225,18 @@
                     "Pathfinding",
                     "",
                     "Player.X()",
-                    "Player.Y() - 600"
+                    "Player.Y() - 650"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "=",
+                    "lerp(Dinosaurs.Pathfinding::MaxSpeed(), 50, 0.2)"
                   ]
                 }
               ]
@@ -630,6 +674,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipY"
                   },
                   "parameters": [
@@ -704,6 +758,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
                 {
                   "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipY"

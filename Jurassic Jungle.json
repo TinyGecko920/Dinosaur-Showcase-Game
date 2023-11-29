@@ -3778,7 +3778,7 @@
           "folded": true,
           "name": "AttackRange",
           "type": "number",
-          "value": 100
+          "value": 1
         },
         {
           "folded": true,
@@ -3836,11 +3836,11 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 400,
+          "maxSpeed": 1000,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 600,
           "angleOffset": 180,
-          "maxSpeed": 300,
           "rotateObject": true,
           "allowDiagonals": true,
           "angularMaxSpeed": 180,
@@ -6387,21 +6387,6 @@
       },
       {
         "objectName": "Coins"
-      },
-      {
-        "objectName": "Cearadactylus"
-      },
-      {
-        "objectName": "Dilophosaurus"
-      },
-      {
-        "objectName": "Euoplocephalus"
-      },
-      {
-        "objectName": "Maiasaura"
-      },
-      {
-        "objectName": "Othnielosaurus"
       }
     ]
   },

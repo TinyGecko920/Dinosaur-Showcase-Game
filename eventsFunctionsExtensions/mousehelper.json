@@ -299,52 +299,21 @@
                     "=",
                     "Object.Behavior::PropertyGamepadScale()"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "clamp(Object.CenterX(), 0, SceneWindowWidth())",
+                    "=",
+                    "clamp(Object.CenterY(), 0, SceneWindowHeight())"
+                  ]
                 }
               ],
               "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "SceneWindowWidth() / 2",
-                        "=",
-                        "SceneWindowHeight() / 2"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetCenter"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "clamp(Object.CenterX(), 0, SceneWindowWidth())",
-                        "=",
-                        "clamp(Object.CenterY(), 0, SceneWindowHeight())"
-                      ]
-                    }
-                  ]
-                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
