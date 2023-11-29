@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2216924727500518,
+    "zoomFactor": 0.2705012603962556,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -785,8 +785,29 @@
       "name": "Constellation",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "GlowOuterStrength",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 7,
+            "innerStrength": 1,
+            "outerStrength": 8
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Background_ParallaxFromPosition",
@@ -2333,6 +2354,18 @@
             "=",
             "SceneWindowHeight() - CreditsButton.Height() - 80"
           ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+          },
+          "parameters": [
+            "Constellation",
+            "Effect",
+            "\"Effect\"",
+            "\"outerStrength\"",
+            "Constellation.GlowOuterStrength"
+          ]
         }
       ]
     },
@@ -2415,7 +2448,7 @@
             "Constellation",
             "Tween",
             "\"fadeIn\"",
-            "127",
+            "40",
             "\"easeOutQuad\"",
             "7",
             ""
@@ -2721,6 +2754,81 @@
           },
           "parameters": [
             "ShowingCredits",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Credit",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Credit",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Tween::IsPlaying"
+          },
+          "parameters": [
+            "Constellation",
+            "Tween",
+            "\"glow\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Constellation",
+            "GlowOuterStrength",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+          },
+          "parameters": [
+            "Constellation",
+            "Tween",
+            "\"glow\"",
+            "GlowOuterStrength",
+            "0",
+            "\"easeOutQuad\"",
+            "1.5",
             ""
           ]
         }
