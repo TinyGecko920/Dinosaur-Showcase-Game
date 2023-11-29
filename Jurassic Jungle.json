@@ -1259,6 +1259,15 @@
         "name": "assets\\BitByBitStudios_0018_Layer-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IslaNublar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IslaNublar.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3634,6 +3643,42 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "TransitionPainter",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [
+        {
+          "folded": true,
+          "name": "OutlineSize",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "fillOpacity": 0,
+      "outlineSize": 9999,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "high"
     }
   ],
   "objectsFolderStructure": {
@@ -3704,6 +3749,9 @@
             "objectName": "DialogueNext"
           }
         ]
+      },
+      {
+        "objectName": "TransitionPainter"
       }
     ]
   },
@@ -3823,6 +3871,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/copycamerasettings"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
