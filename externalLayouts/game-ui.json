@@ -38,7 +38,7 @@
       "customSize": true,
       "depth": 2,
       "height": 100,
-      "layer": "",
+      "layer": "UI",
       "name": "ShinyHeart",
       "persistentUuid": "e030179c-e248-401d-b487-0361358e68eb",
       "width": 117,
@@ -53,7 +53,7 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "UI",
       "name": "HealthAmount",
       "persistentUuid": "582cdd43-4795-4f47-a21c-1ab97ab08649",
       "width": 0,
@@ -75,7 +75,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8926462115230254,
+    "zoomFactor": 0.5079575118131737,
     "windowMask": false
   }
 }
