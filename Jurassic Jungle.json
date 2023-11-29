@@ -3596,12 +3596,12 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 600,
           "angleOffset": 180,
           "maxSpeed": 300,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "type": "PathfindingBehavior::PathfindingBehavior",
           "allowDiagonals": true,
           "angularMaxSpeed": 180,
           "cellHeight": 20,
@@ -4775,6 +4775,21 @@
       },
       {
         "objectName": "Coins"
+      },
+      {
+        "objectName": "Cearadactylus"
+      },
+      {
+        "objectName": "Dilophosaurus"
+      },
+      {
+        "objectName": "Euoplocephalus"
+      },
+      {
+        "objectName": "Maiasaura"
+      },
+      {
+        "objectName": "Othnielosaurus"
       }
     ]
   },
