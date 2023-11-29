@@ -190,6 +190,14 @@
       "actions": [
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "IslaNublar"
+          ]
+        },
+        {
+          "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
@@ -229,6 +237,15 @@
             "0",
             "0",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "IslaNublar",
+            ""
           ]
         }
       ],
