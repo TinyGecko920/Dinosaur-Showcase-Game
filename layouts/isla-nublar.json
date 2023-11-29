@@ -91,6 +91,126 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "11d70db1-dd7c-4f11-b7cd-c551d7f7e1a6",
+      "width": 0,
+      "x": 428,
+      "y": 1385,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "8a23ce50-a5c0-41b0-8df2-ce37d4c4c4ed",
+      "width": 0,
+      "x": 1123,
+      "y": 1523,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "c2383bdc-54e3-4536-92d4-c7b7d56bc11e",
+      "width": 0,
+      "x": 894,
+      "y": 885,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "3c36fde9-b71b-4849-bc41-57416f4b21a2",
+      "width": 0,
+      "x": 1434,
+      "y": 166,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "658cc698-e43c-4b14-a313-35f894010463",
+      "width": 0,
+      "x": 78,
+      "y": 42,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "7a35572b-15e5-4013-95dc-b494381bcc23",
+      "width": 0,
+      "x": 103,
+      "y": -591,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "1043c19f-3ec9-4035-b3f5-148a19eb50a4",
+      "width": 0,
+      "x": 697,
+      "y": -355,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSpawn",
+      "persistentUuid": "854ca880-1127-45aa-a5ff-cc8aaab9aa17",
+      "width": 0,
+      "x": 762,
+      "y": 308,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -189,16 +309,18 @@
           "name": "Gold",
           "type": "number",
           "value": 0
-        },
-        {
-          "folded": true,
-          "name": "EquippedSword",
-          "type": "string",
-          "value": "TempSword2"
         }
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "PixelPerfectTopDownMovement",
+          "type": "PixelPerfectMovement::PixelPerfectTopDownMovement",
+          "TopDownMovement": "TopDownMovement",
+          "PixelSize": 1,
+          "OffsetX": 0,
+          "OffsetY": 0
+        },
         {
           "name": "RemapForTopdown",
           "type": "BehaviorRemapper::RemapForTopdown",
@@ -271,16 +393,16 @@
           "StickMode": "Analog"
         },
         {
+          "deceleration": 900,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 9999,
-          "deceleration": 9999,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
-          "maxSpeed": 200,
           "movementAngleOffset": 0,
           "rotateObject": false,
           "viewpoint": "TopDown"
@@ -558,7 +680,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.12,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -773,188 +895,19 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Fall",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\player_fall_0.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 150
-                      },
-                      {
-                        "x": 9,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\player_fall_1.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 150
-                      },
-                      {
-                        "x": 9,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\player_fall_2.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 150
-                      },
-                      {
-                        "x": 9,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\player_fall_3.png",
-                  "points": [
-                    {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 1
-                      },
-                      {
-                        "x": 100,
-                        "y": 150
-                      },
-                      {
-                        "x": 9,
-                        "y": 150
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PlayerSpawn",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -968,6 +921,9 @@
       },
       {
         "objectName": "TopDownPlayer"
+      },
+      {
+        "objectName": "PlayerSpawn"
       }
     ]
   },
@@ -1011,56 +967,6 @@
             "=",
             "0"
           ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.01"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-          },
-          "parameters": [
-            "",
-            "\"Cursor\"",
-            "0",
-            "0",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-          },
-          "parameters": [
-            "",
-            "\"Game UI\"",
-            "0",
-            "0",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "IslaNublar",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "TopDownPlayer",
-            ""
-          ]
         }
       ],
       "events": [
@@ -1073,6 +979,90 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "PlayerSpawn"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "=",
+                "PlayerSpawn.CenterX()",
+                "=",
+                "PlayerSpawn.CenterY()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.01"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Cursor\"",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Game UI\"",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "IslaNublar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1316,6 +1306,170 @@
           "eventsSheetExpanded": false
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "TopDownMovement"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Animation",
+            "=",
+            "\"Walk\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "TopDownMovement"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Animation",
+            "=",
+            "\"Idle\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\"",
+                "\"Right\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Flippable"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Flippable",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Right\"",
+                "\"Right\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlippedX"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Flippable"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Flippable",
+            "no"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -1555,6 +1709,10 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "PixelPerfectTopDownMovement",
+      "type": "PixelPerfectMovement::PixelPerfectTopDownMovement"
     },
     {
       "name": "PlatformerGamepadMapper",

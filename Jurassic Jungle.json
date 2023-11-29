@@ -1279,7 +1279,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0000_Layer-7.png",
         "kind": "image",
         "metadata": "",
@@ -1297,7 +1297,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0001_Layer-6.png",
         "kind": "image",
         "metadata": "",
@@ -1387,7 +1387,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,        
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0003_Layer-4.png",
         "kind": "image",
         "metadata": "",
@@ -1439,6 +1439,15 @@
         "name": "assets\\ShinyHeart_0006_Layer-1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6795,22 +6804,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 },
                 {
@@ -6829,22 +6826,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 },
                 {
@@ -6863,22 +6848,10 @@
                     "y": 0
                   },
                   "customCollisionMask": [
-                    {
-                      "x": 0,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 0
-                    },
-                    {
-                      "x": 49,
-                      "y": 42
-                    },
-                    {
-                      "x": 0,
-                      "y": 42
-                    }
+                    [],
+                    [],
+                    [],
+                    []
                   ]
                 }
               ]
@@ -7081,6 +7054,7 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\spinosaurus_idle_2.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -7397,6 +7371,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/copycamerasettings"
