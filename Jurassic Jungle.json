@@ -1765,9 +1765,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 2500,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 2500,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -3793,9 +3793,9 @@
         {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 600,
+          "acceleration": 400,
+          "maxSpeed": 1000,
           "angleOffset": 180,
-          "maxSpeed": 300,
           "rotateObject": true,
           "allowDiagonals": true,
           "angularMaxSpeed": 180,
@@ -4477,13 +4477,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 25
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 40
         },
         {
           "folded": true,
@@ -4513,13 +4513,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 35
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 55
         },
         {
           "folded": true,
@@ -4533,9 +4533,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 400,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 400,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5175,25 +5175,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 35
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 60
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 4
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 3.1
+          "value": 7
         },
         {
           "folded": true,
@@ -5211,7 +5211,7 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 75
         },
         {
           "folded": true,
