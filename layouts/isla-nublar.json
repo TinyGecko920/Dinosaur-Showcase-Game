@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.10687685869697774,
+    "zoomFactor": 0.6622955665506385,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -73,6 +73,21 @@
       "x": -212,
       "y": -872,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "TopDownPlayer",
+      "persistentUuid": "09c1a8c2-ff04-496c-bd23-499201490303",
+      "width": 0,
+      "x": -690,
+      "y": 650,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -161,6 +176,766 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TopDownPlayer",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Gold",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "EquippedSword",
+          "type": "string",
+          "value": "TempSword2"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 0,
+          "LogRightwardSpeed": 0,
+          "LogDownwardSpeed": 0,
+          "LogUpwardSpeed": 0,
+          "DelayedCenterX": 0,
+          "DelayedCenterY": 0,
+          "ForecastHistoryMeanX": 0,
+          "ForecastHistoryMeanY": 0,
+          "ForecastHistoryVarianceX": 0,
+          "ForecastHistoryCovariance": 0,
+          "ForecastHistoryLinearA": 0,
+          "ForecastHistoryLinearB": 0,
+          "ForecastedX": 0,
+          "ForecastedY": 0,
+          "ProjectedNewestX": 0,
+          "ProjectedNewestY": 0,
+          "ProjectedOldestX": 0,
+          "ProjectedOldestY": 0,
+          "ForecastHistoryVarianceY": 0,
+          "Index": 0,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 0,
+          "WaitingSpeedXMax": 0,
+          "WaitingSpeedYMax": 0,
+          "WaitingEnd": 0,
+          "CameraDelayCatchUpDuration": 0,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000,
+          "OldY": 9000,
+          "IsCalledManually": false
+        },
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_5.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 94,
+                      "y": 97.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 93.5,
+                      "y": 97.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 95.5,
+                      "y": 94.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 107.5,
+                      "y": 86.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 97,
+                      "y": 95
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -171,6 +946,9 @@
       },
       {
         "objectName": "IslaNublar"
+      },
+      {
+        "objectName": "TopDownPlayer"
       }
     ]
   },
@@ -317,6 +1095,23 @@
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
+        {
+          "type": {
+            "value": "CopyCameraSettings::CopyCameraSettings"
+          },
+          "parameters": [
+            "",
+            "",
+            "0",
+            "\"Cursor\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "SetCenter"
@@ -640,10 +1435,6 @@
       "type": "Health::Health"
     },
     {
-      "name": "Object3D",
-      "type": "Scene3D::Base3DBehavior"
-    },
-    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
     },
@@ -676,8 +1467,16 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
       "name": "Tooltip",
       "type": "Tooltip::Tooltip"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
     {
       "name": "Tween",
