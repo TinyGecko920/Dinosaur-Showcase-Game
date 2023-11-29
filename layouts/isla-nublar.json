@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11420623007494589,
+    "zoomFactor": 0.28905162031349174,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -85,8 +85,8 @@
       "name": "TopDownPlayer",
       "persistentUuid": "09c1a8c2-ff04-496c-bd23-499201490303",
       "width": 0,
-      "x": -690,
-      "y": 650,
+      "x": 379,
+      "y": 577,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -199,6 +199,15 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
@@ -981,6 +990,14 @@
             "value": "Cache"
           },
           "parameters": [
+            "TopDownPlayer"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
             "IslaNublar"
           ]
         },
@@ -1035,6 +1052,15 @@
             "IslaNublar",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            ""
+          ]
         }
       ],
       "events": [
@@ -1063,6 +1089,14 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.5"
+          ]
+        },
         {
           "type": {
             "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -1107,23 +1141,6 @@
       "actions": [
         {
           "type": {
-            "value": "CopyCameraSettings::CopyCameraSettings"
-          },
-          "parameters": [
-            "",
-            "",
-            "0",
-            "\"Cursor\"",
-            "0",
-            "",
-            "",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "SetCenter"
           },
           "parameters": [
@@ -1165,6 +1182,93 @@
             "0",
             "0",
             "SceneWindowWidth() / 2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LastInput::LastInputWasFrom"
+              },
+              "parameters": [
+                "",
+                "\"Gamepad\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Controller_X_is_connected"
+              },
+              "parameters": [
+                "",
+                "1",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "SceneWindowWidth() / 2",
+                "\"Cursor\"",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "SceneWindowHeight() / 2",
+                "\"Cursor\"",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LastInput::LastInputWasFrom"
+              },
+              "parameters": [
+                "",
+                "\"MouseKeyboard\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CopyCameraSettings::CopyCameraSettings"
+              },
+              "parameters": [
+                "",
+                "",
+                "0",
+                "\"Cursor\"",
+                "0",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -1469,6 +1573,10 @@
       "type": "BehaviorRemapper::RemapForPlatformer"
     },
     {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
@@ -1483,6 +1591,10 @@
     {
       "name": "Tooltip",
       "type": "Tooltip::Tooltip"
+    },
+    {
+      "name": "TopDownGamepadMapper",
+      "type": "Gamepads::TopDownGamepadMapper"
     },
     {
       "name": "TopDownMovement",

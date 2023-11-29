@@ -99,7 +99,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
         "name": "NewSprite2",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": true
       },
       {
@@ -108,7 +108,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\JurassicJungle.png",
-        "smoothed": false,
+        "smoothed": true,
         "userAdded": true
       },
       {
@@ -117,7 +117,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "TempSword2",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -241,7 +241,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\bob_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -250,7 +250,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\bob_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -259,7 +259,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\bob_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -268,7 +268,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\bob_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -303,7 +303,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -312,7 +312,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -321,7 +321,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -330,7 +330,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -339,7 +339,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_4.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -348,7 +348,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_idle_5.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_idle_5.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -501,7 +501,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -510,7 +510,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -519,7 +519,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -528,7 +528,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -537,7 +537,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -546,7 +546,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_idle_5.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -564,7 +564,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_walk_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -573,7 +573,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_walk_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -582,7 +582,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_walk_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -591,7 +591,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_walk_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -600,7 +600,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_walk_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -609,7 +609,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_fall_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -618,7 +618,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_fall_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -627,7 +627,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_fall_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -636,7 +636,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_fall_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -645,7 +645,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Attack4",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -654,7 +654,7 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Run2",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -663,7 +663,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Eli1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -672,7 +672,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Eli2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -681,7 +681,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Eli3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -690,7 +690,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Eli4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -699,7 +699,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceraptos_3.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -735,7 +735,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\ankylosaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -744,7 +744,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\ankylosaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -753,7 +753,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\ankylosaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -762,7 +762,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\ankylosaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -771,7 +771,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\apatosaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -780,7 +780,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\apatosaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -789,7 +789,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\apatosaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -798,7 +798,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\apatosaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -807,7 +807,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\cearadactylus_fly_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -816,7 +816,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\cearadactylus_fly_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -825,7 +825,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\cearadactylus_fly_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -834,7 +834,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\dilophosaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -843,7 +843,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\dilophosaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -852,7 +852,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\dilophosaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -861,7 +861,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\dilophosaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -870,7 +870,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\euoplocephalus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -879,7 +879,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\euoplocephalus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -888,7 +888,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\euoplocephalus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -897,7 +897,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\euoplocephalus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -906,7 +906,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\maiasaura_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -915,7 +915,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\maiasaura_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -924,7 +924,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\maiasaura_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -933,7 +933,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\maiasaura_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -942,7 +942,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -951,7 +951,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -960,7 +960,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -969,7 +969,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/otheniasaurus_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\otheniasaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -978,7 +978,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\stegosaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -987,7 +987,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\stegosaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -996,7 +996,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\stegosaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1005,7 +1005,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\stegosaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1014,7 +1014,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceraptos_0.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1023,7 +1023,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceraptos_1.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1032,7 +1032,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceraptos_2.png\",\"extension\":\".png\"}",
         "name": "assets\\triceraptos_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1041,7 +1041,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1050,7 +1050,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1059,7 +1059,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_2.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1068,7 +1068,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_3.png\",\"extension\":\".png\"}",
         "name": "assets\\velociraptor_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1095,7 +1095,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0000_Layer-19.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1104,7 +1104,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0001_Layer-18.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1113,7 +1113,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0002_Layer-17.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1122,7 +1122,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0003_Layer-16.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1131,7 +1131,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0004_Layer-15.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1140,7 +1140,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0005_Layer-14.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1149,7 +1149,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0006_Layer-13.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1158,7 +1158,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0007_Layer-12.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1167,7 +1167,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0008_Layer-11.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1176,7 +1176,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0009_Layer-10.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1185,7 +1185,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0010_Layer-9.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1194,7 +1194,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0011_Layer-8.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1203,7 +1203,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0012_Layer-7.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1212,7 +1212,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0013_Layer-6.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1221,7 +1221,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0014_Layer-5.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1230,7 +1230,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0015_Layer-4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1239,7 +1239,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0016_Layer-3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1248,7 +1248,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0017_Layer-2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1257,7 +1257,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\BitByBitStudios_0018_Layer-1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1279,12 +1279,28 @@
         "userAdded": true
       },
       {
+        "file": "assets/ShinyHeart_0000_Layer-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0000_Layer-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
         "alwaysLoaded": false,
         "file": "assets/carnotaurus_idle_1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\carnotaurus_idle_1.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ShinyHeart_0001_Layer-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0001_Layer-6.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1348,6 +1364,14 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ShinyHeart_0002_Layer-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0002_Layer-5.png",
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1357,6 +1381,14 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle2",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ShinyHeart_0003_Layer-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0003_Layer-4.png",
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1366,6 +1398,15 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle3",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ShinyHeart_0004_Layer-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0004_Layer-3.png",
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1375,6 +1416,24 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle4",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ShinyHeart_0005_Layer-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0005_Layer-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ShinyHeart_0006_Layer-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShinyHeart_0006_Layer-1.png",
+        "smoothed": false,
         "userAdded": false
       }
     ],
@@ -1693,9 +1752,9 @@
       "content": {
         "text": "[b][outline=black][spacing=8]100/100[/spacing][/outline][/b]",
         "opacity": 255,
-        "fontSize": 24,
+        "fontSize": 40,
         "visible": true,
-        "color": "255;255;255",
+        "color": "233;121;135",
         "fontFamily": "ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
@@ -3778,7 +3837,7 @@
           "folded": true,
           "name": "AttackRange",
           "type": "number",
-          "value": 1
+          "value": 100
         },
         {
           "folded": true,
@@ -6555,6 +6614,172 @@
       ]
     },
     {
+      "name": "ShinyHeart",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.07,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0006_Layer-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 42
+                      },
+                      {
+                        "x": 0,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0005_Layer-2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 42
+                      },
+                      {
+                        "x": 0,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0004_Layer-3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 42
+                      },
+                      {
+                        "x": 0,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0003_Layer-4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 0
+                      },
+                      {
+                        "x": 49,
+                        "y": 42
+                      },
+                      {
+                        "x": 0,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Spinosaurus",
@@ -6931,6 +7156,24 @@
       },
       {
         "objectName": "Coins"
+      },
+      {
+        "objectName": "Cearadactylus"
+      },
+      {
+        "objectName": "Dilophosaurus"
+      },
+      {
+        "objectName": "Euoplocephalus"
+      },
+      {
+        "objectName": "Maiasaura"
+      },
+      {
+        "objectName": "Othnielosaurus"
+      },
+      {
+        "objectName": "ShinyHeart"
       }
     ]
   },
