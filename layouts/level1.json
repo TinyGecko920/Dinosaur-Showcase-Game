@@ -848,7 +848,7 @@
       "isLocked": false,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

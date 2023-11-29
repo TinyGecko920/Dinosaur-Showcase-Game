@@ -577,6 +577,16 @@
                     "0",
                     "89"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "False"
+                  ]
                 }
               ],
               "actions": [
@@ -602,8 +612,56 @@
                   "parameters": [
                     "Dinosaurs",
                     "Pathfinding",
+                    "0",
+                    "89"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
                     "-180",
                     "89"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "False"
                   ]
                 }
               ],
@@ -616,6 +674,44 @@
                     "Dinosaurs",
                     "Flippable",
                     "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Pathfinding",
+                    "-180",
+                    "89"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flys",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Flippable",
+                    "no"
                   ]
                 }
               ]
