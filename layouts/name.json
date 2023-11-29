@@ -58,6 +58,12 @@
       "name": "DidChooseName",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "DialogueIndex",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -746,6 +752,30 @@
       "actions": [
         {
           "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
+          },
+          "parameters": [
+            "NameSelectBg",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
+          },
+          "parameters": [
+            "NameSelectBg",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -1031,7 +1061,7 @@
           "parameters": [
             "DialogueNext",
             "=",
-            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 56",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
             "=",
             "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
           ]
@@ -3389,6 +3419,16 @@
           "actions": [
             {
               "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"playerStorage\"",
+                "\"name\"",
+                "ChosenName"
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -3450,7 +3490,7 @@
               "parameters": [
                 "DialogueText",
                 "=",
-                "\"[outline=black]Hello, [b]\" + VariableString(ChosenName) + \"[/b] and welcome to [b]Jurassic Park[/b] and [b]Isla Nublar[/b][/outline]\""
+                "\"[outline=black]Hello, [b]\" + VariableString(ChosenName) + \"[/b] and welcome to [b]Jurassic Park[/b] and [b]Isla Nublar[/b]![/outline]\""
               ]
             },
             {
@@ -3460,6 +3500,304 @@
               "parameters": [
                 "",
                 "\"Dialogue\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_released"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"A\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_released"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"Cross\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "DialogueNext"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "DialogueIndex",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.1"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "DialogueText",
+                "=",
+                "\"[outline=black]My name is [b]Eli Sattler[/b] and I will be your guide during your visit![/outline]\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Tween",
+                "\"jumpIn\"",
+                "DialogueBackground.Y()",
+                "\"easeInBack\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "DialogueCharacter",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueBackground"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueSpeakerText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueText"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "DialogueNext",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "NameSelectBg",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.75"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Isla Nublar\"",
+                ""
               ]
             }
           ]

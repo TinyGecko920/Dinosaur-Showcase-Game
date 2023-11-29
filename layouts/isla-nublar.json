@@ -1,13 +1,13 @@
 {
-  "b": 219,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Isla_32Nublar",
   "name": "Isla Nublar",
-  "r": 105,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "Isla Nublar",
-  "v": 167,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,23 +18,76 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.6622955665506385,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Transitioning",
+      "type": "boolean",
+      "value": true
+    }
+  ],
   "instances": [
     {
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
-      "name": "New3DBox",
-      "persistentUuid": "b7b9b0f2-ffe9-4704-b84e-7640f347fc06",
+      "layer": "Transition",
+      "name": "TransitionPainter",
+      "persistentUuid": "5f373c2f-9bbc-48fb-bff4-49d5cc5337ca",
       "width": 0,
-      "x": 790,
-      "y": 654,
-      "zOrder": 1,
+      "x": 965,
+      "y": 560,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Banner",
+      "name": "Population",
+      "persistentUuid": "19d54926-d6e0-463b-85f2-3bc6ca0cc0ad",
+      "width": 0,
+      "x": 751,
+      "y": 192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 2968,
+      "layer": "",
+      "name": "IslaNublar",
+      "persistentUuid": "5ee39a36-ce7e-4e22-8325-93436d55d156",
+      "width": 2242,
+      "x": -212,
+      "y": -872,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "TopDownPlayer",
+      "persistentUuid": "09c1a8c2-ff04-496c-bd23-499201490303",
+      "width": 0,
+      "x": -690,
+      "y": 650,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -43,45 +96,859 @@
   "objects": [
     {
       "assetStoreId": "",
-      "name": "New3DBox",
-      "type": "Scene3D::Cube3DObject",
+      "name": "Population",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[outline=black][b]Isla Nublar[/b]\n[size=16]\n\n[/size]\n[size=28]Population: 5[/size][/outline]",
+        "opacity": 255,
+        "fontSize": 52,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "IslaNublar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "content": {
-        "width": 100,
-        "height": 100,
-        "depth": 100,
-        "enableTextureTransparency": true,
-        "facesOrientation": "Y",
-        "frontFaceResourceName": "",
-        "backFaceResourceName": "",
-        "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "",
-        "rightFaceResourceName": "",
-        "topFaceResourceName": "",
-        "bottomFaceResourceName": "",
-        "frontFaceVisible": false,
-        "backFaceVisible": false,
-        "leftFaceVisible": false,
-        "rightFaceVisible": false,
-        "topFaceVisible": true,
-        "bottomFaceVisible": false,
-        "frontFaceResourceRepeat": false,
-        "backFaceResourceRepeat": false,
-        "leftFaceResourceRepeat": false,
-        "rightFaceResourceRepeat": false,
-        "topFaceResourceRepeat": false,
-        "bottomFaceResourceRepeat": false,
-        "materialType": "Basic"
-      }
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IslaNublar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 4532,
+                        "y": 0
+                      },
+                      {
+                        "x": 4532,
+                        "y": 6000
+                      },
+                      {
+                        "x": 0,
+                        "y": 6000
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TopDownPlayer",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Gold",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "EquippedSword",
+          "type": "string",
+          "value": "TempSword2"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 0,
+          "LogRightwardSpeed": 0,
+          "LogDownwardSpeed": 0,
+          "LogUpwardSpeed": 0,
+          "DelayedCenterX": 0,
+          "DelayedCenterY": 0,
+          "ForecastHistoryMeanX": 0,
+          "ForecastHistoryMeanY": 0,
+          "ForecastHistoryVarianceX": 0,
+          "ForecastHistoryCovariance": 0,
+          "ForecastHistoryLinearA": 0,
+          "ForecastHistoryLinearB": 0,
+          "ForecastedX": 0,
+          "ForecastedY": 0,
+          "ProjectedNewestX": 0,
+          "ProjectedNewestY": 0,
+          "ProjectedOldestX": 0,
+          "ProjectedOldestY": 0,
+          "ForecastHistoryVarianceY": 0,
+          "Index": 0,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 0,
+          "WaitingSpeedXMax": 0,
+          "WaitingSpeedYMax": 0,
+          "WaitingEnd": 0,
+          "CameraDelayCatchUpDuration": 0,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000,
+          "OldY": 9000,
+          "IsCalledManually": false
+        },
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_idle_5.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 94,
+                      "y": 97.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 93.5,
+                      "y": 97.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 95.5,
+                      "y": 94.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 107.5,
+                      "y": 86.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_walk_4.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 97,
+                      "y": 95
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_0.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_fall_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 92.5,
+                      "y": 99.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "New3DBox"
+        "objectName": "Population"
+      },
+      {
+        "objectName": "IslaNublar"
+      },
+      {
+        "objectName": "TopDownPlayer"
       }
     ]
   },
@@ -99,6 +966,33 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "IslaNublar"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Population",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.01"
+          ]
+        },
         {
           "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
@@ -122,6 +1016,190 @@
             "0",
             "0"
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "IslaNublar",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.setBackgroundColor(100,100,240);",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Population",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "4"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Population",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "1",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CopyCameraSettings::CopyCameraSettings"
+          },
+          "parameters": [
+            "",
+            "",
+            "0",
+            "\"Cursor\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "Population",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 4"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::OutlineSize"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "TransitionPainter.OutlineSize"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::Circle"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "0",
+            "0",
+            "SceneWindowWidth() / 2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "True"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const tm = runtimeScene.getTimeManager();",
+            "",
+            "if (!tm.hasTimer('transitionTimer')) {",
+            "    tm.addTimer('transitionTimer');",
+            "}",
+            "",
+            "const tp = objects[0];",
+            "",
+            "function transFunc(x) {",
+            "    return Math.pow(x, 7) - (1.3 * Math.pow(x, 2)) + x;",
+            "}",
+            "",
+            "tp.getVariables().get('OutlineSize').setNumber(",
+            "    (1 - transFunc(tm.getTimer('transitionTimer').getTime() / 800)) * runtimeScene.getViewportWidth()",
+            ");",
+            "",
+            "if (tp.getVariables().get('OutlineSize').getAsNumber() <= 0) {",
+            "    runtimeScene.getVariables().get('Transitioning').setBoolean(false);",
+            "}"
+          ],
+          "parameterObjects": "TransitionPainter",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ]
     }
@@ -233,6 +1311,102 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Transition",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Banner",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Cursor",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -259,10 +1433,6 @@
     {
       "name": "Health",
       "type": "Health::Health"
-    },
-    {
-      "name": "Object3D",
-      "type": "Scene3D::Base3DBehavior"
     },
     {
       "name": "Opacity",
@@ -297,8 +1467,16 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
       "name": "Tooltip",
       "type": "Tooltip::Tooltip"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
     {
       "name": "Tween",

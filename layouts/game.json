@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.38607785534412625,
+    "zoomFactor": 0.3270842288965242,
     "windowMask": false
   },
   "objectsGroups": [
@@ -36,22 +36,6 @@
   ],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 144,
-      "layer": "UI",
-      "name": "Cursor",
-      "persistentUuid": "0399bde8-cee2-45c5-ad02-cdd15f04b37c",
-      "width": 144,
-      "x": 2376,
-      "y": 922,
-      "zOrder": 9999,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -767,66 +751,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Coins",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Coins.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 114,
-                        "y": 0
-                      },
-                      {
-                        "x": 114,
-                        "y": 147
-                      },
-                      {
-                        "x": 0,
-                        "y": 147
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": true,
       "italic": false,
@@ -920,7 +844,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.11,
+              "timeBetweenFrames": 0.07,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1155,9 +1079,6 @@
       },
       {
         "objectName": "WhiteWoman"
-      },
-      {
-        "objectName": "Coins"
       },
       {
         "objectName": "WhiteWomanSayingWords"
