@@ -1279,6 +1279,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,        
         "file": "assets/ShinyHeart_0000_Layer-7.png",
         "kind": "image",
         "metadata": "",
@@ -1296,6 +1297,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,        
         "file": "assets/ShinyHeart_0001_Layer-6.png",
         "kind": "image",
         "metadata": "",
@@ -1367,6 +1369,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0002_Layer-5.png",
         "kind": "image",
         "metadata": "",
@@ -1384,6 +1387,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,        
         "file": "assets/ShinyHeart_0003_Layer-4.png",
         "kind": "image",
         "metadata": "",
@@ -6614,6 +6618,8 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
       "name": "ShinyHeart",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -6771,6 +6777,108 @@
                         "y": 42
                       }
                     ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0002_Layer-5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    {
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 42
+                    },
+                    {
+                      "x": 0,
+                      "y": 42
+                    }
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0001_Layer-6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    {
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 42
+                    },
+                    {
+                      "x": 0,
+                      "y": 42
+                    }
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShinyHeart_0000_Layer-7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    {
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 0
+                    },
+                    {
+                      "x": 49,
+                      "y": 42
+                    },
+                    {
+                      "x": 0,
+                      "y": 42
+                    }
                   ]
                 }
               ]
@@ -6973,7 +7081,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\spinosaurus_idle_2.png",
-                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
