@@ -1979,6 +1979,10 @@
       "type": "SmoothCamera::SmoothCamera"
     },
     {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
       "name": "Tooltip",
       "type": "Tooltip::Tooltip"
     },
