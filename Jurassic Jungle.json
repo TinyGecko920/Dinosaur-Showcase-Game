@@ -1448,6 +1448,42 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_attack_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_attack_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_attack_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_attack_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_attack_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_attack_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player_attack_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player_attack_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2612,8 +2648,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2654,8 +2690,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2696,8 +2732,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2738,8 +2774,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2780,8 +2816,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2822,8 +2858,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 20.5,
+                      "y": 76
                     }
                   ],
                   "originPoint": {
@@ -2876,8 +2912,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 94,
-                      "y": 97.5
+                      "x": 43.5,
+                      "y": 94
                     }
                   ],
                   "originPoint": {
@@ -2918,8 +2954,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 93.5,
-                      "y": 97.5
+                      "x": 41.5,
+                      "y": 97
                     }
                   ],
                   "originPoint": {
@@ -2960,8 +2996,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 95.5,
-                      "y": 94.5
+                      "x": 45,
+                      "y": 96.5
                     }
                   ],
                   "originPoint": {
@@ -3002,8 +3038,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 107.5,
-                      "y": 86.5
+                      "x": 34.5,
+                      "y": 89
                     }
                   ],
                   "originPoint": {
@@ -3044,8 +3080,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 97,
-                      "y": 95
+                      "x": 41.5,
+                      "y": 93.5
                     }
                   ],
                   "originPoint": {
@@ -3098,8 +3134,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 50.5,
+                      "y": 18
                     }
                   ],
                   "originPoint": {
@@ -3140,8 +3176,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 50.5,
+                      "y": 18
                     }
                   ],
                   "originPoint": {
@@ -3182,8 +3218,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 50.5,
+                      "y": 18
                     }
                   ],
                   "originPoint": {
@@ -3224,8 +3260,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 50.5,
+                      "y": 18
                     }
                   ],
                   "originPoint": {
@@ -3326,16 +3362,142 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.16,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Attack4",
+                  "image": "assets\\player_attack_0.png",
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "x": 97.5,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_attack_1.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 99.5,
+                      "y": 54
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_attack_2.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 83.5,
+                      "y": 83.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 1
+                      },
+                      {
+                        "x": 100,
+                        "y": 150
+                      },
+                      {
+                        "x": 9,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\player_attack_3.png",
+                  "points": [
+                    {
+                      "name": "RightHand",
+                      "x": 28,
+                      "y": 86
                     }
                   ],
                   "originPoint": {
