@@ -1484,6 +1484,33 @@
         "name": "assets\\player_attack_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/swordtwo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\swordtwo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/swordthree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\swordthree.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1544,178 +1571,6 @@
                       {
                         "x": 0,
                         "y": 1534
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "TempSword",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 30
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 0.3
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 0.7
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "TempSword",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31,
-                    "y": 52.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 31,
-                    "y": 52.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 60
-                      },
-                      {
-                        "x": 21,
-                        "y": 60
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "TempSword2",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 60
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 70
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 0.3
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 0.7
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "TempSword2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempSword2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31,
-                    "y": 52.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 31,
-                    "y": 52.5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 5
-                      },
-                      {
-                        "x": 42,
-                        "y": 60
-                      },
-                      {
-                        "x": 21,
-                        "y": 60
                       }
                     ]
                   ]
@@ -2558,7 +2413,7 @@
           "folded": true,
           "name": "EquippedSword",
           "type": "string",
-          "value": "TempSword2"
+          "value": "Sword"
         }
       ],
       "effects": [],
@@ -2640,7 +2495,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.16,
+              "timeBetweenFrames": 0.24,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2648,8 +2503,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2690,8 +2545,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2732,8 +2587,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2774,8 +2629,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2816,8 +2671,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2858,8 +2713,8 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 20.5,
-                      "y": 76
+                      "x": 92.5,
+                      "y": 101
                     }
                   ],
                   "originPoint": {
@@ -2912,7 +2767,7 @@
                   "points": [
                     {
                       "name": "RightHand",
-                      "x": 43.5,
+                      "x": 43,
                       "y": 94
                     }
                   ],
@@ -7290,6 +7145,264 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Sword",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\sword.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 42
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 13
+                      },
+                      {
+                        "x": 45,
+                        "y": 13
+                      },
+                      {
+                        "x": 45,
+                        "y": 49
+                      },
+                      {
+                        "x": 8,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Sword2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\swordtwo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 42
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 57
+                      },
+                      {
+                        "x": 1,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Sword3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "MinDamage",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "folded": true,
+          "name": "MaxDamage",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "folded": true,
+          "name": "MinAttackCooldown",
+          "type": "number",
+          "value": 0.3
+        },
+        {
+          "folded": true,
+          "name": "MaxAttackCooldown",
+          "type": "number",
+          "value": 0.7
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\swordthree.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 57
+                      },
+                      {
+                        "x": 1,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7302,10 +7415,13 @@
         "folderName": "Swords",
         "children": [
           {
-            "objectName": "TempSword2"
+            "objectName": "Sword"
           },
           {
-            "objectName": "TempSword"
+            "objectName": "Sword2"
+          },
+          {
+            "objectName": "Sword3"
           }
         ]
       },
@@ -7410,10 +7526,7 @@
       "name": "Swords",
       "objects": [
         {
-          "name": "TempSword"
-        },
-        {
-          "name": "TempSword2"
+          "name": "Sword"
         }
       ]
     },
