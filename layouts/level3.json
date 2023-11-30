@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2291680161074895,
+    "zoomFactor": 0.2006974131454991,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -47,9 +47,9 @@
       "layer": "Layer4",
       "name": "Layer4",
       "persistentUuid": "bdcb0a09-b3f3-48b8-a484-ff1ab4b780ba",
-      "width": 6000,
-      "x": -2,
-      "y": 3,
+      "width": 12000,
+      "x": -2000,
+      "y": 0,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -63,8 +63,8 @@
       "layer": "Layer5",
       "name": "Layer5",
       "persistentUuid": "16907594-b096-4828-b55f-69a41a567a34",
-      "width": 6000,
-      "x": 0,
+      "width": 5000,
+      "x": -500,
       "y": 0,
       "zOrder": 7,
       "numberProperties": [],
@@ -79,8 +79,8 @@
       "layer": "Layer2",
       "name": "Layer2",
       "persistentUuid": "876b120e-2df1-4611-bc4b-0d54340b9b7b",
-      "width": 6000,
-      "x": 0,
+      "width": 12000,
+      "x": -2000,
       "y": 0,
       "zOrder": 8,
       "numberProperties": [],
@@ -95,26 +95,10 @@
       "layer": "Layer1",
       "name": "Layer1",
       "persistentUuid": "00c7511c-4fa5-4c5d-a5e7-8ee7666647b1",
-      "width": 6000,
-      "x": 0,
+      "width": 12000,
+      "x": -2000,
       "y": 0,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 5,
-      "height": 329,
-      "layer": "",
-      "name": "TempDinosaur",
-      "persistentUuid": "02cba5c0-4445-4f50-8841-85d9626582f6",
-      "width": 329,
-      "x": 2997,
-      "y": 769,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -170,29 +154,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 3,
-      "height": 520,
-      "layer": "",
-      "name": "Tyrannosaurus",
-      "persistentUuid": "406c251a-a3c4-4c5f-9ff5-bedb44f0c8f6",
-      "width": 520,
-      "x": 2003,
-      "y": 624,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 0,
       "height": 1080,
       "layer": "Layer3",
       "name": "Layer3",
       "persistentUuid": "826716fe-4997-471b-8414-eca0bb66c9f5",
-      "width": 6000,
-      "x": 0,
+      "width": 12000,
+      "x": -2000,
       "y": 0,
       "zOrder": 19,
       "numberProperties": [],
@@ -207,7 +175,7 @@
       "layer": "",
       "name": "Ground",
       "persistentUuid": "68e789f0-d7fe-43a3-b88e-27e9a3b134cb",
-      "width": 6000,
+      "width": 10000,
       "x": 0,
       "y": 1048,
       "zOrder": 11,
@@ -227,6 +195,406 @@
       "x": 603,
       "y": 717,
       "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "Layer4",
+      "name": "Layer4",
+      "persistentUuid": "2cc8719a-9272-4488-a539-72624c5b09ec",
+      "width": 12000,
+      "x": 10000,
+      "y": 0,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "Layer4",
+      "name": "Layer4",
+      "persistentUuid": "c3618013-3e83-4087-8ab1-3c2e71f97402",
+      "width": 12000,
+      "x": 20000,
+      "y": 0,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer3",
+      "name": "Layer3",
+      "persistentUuid": "1a70f52e-097b-4d34-80fc-fadf5c1a0d2d",
+      "width": 12000,
+      "x": 10000,
+      "y": 0,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer3",
+      "name": "Layer3",
+      "persistentUuid": "bbf22e0c-f19f-462f-85d8-fa0c85b2c2b1",
+      "width": 12000,
+      "x": 20000,
+      "y": 0,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer2",
+      "name": "Layer2",
+      "persistentUuid": "69b7d572-681e-489f-b0cb-7f6e6afed39d",
+      "width": 12000,
+      "x": 10000,
+      "y": 0,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Layer2",
+      "name": "Layer2",
+      "persistentUuid": "1e35dd5a-45f6-48e2-a897-ea7621570b4e",
+      "width": 12000,
+      "x": 20000,
+      "y": 0,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "Ground",
+      "persistentUuid": "6bc63887-509c-414f-8750-ea992c5838c3",
+      "width": 10000,
+      "x": 10000,
+      "y": 1048,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "Ground",
+      "persistentUuid": "ff15834a-86fb-43aa-886a-7ade3b59e055",
+      "width": 10000,
+      "x": 20000,
+      "y": 1048,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "Layer1",
+      "name": "Layer1",
+      "persistentUuid": "0d1b1e60-af03-4e6c-b678-86117fb7f5d0",
+      "width": 12000,
+      "x": 10000,
+      "y": 0,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "Layer1",
+      "name": "Layer1",
+      "persistentUuid": "09ae3bc2-b2ea-4d9b-8ac3-9fc2eedd4321",
+      "width": 12000,
+      "x": 20000,
+      "y": 0,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 560,
+      "layer": "",
+      "name": "Maiasaura",
+      "persistentUuid": "5bc5b173-2b88-4f99-833b-34355e430a63",
+      "width": 622,
+      "x": 1964,
+      "y": 553,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 810,
+      "layer": "",
+      "name": "Euoplocephalus",
+      "persistentUuid": "57f2a74e-a511-40e0-992d-ef4a205cb39d",
+      "width": 911,
+      "x": 4154,
+      "y": 396,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 715,
+      "layer": "",
+      "name": "Euoplocephalus",
+      "persistentUuid": "75d025d7-fb6e-4d27-a1fb-f08ada16a060",
+      "width": 804,
+      "x": 5316,
+      "y": 481,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 930,
+      "layer": "",
+      "name": "Stegosaurus",
+      "persistentUuid": "68e17130-29fc-4c79-9c6e-aecf8ed78d06",
+      "width": 1047,
+      "x": 7209,
+      "y": 342,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 930,
+      "layer": "",
+      "name": "Stegosaurus",
+      "persistentUuid": "0e2db5af-4023-4a0a-99c1-3a9b4ee9f9a2",
+      "width": 1047,
+      "x": 10708,
+      "y": 346,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 466,
+      "layer": "",
+      "name": "Dilophosaurus",
+      "persistentUuid": "3055b990-6e37-4bd9-884d-47c23933c1f8",
+      "width": 525,
+      "x": 9140,
+      "y": 685,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 532,
+      "layer": "",
+      "name": "Dilophosaurus",
+      "persistentUuid": "1e3f5b1f-e752-4e47-9867-ce93761df658",
+      "width": 599,
+      "x": 9617,
+      "y": 636,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 263,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "05b81e31-6790-42c2-879a-c6033be0325a",
+      "width": 296,
+      "x": 13026,
+      "y": 835,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 301,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "a219ec97-906c-4c3a-a6df-d113f3f0704a",
+      "width": 339,
+      "x": 13195,
+      "y": 791,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 270,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "c0deb715-9036-432b-a587-0be29b21e6f9",
+      "width": 305,
+      "x": 13410,
+      "y": 829,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 240,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "45c61c1e-4f6d-4432-bb55-01e1884bd05b",
+      "width": 271,
+      "x": 13358,
+      "y": 853,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 281,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "7f19be94-e374-41e5-bdc8-82bf2f218db9",
+      "width": 317,
+      "x": 13581,
+      "y": 806,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 247,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "1eee1754-2a18-4002-9eff-fdc0125cd0a3",
+      "width": 279,
+      "x": 13751,
+      "y": 842,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 213,
+      "layer": "",
+      "name": "Othnielosaurus",
+      "persistentUuid": "a2a70ac5-3826-4991-a5ad-916b36adf933",
+      "width": 241,
+      "x": 13147,
+      "y": 871,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 7,
+      "height": 1139,
+      "layer": "",
+      "name": "Stegosaurus",
+      "persistentUuid": "c5d895fe-e1c7-48fc-b7d0-12a264f29adf",
+      "width": 1281,
+      "x": 15086,
+      "y": 195,
+      "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -369,286 +737,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "TempDinosaur",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "MinDamage",
-          "type": "number",
-          "value": 20
-        },
-        {
-          "folded": true,
-          "name": "MaxDamage",
-          "type": "number",
-          "value": 32
-        },
-        {
-          "folded": true,
-          "name": "MinAttackCooldown",
-          "type": "number",
-          "value": 2.5
-        },
-        {
-          "folded": true,
-          "name": "MaxAttackCooldown",
-          "type": "number",
-          "value": 3.1
-        },
-        {
-          "name": "AgroDistanceInPixels",
-          "type": "number",
-          "value": 1000
-        },
-        {
-          "folded": true,
-          "name": "AttackRange",
-          "type": "number",
-          "value": 150
-        },
-        {
-          "folded": true,
-          "name": "MinGoldDrop",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "folded": true,
-          "name": "MaxGoldDrop",
-          "type": "string",
-          "value": "100"
-        },
-        {
-          "folded": true,
-          "name": "_Attacking",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 100,
-          "CurrentHealth": 0,
-          "MaxHealth": 100,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "maxSpeed": 200,
-          "allowDiagonals": false,
-          "acceleration": 9999,
-          "rotateObject": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempDinosaur",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TempDinosaur2",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Attack",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Attack",
-                  "points": [
-                    {
-                      "name": "Health",
-                      "x": 14,
-                      "y": 10.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 7,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 17
-                      },
-                      {
-                        "x": 51,
-                        "y": 54
-                      },
-                      {
-                        "x": 7,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "InvisibleWall",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -735,14 +823,6 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "folderName": "Dinosaurs",
-        "children": [
-          {
-            "objectName": "TempDinosaur"
-          }
-        ]
-      },
       {
         "folderName": "Scenery",
         "children": [
