@@ -1,13 +1,13 @@
 {
-  "b": 0,
+  "b": 243,
   "disableInputWhenNotFocused": true,
   "mangledName": "Isla_32Nublar",
   "name": "Isla Nublar",
-  "r": 0,
+  "r": 86,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "Isla Nublar",
-  "v": 0,
+  "v": 108,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.21446078431372592,
+    "zoomFactor": 0.29879853636069087,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -926,11 +926,11 @@
     },
     {
       "assetStoreId": "",
-      "height": 138,
+      "height": 100,
       "name": "Water",
       "texture": "assets\\WaterTile.png",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 150,
+      "width": 100,
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -1422,11 +1422,28 @@
             "Water",
             "Tween",
             "\"sweep\"",
-            "Water.X() + 150",
-            "Water.Y() + 138",
+            "Water.X() + 100",
+            "Water.Y() + 100",
             "\"easeInOutSine\"",
             "3",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Water",
+            "Opacity",
+            "=",
+            "255 * 0.5 * (sin(TimeFromStart() * 1.5) + 0.5)"
           ]
         }
       ]
@@ -1476,8 +1493,8 @@
             "Water",
             "Tween",
             "\"sweep\"",
-            "Water.X() + 150",
-            "Water.Y() + 138",
+            "Water.X() + 100",
+            "Water.Y() + 100",
             "\"easeInOutSine\"",
             "3",
             ""

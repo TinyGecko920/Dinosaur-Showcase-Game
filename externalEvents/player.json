@@ -112,17 +112,7 @@
                 "Swords",
                 "Scale",
                 "=",
-                "3.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Swords",
-                "=",
-                "Player.ZOrder() + 1"
+                "2.2"
               ]
             }
           ]
