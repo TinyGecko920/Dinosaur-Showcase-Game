@@ -1,0 +1,34 @@
+{
+  "associatedLayout": "Game",
+  "name": "Death UI",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "YouDiedText",
+      "persistentUuid": "bc40732a-c3d6-4605-ba04-88948a89d59d",
+      "width": 0,
+      "x": 671,
+      "y": 339,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.34118560234734485,
+    "windowMask": false
+  }
+}

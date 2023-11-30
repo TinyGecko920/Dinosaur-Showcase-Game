@@ -2430,9 +2430,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 10000,
+          "Health": 100,
           "CurrentHealth": 0,
-          "MaxHealth": 10000,
+          "MaxHealth": 100,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 5,
@@ -7412,6 +7412,32 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "YouDiedText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "YOU DIED.",
+      "font": "ChelseaMarket-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 120,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -7527,6 +7553,9 @@
       },
       {
         "objectName": "ShinyHeart"
+      },
+      {
+        "objectName": "YouDiedText"
       }
     ]
   },
