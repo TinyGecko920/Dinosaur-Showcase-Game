@@ -1,0 +1,66 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "GameWindow",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "description": "True iff the game window was just resized",
+      "fullName": "Window was just resized",
+      "functionType": "Condition",
+      "name": "WindowResized",
+      "sentence": "Game window was just resized",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const windowEvtTool = gdjs.evtTools.window;\r",
+            "\r",
+            "if (!('lastWindowInnerWidth' in gdjs)) {\r",
+            "    gdjs.lastWindowInnerWidth = windowEvtTool.getWindowInnerWidth();\r",
+            "}\r",
+            "\r",
+            "if (!('lastWindowInnerHeight' in gdjs)) {\r",
+            "    gdjs.lastWindowInnerHeight = windowEvtTool.getWindowInnerHeight();\r",
+            "}\r",
+            "\r",
+            "const windowInnerWidth = windowEvtTool.getWindowInnerWidth();\r",
+            "const windowInnerHeight = windowEvtTool.getWindowInnerHeight();\r",
+            "\r",
+            "if (windowInnerWidth !== gdjs.lastWindowInnerWidth) {\r",
+            "    eventsFunctionContext.returnValue = true;\r",
+            "    gdjs.lastWindowInnerWidth = windowInnerWidth\r",
+            "    return;\r",
+            "}\r",
+            "\r",
+            "if (windowInnerHeight !== gdjs.lastWindowInnerHeight) {\r",
+            "    eventsFunctionContext.returnValue = true;\r",
+            "    gdjs.lastWindowInnerHeight = windowInnerHeight\r",
+            "    return;\r",
+            "}\r",
+            "\r",
+            "eventsFunctionContext.returnValue = false;\r",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}

@@ -205,9 +205,24 @@
       "name": "PlayerSpawn",
       "persistentUuid": "854ca880-1127-45aa-a5ff-cc8aaab9aa17",
       "width": 0,
-      "x": 762,
-      "y": 308,
+      "x": 789,
+      "y": 247,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 131,
+      "layer": "Water",
+      "name": "Water",
+      "persistentUuid": "180ca80f-e51f-48d6-9c45-10d714b3b500",
+      "width": 138,
+      "x": -584,
+      "y": 309,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -908,6 +923,22 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 138,
+      "name": "Water",
+      "texture": "assets\\WaterTile.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 150,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -924,6 +955,9 @@
       },
       {
         "objectName": "PlayerSpawn"
+      },
+      {
+        "objectName": "Water"
       }
     ]
   },
@@ -954,6 +988,14 @@
             "value": "Cache"
           },
           "parameters": [
+            "Water"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
             "IslaNublar"
           ]
         },
@@ -967,19 +1009,17 @@
             "=",
             "0"
           ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.01"
+          ]
         }
       ],
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "runtimeScene.setBackgroundColor(100,100,240);",
-            ""
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1014,14 +1054,6 @@
           "actions": [
             {
               "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.01"
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
               },
               "parameters": [
@@ -1050,6 +1082,15 @@
               },
               "parameters": [
                 "IslaNublar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Water",
                 ""
               ]
             },
@@ -1172,6 +1213,17 @@
             "0",
             "0",
             "SceneWindowWidth() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "Water",
+            "Resizable",
+            "max(SceneWindowWidth(), SceneWindowHeight()) * 2",
+            "max(SceneWindowWidth(), SceneWindowHeight()) * 2"
           ]
         }
       ],
@@ -1304,6 +1356,132 @@
           "parameterObjects": "TransitionPainter",
           "useStrict": true,
           "eventsSheetExpanded": false
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::IsPlaying"
+              },
+              "parameters": [
+                "Water",
+                "Tween",
+                "\"sweep\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "Water",
+            "Tween",
+            "\"sweep\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Water",
+            "=",
+            "SceneWindowWidth() - Water.Width()",
+            "=",
+            "SceneWindowHeight() - Water.Height()"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Water",
+            "Tween",
+            "\"sweep\"",
+            "Water.X() + 150",
+            "Water.Y() + 138",
+            "\"easeInOutSine\"",
+            "3",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "GameWindow::WindowResized"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "Water",
+            "Tween",
+            "\"sweep\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Water",
+            "=",
+            "SceneWindowWidth() - Water.Width()",
+            "=",
+            "SceneWindowHeight() - Water.Height()"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "Water",
+            "Tween",
+            "\"sweep\"",
+            "Water.X() + 150",
+            "Water.Y() + 138",
+            "\"easeInOutSine\"",
+            "3",
+            ""
+          ]
         }
       ]
     },
@@ -1470,9 +1648,46 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Water",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
