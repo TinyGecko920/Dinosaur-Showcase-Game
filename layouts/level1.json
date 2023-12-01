@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5427920802473382,
+    "zoomFactor": 0.20069741314550144,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -735,7 +735,7 @@
       "name": "Velociraptor",
       "persistentUuid": "0492c737-0b13-4bf7-8e44-b63f4689df48",
       "width": 579,
-      "x": 36636,
+      "x": 36385,
       "y": 696,
       "zOrder": 26,
       "numberProperties": [],

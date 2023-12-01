@@ -4738,10 +4738,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 450,
+          "maxSpeed": 225,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -7417,6 +7417,32 @@
         "g": 0,
         "r": 255
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ReturningText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Returning to Isla Nubar.",
+      "font": "ChelseaMarket-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -7535,6 +7561,9 @@
       },
       {
         "objectName": "YouDiedText"
+      },
+      {
+        "objectName": "ReturningText"
       }
     ]
   },
