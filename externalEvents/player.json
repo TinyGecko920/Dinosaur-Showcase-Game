@@ -74,14 +74,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "HealthBar"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "HealthAmount"
               ]
             },
@@ -90,7 +82,31 @@
                 "value": "Cache"
               },
               "parameters": [
+                "ShinyHeart"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
                 "GoldAmount"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Coins"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Swords"
               ]
             },
             {
@@ -247,6 +263,28 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"Swing\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"SwingBack\""
+                  ]
                 }
               ],
               "actions": [
@@ -279,48 +317,16 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetAngle"
+                        "value": "Tween::TweenBehavior::AddObjectAngleTween2"
                       },
                       "parameters": [
                         "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), 50, 0.25)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), -100, 0.25)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), 0, 0.25)"
+                        "Tween",
+                        "\"Swing\"",
+                        "-100",
+                        "\"easeInBack\"",
+                        "0.3",
+                        ""
                       ]
                     }
                   ]
@@ -342,48 +348,16 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetAngle"
+                        "value": "Tween::TweenBehavior::AddObjectAngleTween2"
                       },
                       "parameters": [
                         "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), -50, 0.25)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), 100, 0.25)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "Swords",
-                        "=",
-                        "lerp(Swords.Angle(), 0, 0.25)"
+                        "Tween",
+                        "\"Swing\"",
+                        "100",
+                        "\"easeInBack\"",
+                        "0.3",
+                        ""
                       ]
                     }
                   ]
@@ -435,6 +409,74 @@
                     "",
                     "",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"Swing\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"SwingBack\"",
+                    "0",
+                    "\"linear\"",
+                    "0.2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"Swing\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"SwingBack\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "Swords",
+                    "Tween",
+                    "\"SwingBack\""
                   ]
                 }
               ]
