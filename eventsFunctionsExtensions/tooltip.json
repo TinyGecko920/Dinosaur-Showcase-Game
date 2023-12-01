@@ -74,9 +74,9 @@
                   "parameters": [
                     "Object",
                     "=",
-                    "clamp(Object.Behavior::CursorXPosition() + 15, 0, SceneWindowWidth() - Object.Width())",
+                    "clamp(Object.Behavior::CursorXPosition() + 15, CameraBorderLeft(), CameraBorderRight() - Object.Width())",
                     "=",
-                    "clamp(Object.Behavior::CursorYPosition() - 40, 0, SceneWindowHeight())"
+                    "clamp(Object.Behavior::CursorYPosition() - 40, CameraBorderTop(), CameraBorderBottom())"
                   ]
                 }
               ]
