@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.23689563725446833,
+    "zoomFactor": 0.17576384491805552,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -128,7 +128,7 @@
       "name": "Player",
       "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
       "width": 421,
-      "x": 281,
+      "x": 20000,
       "y": 626,
       "zOrder": 10,
       "numberProperties": [],
@@ -144,7 +144,7 @@
       "name": "Ground",
       "persistentUuid": "27221e22-cc70-4885-9fe0-628af0fa6430",
       "width": 12000,
-      "x": -2500,
+      "x": -2000,
       "y": 1048,
       "zOrder": 11,
       "numberProperties": [],
@@ -754,6 +754,22 @@
       "x": 8564,
       "y": 2106,
       "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 434,
+      "layer": "",
+      "name": "Velociraptor",
+      "persistentUuid": "0492c737-0b13-4bf7-8e44-b63f4689df48",
+      "width": 579,
+      "x": 22000,
+      "y": 692,
+      "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1397,10 +1413,6 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
-    },
-    {
-      "name": "Text_AutoTyping",
-      "type": "AutoTyping::Text_AutoTyping"
     },
     {
       "name": "Tooltip",

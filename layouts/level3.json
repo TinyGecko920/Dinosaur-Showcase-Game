@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.24488383633725702,
+    "zoomFactor": 0.16448391304937662,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -598,6 +598,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 1011,
+      "layer": "",
+      "name": "Tyrannosaurus",
+      "persistentUuid": "4dd92c5c-1c60-4f1b-a2a2-c788b29e483e",
+      "width": 1011,
+      "x": 28614,
+      "y": 209,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1058,7 +1074,7 @@
       "isLocked": true,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
