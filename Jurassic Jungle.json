@@ -1520,6 +1520,24 @@
         "name": "assets\\WaterTile.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/triceratops_idle_0.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/triceratops_idle_0.png\",\"extension\":\".png\"}",
+        "name": "assets\\triceratops_idle_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/triceratops_idle_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/triceratops_idle_1.png\",\"extension\":\".png\"}",
+        "name": "assets\\triceratops_idle_1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5856,13 +5874,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 32
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 50
         },
         {
           "folded": true,
@@ -5898,7 +5916,7 @@
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 75
         },
         {
           "folded": true,
@@ -5912,9 +5930,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 550,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 550,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5938,10 +5956,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 500,
+          "maxSpeed": 250,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5966,7 +5984,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_0.png",
+                  "image": "assets\\triceratops_idle_0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -5982,27 +6000,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 8,
-                        "y": 39
+                        "x": 1,
+                        "y": 14
                       },
                       {
-                        "x": 139,
-                        "y": 39
+                        "x": 147,
+                        "y": 14
                       },
                       {
-                        "x": 139,
-                        "y": 119
+                        "x": 147,
+                        "y": 116
                       },
                       {
-                        "x": 8,
-                        "y": 119
+                        "x": 1,
+                        "y": 116
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_1.png",
+                  "image": "assets\\triceratops_idle_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6018,92 +6036,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 8,
-                        "y": 39
+                        "x": 1,
+                        "y": 14
                       },
                       {
-                        "x": 139,
-                        "y": 39
+                        "x": 147,
+                        "y": 14
                       },
                       {
-                        "x": 139,
-                        "y": 119
+                        "x": 147,
+                        "y": 116
                       },
                       {
-                        "x": 8,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 39
-                      },
-                      {
-                        "x": 139,
-                        "y": 39
-                      },
-                      {
-                        "x": 139,
-                        "y": 119
-                      },
-                      {
-                        "x": 8,
-                        "y": 119
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\triceraptos_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 39
-                      },
-                      {
-                        "x": 139,
-                        "y": 39
-                      },
-                      {
-                        "x": 139,
-                        "y": 119
-                      },
-                      {
-                        "x": 8,
-                        "y": 119
+                        "x": 1,
+                        "y": 116
                       }
                     ]
                   ]
@@ -6207,8 +6153,8 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 700,
-          "maxSpeed": 350,
+          "acceleration": 900,
+          "maxSpeed": 450,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
           "allowDiagonals": false,
