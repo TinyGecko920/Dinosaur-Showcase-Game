@@ -1015,7 +1015,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "0.01"
+            "0.001"
           ]
         }
       ],
@@ -1114,6 +1114,28 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ShinyHeart"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "HealthAmount"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1180,6 +1202,30 @@
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
+        {
+          "type": {
+            "value": "Tooltip::Tooltip::SetCursorXPosition"
+          },
+          "parameters": [
+            "Tooltip",
+            "Tooltip",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tooltip::Tooltip::SetCursorYPosition"
+          },
+          "parameters": [
+            "Tooltip",
+            "Tooltip",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "SetCenter"
@@ -1672,6 +1718,377 @@
             "TopDownPlayer",
             "Flippable",
             "no"
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "GoldAmount",
+            "=",
+            "\"[outline=black]\" + ToString(TopDownPlayer.Gold) + \"[/outline]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "const topDownPlayer = runtimeScene.getObjects('TopDownPlayer')[0];",
+        "",
+        "if (!(objects.length > 0)) return;",
+        "",
+        "objects[0].setBBText(`[b][outline=black][spacing=8]${('0000000000' + topDownPlayer.getVariables().get('Gold').getAsNumber()).substr(-6)}[/spacing][/outline][/b][outline=black]`);"
+      ],
+      "parameterObjects": "GoldAmount",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Cross\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MouseHelper::cursor::ChangeIcon"
+          },
+          "parameters": [
+            "Cursor",
+            "cursor",
+            "\"Pressed\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_Button_pressed"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"A\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_Button_pressed"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Cross\"",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MouseHelper::cursor::ChangeIcon"
+          },
+          "parameters": [
+            "Cursor",
+            "cursor",
+            "\"Idle\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "GoldAmount",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "GoldAmount",
+                    "GoldAmount",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tooltip",
+            "=",
+            "\"[outline=black]You have [color=FFB25D]\" + ToString(TopDownPlayer.Gold) + \"[/color] gold[/outline]\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Tooltip"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Tooltip",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "GoldAmount",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "GoldAmount",
+                    "GoldAmount",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "Tooltip"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Tooltip"
           ]
         }
       ]
