@@ -1538,6 +1538,24 @@
         "name": "assets\\triceratops_idle_1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ground2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Ground2.png\"}",
+        "name": "Ground2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ground.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
