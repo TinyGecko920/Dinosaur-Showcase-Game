@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.20746499616301373,
+    "zoomFactor": 0.1489067059587428,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -323,7 +323,7 @@
           "folded": true,
           "name": "Gold",
           "type": "number",
-          "value": 0
+          "value": 325489
         }
       ],
       "effects": [],
@@ -1499,7 +1499,7 @@
             "Water",
             "Opacity",
             "=",
-            "255 * (((1 / 3) * (sin(TimeFromStart())) + (2 / 3)))"
+            "200 * (((1 / 3) * (sin(TimeFromStart())) + (2 / 3)))"
           ]
         }
       ]

@@ -70,6 +70,11 @@
         {
           "folded": true,
           "type": "string",
+          "value": "[size=24]Special thanks to\n\n[/size]\n[b]Mr. DeLaRosa[/b]\n[size=24]\n\nfor teaching IGD this year[/size]"
+        },
+        {
+          "folded": true,
+          "type": "string",
           "value": "[size=24]Artist\n\n[/size]\n[b]Karolyn Young[/b]"
         }
       ]
