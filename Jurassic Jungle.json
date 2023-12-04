@@ -1610,6 +1610,51 @@
         "name": "assets\\Palm4.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trex_attack_0.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/trex_attack_0.png\",\"extension\":\".png\"}",
+        "name": "assets\\trex_attack_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trex_attack_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/trex_attack_1.png\",\"extension\":\".png\"}",
+        "name": "assets\\trex_attack_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trex_attack_2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/trex_attack_2.png\",\"extension\":\".png\"}",
+        "name": "assets\\trex_attack_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trex_attack_3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/trex_attack_3.png\",\"extension\":\".png\"}",
+        "name": "assets\\trex_attack_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/trex_attack_4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/trex_attack_4.png\",\"extension\":\".png\"}",
+        "name": "assets\\trex_attack_4.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2111,6 +2156,199 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\trex_idle_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 165
+                      },
+                      {
+                        "x": 19,
+                        "y": 165
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.16,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\trex_attack_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 165
+                      },
+                      {
+                        "x": 19,
+                        "y": 165
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\trex_attack_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 165
+                      },
+                      {
+                        "x": 19,
+                        "y": 165
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\trex_attack_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 165
+                      },
+                      {
+                        "x": 19,
+                        "y": 165
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\trex_attack_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 20
+                      },
+                      {
+                        "x": 184,
+                        "y": 165
+                      },
+                      {
+                        "x": 19,
+                        "y": 165
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\trex_attack_4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4549,9 +4787,9 @@
           "HealToBeApplied": 0
         },
         {
-          "angularMaxSpeed": 180,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "angularMaxSpeed": 180,
           "acceleration": 450,
           "maxSpeed": 225,
           "allowDiagonals": false,

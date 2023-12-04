@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.12615340253748725,
+    "zoomFactor": 0.15911838846838722,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1087,10 +1087,6 @@
     {
       "name": "BBText_AutoTyping",
       "type": "AutoTyping::BBText_AutoTyping"
-    },
-    {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
