@@ -651,6 +651,168 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "the cursor scale of the object.",
+          "fullName": "Cursor scale",
+          "functionType": "ExpressionAndCondition",
+          "group": "Cursor configuration",
+          "name": "Scale",
+          "sentence": "the cursor scale",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyScale()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "Scale",
+          "name": "SetScale",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::SetPropertyScale"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "the cursor scale (gamepad) of the object.",
+          "fullName": "Cursor scale (gamepad)",
+          "functionType": "ExpressionAndCondition",
+          "group": "Cursor configuration",
+          "name": "GamepadScale",
+          "sentence": "the cursor scale (gamepad)",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyGamepadScale()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "ActionWithOperator",
+          "getterName": "GamepadScale",
+          "name": "SetGamepadScale",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::SetPropertyGamepadScale"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "MouseHelper::cursor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [

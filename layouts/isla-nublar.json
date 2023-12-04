@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": true,
-    "zoomFactor": 0.2987985363606917,
+    "zoomFactor": 0.2616774116992161,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -114,8 +114,8 @@
       "name": "PlayerSpawn",
       "persistentUuid": "11d70db1-dd7c-4f11-b7cd-c551d7f7e1a6",
       "width": 0,
-      "x": 428,
-      "y": 1385,
+      "x": 459,
+      "y": 1404,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -144,8 +144,8 @@
       "name": "PlayerSpawn",
       "persistentUuid": "c2383bdc-54e3-4536-92d4-c7b7d56bc11e",
       "width": 0,
-      "x": 959,
-      "y": 1027,
+      "x": 982,
+      "y": 1004,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -159,8 +159,8 @@
       "name": "PlayerSpawn",
       "persistentUuid": "3c36fde9-b71b-4849-bc41-57416f4b21a2",
       "width": 0,
-      "x": 1603,
-      "y": -22,
+      "x": 1630,
+      "y": -29,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -174,8 +174,8 @@
       "name": "PlayerSpawn",
       "persistentUuid": "658cc698-e43c-4b14-a313-35f894010463",
       "width": 0,
-      "x": 292,
-      "y": 290,
+      "x": 376,
+      "y": 334,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -189,8 +189,8 @@
       "name": "PlayerSpawn",
       "persistentUuid": "1043c19f-3ec9-4035-b3f5-148a19eb50a4",
       "width": 0,
-      "x": 69,
-      "y": -228,
+      "x": 80,
+      "y": -247,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -228,26 +228,11 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Shopkeeper",
-      "persistentUuid": "f1f1c75a-0481-4e20-8b9d-87497253ab89",
-      "width": 0,
-      "x": 1012,
-      "y": -730,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 0,
       "height": 150,
       "layer": "",
-      "name": "ShopkeeperMalcolm",
+      "name": "Shopkeeper",
       "persistentUuid": "e36276db-0a6d-4c76-86da-3402fc52bad4",
       "width": 150,
       "x": 1077,
@@ -2173,7 +2158,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "ShopkeeperMalcolm",
+      "name": "Shopkeeper",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2700,7 +2685,7 @@
         "objectName": "Water"
       },
       {
-        "objectName": "ShopkeeperMalcolm"
+        "objectName": "Shopkeeper"
       },
       {
         "objectName": "Nametag"
@@ -3124,7 +3109,7 @@
           },
           "parameters": [
             "",
-            "ShopkeeperMalcolm",
+            "Shopkeeper",
             "Nametag"
           ]
         },
@@ -3173,6 +3158,18 @@
         },
         {
           "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "DialogueNext",
+            "=",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
+            "=",
+            "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
+          ]
+        },
+        {
+          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -3214,7 +3211,7 @@
             "value": "EffectCapability::EffectBehavior::EnableEffect"
           },
           "parameters": [
-            "ShopkeeperMalcolm",
+            "Shopkeeper",
             "Effect",
             "\"Outline\"",
             ""
@@ -3229,6 +3226,19 @@
             "TopDownMovement",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenCameraZoom2"
+          },
+          "parameters": [
+            "",
+            "\"zoomIn\"",
+            "2",
+            "",
+            "\"easeOutCirc\"",
+            "1"
           ]
         },
         {
@@ -3312,6 +3322,19 @@
             "Tween",
             "\"jumpOut\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenCameraZoom2"
+          },
+          "parameters": [
+            "",
+            "\"zoomIn\"",
+            "1",
+            "",
+            "\"easeOutQuad\"",
+            "0.5"
           ]
         },
         {
@@ -3503,6 +3526,93 @@
             "=",
             "TopDownPlayer.Y() + TopDownPlayer.Height()"
           ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "DialogueBackground",
+            "=",
+            "SceneWindowWidth() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "DialogueBackground",
+            "=",
+            "SceneWindowHeight() - DialogueBackground.Height() - 40"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "=",
+            "DialogueBackground.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterY"
+          },
+          "parameters": [
+            "DialogueSpeakerText",
+            "=",
+            "DialogueBackground.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "DialogueSpeakerText",
+            "=",
+            "DialogueBackground.X() + 160"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "DialogueText",
+            "=",
+            "DialogueSpeakerText.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "DialogueText",
+            "=",
+            "DialogueBackground.Y() + 40"
+          ]
+        },
+        {
+          "type": {
+            "value": "CopyCameraSettings::CopyCameraSettings"
+          },
+          "parameters": [
+            "",
+            "",
+            "0",
+            "\"Billboards\"",
+            "0",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
         }
       ],
       "events": [
@@ -3554,30 +3664,6 @@
                 "\"Cursor\"",
                 "0"
               ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "SceneWindowWidth() / 2",
-                "\"Billboards\"",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterY"
-              },
-              "parameters": [
-                "",
-                "=",
-                "SceneWindowHeight() / 2",
-                "\"Billboards\"",
-                "0"
-              ]
             }
           ]
         },
@@ -3608,24 +3694,7 @@
                 "0",
                 "",
                 "",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CopyCameraSettings::CopyCameraSettings"
-              },
-              "parameters": [
-                "",
-                "",
-                "0",
-                "\"Billboards\"",
-                "0",
-                "",
-                "",
-                "",
+                "yes",
                 "",
                 ""
               ]
@@ -4386,7 +4455,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "",
                         "",
                         ""
@@ -4415,7 +4484,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "GoldAmount",
                         "",
                         ""
@@ -4430,7 +4499,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\""
               ]
@@ -4886,7 +4955,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "TopDownPlayer",
                 "200",
                 ""
@@ -4898,7 +4967,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\""
               ]
@@ -4910,7 +4979,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\"",
                 "yes"
@@ -4927,7 +4996,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "TopDownPlayer",
                 "200",
                 ""
@@ -4938,7 +5007,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\""
               ]
@@ -4950,7 +5019,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\"",
                 "no"
@@ -4999,7 +5068,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "",
                         "",
                         ""
@@ -5028,7 +5097,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "GoldAmount",
                         "",
                         ""
@@ -5043,7 +5112,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Glow\""
               ]
@@ -5109,7 +5178,7 @@
                     "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
                   },
                   "parameters": [
-                    "ShopkeeperMalcolm",
+                    "Shopkeeper",
                     "Effect",
                     "\"Outline\""
                   ]
@@ -5121,7 +5190,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "ShopkeeperMalcolm",
+                    "Shopkeeper",
                     "Effect",
                     "\"Outline\"",
                     "yes"
@@ -5173,7 +5242,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "",
                         "",
                         ""
@@ -5203,7 +5272,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "GoldAmount",
                         "",
                         ""
@@ -5217,7 +5286,7 @@
                     "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
                   },
                   "parameters": [
-                    "ShopkeeperMalcolm",
+                    "Shopkeeper",
                     "Effect",
                     "\"Glow\""
                   ]
@@ -5239,7 +5308,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Outline\""
               ]
@@ -5251,7 +5320,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Outline\"",
                 "no"
@@ -5267,7 +5336,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Outline\""
               ]
@@ -5287,7 +5356,7 @@
               "parameters": [
                 "",
                 "Nametag",
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 ""
               ]
             },
@@ -5331,7 +5400,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "ShopkeeperMalcolm.CenterX()"
+                "Shopkeeper.CenterX()"
               ]
             },
             {
@@ -5341,7 +5410,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "ShopkeeperMalcolm.Y() - Nametag.Height()"
+                "Shopkeeper.Y() - Nametag.Height()"
               ]
             },
             {
@@ -5383,7 +5452,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 "Effect",
                 "\"Outline\""
               ]
@@ -5403,7 +5472,7 @@
               "parameters": [
                 "",
                 "Nametag",
-                "ShopkeeperMalcolm",
+                "Shopkeeper",
                 ""
               ]
             },
@@ -5451,7 +5520,7 @@
                 "Nametag",
                 "Tween",
                 "\"fallDown\"",
-                "ShopkeeperMalcolm.Y() - Nametag.Height()",
+                "Shopkeeper.Y() - Nametag.Height()",
                 "\"easeOutBack\"",
                 "0.25",
                 ""
@@ -5500,7 +5569,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "",
                         "",
                         ""
@@ -5559,7 +5628,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "ShopkeeperMalcolm",
+                        "Shopkeeper",
                         "GoldAmount",
                         "",
                         ""
@@ -5596,7 +5665,7 @@
               "parameters": [
                 "CurrentSpeaker",
                 "=",
-                "\"Shopkeeper Malcolm\""
+                "\"Shopkeeper Ian\""
               ]
             },
             {
@@ -5790,7 +5859,7 @@
                   "parameters": [
                     "CurrentSpeaker",
                     "=",
-                    "\"Shopkeeper Malcolm\""
+                    "\"Shopkeeper Ian\""
                   ]
                 }
               ],
@@ -5991,11 +6060,11 @@
           "effectType": "KawaseBlur",
           "name": "Blur",
           "doubleParameters": {
-            "blur": 1,
+            "blur": 3,
             "padding": 0,
             "pixelizeX": 0,
             "pixelizeY": 0,
-            "quality": 20
+            "quality": 7
           },
           "stringParameters": {},
           "booleanParameters": {}
@@ -6047,11 +6116,11 @@
           "effectType": "KawaseBlur",
           "name": "Blur",
           "doubleParameters": {
-            "blur": 1,
+            "blur": 3,
             "padding": 0,
             "pixelizeX": 0,
             "pixelizeY": 0,
-            "quality": 20
+            "quality": 7
           },
           "stringParameters": {},
           "booleanParameters": {}

@@ -78,6 +78,12 @@
           "value": "[size=24]Artist\n\n[/size]\n[b]Karolyn Young[/b]"
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "SavedName",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -1697,6 +1703,15 @@
             "=",
             "- (SceneWindowHeight() / 2) * 1.12"
           ]
+        },
+        {
+          "type": {
+            "value": "ChangeTimeScale"
+          },
+          "parameters": [
+            "",
+            "3"
+          ]
         }
       ],
       "events": [
@@ -1753,6 +1768,53 @@
               },
               "parameters": [
                 "\"playerStorage\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"playerStorage\"",
+                "\"name\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"playerStorage\"",
+                "\"name\"",
+                "",
+                "SavedName"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Name",
+                "=",
+                "SavedName"
+              ]
+            },
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "SavedName",
+                "\"info\"",
+                ""
               ]
             }
           ]
@@ -3136,6 +3198,283 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "PlayButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "PlayButton"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "Changelog",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Changelog"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::Value"
+                          },
+                          "parameters": [
+                            "Changelog",
+                            "Opacity",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "PlayButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "PlayButton"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Changelog",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Changelog"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "Opacity",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "PlayButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "PlayButton"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]Continue as [b]\" + SavedName + \"[/b][/outline]\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "CollisionNP"
                   },
                   "parameters": [
@@ -3184,43 +3523,19 @@
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "Tooltip"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "BBText::SetBBText"
-                      },
-                      "parameters": [
-                        "Tooltip",
-                        "=",
-                        "\"[outline=black]View on GitHub[/outline]\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "Tooltip",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]View on GitHub[/outline]\""
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -3265,53 +3580,6 @@
                         ""
                       ]
                     }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "Changelog",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "Tooltip"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Tooltip"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseHelper::cursor::ChangeIcon"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "cursor",
-                    "\"Idle\"",
-                    ""
                   ]
                 }
               ]
@@ -3841,6 +4109,282 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "PlayButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "PlayButton"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Changelog",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "Changelog"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::Value"
+                          },
+                          "parameters": [
+                            "Changelog",
+                            "Opacity",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "PlayButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "PlayButton"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Changelog",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "OpacityCapability::OpacityBehavior::Value"
+                      },
+                      "parameters": [
+                        "Changelog",
+                        "Opacity",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "PlayButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "PlayButton"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ShowingCredits",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]Continue as [b]\" + SavedName + \"[/b][/outline]\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
@@ -3888,43 +4432,19 @@
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "Tooltip"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "BBText::SetBBText"
-                      },
-                      "parameters": [
-                        "Tooltip",
-                        "=",
-                        "\"[outline=black]View on GitHub[/outline]\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "Tooltip",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "Tooltip",
+                    "=",
+                    "\"[outline=black]View on GitHub[/outline]\""
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -3948,52 +4468,6 @@
                         ""
                       ]
                     }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Changelog",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "Tooltip"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Tooltip"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseHelper::cursor::ChangeIcon"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "cursor",
-                    "\"Idle\"",
-                    ""
                   ]
                 }
               ]
