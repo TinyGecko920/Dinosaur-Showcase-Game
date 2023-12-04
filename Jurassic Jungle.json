@@ -1912,6 +1912,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -3779,6 +3783,10 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4011,6 +4019,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4279,6 +4291,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4533,13 +4549,13 @@
           "HealToBeApplied": 0
         },
         {
+          "angularMaxSpeed": 180,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 450,
           "maxSpeed": 225,
           "allowDiagonals": false,
           "angleOffset": 0,
-          "angularMaxSpeed": 180,
           "cellHeight": 20,
           "cellWidth": 20,
           "extraBorder": 0,
@@ -4547,6 +4563,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4768,6 +4788,12 @@
           "name": "_Attacking",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "IsTheBoss",
+          "type": "boolean",
+          "value": true
         }
       ],
       "effects": [],
@@ -4815,6 +4841,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4976,6 +5006,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -5245,6 +5279,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -5514,6 +5552,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -5783,6 +5825,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -5980,6 +6026,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -6249,6 +6299,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -6752,6 +6806,10 @@
           "gridOffsetY": 0,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -7885,6 +7943,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tweenzorder"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"

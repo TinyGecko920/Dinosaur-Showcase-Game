@@ -115,6 +115,17 @@
                 "Dinosaurs.AgroDistanceInPixels",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                ""
+              ]
             }
           ],
           "actions": [],
@@ -307,6 +318,17 @@
                 "_Attacking",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -382,6 +404,17 @@
             {
               "type": {
                 "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Dinosaurs",
+                "Health",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
               },
               "parameters": [
                 "Dinosaurs",
@@ -508,27 +541,145 @@
                 "Health",
                 ""
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Dinosaurs",
-                ""
-              ]
             },
             {
               "type": {
-                "value": "ModVarObjet"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "Player",
-                "Gold",
-                "+",
-                "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "IsTheBoss",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Gold",
+                    "+",
+                    "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "IsTheBoss",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Tween",
+                    "\"TweenBossHeight\"",
+                    "Dinosaurs.X()",
+                    "Dinosaurs.Y() - 1000",
+                    "\"easeInSine\"",
+                    "6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Tween",
+                    "\"TweenBossOpacity\"",
+                    "0",
+                    "\"easeInSine\"",
+                    "6",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween2"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Tween",
+                    "\"TweenBossScale\"",
+                    "3.5",
+                    "3.5",
+                    "\"easeInSine\"",
+                    "6",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "Tween",
+                    "\"TweenBossScale\"",
+                    "RandomFloatInRange(-50, 50)",
+                    "\"easeInSine\"",
+                    "6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Isla Nublar\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]

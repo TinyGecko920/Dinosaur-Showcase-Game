@@ -5143,10 +5143,6 @@
       "type": "Backgrounds::Background_ParallaxFromPosition"
     },
     {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
-    },
-    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
