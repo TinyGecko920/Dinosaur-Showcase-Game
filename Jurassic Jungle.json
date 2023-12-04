@@ -237,37 +237,37 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bob_0.png",
+        "file": "assets/ShopkeeperMalcolm0.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\bob_0.png",
+        "name": "assets\\ShopkeeperMalcolm0.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bob_1.png",
+        "file": "assets/ShopkeeperMalcolm1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\bob_1.png",
+        "name": "assets\\ShopkeeperMalcolm1.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bob_2.png",
+        "file": "assets/ShopkeeperMalcolm2.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\bob_2.png",
+        "name": "assets\\ShopkeeperMalcolm2.png",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bob_3.png",
+        "file": "assets/ShopkeeperMalcolm3.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\bob_3.png",
+        "name": "assets\\ShopkeeperMalcolm3.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1555,6 +1555,60 @@
         "metadata": "",
         "name": "assets\\Ground.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Grass.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Palm0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Palm0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Palm1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Palm1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Palm2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Palm2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Palm3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Palm3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Palm4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Palm4.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -3435,265 +3489,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "DialogueSpeakerText",
-      "type": "BBText::BBText",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "text": "[b][outline=black]Eli Sattler[/outline][/b]",
-        "opacity": 254,
-        "fontSize": 40,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
-    },
-    {
-      "assetStoreId": "",
-      "name": "DialogueText",
-      "type": "BBText::BBText",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "BBText_AutoTyping",
-          "type": "AutoTyping::BBText_AutoTyping",
-          "Interval": 0.03,
-          "CharacterJustAdded": false,
-          "CurrentCharacter": ""
-        }
-      ],
-      "content": {
-        "text": "[outline=black]Lorem ipsum[/outline]",
-        "opacity": 255,
-        "fontSize": 36,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "DialogueCharacter",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Outline",
-          "doubleParameters": {
-            "padding": 0,
-            "thickness": 4
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Eli",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.11,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 234,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 900
-                      },
-                      {
-                        "x": 234,
-                        "y": 900
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 234,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 900
-                      },
-                      {
-                        "x": 234,
-                        "y": 900
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 234,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 900
-                      },
-                      {
-                        "x": 234,
-                        "y": 900
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 234,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 54
-                      },
-                      {
-                        "x": 768,
-                        "y": 900
-                      },
-                      {
-                        "x": 234,
-                        "y": 900
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 21,
-      "height": 42,
-      "leftMargin": 21,
-      "name": "DialogueBackground",
-      "rightMargin": 21,
-      "texture": "ButtonPrimary.png",
-      "tiled": false,
-      "topMargin": 21,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 42,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "DialogBoxBackGround",
-          "type": "DialogBox::DialogBoxBackGround",
-          "Interval": 0.04,
-          "Se": "",
-          "Tween": "Tween",
-          "Duration": 250
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -7443,6 +7238,413 @@
         "g": 255,
         "r": 255
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 21,
+      "height": 42,
+      "leftMargin": 21,
+      "name": "DialogueBackground",
+      "rightMargin": 21,
+      "texture": "ButtonPrimary.png",
+      "tiled": false,
+      "topMargin": 21,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 42,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DialogueCharacter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Ellie",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.07,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Eli4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shopkeeper Malcolm",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShopkeeperMalcolm0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShopkeeperMalcolm1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShopkeeperMalcolm2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\ShopkeeperMalcolm3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 234,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 54
+                      },
+                      {
+                        "x": 768,
+                        "y": 900
+                      },
+                      {
+                        "x": 234,
+                        "y": 900
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BBText_AutoTyping",
+          "type": "AutoTyping::BBText_AutoTyping",
+          "Interval": 0.02,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "",
+        "opacity": 255,
+        "fontSize": 36,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueSpeakerText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b][outline=black]Ellie Sattler[/outline][/b]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "left",
+        "wordWrap": false
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -7534,16 +7736,16 @@
         "folderName": "Dialogue",
         "children": [
           {
-            "objectName": "DialogueBackground"
-          },
-          {
-            "objectName": "DialogueCharacter"
+            "objectName": "DialogueSpeakerText"
           },
           {
             "objectName": "DialogueText"
           },
           {
-            "objectName": "DialogueSpeakerText"
+            "objectName": "DialogueCharacter"
+          },
+          {
+            "objectName": "DialogueBackground"
           },
           {
             "objectName": "DialogueNext"
@@ -7626,6 +7828,12 @@
       "name": "_LastInput",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "Name",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -7696,10 +7904,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/internetconnectivity"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

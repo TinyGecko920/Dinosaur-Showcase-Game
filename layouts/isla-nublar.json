@@ -9,16 +9,16 @@
   "title": "Isla Nublar",
   "v": 0,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
-    "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.4027225833325923,
+    "gridAlpha": 0.1,
+    "snap": true,
+    "zoomFactor": 0.28905162031349285,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -28,6 +28,18 @@
       "name": "Transitioning",
       "type": "boolean",
       "value": true
+    },
+    {
+      "folded": true,
+      "name": "CurrentSpeaker",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "DialogueIndex",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -41,7 +53,7 @@
       "width": 0,
       "x": 965,
       "y": 560,
-      "zOrder": 2,
+      "zOrder": 9999,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -54,8 +66,8 @@
       "name": "Population",
       "persistentUuid": "19d54926-d6e0-463b-85f2-3bc6ca0cc0ad",
       "width": 0,
-      "x": 751,
-      "y": 192,
+      "x": 1514,
+      "y": -663,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -67,12 +79,14 @@
       "depth": 0,
       "height": 2968,
       "layer": "",
+      "locked": true,
       "name": "IslaNublar",
       "persistentUuid": "5ee39a36-ce7e-4e22-8325-93436d55d156",
+      "sealed": true,
       "width": 2242,
       "x": -212,
       "y": -872,
-      "zOrder": 4,
+      "zOrder": -999999,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -85,8 +99,8 @@
       "name": "TopDownPlayer",
       "persistentUuid": "09c1a8c2-ff04-496c-bd23-499201490303",
       "width": 0,
-      "x": 379,
-      "y": 577,
+      "x": 796,
+      "y": -723,
       "zOrder": 800,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,7 +116,7 @@
       "width": 0,
       "x": 428,
       "y": 1385,
-      "zOrder": 6,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -115,9 +129,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "8a23ce50-a5c0-41b0-8df2-ce37d4c4c4ed",
       "width": 0,
-      "x": 1123,
-      "y": 1523,
-      "zOrder": 6,
+      "x": 893,
+      "y": -643,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -130,9 +144,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "c2383bdc-54e3-4536-92d4-c7b7d56bc11e",
       "width": 0,
-      "x": 894,
-      "y": 885,
-      "zOrder": 6,
+      "x": 959,
+      "y": 1027,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -145,9 +159,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "3c36fde9-b71b-4849-bc41-57416f4b21a2",
       "width": 0,
-      "x": 1434,
-      "y": 166,
-      "zOrder": 6,
+      "x": 1603,
+      "y": -22,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -160,24 +174,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "658cc698-e43c-4b14-a313-35f894010463",
       "width": 0,
-      "x": 78,
-      "y": 42,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "PlayerSpawn",
-      "persistentUuid": "7a35572b-15e5-4013-95dc-b494381bcc23",
-      "width": 0,
-      "x": 103,
-      "y": -591,
-      "zOrder": 6,
+      "x": 292,
+      "y": 290,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -190,9 +189,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "1043c19f-3ec9-4035-b3f5-148a19eb50a4",
       "width": 0,
-      "x": 697,
-      "y": -355,
-      "zOrder": 6,
+      "x": 69,
+      "y": -228,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -205,9 +204,9 @@
       "name": "PlayerSpawn",
       "persistentUuid": "854ca880-1127-45aa-a5ff-cc8aaab9aa17",
       "width": 0,
-      "x": 789,
-      "y": 247,
-      "zOrder": 6,
+      "x": 1112,
+      "y": 336,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -238,6 +237,1222 @@
       "x": 1012,
       "y": -730,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 150,
+      "layer": "",
+      "name": "ShopkeeperMalcolm",
+      "persistentUuid": "e36276db-0a6d-4c76-86da-3402fc52bad4",
+      "width": 150,
+      "x": 1077,
+      "y": -712,
+      "zOrder": 801,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "584c5817-07a0-4759-9aba-4241ec6e9bf4",
+      "width": 416,
+      "x": 64,
+      "y": -832,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "88fa2bd1-9edc-42ba-b329-1c05863bd155",
+      "width": 608,
+      "x": 0,
+      "y": -768,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "b03b9e28-39fc-40b2-93b0-e34d90c73624",
+      "width": 768,
+      "x": -64,
+      "y": -704,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "a2ec2955-6742-45b7-a0d4-ab75f4a2d96d",
+      "width": 864,
+      "x": -128,
+      "y": -640,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "80d9d662-ee20-419b-8305-505870c16071",
+      "width": 832,
+      "x": -160,
+      "y": -576,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "5fb1198d-a4c6-4391-adbf-f9aa13d36740",
+      "width": 512,
+      "x": -128,
+      "y": -512,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "5d2db87b-d037-47bc-9b75-77a57cdeda89",
+      "width": 224,
+      "x": 0,
+      "y": -448,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "507e55d9-1e21-4b39-93d0-5998702806fa",
+      "width": 320,
+      "x": 768,
+      "y": -320,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "a5d5acc4-9434-48df-a159-3d3d32eb8794",
+      "width": 736,
+      "x": 608,
+      "y": -256,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "83f076b8-53e9-4090-87ca-33695169ed2c",
+      "width": 1120,
+      "x": 288,
+      "y": -192,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "def696b4-610b-4a1d-9abc-d79f7f39b204",
+      "width": 1248,
+      "x": 224,
+      "y": -128,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "cefa5039-e403-4799-bd22-acb63366b875",
+      "width": 1184,
+      "x": 256,
+      "y": -64,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "501116b3-dc18-4476-a25b-01d82141bbdb",
+      "width": 960,
+      "x": 416,
+      "y": 0,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "d82afd6c-fd03-4680-8d32-924c925f52b8",
+      "width": 864,
+      "x": 480,
+      "y": 64,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "3d363fb9-2fc5-4e9d-8f48-e84bc51f2cc6",
+      "width": 544,
+      "x": 608,
+      "y": 128,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "09700fa8-d421-4dd3-880d-e16862c9e6a2",
+      "width": 256,
+      "x": 736,
+      "y": 192,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "03d2601f-8be1-4749-a806-1ddbcdfda750",
+      "width": 160,
+      "x": 800,
+      "y": 256,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "9ac08a32-85b1-40cb-8c76-9dd932ec0dc0",
+      "width": 96,
+      "x": 832,
+      "y": 320,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "34f4c6b0-dc44-46ef-a32b-e2cfabda1eb3",
+      "width": 64,
+      "x": 864,
+      "y": 384,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "8c36324a-e4c0-445e-a065-b06bf71dfa28",
+      "width": 160,
+      "x": 864,
+      "y": -384,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "5c8e4595-3a2a-4e21-8766-e2695020786f",
+      "width": 96,
+      "x": 928,
+      "y": -448,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "5c6d85d9-72b1-4ed3-8bb2-0abc05fb715b",
+      "width": 128,
+      "x": -128,
+      "y": 0,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "12e38c8f-656c-42e8-ae51-f7af925d0866",
+      "width": 64,
+      "x": 0,
+      "y": 128,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "a55722f2-ff2c-4b41-9133-6fdfef2d664d",
+      "width": 96,
+      "x": 1376,
+      "y": -448,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "4dcedc53-eef1-4ef6-806c-ceef4d6c6217",
+      "width": 64,
+      "x": -96,
+      "y": -64,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "27a7d8d4-0cc6-4731-bfbd-ceffa45bbf7c",
+      "width": 64,
+      "x": 256,
+      "y": 576,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "2b80f04a-a3b7-4bb6-96f5-4f3d2d3fefff",
+      "width": 64,
+      "x": 320,
+      "y": 608,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 384,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "2ec451f9-e47f-4b9c-beff-4eb00cf8b087",
+      "width": 64,
+      "x": 384,
+      "y": 640,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 416,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "f3f418fb-8f94-4f87-9a5a-67f4bb510549",
+      "width": 64,
+      "x": 448,
+      "y": 736,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 448,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "dd7d47e4-bd5a-4455-9ac4-e5b22637e4da",
+      "width": 64,
+      "x": 512,
+      "y": 768,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 480,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "ee14798b-b43b-484c-9656-c73d9bfb8c0f",
+      "width": 64,
+      "x": 576,
+      "y": 768,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 416,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "cc64905d-444b-4022-81e7-6526be468130",
+      "width": 64,
+      "x": 640,
+      "y": 800,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 320,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "7c3b43a7-114a-4717-be10-dd53a9478ebd",
+      "width": 64,
+      "x": 704,
+      "y": 832,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 160,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "d12ba66f-6e6a-4eec-8c5b-dfddbc9a9439",
+      "width": 64,
+      "x": 768,
+      "y": 928,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "2e1fe9b6-3835-4efb-91a4-f3f4dd7eae64",
+      "width": 160,
+      "x": -160,
+      "y": 64,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "18196023-6725-46e5-8d7b-5145d4256e8b",
+      "width": 96,
+      "x": -96,
+      "y": 128,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "edda3e5b-e5f2-48b2-b10f-43be269928bd",
+      "width": 96,
+      "x": 1856,
+      "y": -320,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "a863a9ac-0df4-4cb1-a54d-bb2176c98031",
+      "width": 256,
+      "x": 1728,
+      "y": -256,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "5a22db44-901e-440f-907c-2008f5c91580",
+      "width": 224,
+      "x": 1760,
+      "y": -192,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "2708f4f4-3800-43cb-bba0-4f253f2ba5b3",
+      "width": 128,
+      "x": 1824,
+      "y": -128,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "d8ae3fdd-26b2-4f38-beb0-7ce5803b9655",
+      "width": 96,
+      "x": 1504,
+      "y": 576,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "21dbb92f-db22-4a83-b90a-5c4b5dd47d52",
+      "width": 192,
+      "x": 1440,
+      "y": 640,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "2bea32c6-2366-46de-af87-e58b7937f0d5",
+      "width": 192,
+      "x": 1408,
+      "y": 704,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "1728e7fc-c75a-4a5d-a99b-b7feb7fbaff2",
+      "width": 224,
+      "x": 1344,
+      "y": 768,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "e13c5d78-d947-46b1-bf44-e9af642689af",
+      "width": 384,
+      "x": 1216,
+      "y": 832,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "6ae71def-8535-4d40-a900-4a845b6dc469",
+      "width": 480,
+      "x": 1152,
+      "y": 896,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "0ddca22a-1ac2-4c28-a583-fca39faa4609",
+      "width": 352,
+      "x": 1184,
+      "y": 960,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "c60e9131-cc94-465b-8b2f-885357be1008",
+      "width": 256,
+      "x": 1216,
+      "y": 1024,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "40a829fb-ca28-4f4a-8e8f-dc2e0034c052",
+      "width": 192,
+      "x": 1248,
+      "y": 1088,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "dabd6d6c-7837-4fe0-8f6d-5e2216b0b96c",
+      "width": 96,
+      "x": 1280,
+      "y": 1152,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "38d99b47-0c62-4c54-8c0a-69bce5e3a27a",
+      "width": 96,
+      "x": 1312,
+      "y": 1216,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "8561eef6-0ba6-4b98-afd7-5900b88f3ca1",
+      "width": 64,
+      "x": 1344,
+      "y": 1280,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "bb8b6954-7b4a-4ef6-8940-cacc9fb4943a",
+      "width": 448,
+      "x": 608,
+      "y": 1632,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "32c356e3-36c2-44da-a6d3-61dcf13ac298",
+      "width": 352,
+      "x": 672,
+      "y": 1696,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "ad59ffe9-6c61-45cb-a197-0f746cccf526",
+      "width": 352,
+      "x": 672,
+      "y": 1760,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "22ec1e9b-c839-4f3c-83c1-def3311889eb",
+      "width": 320,
+      "x": 704,
+      "y": 1824,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "f4bd144c-88f1-40ce-a004-b03fba11fc9c",
+      "width": 160,
+      "x": 736,
+      "y": 1888,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "dfb8df2c-11bc-4c53-a67c-b53f2476dca5",
+      "width": 160,
+      "x": 736,
+      "y": 1952,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "Grass",
+      "persistentUuid": "82c7f530-bb54-4103-a83b-5054371f03ea",
+      "width": 192,
+      "x": 736,
+      "y": 1568,
+      "zOrder": -999998,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "649c8c62-c9ed-4973-907d-00c538ebc94a",
+      "width": 256,
+      "x": 585,
+      "y": 1263,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "802e1053-f564-4f83-ae5e-0024d4932d55",
+      "width": 256,
+      "x": 820,
+      "y": 1455,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "bbd6d8e7-0913-4a55-9503-f7da8a06a2ba",
+      "width": 256,
+      "x": 367,
+      "y": 697,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "494a05c7-c7e1-49c6-802d-c4fd575692f8",
+      "width": 256,
+      "x": 648,
+      "y": 684,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "881abcf5-3cac-484e-a7f8-884598579a0d",
+      "width": 256,
+      "x": 536,
+      "y": 423,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "09d9af91-ebca-42fa-9570-6e3a3612e535",
+      "width": 256,
+      "x": 1111,
+      "y": 498,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "a45ba3a2-3892-4a3e-ba2d-237ba7cc6f35",
+      "width": 256,
+      "x": 1248,
+      "y": 821,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "ae76a4fb-8b4c-4973-a693-c7e61120e0a5",
+      "width": 256,
+      "x": 1405,
+      "y": 276,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "052b1b19-0327-46fd-b156-e7f354dd682a",
+      "width": 256,
+      "x": 1714,
+      "y": -617,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "2dfc2367-4e6d-44d5-b027-f18abc90bbfb",
+      "width": 256,
+      "x": -148,
+      "y": -356,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "1c5b34c7-e29a-4f41-af14-4caa624e5f79",
+      "width": 256,
+      "x": -193,
+      "y": -990,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "4ab08362-a5ab-45ac-9eee-a29251f41e0c",
+      "width": 256,
+      "x": 96,
+      "y": -1184,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "6e4477f3-cea3-47cd-9134-6ed57eaffda0",
+      "width": 256,
+      "x": 270,
+      "y": -995,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "7ce946dc-2017-47b7-82dc-93d3d7db2871",
+      "width": 256,
+      "x": 534,
+      "y": -1087,
+      "zOrder": 1300,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "ad6093fd-c7dd-45ee-b07e-5b63615b0dc6",
+      "width": 256,
+      "x": 6,
+      "y": -876,
+      "zOrder": 1302,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "876e4aa6-ab85-4495-b8fc-2a7aeca0afc9",
+      "width": 256,
+      "x": 1308,
+      "y": -830,
+      "zOrder": 1300,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -328,7 +1543,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "TopDownPlayer",
       "type": "Sprite",
@@ -425,9 +1640,9 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 200,
           "deceleration": 900,
           "ignoreDefaultControls": true,
-          "maxSpeed": 200,
           "acceleration": 9999,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -453,9 +1668,9 @@
                   "image": "assets\\player_idle_0.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -472,19 +1687,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -495,9 +1710,9 @@
                   "image": "assets\\player_idle_1.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -514,19 +1729,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -537,9 +1752,9 @@
                   "image": "assets\\player_idle_2.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -556,19 +1771,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -579,9 +1794,9 @@
                   "image": "assets\\player_idle_3.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -598,19 +1813,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -621,9 +1836,9 @@
                   "image": "assets\\player_idle_4.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -640,19 +1855,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -663,9 +1878,9 @@
                   "image": "assets\\player_idle_5.png",
                   "points": [
                     {
-                      "name": "RightHand",
-                      "x": 92.5,
-                      "y": 99.5
+                      "name": "Base",
+                      "x": 69,
+                      "y": 149.5
                     }
                   ],
                   "originPoint": {
@@ -682,19 +1897,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -736,19 +1951,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -778,19 +1993,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -820,19 +2035,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -862,19 +2077,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -904,19 +2119,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 1
+                        "x": 46,
+                        "y": 144
                       },
                       {
-                        "x": 100,
-                        "y": 1
+                        "x": 91.5,
+                        "y": 144
                       },
                       {
-                        "x": 100,
+                        "x": 91.5,
                         "y": 150
                       },
                       {
-                        "x": 9,
+                        "x": 45,
                         "y": 150
                       }
                     ]
@@ -956,9 +2171,9 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "Shopkeeper",
+      "name": "ShopkeeperMalcolm",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1001,7 +2216,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\bob_0.png",
+                  "image": "assets\\ShopkeeperMalcolm0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1018,18 +2233,30 @@
                     [
                       {
                         "x": 43,
-                        "y": 4
+                        "y": 97
+                      },
+                      {
+                        "x": 47,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 4.5
+                      },
+                      {
+                        "x": 85,
+                        "y": 6.5
                       },
                       {
                         "x": 124,
-                        "y": 4
+                        "y": 73
                       },
                       {
-                        "x": 124,
-                        "y": 149
+                        "x": 100.5,
+                        "y": 147
                       },
                       {
-                        "x": 43,
+                        "x": 52,
                         "y": 149
                       }
                     ]
@@ -1037,7 +2264,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\bob_1.png",
+                  "image": "assets\\ShopkeeperMalcolm1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1054,18 +2281,30 @@
                     [
                       {
                         "x": 43,
-                        "y": 4
+                        "y": 97
+                      },
+                      {
+                        "x": 47,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 4.5
+                      },
+                      {
+                        "x": 85,
+                        "y": 6.5
                       },
                       {
                         "x": 124,
-                        "y": 4
+                        "y": 73
                       },
                       {
-                        "x": 124,
-                        "y": 149
+                        "x": 100.5,
+                        "y": 147
                       },
                       {
-                        "x": 43,
+                        "x": 52,
                         "y": 149
                       }
                     ]
@@ -1073,7 +2312,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\bob_2.png",
+                  "image": "assets\\ShopkeeperMalcolm2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1090,18 +2329,30 @@
                     [
                       {
                         "x": 43,
-                        "y": 4
+                        "y": 97
+                      },
+                      {
+                        "x": 47,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 4.5
+                      },
+                      {
+                        "x": 85,
+                        "y": 6.5
                       },
                       {
                         "x": 124,
-                        "y": 4
+                        "y": 73
                       },
                       {
-                        "x": 124,
-                        "y": 149
+                        "x": 100.5,
+                        "y": 147
                       },
                       {
-                        "x": 43,
+                        "x": 52,
                         "y": 149
                       }
                     ]
@@ -1109,7 +2360,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\bob_3.png",
+                  "image": "assets\\ShopkeeperMalcolm3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1126,18 +2377,30 @@
                     [
                       {
                         "x": 43,
-                        "y": 4
+                        "y": 97
+                      },
+                      {
+                        "x": 47,
+                        "y": 20.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 4.5
+                      },
+                      {
+                        "x": 85,
+                        "y": 6.5
                       },
                       {
                         "x": 124,
-                        "y": 4
+                        "y": 73
                       },
                       {
-                        "x": 124,
-                        "y": 149
+                        "x": 100.5,
+                        "y": 147
                       },
                       {
-                        "x": 43,
+                        "x": 52,
                         "y": 149
                       }
                     ]
@@ -1171,6 +2434,251 @@
         "align": "center",
         "wordWrap": false
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Grass",
+      "texture": "assets\\Grass.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Palm",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Palm0.png",
+                  "points": [
+                    {
+                      "name": "Base",
+                      "x": 17,
+                      "y": 74.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 17,
+                    "y": 73.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 72
+                      },
+                      {
+                        "x": 22,
+                        "y": 72
+                      },
+                      {
+                        "x": 21,
+                        "y": 75
+                      },
+                      {
+                        "x": 13,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Palm1.png",
+                  "points": [
+                    {
+                      "name": "Base",
+                      "x": 17,
+                      "y": 74.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 17,
+                    "y": 73.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 72
+                      },
+                      {
+                        "x": 22,
+                        "y": 72
+                      },
+                      {
+                        "x": 21,
+                        "y": 75
+                      },
+                      {
+                        "x": 13,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Palm2.png",
+                  "points": [
+                    {
+                      "name": "Base",
+                      "x": 17,
+                      "y": 74.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 17,
+                    "y": 73.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 72
+                      },
+                      {
+                        "x": 22,
+                        "y": 72
+                      },
+                      {
+                        "x": 21,
+                        "y": 75
+                      },
+                      {
+                        "x": 13,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Palm3.png",
+                  "points": [
+                    {
+                      "name": "Base",
+                      "x": 17,
+                      "y": 74.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 17,
+                    "y": 73.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 72
+                      },
+                      {
+                        "x": 22,
+                        "y": 72
+                      },
+                      {
+                        "x": 21,
+                        "y": 75
+                      },
+                      {
+                        "x": 13,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Palm4.png",
+                  "points": [
+                    {
+                      "name": "Base",
+                      "x": 17,
+                      "y": 74.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 17,
+                    "y": 73.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 72
+                      },
+                      {
+                        "x": 22,
+                        "y": 72
+                      },
+                      {
+                        "x": 21,
+                        "y": 75
+                      },
+                      {
+                        "x": 13,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1192,10 +2700,16 @@
         "objectName": "Water"
       },
       {
-        "objectName": "Shopkeeper"
+        "objectName": "ShopkeeperMalcolm"
       },
       {
         "objectName": "Nametag"
+      },
+      {
+        "objectName": "Grass"
+      },
+      {
+        "objectName": "Palm"
       }
     ]
   },
@@ -1219,6 +2733,22 @@
           },
           "parameters": [
             "TopDownPlayer"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Grass"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Palm"
           ]
         },
         {
@@ -1293,6 +2823,68 @@
                 "=",
                 "PlayerSpawn.CenterY()"
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Palm",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Palm",
+                "=",
+                "Palm.Y() + Palm.Height()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "RandomInRange(1, 2)",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Palm",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "Palm",
+                ""
+              ]
             },
             {
               "type": {
@@ -1305,13 +2897,7 @@
                 "",
                 "0"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+            },
             {
               "type": {
                 "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
@@ -1330,10 +2916,40 @@
               },
               "parameters": [
                 "",
+                "\"Character Dialogue\"",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
                 "\"Game UI\"",
                 "0",
                 "0",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "IslaNublar",
+                "\"153;229;80\""
               ]
             },
             {
@@ -1343,6 +2959,35 @@
               "parameters": [
                 "IslaNublar",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Grass",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Palm",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EnableLayerEffect"
+              },
+              "parameters": [
+                "",
+                "\"Water\"",
+                "\"Blur\"",
+                "no"
               ]
             },
             {
@@ -1479,7 +3124,7 @@
           },
           "parameters": [
             "",
-            "Shopkeeper",
+            "ShopkeeperMalcolm",
             "Nametag"
           ]
         },
@@ -1490,7 +3135,267 @@
           "parameters": [
             "Nametag",
             "=",
-            "\"[outline=black]Shopkeeper[/outline]\""
+            "\"[outline=black]Shopkeeper Malcolm[/outline]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Animation",
+            "=",
+            "CurrentSpeaker"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "GoldAmount"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "\"Water\"",
+            "\"Blur\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"Blur\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "ShopkeeperMalcolm",
+            "Effect",
+            "\"Outline\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "TopDownMovement",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"jumpOut\"",
+            "DialogueBackground.CenterY() - (DialogueCharacter.Height() / 2)",
+            "\"easeOutBack\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AutoTyping::BBText_AutoTyping::StartAtBeginning"
+          },
+          "parameters": [
+            "DialogueText",
+            "BBText_AutoTyping",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"fadeIn\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"jumpOut\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Opacity",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenterY"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "=",
+            "DialogueBackground.Y() + DialogueBackground.Height()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "DialogueNext",
+            "=",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
+            "=",
+            "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Coins",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "GoldAmount",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"Blur\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "\"Water\"",
+            "\"Blur\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "TopDownMovement",
+            "=",
+            "200"
           ]
         }
       ]
@@ -1577,6 +3482,26 @@
             "Resizable",
             "max(SceneWindowWidth(), SceneWindowHeight()) * 2",
             "max(SceneWindowWidth(), SceneWindowHeight()) * 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "DialogueSpeakerText",
+            "=",
+            "\"[b][outline=black]\" + CurrentSpeaker + \"[/outline][b]\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "=",
+            "TopDownPlayer.Y() + TopDownPlayer.Height()"
           ]
         }
       ],
@@ -1681,6 +3606,101 @@
                 ""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Palm",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Plan"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            ">",
+            "Palm.ZOrder()"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::Value"
+          },
+          "parameters": [
+            "Palm",
+            "Opacity",
+            "!=",
+            "191"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Palm",
+            "Opacity",
+            "=",
+            "191"
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "Palm",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::Value"
+          },
+          "parameters": [
+            "Palm",
+            "Opacity",
+            "=",
+            "191"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Palm",
+            "Opacity",
+            "=",
+            "255"
           ]
         }
       ]
@@ -1932,6 +3952,107 @@
       "conditions": [
         {
           "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "Grass",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "TopDownMovement",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetSpeedScale"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "Animation",
+                "=",
+                "0.5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "Grass",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "TopDownMovement",
+                "=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetSpeedScale"
+              },
+              "parameters": [
+                "TopDownPlayer",
+                "Animation",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
@@ -1966,6 +4087,16 @@
           "parameters": [
             "TopDownPlayer",
             "Flippable"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
           ]
         }
       ],
@@ -2020,6 +4151,16 @@
           "parameters": [
             "TopDownPlayer",
             "Flippable"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Dialogue\""
           ]
         }
       ],
@@ -2107,6 +4248,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": {
+            "value": "MouseHelper::cursor::IconSuffix"
+          },
+          "parameters": [
+            "Cursor",
+            "cursor",
+            "!=",
+            "\"Pressed\"",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -2128,49 +4281,198 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "MouseButtonPressed"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "Left"
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_Button_pressed"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"A\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_Button_pressed"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"Cross\"",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Cross\"",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "MouseHelper::cursor::ChangeIcon"
-          },
-          "parameters": [
-            "Cursor",
-            "cursor",
-            "\"Idle\"",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "ShopkeeperMalcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "ShopkeeperMalcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "ShopkeeperMalcolm",
+                "Effect",
+                "\"Glow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MouseHelper::cursor::ChangeIcon"
+              },
+              "parameters": [
+                "Cursor",
+                "cursor",
+                "\"Active\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseHelper::cursor::IconSuffix"
+              },
+              "parameters": [
+                "Cursor",
+                "cursor",
+                "=",
+                "\"Pressed\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MouseHelper::cursor::ChangeIcon"
+              },
+              "parameters": [
+                "Cursor",
+                "cursor",
+                "\"Idle\"",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -2421,10 +4723,146 @@
           "conditions": [
             {
               "type": {
+                "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+              },
+              "parameters": [
+                "DialogueText",
+                "BBText_AutoTyping",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+                  },
+                  "parameters": [
+                    "DialogueCharacter",
+                    "Animation"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "DialogueCharacter",
+                    "Animation"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "DialogueNext"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+              },
+              "parameters": [
+                "DialogueText",
+                "BBText_AutoTyping",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+                  },
+                  "parameters": [
+                    "DialogueCharacter",
+                    "Animation"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                  },
+                  "parameters": [
+                    "DialogueCharacter",
+                    "Animation"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "DialogueNext"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "DialogueNext"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Distance"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "TopDownPlayer",
                 "200",
                 ""
@@ -2436,7 +4874,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Glow\""
               ]
@@ -2448,7 +4886,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Glow\"",
                 "yes"
@@ -2465,7 +4903,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "TopDownPlayer",
                 "200",
                 ""
@@ -2476,7 +4914,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Glow\""
               ]
@@ -2488,7 +4926,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Glow\"",
                 "no"
@@ -2537,7 +4975,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "Shopkeeper",
+                        "ShopkeeperMalcolm",
                         "",
                         "",
                         ""
@@ -2566,7 +5004,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "Shopkeeper",
+                        "ShopkeeperMalcolm",
                         "GoldAmount",
                         "",
                         ""
@@ -2581,33 +5019,90 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Glow\""
               ]
             },
             {
               "type": {
-                "inverted": true,
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                "value": "BuiltinCommonInstructions::CompareStrings"
               },
               "parameters": [
-                "Shopkeeper",
-                "Effect",
-                "\"Outline\""
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "Shopkeeper",
-                "Effect",
-                "\"Outline\"",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "=",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "ShopkeeperMalcolm",
+                    "Effect",
+                    "\"Outline\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "ShopkeeperMalcolm",
+                    "Effect",
+                    "\"Outline\"",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -2654,7 +5149,7 @@
                       },
                       "parameters": [
                         "Cursor",
-                        "Shopkeeper",
+                        "ShopkeeperMalcolm",
                         "",
                         "",
                         ""
@@ -2684,7 +5179,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "Shopkeeper",
+                        "ShopkeeperMalcolm",
                         "GoldAmount",
                         "",
                         ""
@@ -2698,9 +5193,19 @@
                     "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
                   },
                   "parameters": [
-                    "Shopkeeper",
+                    "ShopkeeperMalcolm",
                     "Effect",
                     "\"Glow\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
                   ]
                 }
               ]
@@ -2710,7 +5215,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Outline\""
               ]
@@ -2722,7 +5227,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Outline\"",
                 "no"
@@ -2738,7 +5243,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Outline\""
               ]
@@ -2758,7 +5263,7 @@
               "parameters": [
                 "",
                 "Nametag",
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 ""
               ]
             },
@@ -2802,7 +5307,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "Shopkeeper.CenterX()"
+                "ShopkeeperMalcolm.CenterX()"
               ]
             },
             {
@@ -2812,7 +5317,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "Shopkeeper.Y() - Nametag.Height()"
+                "ShopkeeperMalcolm.Y() - Nametag.Height()"
               ]
             },
             {
@@ -2854,7 +5359,7 @@
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 "Effect",
                 "\"Outline\""
               ]
@@ -2874,7 +5379,7 @@
               "parameters": [
                 "",
                 "Nametag",
-                "Shopkeeper",
+                "ShopkeeperMalcolm",
                 ""
               ]
             },
@@ -2922,9 +5427,502 @@
                 "Nametag",
                 "Tween",
                 "\"fallDown\"",
-                "Shopkeeper.Y() - Nametag.Height()",
+                "ShopkeeperMalcolm.Y() - Nametag.Height()",
                 "\"easeOutBack\"",
                 "0.25",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "ShopkeeperMalcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "ShopkeeperMalcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"Shopkeeper Malcolm\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "DialogueText",
+                "=",
+                "\"[outline=black]Well hello, [b]\" + GlobalVariableString(Name) + \"[/b]! How may I help you?[/outline]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "DialogueNext",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "=",
+                    "\"Shopkeeper Malcolm\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Dialogue\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "CurrentSpeaker",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "DialogueNext",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseHelper::cursor::IconSuffix"
+              },
+              "parameters": [
+                "Cursor",
+                "cursor",
+                "!=",
+                "\"Active\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MouseHelper::cursor::ChangeIcon"
+              },
+              "parameters": [
+                "Cursor",
+                "cursor",
+                "\"Active\"",
                 ""
               ]
             }
@@ -2963,6 +5961,19 @@
             "skyColor": "255;255;255",
             "top": "Y-"
           },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "KawaseBlur",
+          "name": "Blur",
+          "doubleParameters": {
+            "blur": 1,
+            "padding": 0,
+            "pixelizeX": 0,
+            "pixelizeY": 0,
+            "quality": 20
+          },
+          "stringParameters": {},
           "booleanParameters": {}
         }
       ]
@@ -3006,6 +6017,19 @@
             "skyColor": "255;255;255",
             "top": "Y-"
           },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "KawaseBlur",
+          "name": "Blur",
+          "doubleParameters": {
+            "blur": 1,
+            "padding": 0,
+            "pixelizeX": 0,
+            "pixelizeY": 0,
+            "quality": 20
+          },
+          "stringParameters": {},
           "booleanParameters": {}
         }
       ]
@@ -3148,6 +6172,38 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
+      "name": "Dialogue",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "Cursor",
       "renderingType": "",
       "visibility": true,
@@ -3179,10 +6235,6 @@
     {
       "name": "BBText_AutoTyping",
       "type": "AutoTyping::BBText_AutoTyping"
-    },
-    {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",

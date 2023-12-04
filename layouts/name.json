@@ -3045,6 +3045,16 @@
         },
         {
           "type": {
+            "value": "ModVarGlobalTxt"
+          },
+          "parameters": [
+            "Name",
+            "=",
+            "NameCandidate"
+          ]
+        },
+        {
+          "type": {
             "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
@@ -3990,10 +4000,6 @@
     {
       "name": "Background_ParallaxMouse",
       "type": "Backgrounds::Background_ParallaxFromPosition"
-    },
-    {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
