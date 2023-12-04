@@ -1829,6 +1829,12 @@
           "name": "_Attacking",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "IsTheBoss",
+          "type": "boolean",
+          "value": true
         }
       ],
       "effects": [],
@@ -4950,7 +4956,7 @@
           "folded": true,
           "name": "IsTheBoss",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ],
       "effects": [],
@@ -6244,6 +6250,12 @@
           "name": "_Attacking",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "IsTheBoss",
+          "type": "boolean",
+          "value": true
         }
       ],
       "effects": [],
@@ -6517,6 +6529,12 @@
           "name": "_Attacking",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "IsTheBoss",
+          "type": "boolean",
+          "value": true
         }
       ],
       "effects": [],
