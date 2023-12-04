@@ -94,30 +94,12 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": true,
         "file": "assets/JurassicJungle.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\JurassicJungle.png",
         "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/TempSword2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "TempSword2",
-        "smoothed": false,
         "userAdded": true
       },
       {
@@ -641,15 +623,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Attack5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Attack4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Run5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -690,15 +663,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Eli4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/triceraptos_3.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/triceraptos_3.png\",\"extension\":\".png\"}",
-        "name": "assets\\triceraptos_3.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1010,33 +974,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/triceraptos_0.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/triceraptos_0.png\",\"extension\":\".png\"}",
-        "name": "assets\\triceraptos_0.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/triceraptos_1.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/triceraptos_1.png\",\"extension\":\".png\"}",
-        "name": "assets\\triceraptos_1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/triceraptos_2.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/triceraptos_2.png\",\"extension\":\".png\"}",
-        "name": "assets\\triceraptos_2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/velociraptor_idle_0.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/velociraptor_idle_0.png\",\"extension\":\".png\"}",
@@ -1271,15 +1208,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/carnotaurus_idle_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\carnotaurus_idle_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0000_Layer-7.png",
         "kind": "image",
         "metadata": "",
@@ -1289,38 +1217,11 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/carnotaurus_idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\carnotaurus_idle_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/ShinyHeart_0001_Layer-6.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\ShinyHeart_0001_Layer-6.png",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/carnotaurus_idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\carnotaurus_idle_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/carnotaurus_idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\carnotaurus_idle_3.png",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -1442,15 +1343,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/player_attack_0.png",
         "kind": "image",
         "metadata": "",
@@ -1538,15 +1430,6 @@
         "name": "assets\\triceratops_idle_1.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Ground2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Ground2.png\"}",
-        "name": "Ground2",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -1654,6 +1537,42 @@
         "metadata": "{\"localFilePath\":\"assets/trex_attack_4.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_attack_4.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Malcolm0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Malcolm0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Malcolm1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Malcolm1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Malcolm3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Malcolm3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Malcolm4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Malcolm4.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],

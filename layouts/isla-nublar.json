@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": true,
-    "zoomFactor": 0.2616774116992161,
+    "zoomFactor": 0.30887412163426653,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1441,6 +1441,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Malcolm",
+      "persistentUuid": "db34fdfc-7862-4439-8927-171795757aca",
+      "width": 0,
+      "x": 1149,
+      "y": 1344,
+      "zOrder": 801,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2664,6 +2679,174 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Malcolm",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 144
+                      },
+                      {
+                        "x": 48,
+                        "y": 144
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 144
+                      },
+                      {
+                        "x": 48,
+                        "y": 144
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 144
+                      },
+                      {
+                        "x": 48,
+                        "y": 144
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 11
+                      },
+                      {
+                        "x": 126,
+                        "y": 144
+                      },
+                      {
+                        "x": 48,
+                        "y": 144
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2695,6 +2878,9 @@
       },
       {
         "objectName": "Palm"
+      },
+      {
+        "objectName": "Malcolm"
       }
     ]
   },
@@ -2992,6 +3178,16 @@
                 "TopDownPlayer",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Malcolm",
+                "Flippable",
+                "yes"
+              ]
             }
           ]
         },
@@ -3120,7 +3316,54 @@
           "parameters": [
             "Nametag",
             "=",
-            "\"[outline=black]Shopkeeper Malcolm[/outline]\""
+            "\"[outline=black]Shopkeeper Ian[/outline]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Nametag",
+            "-9999",
+            "-9999",
+            "\"Billboards\""
+          ]
+        },
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "Malcolm",
+            "Nametag"
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Nametag",
+            "=",
+            "\"[outline=black]Malcolm[/outline]\""
           ]
         }
       ]
@@ -4955,6 +5198,86 @@
                 "value": "Distance"
               },
               "parameters": [
+                "Malcolm",
+                "TopDownPlayer",
+                "200",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Malcolm",
+                "TopDownPlayer",
+                "200",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
                 "Shopkeeper",
                 "TopDownPlayer",
                 "200",
@@ -5023,6 +5346,179 @@
                 "Effect",
                 "\"Glow\"",
                 "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Malcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Malcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Glow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "=",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Malcolm",
+                    "Effect",
+                    "\"Outline\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Malcolm",
+                    "Effect",
+                    "\"Outline\"",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -5242,6 +5738,262 @@
                       },
                       "parameters": [
                         "Cursor",
+                        "Malcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Malcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Malcolm",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Malcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Malcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Malcolm",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
                         "Shopkeeper",
                         "",
                         "",
@@ -5324,6 +6076,206 @@
                 "Effect",
                 "\"Outline\"",
                 "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "Nametag",
+                "Malcolm",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeOut\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fallDown\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Nametag",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Nametag",
+                "=",
+                "Shopkeeper.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Nametag",
+                "=",
+                "Shopkeeper.Y() - Nametag.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeIn\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"popUp\"",
+                "Nametag.Y() - 8",
+                "\"easeOutBack\"",
+                "0.25",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Malcolm",
+                "Effect",
+                "\"Outline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "Nametag",
+                "Malcolm",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeIn\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"popUp\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fallDown\"",
+                "Shopkeeper.Y() - Nametag.Height()",
+                "\"easeOutBack\"",
+                "0.25",
+                ""
               ]
             }
           ]
@@ -5524,6 +6476,177 @@
                 "\"easeOutBack\"",
                 "0.25",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Malcolm",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Malcolm",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"Malcolm\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "DialogueText",
+                "=",
+                "\"[outline=black]Hmm...\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
               ]
             }
           ]
@@ -5849,6 +6972,60 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "=",
+                    "\"Malcolm\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Dialogue\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "CurrentSpeaker",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
