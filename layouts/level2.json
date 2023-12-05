@@ -18,59 +18,12 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11805730185029358,
+    "zoomFactor": 0.14890670595874447,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Layer4",
-      "persistentUuid": "d144997f-fea2-46c9-9719-15349d804368",
-      "width": 0,
-      "x": -36,
-      "y": 1383,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer5",
-      "name": "Layer5",
-      "persistentUuid": "16907594-b096-4828-b55f-69a41a567a34",
-      "width": 12000,
-      "x": -2500,
-      "y": 0,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "876b120e-2df1-4611-bc4b-0d54340b9b7b",
-      "width": 12000,
-      "x": -2000,
-      "y": 0,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -83,22 +36,6 @@
       "x": 0,
       "y": 1048,
       "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "826716fe-4997-471b-8414-eca0bb66c9f5",
-      "width": 12000,
-      "x": -2000,
-      "y": 0,
-      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -131,38 +68,6 @@
       "x": 14513,
       "y": 5,
       "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "60fa5ae9-79c9-4fff-8d39-0ab3b7e9df00",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "e3ca8d95-5861-4fdc-a835-a7a7ec024494",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -386,54 +291,6 @@
       "width": 1259,
       "x": 18076,
       "y": 44,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "5dc0610e-a3f4-4e2a-b717-f6e069d14774",
-      "width": 10000,
-      "x": 22000,
-      "y": 0,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "65052601-1480-40f5-9bcc-36a5e0c87503",
-      "width": 10000,
-      "x": 32000,
-      "y": 0,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "24127b56-633c-444d-8daa-43bc28196f27",
-      "width": 12000,
-      "x": 22000,
-      "y": 0,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -742,6 +599,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "",
+      "name": "Layer3",
+      "persistentUuid": "4c8ea7c9-f542-4ad2-bb31-a06b82f0b107",
+      "width": 1920,
+      "x": -3846,
+      "y": 2434,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "",
+      "name": "Layer3",
+      "persistentUuid": "2b147df8-eead-4921-a4c5-702b1921c587",
+      "width": 1920,
+      "x": -2366,
+      "y": 2434,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1080,
+      "layer": "",
+      "name": "Layer2",
+      "persistentUuid": "827a73bd-f2d6-4d05-afc2-7b87cfc7b817",
+      "width": 1920,
+      "x": -3000,
+      "y": 2785,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -766,41 +671,9 @@
       "bottomMargin": 0,
       "height": 32,
       "leftMargin": 0,
-      "name": "Layer4",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1290.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
       "name": "Layer2",
       "rightMargin": 0,
       "texture": "assets\\IMG_1296.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer1",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1293.png",
       "tiled": true,
       "topMargin": 0,
       "type": "PanelSpriteObject::PanelSprite",
@@ -1259,16 +1132,10 @@
         "folderName": "Scenery",
         "children": [
           {
-            "objectName": "Layer1"
-          },
-          {
             "objectName": "Layer2"
           },
           {
             "objectName": "Layer3"
-          },
-          {
-            "objectName": "Layer4"
           },
           {
             "objectName": "Layer5"
@@ -1348,10 +1215,10 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer4",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
@@ -1487,10 +1354,10 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Layer1",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
@@ -1551,10 +1418,6 @@
     {
       "name": "BBText_AutoTyping",
       "type": "AutoTyping::BBText_AutoTyping"
-    },
-    {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
