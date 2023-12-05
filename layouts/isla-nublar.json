@@ -9,7 +9,7 @@
   "title": "Isla Nublar",
   "v": 0,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.1,
-    "snap": true,
-    "zoomFactor": 0.30887412163426653,
+    "snap": false,
+    "zoomFactor": 0.26167741169921616,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1452,6 +1452,134 @@
       "x": 1149,
       "y": 1344,
       "zOrder": 1494,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "754f3eb4-7bb2-491e-9b0f-a5d6b34296be",
+      "width": 256,
+      "x": 768,
+      "y": -157,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "a50ccd08-7276-42df-8519-c712d89501b7",
+      "width": 256,
+      "x": 572,
+      "y": -327,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "a7d13538-9084-41f2-a30e-a735d5caf813",
+      "width": 256,
+      "x": 261,
+      "y": -522,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "27e279aa-ab29-4592-bd57-ffdc96b991d8",
+      "width": 256,
+      "x": 508,
+      "y": -599,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "9f29a6fc-3144-4c77-b5fb-e72ed5929f68",
+      "width": 256,
+      "x": 841,
+      "y": -709,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "1c63d351-3c66-45db-aafe-a6bb4c6da395",
+      "width": 256,
+      "x": 978,
+      "y": -629,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "83ba696e-5cc4-43a3-a924-86959c684268",
+      "width": 256,
+      "x": 1086,
+      "y": -360,
+      "zOrder": 1301,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 6,
+      "height": 457,
+      "layer": "",
+      "name": "Palm",
+      "persistentUuid": "13f0350f-6e3c-4efb-8457-748627e2c494",
+      "width": 256,
+      "x": 1223,
+      "y": -535,
+      "zOrder": 1301,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3471,7 +3599,7 @@
           "parameters": [
             "",
             "\"zoomIn\"",
-            "1.25",
+            "1.2",
             "",
             "\"easeOutCirc\"",
             "1"
@@ -4553,7 +4681,7 @@
         "",
         "if (!(objects.length > 0)) return;",
         "",
-        "objects[0].setBBText(`[b][outline=black][spacing=8]${('0000000000' + topDownPlayer.getVariables().get('Gold').getAsNumber()).substr(-6)}[/spacing][/outline][/b][outline=black]`);"
+        "objects[0].setBBText(`[b][outline=black][spacing=8]${('0000000000' + runtimeScene.getGame().getVariables().get('Gold').getAsNumber()).substr(-6)}[/spacing][/outline][/b][outline=black]`);"
       ],
       "parameterObjects": "GoldAmount",
       "useStrict": true,
@@ -5042,7 +5170,7 @@
           "parameters": [
             "Tooltip",
             "=",
-            "\"[outline=black]You have [color=FFB25D]\" + ToString(TopDownPlayer.Gold) + \"[/color] gold[/outline]\""
+            "\"[outline=black]You have [color=FFB25D]\" + ToString(Gold) + \"[/color] gold[/outline]\""
           ]
         }
       ],
@@ -6640,7 +6768,7 @@
               "parameters": [
                 "DialogueText",
                 "=",
-                "\"[outline=black]Hmm...\""
+                "\"[outline=black]So, [b]\" + GlobalVariableString(Name) + \"[/b]. You think you are ready?[/outline]\""
               ]
             },
             {
@@ -7000,8 +7128,161 @@
                       },
                       "parameters": [
                         "DialogueIndex",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]Come back to me once you have amassed a minimum of [color=FFB25D][b]4000 gold[/b][/color]![/outline]\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]I see you have prepared well.[/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]You must trek across the swampy forest and defeat the vicious [color=D85252][b]T-Rex[/b][/color]![/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
                         ">",
-                        "0"
+                        "2"
                       ]
                     }
                   ],

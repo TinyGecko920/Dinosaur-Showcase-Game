@@ -8151,6 +8151,12 @@
       "name": "Name",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "Gold",
+      "type": "number",
+      "value": 100000
     }
   ],
   "layouts": [
