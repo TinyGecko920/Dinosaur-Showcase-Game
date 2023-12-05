@@ -2519,9 +2519,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 10000,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 10000,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 5,
@@ -8250,6 +8250,36 @@
       "name": "Gold",
       "type": "number",
       "value": 100000
+    },
+    {
+      "folded": true,
+      "name": "Layer1Tile",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Layer2Tile",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Layer3Tile",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Layer4Tile",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Layer5Tile",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -8301,6 +8331,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/extendedmath"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tweenzorder"
