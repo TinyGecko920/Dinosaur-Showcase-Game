@@ -228,8 +228,7 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
+      "customSize": false,
       "height": 150,
       "layer": "",
       "name": "Shopkeeper",
@@ -237,7 +236,7 @@
       "width": 150,
       "x": 1077,
       "y": -712,
-      "zOrder": 801,
+      "zOrder": -562,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1452,7 +1451,7 @@
       "width": 0,
       "x": 1149,
       "y": 1344,
-      "zOrder": 801,
+      "zOrder": 1494,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2158,7 +2157,7 @@
       "assetStoreId": "",
       "height": 100,
       "name": "Water",
-      "texture": "assets\\WaterTile.png",
+      "texture": "assets\\Water.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 100,
       "variables": [],
@@ -2212,11 +2211,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.11,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm0.png",
+                  "image": "assets\\Shopkeeper0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2232,39 +2231,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 43,
-                        "y": 97
+                        "x": 53.5,
+                        "y": 134
                       },
                       {
-                        "x": 47,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 58.5,
-                        "y": 4.5
-                      },
-                      {
-                        "x": 85,
-                        "y": 6.5
-                      },
-                      {
-                        "x": 124,
-                        "y": 73
+                        "x": 93,
+                        "y": 132.5
                       },
                       {
                         "x": 100.5,
-                        "y": 147
+                        "y": 147.5
                       },
                       {
-                        "x": 52,
-                        "y": 149
+                        "x": 50.5,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm1.png",
+                  "image": "assets\\Shopkeeper0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2280,39 +2267,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 43,
-                        "y": 97
+                        "x": 53.5,
+                        "y": 134
                       },
                       {
-                        "x": 47,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 58.5,
-                        "y": 4.5
-                      },
-                      {
-                        "x": 85,
-                        "y": 6.5
-                      },
-                      {
-                        "x": 124,
-                        "y": 73
+                        "x": 93,
+                        "y": 132.5
                       },
                       {
                         "x": 100.5,
-                        "y": 147
+                        "y": 147.5
                       },
                       {
-                        "x": 52,
-                        "y": 149
+                        "x": 50.5,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm2.png",
+                  "image": "assets\\Shopkeeper1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2328,39 +2303,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 43,
-                        "y": 97
+                        "x": 53.5,
+                        "y": 134
                       },
                       {
-                        "x": 47,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 58.5,
-                        "y": 4.5
-                      },
-                      {
-                        "x": 85,
-                        "y": 6.5
-                      },
-                      {
-                        "x": 124,
-                        "y": 73
+                        "x": 93,
+                        "y": 132.5
                       },
                       {
                         "x": 100.5,
-                        "y": 147
+                        "y": 147.5
                       },
                       {
-                        "x": 52,
-                        "y": 149
+                        "x": 50.5,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm3.png",
+                  "image": "assets\\Shopkeeper2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2376,32 +2339,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 43,
-                        "y": 97
+                        "x": 53.5,
+                        "y": 134
                       },
                       {
-                        "x": 47,
-                        "y": 20.5
-                      },
-                      {
-                        "x": 58.5,
-                        "y": 4.5
-                      },
-                      {
-                        "x": 85,
-                        "y": 6.5
-                      },
-                      {
-                        "x": 124,
-                        "y": 73
+                        "x": 93,
+                        "y": 132.5
                       },
                       {
                         "x": 100.5,
-                        "y": 147
+                        "y": 147.5
                       },
                       {
-                        "x": 52,
-                        "y": 149
+                        "x": 50.5,
+                        "y": 150
                       }
                     ]
                   ]
@@ -2687,7 +2638,33 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -2772,7 +2749,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Malcolm3.png",
+                  "image": "assets\\Malcolm2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2808,7 +2785,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Malcolm4.png",
+                  "image": "assets\\Malcolm0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2853,6 +2830,17 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "NPCs",
+        "children": [
+          {
+            "objectName": "Shopkeeper"
+          },
+          {
+            "objectName": "Malcolm"
+          }
+        ]
+      },
+      {
         "objectName": "Population"
       },
       {
@@ -2868,9 +2856,6 @@
         "objectName": "Water"
       },
       {
-        "objectName": "Shopkeeper"
-      },
-      {
         "objectName": "Nametag"
       },
       {
@@ -2878,9 +2863,6 @@
       },
       {
         "objectName": "Palm"
-      },
-      {
-        "objectName": "Malcolm"
       }
     ]
   },
@@ -3401,6 +3383,17 @@
         },
         {
           "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Resizable",
+            "900",
+            "900"
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -3478,7 +3471,7 @@
           "parameters": [
             "",
             "\"zoomIn\"",
-            "2",
+            "1.25",
             "",
             "\"easeOutCirc\"",
             "1"
@@ -3578,6 +3571,17 @@
             "",
             "\"easeOutQuad\"",
             "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Resizable",
+            "900",
+            "900"
           ]
         },
         {
@@ -4225,6 +4229,18 @@
             "3",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "DialogueNext",
+            "=",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
+            "=",
+            "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
+          ]
         }
       ]
     },
@@ -4668,83 +4684,198 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::And"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "LastInput::LastInputWasFrom"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Gamepad\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Controller_X_is_connected"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "Shopkeeper",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Shopkeeper",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
                       ]
                     },
                     {
                       "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Shopkeeper",
-                        "",
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"MouseKeyboard\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Shopkeeper",
+                            "GoldAmount",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Shopkeeper",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::And"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "LastInput::LastInputWasFrom"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Gamepad\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Controller_X_is_connected"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "Malcolm",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Malcolm",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
                       ]
                     },
                     {
                       "type": {
-                        "value": "SourisSurObjet"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "Shopkeeper",
-                        "GoldAmount",
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"MouseKeyboard\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Malcolm",
+                            "GoldAmount",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Malcolm",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 }
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-              },
-              "parameters": [
-                "Shopkeeper",
-                "Effect",
-                "\"Glow\""
               ]
             },
             {
@@ -5472,7 +5603,7 @@
                   "parameters": [
                     "Cursor",
                     "cursor",
-                    "=",
+                    "!=",
                     "\"Active\"",
                     ""
                   ]
@@ -5645,7 +5776,7 @@
                   "parameters": [
                     "Cursor",
                     "cursor",
-                    "=",
+                    "!=",
                     "\"Active\"",
                     ""
                   ]
@@ -5692,134 +5823,6 @@
                     "yes"
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Malcolm",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Malcolm",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                  },
-                  "parameters": [
-                    "Malcolm",
-                    "Effect",
-                    "\"Glow\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "CurrentSpeaker",
-                    "!=",
-                    "\"0\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-              },
-              "parameters": [
-                "Malcolm",
-                "Effect",
-                "\"Outline\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "Malcolm",
-                "Effect",
-                "\"Outline\"",
-                "no"
               ]
             }
           ]
@@ -6152,7 +6155,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "Shopkeeper.CenterX()"
+                "Malcolm.CenterX()"
               ]
             },
             {
@@ -6162,7 +6165,7 @@
               "parameters": [
                 "Nametag",
                 "=",
-                "Shopkeeper.Y() - Nametag.Height()"
+                "Malcolm.Y() - Nametag.Height()"
               ]
             },
             {

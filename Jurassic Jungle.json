@@ -219,55 +219,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/ShopkeeperMalcolm0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShopkeeperMalcolm0.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShopkeeperMalcolm1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShopkeeperMalcolm1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShopkeeperMalcolm2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShopkeeperMalcolm2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShopkeeperMalcolm3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShopkeeperMalcolm3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Shaded Red Fill Bar2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shaded Red Fill Bar.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/96409107ae77918bbcde7a715c09e12b1b6c8ef16524b06b0d162955f1bd1a27_Shaded Red Fill Bar.png",
-          "name": "Shaded Red Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Wood Bar Border2.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Wood Bar Border2.png\",\"extension\":\".png\",\"pskl\":{}}",
@@ -632,42 +583,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Eli1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Eli1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Eli2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Eli2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Eli3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Eli3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Eli4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Eli4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/GamepadCursorIdle.png",
         "kind": "image",
         "metadata": "",
@@ -1028,177 +943,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0000_Layer-19.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0000_Layer-19.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0001_Layer-18.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0001_Layer-18.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0002_Layer-17.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0002_Layer-17.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0003_Layer-16.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0003_Layer-16.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0004_Layer-15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0004_Layer-15.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0005_Layer-14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0005_Layer-14.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0006_Layer-13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0006_Layer-13.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0007_Layer-12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0007_Layer-12.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0008_Layer-11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0008_Layer-11.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0009_Layer-10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0009_Layer-10.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0010_Layer-9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0010_Layer-9.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0011_Layer-8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0011_Layer-8.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0012_Layer-7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0012_Layer-7.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0013_Layer-6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0013_Layer-6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0014_Layer-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0014_Layer-5.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0015_Layer-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0015_Layer-4.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0016_Layer-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0016_Layer-3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0017_Layer-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0017_Layer-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BitByBitStudios_0018_Layer-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\BitByBitStudios_0018_Layer-1.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/IslaNublar.png",
         "kind": "image",
         "metadata": "",
@@ -1208,19 +952,64 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0000_Layer-7.png",
+        "file": "assets/Heart0.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\ShinyHeart_0000_Layer-7.png",
+        "name": "assets\\Heart0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Heart1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Heart1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Heart2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Heart3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Heart3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Heart4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Heart4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Heart5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Heart5.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0001_Layer-6.png",
+        "file": "assets/Heart6.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\ShinyHeart_0001_Layer-6.png",
+        "name": "assets\\Heart6.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1230,7 +1019,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\spinosaurus_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1239,7 +1028,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\spinosaurus_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1248,7 +1037,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\spinosaurus_idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1257,7 +1046,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\spinosaurus_idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1266,17 +1055,8 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0002_Layer-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShinyHeart_0002_Layer-5.png",
         "smoothed": false,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1284,17 +1064,8 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0003_Layer-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShinyHeart_0003_Layer-4.png",
         "smoothed": false,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1302,17 +1073,8 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle3",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0004_Layer-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShinyHeart_0004_Layer-3.png",
         "smoothed": false,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1320,24 +1082,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Idle4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0005_Layer-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShinyHeart_0005_Layer-2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/ShinyHeart_0006_Layer-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\ShinyHeart_0006_Layer-1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1347,7 +1091,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_attack_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1356,7 +1100,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_attack_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1365,7 +1109,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_attack_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1374,7 +1118,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\player_attack_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1383,7 +1127,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\sword.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1392,7 +1136,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\swordtwo.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1401,15 +1145,15 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\swordthree.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/WaterTile.png",
+        "file": "assets/Water.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\WaterTile.png",
+        "name": "assets\\Water.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1419,7 +1163,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceratops_idle_0.png\",\"extension\":\".png\"}",
         "name": "assets\\triceratops_idle_0.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1428,7 +1172,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/triceratops_idle_1.png\",\"extension\":\".png\"}",
         "name": "assets\\triceratops_idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1437,7 +1181,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Ground.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1509,7 +1253,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_attack_1.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_attack_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1518,7 +1262,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_attack_2.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_attack_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1527,7 +1271,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_attack_3.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_attack_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1536,7 +1280,7 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/trex_attack_4.png\",\"extension\":\".png\"}",
         "name": "assets\\trex_attack_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -1559,19 +1303,163 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Malcolm3.png",
+        "file": "assets/Malcolm2.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Malcolm3.png",
+        "name": "assets\\Malcolm2.png",
         "smoothed": false,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Malcolm4.png",
+        "file": "assets/Shopkeeper0.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Malcolm4.png",
+        "name": "assets\\Shopkeeper0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Shopkeeper1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Shopkeeper1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Shopkeeper2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Shopkeeper2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ellie0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ellie0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ellie1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ellie1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ellie2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ellie2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ellie3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ellie3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BitByBitStudios10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BitByBitStudios10.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -1643,71 +1531,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "d68a7f09fb9a6a3b183e43e1132b13d6ef13a5cc0988dd148dd22819876a463c",
-      "name": "HealthBar",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "InitialValue": 100,
-        "MaxValue": 100,
-        "BarTopPadding": 8,
-        "BarRightPadding": 10,
-        "BarBottomPadding": 8,
-        "BarLeftPadding": 10,
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": false
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 8,
-          "height": 35,
-          "leftMargin": 10,
-          "rightMargin": 10,
-          "texture": "Wood Bar Border.png",
-          "tiled": true,
-          "topMargin": 8,
-          "width": 397
-        },
-        "Buffer": {
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 32
-        },
-        "FillBar": {
-          "bottomMargin": 9,
-          "height": 19,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Shaded Red Fill Bar.png",
-          "tiled": false,
-          "topMargin": 9,
-          "width": 19
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "8 / 16",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 16,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        }
-      }
     },
     {
       "assetStoreId": "",
@@ -6768,7 +6591,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0006_Layer-1.png",
+                  "image": "assets\\Heart0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6804,7 +6627,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0005_Layer-2.png",
+                  "image": "assets\\Heart1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6840,7 +6663,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0004_Layer-3.png",
+                  "image": "assets\\Heart2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6876,7 +6699,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0003_Layer-4.png",
+                  "image": "assets\\Heart3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6912,7 +6735,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0002_Layer-5.png",
+                  "image": "assets\\Heart4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6934,7 +6757,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0001_Layer-6.png",
+                  "image": "assets\\Heart5.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6956,7 +6779,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShinyHeart_0000_Layer-7.png",
+                  "image": "assets\\Heart6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7635,11 +7458,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.07,
+              "timeBetweenFrames": 0.09,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli1.png",
+                  "image": "assets\\Ellie0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7655,27 +7478,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli2.png",
+                  "image": "assets\\Ellie1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7691,27 +7514,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli3.png",
+                  "image": "assets\\Ellie2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7727,27 +7550,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Eli4.png",
+                  "image": "assets\\Ellie3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7763,20 +7586,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
@@ -7791,11 +7614,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.11,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm0.png",
+                  "image": "assets\\Shopkeeper0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7811,27 +7634,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm1.png",
+                  "image": "assets\\Shopkeeper0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7847,27 +7670,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm2.png",
+                  "image": "assets\\Shopkeeper1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7883,27 +7706,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ShopkeeperMalcolm3.png",
+                  "image": "assets\\Shopkeeper2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7919,20 +7742,176 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 234,
-                        "y": 54
+                        "x": 39,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 54
+                        "x": 128,
+                        "y": 9
                       },
                       {
-                        "x": 768,
-                        "y": 900
+                        "x": 128,
+                        "y": 150
                       },
                       {
-                        "x": 234,
-                        "y": 900
+                        "x": 39,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Malcolm",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 39,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 150
+                      },
+                      {
+                        "x": 39,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 39,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 150
+                      },
+                      {
+                        "x": 39,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 39,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 150
+                      },
+                      {
+                        "x": 39,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Malcolm0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 39,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 9
+                      },
+                      {
+                        "x": 128,
+                        "y": 150
+                      },
+                      {
+                        "x": 39,
+                        "y": 150
                       }
                     ]
                   ]
@@ -7977,7 +7956,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[b][outline=black]Ellie Sattler[/outline][/b]",
+        "text": "[b][outline=black]Ellie[/outline][/b]",
         "opacity": 255,
         "fontSize": 40,
         "visible": true,
@@ -8060,9 +8039,6 @@
       },
       {
         "objectName": "HealthAmount"
-      },
-      {
-        "objectName": "HealthBar"
       },
       {
         "objectName": "DamageNumber"

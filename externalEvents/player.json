@@ -18,17 +18,6 @@
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "HealthBar",
-                "=",
-                "Player.Health::Health()",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "BBText::SetBBText"
               },
               "parameters": [

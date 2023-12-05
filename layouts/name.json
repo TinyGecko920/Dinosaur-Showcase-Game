@@ -952,6 +952,17 @@
       "actions": [
         {
           "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Resizable",
+            "900",
+            "900"
+          ]
+        },
+        {
+          "type": {
             "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
           },
           "parameters": [
@@ -1035,6 +1046,17 @@
         },
         {
           "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Resizable",
+            "900",
+            "900"
+          ]
+        },
+        {
+          "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
@@ -1054,6 +1076,34 @@
             "DialogueBackground.Y() + DialogueBackground.Height()"
           ]
         },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "DialogueNext",
+            "=",
+            "(DialogueBackground.X() + DialogueBackground.Width()) - DialogueNext.Width() - 48",
+            "=",
+            "(DialogueBackground.Y() + DialogueBackground.Height()) - DialogueNext.Height() - 32"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "GameWindow::WindowResized"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "MettreXY"
@@ -3687,7 +3737,7 @@
               "parameters": [
                 "DialogueText",
                 "=",
-                "\"[outline=black]My name is [b]Eli Sattler[/b] and I will be your guide during your visit![/outline]\""
+                "\"[outline=black]My name is [b]Ellie Sattler[/b] and I will be your guide during your visit![/outline]\""
               ]
             }
           ]
