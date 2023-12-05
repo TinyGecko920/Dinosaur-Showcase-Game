@@ -1787,11 +1787,11 @@
           "StickMode": "Analog"
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 9999999,
           "deceleration": 1000,
           "maxSpeed": 180,
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "ignoreDefaultControls": true,
           "allowDiagonals": true,
           "angleOffset": 0,
