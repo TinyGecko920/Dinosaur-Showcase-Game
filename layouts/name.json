@@ -2246,6 +2246,17 @@
         },
         {
           "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::Value"
+          },
+          "parameters": [
+            "NameInput",
+            "Text",
+            "!=",
+            "\"0\""
+          ]
+        },
+        {
+          "type": {
             "value": "SceneVariableAsBoolean"
           },
           "parameters": [
@@ -2289,15 +2300,34 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "RegEx::HasPattern"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            "\"^[a-z0-9 ]{1,\" + ToString(Variable(MaxCharacterLimit)) + \"}$\"",
-            "\"i\"",
-            "NameInput.Text()",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "RegEx::HasPattern"
+              },
+              "parameters": [
+                "",
+                "\"^[a-z0-9 ]{1,\" + ToString(Variable(MaxCharacterLimit)) + \"}$\"",
+                "\"i\"",
+                "NameInput.Text()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::Value"
+              },
+              "parameters": [
+                "NameInput",
+                "Text",
+                "=",
+                "\"0\""
+              ]
+            }
           ]
         },
         {

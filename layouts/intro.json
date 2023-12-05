@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.15911838846838605,
+    "zoomFactor": 0.9538618542089506,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1704,15 +1704,6 @@
             "=",
             "- (SceneWindowHeight() / 2) * 1.12"
           ]
-        },
-        {
-          "type": {
-            "value": "ChangeTimeScale"
-          },
-          "parameters": [
-            "",
-            "3"
-          ]
         }
       ],
       "events": [
@@ -1789,7 +1780,7 @@
           "actions": [
             {
               "type": {
-                "value": "LireFichierExp"
+                "value": "LireFichierTxt"
               },
               "parameters": [
                 "\"playerStorage\"",
@@ -3228,6 +3219,16 @@
                           "parameters": [
                             "PlayButton"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "SavedName",
+                            "!=",
+                            "\"0\""
+                          ]
                         }
                       ]
                     },
@@ -3314,86 +3315,134 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "Cursor",
-                        "PlayButton",
-                        "",
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Cursor",
+                                "PlayButton",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "PlayButton"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Cursor",
+                                "Changelog",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "Changelog"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "OpacityCapability::OpacityBehavior::Value"
+                              },
+                              "parameters": [
+                                "Changelog",
+                                "Opacity",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Visible"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "PlayButton"
+                        "Transitioning",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ShowingCredits",
+                        "True"
                       ]
                     }
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "Visible"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Changelog",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "Changelog"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "Opacity",
-                        ">",
-                        "0"
-                      ]
-                    }
+                  "parameters": [
+                    "Tooltip"
                   ]
-                },
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "Transitioning",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "ShowingCredits",
-                    ""
+                    "True"
                   ]
                 },
                 {
@@ -3455,6 +3504,16 @@
                   "parameters": [
                     "ShowingCredits",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "SavedName",
+                    "!=",
+                    "\"0\""
                   ]
                 }
               ],
@@ -4138,6 +4197,16 @@
                           "parameters": [
                             "PlayButton"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "SavedName",
+                            "!=",
+                            "\"0\""
+                          ]
                         }
                       ]
                     },
@@ -4223,88 +4292,136 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "SourisSurObjet"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "PlayButton",
-                        "",
-                        "",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "PlayButton",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Visible"
+                              },
+                              "parameters": [
+                                "PlayButton"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Cursor",
+                                "Changelog",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "SourisSurObjet"
+                              },
+                              "parameters": [
+                                "Changelog",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "OpacityCapability::OpacityBehavior::Value"
+                              },
+                              "parameters": [
+                                "Changelog",
+                                "Opacity",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Visible"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "PlayButton"
+                        "Transitioning",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ShowingCredits",
+                        "True"
                       ]
                     }
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "Visible"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Changelog",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "OpacityCapability::OpacityBehavior::Value"
-                      },
-                      "parameters": [
-                        "Changelog",
-                        "Opacity",
-                        ">",
-                        "0"
-                      ]
-                    }
+                  "parameters": [
+                    "Tooltip"
                   ]
-                },
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Tooltip"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
                     "Transitioning",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "ShowingCredits",
-                    ""
+                    "True"
                   ]
                 },
                 {
@@ -4365,6 +4482,16 @@
                   "parameters": [
                     "ShowingCredits",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "SavedName",
+                    "!=",
+                    "\"0\""
                   ]
                 }
               ],
@@ -4927,12 +5054,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "GroupExists"
+                        "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "\"playerStorage\"",
-                        "\"name\""
+                        "SavedName",
+                        "=",
+                        "\"0\""
                       ]
                     }
                   ],
@@ -4954,11 +5081,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "GroupExists"
+                        "value": "VarSceneTxt"
                       },
                       "parameters": [
-                        "\"playerStorage\"",
-                        "\"name\""
+                        "SavedName",
+                        "!=",
+                        "\"0\""
                       ]
                     }
                   ],
