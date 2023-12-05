@@ -82,6 +82,36 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Dialogue",
+      "name": "DialogueChoice1",
+      "persistentUuid": "ce6a60c9-f5ce-4565-9971-f4bfb87e3db1",
+      "width": 0,
+      "x": 1016,
+      "y": 558,
+      "zOrder": 105,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Dialogue",
+      "name": "DialogueChoice2",
+      "persistentUuid": "82fb5340-8f95-4071-b065-9db0c6f4f016",
+      "width": 0,
+      "x": 1153,
+      "y": 648,
+      "zOrder": 106,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {

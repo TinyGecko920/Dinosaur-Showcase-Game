@@ -3498,7 +3498,21 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "RectangleMovement",
@@ -7974,6 +7988,70 @@
         "align": "left",
         "wordWrap": false
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueChoice1",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "[outline=black][b]Yes[/b][/outline]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DialogueChoice2",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "[outline=black][b]No[/b][/outline]",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -8061,6 +8139,12 @@
       {
         "folderName": "Dialogue",
         "children": [
+          {
+            "objectName": "DialogueChoice1"
+          },
+          {
+            "objectName": "DialogueChoice2"
+          },
           {
             "objectName": "DialogueSpeakerText"
           },
