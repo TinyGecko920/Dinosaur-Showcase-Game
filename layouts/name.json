@@ -653,6 +653,22 @@
         },
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueChoice1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueChoice2"
+          ]
+        },
+        {
+          "type": {
             "value": "HideLayer"
           },
           "parameters": [
@@ -3890,6 +3906,227 @@
                 ""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "DialogueNext"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+          },
+          "parameters": [
+            "DialogueNext",
+            "Effect",
+            "\"Glow\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "DialogueNext",
+            "Effect",
+            "\"Glow\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Gamepad\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Controller_X_is_connected"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "LastInput::LastInputWasFrom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MouseKeyboard\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+          },
+          "parameters": [
+            "DialogueNext",
+            "Effect",
+            "\"Glow\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "DialogueNext",
+            "Effect",
+            "\"Glow\"",
+            "no"
           ]
         }
       ]
