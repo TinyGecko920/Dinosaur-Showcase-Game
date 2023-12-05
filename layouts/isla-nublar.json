@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.5800155239904887,
+    "zoomFactor": 0.44485159988866707,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1787,11 +1787,11 @@
           "StickMode": "Analog"
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 9999999,
           "deceleration": 1000,
           "maxSpeed": 180,
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "ignoreDefaultControls": true,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -5288,6 +5288,103 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Gamepad\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Controller_X_is_connected"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Cursor",
+                            "Ellie",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Ellie",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "LastInput::LastInputWasFrom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"MouseKeyboard\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "Ellie",
+                            "GoldAmount",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                          },
+                          "parameters": [
+                            "Ellie",
+                            "Effect",
+                            "\"Glow\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -6624,16 +6721,6 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
                   ]
                 },
@@ -6664,17 +6751,17 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
                   ]
                 },
                 {
@@ -6762,16 +6849,6 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
                   ]
                 },
@@ -6802,17 +6879,17 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
                   ]
                 },
                 {
@@ -6900,16 +6977,6 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
                   ]
                 },
@@ -6940,17 +7007,17 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::CompareStrings"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "!=",
-                        "\"0\""
-                      ]
                     }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
                   ]
                 },
                 {
