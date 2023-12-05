@@ -1462,6 +1462,15 @@
         "name": "assets\\BitByBitStudios10.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bounds.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Bounds",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
