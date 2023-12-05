@@ -1471,6 +1471,69 @@
         "name": "Bounds",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1389.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1389.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1386.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1386.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1387.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1387.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1395.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1395.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1394.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1394.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1393.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1393.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/IMG_1397.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\IMG_1397.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
