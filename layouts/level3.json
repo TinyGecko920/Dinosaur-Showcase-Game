@@ -18,27 +18,12 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.07671019818341006,
+    "zoomFactor": 0.11048078165018045,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Layer4",
-      "persistentUuid": "d144997f-fea2-46c9-9719-15349d804368",
-      "width": 0,
-      "x": -36,
-      "y": 1383,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -47,8 +32,8 @@
       "layer": "",
       "name": "Ground",
       "persistentUuid": "68e789f0-d7fe-43a3-b88e-27e9a3b134cb",
-      "width": 10000,
-      "x": 0,
+      "width": 12000,
+      "x": -2000,
       "y": 1048,
       "zOrder": 11,
       "numberProperties": [],
@@ -67,102 +52,6 @@
       "x": 562,
       "y": 755,
       "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer4",
-      "name": "Layer4",
-      "persistentUuid": "2cc8719a-9272-4488-a539-72624c5b09ec",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer4",
-      "name": "Layer4",
-      "persistentUuid": "c3618013-3e83-4087-8ab1-3c2e71f97402",
-      "width": 12000,
-      "x": 20000,
-      "y": 0,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "1a70f52e-097b-4d34-80fc-fadf5c1a0d2d",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "bbf22e0c-f19f-462f-85d8-fa0c85b2c2b1",
-      "width": 12000,
-      "x": 20000,
-      "y": 0,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "69b7d572-681e-489f-b0cb-7f6e6afed39d",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "1e35dd5a-45f6-48e2-a897-ea7621570b4e",
-      "width": 12000,
-      "x": 20000,
-      "y": 0,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -195,38 +84,6 @@
       "x": 20000,
       "y": 1048,
       "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer1",
-      "name": "Layer1",
-      "persistentUuid": "0d1b1e60-af03-4e6c-b678-86117fb7f5d0",
-      "width": 12000,
-      "x": 10000,
-      "y": 0,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer1",
-      "name": "Layer1",
-      "persistentUuid": "09ae3bc2-b2ea-4d9b-8ac3-9fc2eedd4321",
-      "width": 12000,
-      "x": 20000,
-      "y": 0,
-      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -602,54 +459,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 1080,
-      "layer": "Layer1",
-      "name": "Layer1",
-      "persistentUuid": "94ed469f-51e3-44bc-86bf-f33bd0ba5f83",
-      "width": 12000,
-      "x": 32000,
-      "y": 0,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer2",
-      "name": "Layer2",
-      "persistentUuid": "a8a7e401-223e-4a02-9a6c-ca881709bfbc",
-      "width": 12000,
-      "x": 32000,
-      "y": 0,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 1080,
-      "layer": "Layer3",
-      "name": "Layer3",
-      "persistentUuid": "f9cec60e-1536-45ec-ac05-3ced965cdf3d",
-      "width": 12000,
-      "x": 32000,
-      "y": 0,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 6,
       "height": 928,
       "layer": "",
@@ -874,70 +683,6 @@
   ],
   "objects": [
     {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer5",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1309.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer4",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1310.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer2",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1312.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer1",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1313.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Ground",
@@ -1076,20 +821,304 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "Layer3",
-      "rightMargin": 0,
-      "texture": "assets\\IMG_1311.png",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
+      "name": "Layer1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Layer1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1313.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Layer2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Layer2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1395.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 89
+                      },
+                      {
+                        "x": 1920,
+                        "y": 89
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Layer3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Layer3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1394.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 401
+                      },
+                      {
+                        "x": 1920,
+                        "y": 401
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Layer4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Layer4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1393.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Layer5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Layer5",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1397.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1284,7 +1313,7 @@
       "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": true,
+      "isLocked": false,
       "name": "",
       "renderingType": "",
       "visibility": true,
