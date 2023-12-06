@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.11048078165018049,
+    "zoomFactor": 0.21446078431372903,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -337,8 +337,8 @@
       "name": "Tyrannosaurus",
       "persistentUuid": "4dd92c5c-1c60-4f1b-a2a2-c788b29e483e",
       "width": 1011,
-      "x": 37000,
-      "y": 209,
+      "x": 37011,
+      "y": 215,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -1468,10 +1468,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tooltip",

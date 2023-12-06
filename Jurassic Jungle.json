@@ -1570,6 +1570,16 @@
         "name": "assets\\Shopkeeper3.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/new-level-142995.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\new-level-142995.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6234,10 +6244,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 1100,
+          "maxSpeed": 550,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 900,
-          "maxSpeed": 450,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -7475,58 +7485,6 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "YouDiedText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "YOU DIED.",
-      "font": "ChelseaMarket-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 120,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 255
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "ReturningText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "Returning to Isla Nubar.",
-      "font": "ChelseaMarket-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 60,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      }
-    },
-    {
-      "assetStoreId": "",
       "bottomMargin": 21,
       "height": 42,
       "leftMargin": 21,
@@ -8307,6 +8265,75 @@
         "align": "center",
         "wordWrap": false
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ReturningText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[outline=black]Returning to Isla Nubar...[/outline]",
+        "opacity": 255,
+        "fontSize": 60,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "VictoryText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[b][outline=black]LEVEL CLEARED![/outline][/b]",
+        "opacity": 255,
+        "fontSize": 120,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "YouDiedText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "YOU DIED!",
+        "opacity": 255,
+        "fontSize": 120,
+        "visible": true,
+        "color": "255;0;0",
+        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "align": "center",
+        "wordWrap": false
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -8427,10 +8454,13 @@
         "objectName": "ShinyHeart"
       },
       {
-        "objectName": "YouDiedText"
+        "objectName": "ReturningText"
       },
       {
-        "objectName": "ReturningText"
+        "objectName": "VictoryText"
+      },
+      {
+        "objectName": "YouDiedText"
       }
     ]
   },

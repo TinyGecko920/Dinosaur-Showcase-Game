@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.13480471535734892,
+    "zoomFactor": 0.23689563725447121,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -46,7 +46,7 @@
       "name": "Player",
       "persistentUuid": "20925749-18ef-4efb-badb-7c3dbd0344b1",
       "width": 421,
-      "x": 281,
+      "x": 34000,
       "y": 626,
       "zOrder": 10,
       "numberProperties": [],
@@ -1703,10 +1703,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tooltip",
