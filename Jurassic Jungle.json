@@ -295,6 +295,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/LoadingScreenBg0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\LoadingScreenBg0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/LoadingScreenBg1.png",
         "kind": "image",
         "metadata": "",
@@ -309,7 +318,7 @@
         "metadata": "",
         "name": "assets\\LoadingScreenBg2.png",
         "smoothed": true,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -317,15 +326,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\LoadingScreenBg3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/LoadingScreenBg4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\LoadingScreenBg4.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1536,23 +1536,39 @@
         "userAdded": true
       },
       {
-        "file": "assets/slash-21834.mp3",
-        "kind": "audio",
+        "alwaysLoaded": false,
+        "file": "assets/Ian0.png",
+        "kind": "image",
         "metadata": "",
-        "name": "assets\\slash-21834.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "name": "assets\\Ian0.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "assets/footsteps_grass_1-6810.mp3",
-        "kind": "audio",
+        "alwaysLoaded": false,
+        "file": "assets/Ian1.png",
+        "kind": "image",
         "metadata": "",
-        "name": "assets\\footsteps_grass_1-6810.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "name": "assets\\Ian1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ian2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ian2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Shopkeeper3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Shopkeeper3.png",
+        "smoothed": false,
         "userAdded": true
       },
       {

@@ -395,7 +395,7 @@
                       "parameters": [
                         "Object",
                         "Gamepads::StickAngle(1, \"Right\")",
-                        "Gamepads::StickForce(1, \"Right\") * (SceneWindowWidth() / 1.5)",
+                        "Gamepads::StickForce(1, \"Right\") * (SceneWindowWidth() * 1.5)",
                         "0"
                       ]
                     }

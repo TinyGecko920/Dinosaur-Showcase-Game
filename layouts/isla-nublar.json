@@ -1,13 +1,13 @@
 {
-  "b": 191,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Isla_32Nublar",
   "name": "Isla Nublar",
-  "r": 209,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "Isla Nublar",
-  "v": 191,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.2216924727500549,
+    "zoomFactor": 0.3300560049165976,
     "windowMask": false
   },
   "objectsGroups": [
@@ -5816,7 +5816,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Shopkeeper",
       "type": "Sprite",
@@ -5857,7 +5857,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.11,
+              "timeBetweenFrames": 0.14,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -5877,55 +5877,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
-                      },
-                      {
-                        "x": 50.5,
+                        "x": 102,
                         "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Shopkeeper0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 53.5,
-                        "y": 134
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
-                      },
-                      {
-                        "x": 100.5,
-                        "y": 147.5
-                      },
-                      {
-                        "x": 50.5,
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -5949,19 +5913,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
+                        "x": 102,
+                        "y": 150
                       },
                       {
-                        "x": 50.5,
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -5985,19 +5949,55 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
+                        "x": 102,
+                        "y": 150
                       },
                       {
-                        "x": 50.5,
+                        "x": 44,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Shopkeeper3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 10
+                      },
+                      {
+                        "x": 102,
+                        "y": 10
+                      },
+                      {
+                        "x": 102,
+                        "y": 150
+                      },
+                      {
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -6675,6 +6675,200 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ian",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6688,6 +6882,9 @@
           },
           {
             "objectName": "Shopkeeper"
+          },
+          {
+            "objectName": "Ian"
           },
           {
             "objectName": "Malcolm"
@@ -7049,6 +7246,16 @@
               },
               "parameters": [
                 "Malcolm",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Shopkeeper",
                 "Flippable",
                 "yes"
               ]
@@ -7941,6 +8148,16 @@
         },
         {
           "type": {
+            "value": "Plan"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            ">",
+            "Palm.ZOrder()"
+          ]
+        },
+        {
+          "type": {
             "value": "OpacityCapability::OpacityBehavior::Value"
           },
           "parameters": [
@@ -8604,1041 +8821,6 @@
           "subInstructions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Shopkeeper",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Shopkeeper",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Shopkeeper",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Shopkeeper",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Malcolm",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Malcolm",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Malcolm",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Malcolm",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "Ellie",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Ellie",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Ellie",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "Ellie",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "DialogueNext",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                  },
-                  "parameters": [
-                    "DialogueNext",
-                    "Effect",
-                    "\"Glow\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "DialogueChoice1",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "DialogueChoice1",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "DialogueChoice1",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "DialogueChoice1",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Gamepad\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Controller_X_is_connected"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Cursor",
-                        "DialogueChoice2",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "DialogueChoice2",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "DialogueChoice2",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "DialogueChoice2",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "MouseHelper::cursor::IconSuffix"
-          },
-          "parameters": [
-            "Cursor",
-            "cursor",
-            "!=",
-            "\"Active\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SceneVariableAsBoolean"
-          },
-          "parameters": [
-            "Transitioning",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MouseHelper::cursor::ChangeIcon"
-          },
-          "parameters": [
-            "Cursor",
-            "cursor",
-            "\"Active\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gamepad\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Controller_X_is_connected"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "Shopkeeper",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Shopkeeper",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gamepad\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Controller_X_is_connected"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "Malcolm",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Malcolm",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gamepad\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Controller_X_is_connected"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "Ellie",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Ellie",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::And"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "LastInput::LastInputWasFrom"
-              },
-              "parameters": [
-                "",
-                "\"MouseKeyboard\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "DialogueNext",
-                "GoldAmount",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gamepad\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Controller_X_is_connected"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "DialogueChoice1",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "DialogueChoice1",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Gamepad\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Controller_X_is_connected"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Cursor",
-                    "DialogueChoice2",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "DialogueChoice2",
-                    "GoldAmount",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": {
-            "value": "MouseHelper::cursor::IconSuffix"
-          },
-          "parameters": [
-            "Cursor",
-            "cursor",
-            "!=",
-            "\"Idle\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SceneVariableAsBoolean"
-          },
-          "parameters": [
-            "Transitioning",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MouseHelper::cursor::ChangeIcon"
-          },
-          "parameters": [
-            "Cursor",
-            "cursor",
-            "\"Idle\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
                 "value": "MouseButtonReleased"
               },
               "parameters": [
@@ -9972,240 +9154,17 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "LastInput::LastInputWasFrom"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MouseKeyboard\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "DialogueNext",
-                        "GoldAmount",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                      },
-                      "parameters": [
-                        "DialogueNext",
-                        "Effect",
-                        "\"Glow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "LastInput::LastInputWasFrom"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Gamepad\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Controller_X_is_connected"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Cursor",
-                            "DialogueChoice1",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                          },
-                          "parameters": [
-                            "DialogueChoice1",
-                            "Effect",
-                            "\"Glow\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "LastInput::LastInputWasFrom"
-                          },
-                          "parameters": [
-                            "",
-                            "\"MouseKeyboard\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "DialogueChoice1",
-                            "GoldAmount",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                          },
-                          "parameters": [
-                            "DialogueChoice1",
-                            "Effect",
-                            "\"Glow\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "LastInput::LastInputWasFrom"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Gamepad\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Controller_X_is_connected"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "Cursor",
-                            "DialogueChoice2",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                          },
-                          "parameters": [
-                            "DialogueChoice2",
-                            "Effect",
-                            "\"Glow\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "LastInput::LastInputWasFrom"
-                          },
-                          "parameters": [
-                            "",
-                            "\"MouseKeyboard\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SourisSurObjet"
-                          },
-                          "parameters": [
-                            "DialogueChoice2",
-                            "GoldAmount",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-                          },
-                          "parameters": [
-                            "DialogueChoice2",
-                            "Effect",
-                            "\"Glow\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
                 }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
               ]
             },
             {
@@ -13182,6 +12141,18 @@
                     },
                     {
                       "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
@@ -13193,7 +12164,7 @@
                           "parameters": [
                             "",
                             "1",
-                            "\"RB\"",
+                            "\"A\"",
                             ""
                           ]
                         },
@@ -13204,7 +12175,7 @@
                           "parameters": [
                             "",
                             "1",
-                            "\"R1\"",
+                            "\"Cross\"",
                             ""
                           ]
                         }
@@ -13681,32 +12652,14 @@
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
+                        "value": "CollisionNP"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"RB\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"R1\"",
-                            ""
-                          ]
-                        }
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -13746,19 +12699,8 @@
           "actions": [],
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "value": "LastInput::LastInputWasFrom"
-                  },
-                  "parameters": [
-                    "",
-                    "\"MouseKeyboard\"",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "MouseHelper::cursor::IconSuffix"
@@ -13863,34 +12805,15 @@
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
+                        "inverted": true,
+                        "value": "CollisionNP"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"RB\"",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"R1\"",
-                            ""
-                          ]
-                        }
+                      "parameters": [
+                        "Cursor",
+                        "DialogueNext",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -13926,28 +12849,66 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-              },
-              "parameters": [
-                "DialogueNext",
-                "Effect",
-                "\"Glow\""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "DialogueNext",
-                "Effect",
-                "\"Glow\"",
-                "no"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "!=",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "DialogueNext",
+                    "Effect",
+                    "\"Glow\"",
+                    "no"
+                  ]
+                }
               ]
             }
           ]
@@ -14036,7 +12997,6 @@
           "actions": [],
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14187,28 +13147,66 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-              },
-              "parameters": [
-                "DialogueChoice1",
-                "Effect",
-                "\"Glow\""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "DialogueChoice1",
-                "Effect",
-                "\"Glow\"",
-                "no"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "!=",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "DialogueChoice1",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "DialogueChoice1",
+                    "Effect",
+                    "\"Glow\"",
+                    "no"
+                  ]
+                }
               ]
             }
           ]
@@ -14297,7 +13295,6 @@
           "actions": [],
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14448,28 +13445,66 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-              },
-              "parameters": [
-                "DialogueChoice2",
-                "Effect",
-                "\"Glow\""
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "DialogueChoice2",
-                "Effect",
-                "\"Glow\"",
-                "no"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "!=",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Idle\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "DialogueChoice2",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "DialogueChoice2",
+                    "Effect",
+                    "\"Glow\"",
+                    "no"
+                  ]
+                }
               ]
             }
           ]
