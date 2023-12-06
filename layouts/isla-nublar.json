@@ -1,13 +1,13 @@
 {
-  "b": 191,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Isla_32Nublar",
   "name": "Isla Nublar",
-  "r": 209,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "Isla Nublar",
-  "v": 191,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
