@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.27050126039625916,
+    "zoomFactor": 0.3300560049165976,
     "windowMask": false
   },
   "objectsGroups": [
@@ -5816,7 +5816,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Shopkeeper",
       "type": "Sprite",
@@ -5857,7 +5857,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.11,
+              "timeBetweenFrames": 0.14,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -5877,55 +5877,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
-                      },
-                      {
-                        "x": 50.5,
+                        "x": 102,
                         "y": 150
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Shopkeeper0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 53.5,
-                        "y": 134
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
-                      },
-                      {
-                        "x": 100.5,
-                        "y": 147.5
-                      },
-                      {
-                        "x": 50.5,
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -5949,19 +5913,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
+                        "x": 102,
+                        "y": 150
                       },
                       {
-                        "x": 50.5,
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -5985,19 +5949,55 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 53.5,
-                        "y": 134
+                        "x": 44,
+                        "y": 10
                       },
                       {
-                        "x": 93,
-                        "y": 132.5
+                        "x": 102,
+                        "y": 10
                       },
                       {
-                        "x": 100.5,
-                        "y": 147.5
+                        "x": 102,
+                        "y": 150
                       },
                       {
-                        "x": 50.5,
+                        "x": 44,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Shopkeeper3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 10
+                      },
+                      {
+                        "x": 102,
+                        "y": 10
+                      },
+                      {
+                        "x": 102,
+                        "y": 150
+                      },
+                      {
+                        "x": 44,
                         "y": 150
                       }
                     ]
@@ -6675,6 +6675,200 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ian",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "241;233;129"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.11,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Ian2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 5
+                      },
+                      {
+                        "x": 127,
+                        "y": 150
+                      },
+                      {
+                        "x": 46,
+                        "y": 150
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6688,6 +6882,9 @@
           },
           {
             "objectName": "Shopkeeper"
+          },
+          {
+            "objectName": "Ian"
           },
           {
             "objectName": "Malcolm"
@@ -7049,6 +7246,16 @@
               },
               "parameters": [
                 "Malcolm",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Shopkeeper",
                 "Flippable",
                 "yes"
               ]
