@@ -127,6 +127,18 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\new-level-142995.mp3",
+                "",
+                "100",
+                ""
+              ]
             }
           ],
           "events": [
@@ -156,7 +168,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "21",
+              "repeatExpression": "25",
               "conditions": [],
               "actions": [
                 {
@@ -253,7 +265,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "21",
+              "repeatExpression": "25",
               "conditions": [],
               "actions": [
                 {
@@ -350,7 +362,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "21",
+              "repeatExpression": "25",
               "conditions": [],
               "actions": [
                 {
@@ -447,7 +459,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "21",
+              "repeatExpression": "25",
               "conditions": [],
               "actions": [
                 {
@@ -544,7 +556,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "21",
+              "repeatExpression": "25",
               "conditions": [],
               "actions": [
                 {

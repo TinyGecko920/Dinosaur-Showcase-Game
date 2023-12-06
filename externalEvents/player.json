@@ -51,11 +51,10 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "Cache"
               },
               "parameters": [
-                "Player",
-                ""
+                "Player"
               ]
             },
             {
@@ -105,9 +104,19 @@
               "parameters": [
                 "",
                 "YouDiedText",
-                "668.5",
+                "99999",
                 "-500",
                 "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "ReturningText",
+                "=",
+                "SceneWindowWidth() / 2"
               ]
             },
             {
@@ -139,9 +148,19 @@
               "parameters": [
                 "",
                 "ReturningText",
-                "591",
+                "99999",
                 "550",
                 "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "ReturningText",
+                "=",
+                "SceneWindowWidth() / 2"
               ]
             },
             {
