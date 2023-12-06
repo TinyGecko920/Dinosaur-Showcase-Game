@@ -227,7 +227,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg1.png",
+                  "image": "assets\\LoadingScreenBg0.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -299,7 +299,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg2.png",
+                  "image": "assets\\LoadingScreenBg1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -371,7 +371,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg3.png",
+                  "image": "assets\\LoadingScreenBg2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -443,7 +443,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg4.png",
+                  "image": "assets\\LoadingScreenBg3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
