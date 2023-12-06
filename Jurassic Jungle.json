@@ -1570,6 +1570,26 @@
         "name": "assets\\IMG_1397.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/slash-21834.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\slash-21834.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/footsteps_grass_1-6810.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\footsteps_grass_1-6810.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
