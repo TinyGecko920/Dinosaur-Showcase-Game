@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.3300560049165976,
+    "zoomFactor": 0.253141400129866,
     "windowMask": false
   },
   "objectsGroups": [
@@ -71,8 +71,8 @@
     {
       "folded": true,
       "name": "LastDialogueChoice",
-      "type": "string",
-      "value": ""
+      "type": "number",
+      "value": 0
     },
     {
       "folded": true,
@@ -5109,6 +5109,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Ian",
+      "persistentUuid": "f09178af-ada3-4d2a-a98d-10954095ac55",
+      "width": 0,
+      "x": 1678,
+      "y": 184,
+      "zOrder": 334,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -5816,7 +5831,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Shopkeeper",
       "type": "Sprite",
@@ -5877,19 +5892,31 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 44,
-                        "y": 10
+                        "x": 63.5,
+                        "y": 144
                       },
                       {
-                        "x": 102,
-                        "y": 10
+                        "x": 66,
+                        "y": 139
                       },
                       {
-                        "x": 102,
+                        "x": 88,
+                        "y": 138
+                      },
+                      {
+                        "x": 92.5,
+                        "y": 142
+                      },
+                      {
+                        "x": 93,
+                        "y": 147.5
+                      },
+                      {
+                        "x": 78.5,
                         "y": 150
                       },
                       {
-                        "x": 44,
+                        "x": 63,
                         "y": 150
                       }
                     ]
@@ -5913,19 +5940,31 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 44,
-                        "y": 10
+                        "x": 63.5,
+                        "y": 144
                       },
                       {
-                        "x": 102,
-                        "y": 10
+                        "x": 66,
+                        "y": 139
                       },
                       {
-                        "x": 102,
+                        "x": 88,
+                        "y": 138
+                      },
+                      {
+                        "x": 92.5,
+                        "y": 142
+                      },
+                      {
+                        "x": 93,
+                        "y": 147.5
+                      },
+                      {
+                        "x": 78.5,
                         "y": 150
                       },
                       {
-                        "x": 44,
+                        "x": 63,
                         "y": 150
                       }
                     ]
@@ -5949,19 +5988,31 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 44,
-                        "y": 10
+                        "x": 63.5,
+                        "y": 144
                       },
                       {
-                        "x": 102,
-                        "y": 10
+                        "x": 66,
+                        "y": 139
                       },
                       {
-                        "x": 102,
+                        "x": 88,
+                        "y": 138
+                      },
+                      {
+                        "x": 92.5,
+                        "y": 142
+                      },
+                      {
+                        "x": 93,
+                        "y": 147.5
+                      },
+                      {
+                        "x": 78.5,
                         "y": 150
                       },
                       {
-                        "x": 44,
+                        "x": 63,
                         "y": 150
                       }
                     ]
@@ -5985,19 +6036,31 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 44,
-                        "y": 10
+                        "x": 63.5,
+                        "y": 144
                       },
                       {
-                        "x": 102,
-                        "y": 10
+                        "x": 66,
+                        "y": 139
                       },
                       {
-                        "x": 102,
+                        "x": 88,
+                        "y": 138
+                      },
+                      {
+                        "x": 92.5,
+                        "y": 142
+                      },
+                      {
+                        "x": 93,
+                        "y": 147.5
+                      },
+                      {
+                        "x": 78.5,
                         "y": 150
                       },
                       {
-                        "x": 44,
+                        "x": 63,
                         "y": 150
                       }
                     ]
@@ -6278,7 +6341,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Malcolm",
       "type": "Sprite",
@@ -6339,20 +6402,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 48,
-                        "y": 11
+                        "x": 53.5,
+                        "y": 137.5
                       },
                       {
-                        "x": 126,
-                        "y": 11
+                        "x": 85.5,
+                        "y": 136
                       },
                       {
-                        "x": 126,
-                        "y": 144
+                        "x": 91,
+                        "y": 140
                       },
                       {
-                        "x": 48,
-                        "y": 144
+                        "x": 91.5,
+                        "y": 146
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 150
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 149.5
                       }
                     ]
                   ]
@@ -6375,20 +6446,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 48,
-                        "y": 11
+                        "x": 53.5,
+                        "y": 137.5
                       },
                       {
-                        "x": 126,
-                        "y": 11
+                        "x": 85.5,
+                        "y": 136
                       },
                       {
-                        "x": 126,
-                        "y": 144
+                        "x": 91,
+                        "y": 140
                       },
                       {
-                        "x": 48,
-                        "y": 144
+                        "x": 91.5,
+                        "y": 146
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 150
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 149.5
                       }
                     ]
                   ]
@@ -6411,20 +6490,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 48,
-                        "y": 11
+                        "x": 53.5,
+                        "y": 137.5
                       },
                       {
-                        "x": 126,
-                        "y": 11
+                        "x": 85.5,
+                        "y": 136
                       },
                       {
-                        "x": 126,
-                        "y": 144
+                        "x": 91,
+                        "y": 140
                       },
                       {
-                        "x": 48,
-                        "y": 144
+                        "x": 91.5,
+                        "y": 146
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 150
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 149.5
                       }
                     ]
                   ]
@@ -6447,20 +6534,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 48,
-                        "y": 11
+                        "x": 53.5,
+                        "y": 137.5
                       },
                       {
-                        "x": 126,
-                        "y": 11
+                        "x": 85.5,
+                        "y": 136
                       },
                       {
-                        "x": 126,
-                        "y": 144
+                        "x": 91,
+                        "y": 140
                       },
                       {
-                        "x": 48,
-                        "y": 144
+                        "x": 91.5,
+                        "y": 146
+                      },
+                      {
+                        "x": 64.5,
+                        "y": 150
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 149.5
                       }
                     ]
                   ]
@@ -6472,7 +6567,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Ellie",
       "type": "Sprite",
@@ -6533,20 +6628,24 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 42,
-                        "y": 9
+                        "x": 61.5,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
-                        "y": 9
+                        "x": 78,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
+                        "x": 84.5,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 66,
                         "y": 150
                       },
                       {
-                        "x": 42,
-                        "y": 150
+                        "x": 61.5,
+                        "y": 147.5
                       }
                     ]
                   ]
@@ -6569,20 +6668,24 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 42,
-                        "y": 9
+                        "x": 61.5,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
-                        "y": 9
+                        "x": 78,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
+                        "x": 84.5,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 66,
                         "y": 150
                       },
                       {
-                        "x": 42,
-                        "y": 150
+                        "x": 61.5,
+                        "y": 147.5
                       }
                     ]
                   ]
@@ -6605,20 +6708,24 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 42,
-                        "y": 9
+                        "x": 61.5,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
-                        "y": 9
+                        "x": 78,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
+                        "x": 84.5,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 66,
                         "y": 150
                       },
                       {
-                        "x": 42,
-                        "y": 150
+                        "x": 61.5,
+                        "y": 147.5
                       }
                     ]
                   ]
@@ -6641,20 +6748,24 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 42,
-                        "y": 9
+                        "x": 61.5,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
-                        "y": 9
+                        "x": 78,
+                        "y": 132.5
                       },
                       {
-                        "x": 131,
+                        "x": 84.5,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 66,
                         "y": 150
                       },
                       {
-                        "x": 42,
-                        "y": 150
+                        "x": 61.5,
+                        "y": 147.5
                       }
                     ]
                   ]
@@ -6677,7 +6788,7 @@
       "behaviors": []
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Ian",
       "type": "Sprite",
@@ -6738,20 +6849,32 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 46,
-                        "y": 5
+                        "x": 55.5,
+                        "y": 134.5
                       },
                       {
-                        "x": 127,
-                        "y": 5
+                        "x": 96.5,
+                        "y": 131.5
                       },
                       {
-                        "x": 127,
-                        "y": 150
+                        "x": 104,
+                        "y": 139.5
                       },
                       {
-                        "x": 46,
-                        "y": 150
+                        "x": 104.5,
+                        "y": 148
+                      },
+                      {
+                        "x": 69,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 149
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 147
                       }
                     ]
                   ]
@@ -6774,20 +6897,32 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 46,
-                        "y": 5
+                        "x": 55.5,
+                        "y": 134.5
                       },
                       {
-                        "x": 127,
-                        "y": 5
+                        "x": 96.5,
+                        "y": 131.5
                       },
                       {
-                        "x": 127,
-                        "y": 150
+                        "x": 104,
+                        "y": 139.5
                       },
                       {
-                        "x": 46,
-                        "y": 150
+                        "x": 104.5,
+                        "y": 148
+                      },
+                      {
+                        "x": 69,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 149
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 147
                       }
                     ]
                   ]
@@ -6810,20 +6945,32 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 46,
-                        "y": 5
+                        "x": 55.5,
+                        "y": 134.5
                       },
                       {
-                        "x": 127,
-                        "y": 5
+                        "x": 96.5,
+                        "y": 131.5
                       },
                       {
-                        "x": 127,
-                        "y": 150
+                        "x": 104,
+                        "y": 139.5
                       },
                       {
-                        "x": 46,
-                        "y": 150
+                        "x": 104.5,
+                        "y": 148
+                      },
+                      {
+                        "x": 69,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 149
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 147
                       }
                     ]
                   ]
@@ -6846,20 +6993,32 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 46,
-                        "y": 5
+                        "x": 55.5,
+                        "y": 134.5
                       },
                       {
-                        "x": 127,
-                        "y": 5
+                        "x": 96.5,
+                        "y": 131.5
                       },
                       {
-                        "x": 127,
-                        "y": 150
+                        "x": 104,
+                        "y": 139.5
                       },
                       {
-                        "x": 46,
-                        "y": 150
+                        "x": 104.5,
+                        "y": 148
+                      },
+                      {
+                        "x": 69,
+                        "y": 149.5
+                      },
+                      {
+                        "x": 55.5,
+                        "y": 149
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 147
                       }
                     ]
                   ]
@@ -6878,13 +7037,13 @@
         "folderName": "NPCs",
         "children": [
           {
+            "objectName": "Ian"
+          },
+          {
             "objectName": "Ellie"
           },
           {
             "objectName": "Shopkeeper"
-          },
-          {
-            "objectName": "Ian"
           },
           {
             "objectName": "Malcolm"
@@ -6939,7 +7098,7 @@
             "value": "Cache"
           },
           "parameters": [
-            "Bounds"
+            "Ian"
           ]
         },
         {
@@ -6948,6 +7107,14 @@
           },
           "parameters": [
             "NPCs"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Bounds"
           ]
         },
         {
@@ -7236,6 +7403,15 @@
                 "value": "Montre"
               },
               "parameters": [
+                "Ian",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
                 "TopDownPlayer",
                 ""
               ]
@@ -7256,6 +7432,16 @@
               },
               "parameters": [
                 "Shopkeeper",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Ian",
                 "Flippable",
                 "yes"
               ]
@@ -7387,7 +7573,7 @@
           "parameters": [
             "Nametag",
             "=",
-            "\"[outline=black]Shopkeeper Ian[/outline]\""
+            "\"[outline=black]Shopkeeper[/outline]\""
           ]
         }
       ]
@@ -7482,6 +7668,53 @@
             "Nametag",
             "=",
             "\"[outline=black]Ellie[/outline]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Nametag",
+            "-9999",
+            "-9999",
+            "\"Billboards\""
+          ]
+        },
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "Ian",
+            "Nametag"
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Nametag",
+            "=",
+            "\"[outline=black]Ian[/outline]\""
           ]
         }
       ]
@@ -8038,6 +8271,16 @@
           "parameters": [
             "TopDownPlayer",
             "Bounds",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "TopDownPlayer",
+            "NPCs",
             ""
           ]
         }
@@ -10059,6 +10302,114 @@
           "conditions": [
             {
               "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Ian",
+                "TopDownPlayer",
+                "200",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Ian",
+                    "TopDownPlayer",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
@@ -10564,6 +10915,179 @@
                   },
                   "parameters": [
                     "Shopkeeper",
+                    "Effect",
+                    "\"Outline\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Ian",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Ian",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Glow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareStrings"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Transitioning",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::IconSuffix"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "!=",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MouseHelper::cursor::ChangeIcon"
+                  },
+                  "parameters": [
+                    "Cursor",
+                    "cursor",
+                    "\"Active\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Ian",
+                    "Effect",
+                    "\"Outline\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Ian",
                     "Effect",
                     "\"Outline\"",
                     "yes"
@@ -10950,6 +11474,134 @@
               },
               "parameters": [
                 "Shopkeeper",
+                "Effect",
+                "\"Outline\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Ian",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Ian",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "!=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                  },
+                  "parameters": [
+                    "Ian",
+                    "Effect",
+                    "\"Glow\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Outline\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Ian",
                 "Effect",
                 "\"Outline\"",
                 "no"
@@ -11596,6 +12248,206 @@
           "conditions": [
             {
               "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Outline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "Nametag",
+                "Ian",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeOut\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fallDown\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Nametag",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Nametag",
+                "=",
+                "Ian.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Nametag",
+                "=",
+                "Ian.Y() - Nametag.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeIn\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"popUp\"",
+                "Nametag.Y() - 8",
+                "\"easeOutBack\"",
+                "0.25",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Ian",
+                "Effect",
+                "\"Outline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "Nametag",
+                "Ian",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeIn\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"popUp\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fadeOut\"",
+                "0",
+                "\"easeOutQuad\"",
+                "0.25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Nametag",
+                "Tween",
+                "\"fallDown\"",
+                "Ian.Y() - Nametag.Height()",
+                "\"easeOutBack\"",
+                "0.25",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
@@ -11721,6 +12573,25 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ForceDialogueChoices",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "0"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarSceneTxt"
@@ -11894,6 +12765,25 @@
           "actions": [
             {
               "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ForceDialogueChoices",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
@@ -12065,12 +12955,31 @@
           "actions": [
             {
               "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ForceDialogueChoices",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "CurrentSpeaker",
                 "=",
-                "\"Shopkeeper Ian\""
+                "\"Shopkeeper\""
               ]
             },
             {
@@ -12090,7 +12999,197 @@
               "parameters": [
                 "DialogueText",
                 "=",
-                "\"[outline=black]Well hello, [b]\" + GlobalVariableString(Name) + \"[/b]! How may I help you?[/outline]\""
+                "\"[outline=black]Hello, [b]\" + GlobalVariableString(Name) + \"[/b]![/outline]\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Gamepad\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Controller_X_is_connected"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Cursor",
+                        "Ian",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_released"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Cross\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "LastInput::LastInputWasFrom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"MouseKeyboard\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Ian",
+                        "GoldAmount",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ForceDialogueChoices",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "CurrentSpeaker",
+                "=",
+                "\"Ian\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "DialogueText",
+                "=",
+                "\"[outline=black]Well hello there, [b]\" + GlobalVariableString(Name) + \"[/b]![/outline]\""
               ]
             },
             {
@@ -12287,8 +13386,476 @@
                       },
                       "parameters": [
                         "DialogueIndex",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "DialogueText",
+                        "=",
+                        "\"[outline=black]I have a quest for you.[/outline]\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "DialogueText",
+                        "=",
+                        "\"[outline=black]The dinosaurs in [b]Isla Nublar[/b] are...[b][/b][b][/b]lets put it out of control.[/outline]\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ForceDialogueChoices",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "DialogueText",
+                        "=",
+                        "\"[outline=black]I need you to put a stop to this \\\"dino siege.\\\" Would you like to get started?[/outline]\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "LastDialogueChoice",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Isla Nublar\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "LastDialogueChoice",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ForceDialogueChoices",
+                            "False"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]You can talk to me anytime![/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
                         ">",
-                        "0"
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Dialogue\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "CurrentSpeaker",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "CurrentSpeaker",
+                    "=",
+                    "\"Ian\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]Unfortunately, I cannot have you proceed until you have earned [color=FFB25D][b]1000 gold[/b][/color] or more.[/outline]\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]The treachery of this level is one I remember vividly...[/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]I task you with defeating the master dinosaur inside the region.[/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ForceDialogueChoices",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]Are you up for this task?[/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
+                        ">",
+                        "3"
                       ]
                     }
                   ],
@@ -12494,8 +14061,98 @@
                       },
                       "parameters": [
                         "DialogueIndex",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ForceDialogueChoices",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]Are you ready?[/outline]\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
                         ">",
-                        "2"
+                        "3"
                       ]
                     }
                   ],
@@ -12533,7 +14190,7 @@
                   "parameters": [
                     "CurrentSpeaker",
                     "=",
-                    "\"Shopkeeper Ian\""
+                    "\"Shopkeeper\""
                   ]
                 }
               ],
@@ -12553,24 +14210,69 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "BBText::SetBBText"
-                      },
-                      "parameters": [
-                        "DialogueText",
-                        "=",
-                        "\"[outline=black]Would you like to visit my shop?[/outline]\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "1000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]I cannot help you once you have earned at least [color=FFB25D][b]1000 gold[/b][/color].[/outline]\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "SetSceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "ForceDialogueChoices",
-                        "True"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "1000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ForceDialogueChoices",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BBText::SetBBText"
+                          },
+                          "parameters": [
+                            "DialogueText",
+                            "=",
+                            "\"[outline=black]Would you like to visit my shop?[/outline]\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -13505,6 +15207,152 @@
                     "no"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DialogueChoice1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "DialogueChoice1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "DialogueChoice1",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "DialogueChoice2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "DialogueChoice2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "DialogueChoice2",
+                "Effect",
+                "\"Glow\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LastDialogueChoice",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
               ]
             }
           ]
