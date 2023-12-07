@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.28905162031349624,
+    "zoomFactor": 0.2705012603962596,
     "windowMask": false
   },
   "objectsGroups": [
@@ -14923,7 +14923,7 @@
                               "parameters": [
                                 "SceneToQueue",
                                 "=",
-                                "\"Shopfront\""
+                                "\"Shop\""
                               ]
                             },
                             {

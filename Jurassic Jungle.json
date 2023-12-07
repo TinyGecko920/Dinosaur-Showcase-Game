@@ -1580,6 +1580,24 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ShopfrontBg0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShopfrontBg0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ShopfrontBg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ShopfrontBg1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

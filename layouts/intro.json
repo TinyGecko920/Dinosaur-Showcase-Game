@@ -107,7 +107,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Background",
-      "name": "LoadingScreenBg1",
+      "name": "LoadingScreenBg0",
       "persistentUuid": "6f8cecfd-80cc-4fca-b26c-cb2f2997cb53",
       "width": 0,
       "x": 2530,
@@ -122,7 +122,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Background Layers",
-      "name": "LoadingScreenBg2",
+      "name": "LoadingScreenBg1",
       "persistentUuid": "5d84cb00-f701-4a72-a7ed-086b251b21e8",
       "width": 0,
       "x": -219,
@@ -137,7 +137,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Background Layers",
-      "name": "LoadingScreenBg3",
+      "name": "LoadingScreenBg2",
       "persistentUuid": "9d660ef3-d070-4a9e-b466-76942d1370cb",
       "width": 0,
       "x": 4602,
@@ -152,7 +152,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Background Layers",
-      "name": "LoadingScreenBg4",
+      "name": "LoadingScreenBg3",
       "persistentUuid": "634d702c-33ca-4080-8eaf-c634c3520c88",
       "width": 0,
       "x": 2737,
@@ -199,7 +199,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "LoadingScreenBg1",
+      "name": "LoadingScreenBg0",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -270,7 +270,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "LoadingScreenBg2",
+      "name": "LoadingScreenBg1",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -342,7 +342,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "LoadingScreenBg3",
+      "name": "LoadingScreenBg2",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -414,7 +414,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "LoadingScreenBg4",
+      "name": "LoadingScreenBg3",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1568,6 +1568,9 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "objectName": "LoadingScreenBg0"
+      },
+      {
         "objectName": "LoadingScreenBg1"
       },
       {
@@ -1575,9 +1578,6 @@
       },
       {
         "objectName": "LoadingScreenBg3"
-      },
-      {
-        "objectName": "LoadingScreenBg4"
       },
       {
         "objectName": "Changelog"
@@ -1691,7 +1691,7 @@
             "value": "ChangeColor"
           },
           "parameters": [
-            "LoadingScreenBg1",
+            "LoadingScreenBg0",
             "\"0;0;0\""
           ]
         },
@@ -1972,7 +1972,7 @@
             "value": "Tween::TweenBehavior::AddObjectColorTween2"
           },
           "parameters": [
-            "LoadingScreenBg1",
+            "LoadingScreenBg0",
             "Tween",
             "\"fadeOut\"",
             "\"255;255;255\"",
@@ -2127,6 +2127,30 @@
             "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
           },
           "parameters": [
+            "LoadingScreenBg1",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
+          },
+          "parameters": [
+            "LoadingScreenBg1",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
+          },
+          "parameters": [
             "LoadingScreenBg2",
             "Background_ParallaxMouse",
             "=",
@@ -2164,30 +2188,6 @@
           },
           "parameters": [
             "LoadingScreenBg3",
-            "Background_ParallaxMouse",
-            "=",
-            "Cursor.CenterY()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
-          },
-          "parameters": [
-            "LoadingScreenBg4",
-            "Background_ParallaxMouse",
-            "=",
-            "Cursor.CenterX()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
-          },
-          "parameters": [
-            "LoadingScreenBg4",
             "Background_ParallaxMouse",
             "=",
             "Cursor.CenterY()",
@@ -2765,7 +2765,7 @@
             "value": "Tween::TweenBehavior::AddObjectColorTween2"
           },
           "parameters": [
-            "LoadingScreenBg1",
+            "LoadingScreenBg0",
             "Tween",
             "\"fadeOut\"",
             "\"4;14;41\"",
@@ -5418,7 +5418,7 @@
                 "value": "Tween::TweenBehavior::AddObjectColorTween2"
               },
               "parameters": [
-                "LoadingScreenBg1",
+                "LoadingScreenBg0",
                 "Tween",
                 "\"fadeOut\"",
                 "\"255;255;255\"",
@@ -5788,6 +5788,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "SmoothPlatformerCamera",
+      "type": "SmoothCamera::SmoothPlatformerCamera"
     },
     {
       "name": "Text",
