@@ -1603,19 +1603,10 @@
         "file": "assets/slash-21834.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\Close.png",
+        "name": "assets\\slash-21834.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Close.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Close.png",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -1636,6 +1627,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Close.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Close.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -8876,7 +8876,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-0      "referenceTo": "/externalEvents/level"
+      "referenceTo": "/externalEvents/level"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

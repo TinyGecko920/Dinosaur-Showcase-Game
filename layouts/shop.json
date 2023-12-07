@@ -28,6 +28,12 @@
       "name": "LayerZoom",
       "type": "number",
       "value": 1.5
+    },
+    {
+      "folded": true,
+      "name": "TransitionBack",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -36,8 +42,10 @@
       "customSize": false,
       "height": 0,
       "layer": "Background",
+      "locked": true,
       "name": "ShopfrontBg0",
       "persistentUuid": "1ecb2ccc-3e5f-46d7-8a1d-6aed7f660893",
+      "sealed": true,
       "width": 0,
       "x": 155,
       "y": -265,
@@ -51,8 +59,10 @@
       "customSize": false,
       "height": 0,
       "layer": "Background Layers",
+      "locked": true,
       "name": "ShopfrontBg1",
       "persistentUuid": "263a7297-abe4-4ff4-8737-59971e256b0d",
+      "sealed": true,
       "width": 0,
       "x": -1,
       "y": 576,
@@ -349,6 +359,114 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopItem",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Better Sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\swordtwo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 57
+                      },
+                      {
+                        "x": 1,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bestest Sword",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\swordthree.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 11
+                      },
+                      {
+                        "x": 47,
+                        "y": 57
+                      },
+                      {
+                        "x": 1,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -362,6 +480,9 @@
       },
       {
         "objectName": "Close"
+      },
+      {
+        "objectName": "ShopItem"
       }
     ]
   },
@@ -588,7 +709,7 @@
           "parameters": [
             "ShopfrontBg1",
             "Tween",
-            "\"blur\"",
+            "\"blurOut\"",
             "Blur",
             "0",
             "\"easeInOutCirc\"",
@@ -602,7 +723,7 @@
           },
           "parameters": [
             "",
-            "\"zoom\"",
+            "\"zoomOut\"",
             "LayerZoom",
             "1",
             "\"easeOutQuad\"",
@@ -719,6 +840,139 @@
       "conditions": [
         {
           "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "TransitionBack",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "ShopfrontBg1",
+            "Tween",
+            "\"fadeIn\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "ShopfrontBg1",
+            "Tween",
+            "\"blurOut\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "ShopfrontBg1",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "0.333",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+          },
+          "parameters": [
+            "ShopfrontBg1",
+            "Tween",
+            "\"blurIn\"",
+            "Blur",
+            "15",
+            "\"easeInOutCirc\"",
+            "0.333",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenSceneVariableNumber3"
+          },
+          "parameters": [
+            "",
+            "\"zoomIn\"",
+            "LayerZoom",
+            "1.5",
+            "\"easeOutQuad\"",
+            "0.333"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectColorTween2"
+          },
+          "parameters": [
+            "ShopfrontBg0",
+            "Tween",
+            "\"fadeToDark\"",
+            "\"0;0;0\"",
+            "\"easeOutQuad\"",
+            "1",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Close",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "0.2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Isla Nublar\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "GameWindow::WindowResized"
           },
           "parameters": [
@@ -806,12 +1060,11 @@
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "\"Isla Nublar\"",
-                ""
+                "TransitionBack",
+                "True"
               ]
             }
           ]
@@ -930,12 +1183,11 @@
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "\"Isla Nublar\"",
-                ""
+                "TransitionBack",
+                "True"
               ]
             }
           ]
