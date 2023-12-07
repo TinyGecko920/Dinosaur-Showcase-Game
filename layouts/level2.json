@@ -1433,6 +1433,15 @@
             "top": "Y-"
           },
           "booleanParameters": {}
+        },
+        {
+          "effectType": "Brightness",
+          "name": "Darken",
+          "doubleParameters": {
+            "brightness": 0.5
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
         }
       ]
     },

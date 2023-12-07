@@ -2666,6 +2666,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 100,
