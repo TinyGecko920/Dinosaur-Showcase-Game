@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.17003036489028933,
+    "zoomFactor": 0.1104807816501789,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -496,7 +496,7 @@
         }
       ],
       "content": {
-        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n- This is a test of the changelog\n- Item 1\n- Item 2\n- Item 3\n- This game is (clearly) in early alpha[/outline]",
+        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n[b]The First Release![/b]\n\n- Initial release\n- Your progress automatically saves across sessions\n- Enjoy your visit in [b]Isla Nublar[/b]\n- Interact with Ellie, Ian, and Malcolm and finish quests\n- Talk to the shopkeeper to upgrade your gear\n\n- This game is (very clearly) in early alpha[/outline]",
         "opacity": 255,
         "fontSize": 28,
         "visible": true,
