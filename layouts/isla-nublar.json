@@ -9933,6 +9933,45 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "AutoTyping::BBText_AutoTyping::IsCharacterJustAdded"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "BBText_AutoTyping",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "DialogueCharacter",
+                    "Tween",
+                    "\"jumpOut\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Type",
+                    "",
+                    "75",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
                   },
                   "parameters": [
@@ -16381,6 +16420,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",

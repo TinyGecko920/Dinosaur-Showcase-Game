@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\150086152\\Documents\\GitHub\\Dinosaur-Showcase-Game\\export",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1604,7 +1604,9 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\Close.png",
-        "smoothed": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": true
       },
       {
@@ -1621,6 +1623,16 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\footsteps_grass_1-6810.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Type.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 56\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.001,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":625.1978837773837,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"triangle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":55,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":16,\\\"lowPassCutoff\\\":147.49579118614778,\\\"lowPassCutoffSweep\\\":-396.84710512168635,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"Type\"}}",
+        "name": "Type",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -5422,10 +5434,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 500,
-          "maxSpeed": 250,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 500,
+          "maxSpeed": 250,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5703,10 +5715,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 200,
-          "maxSpeed": 100,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "maxSpeed": 100,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5984,10 +5996,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 600,
-          "maxSpeed": 300,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 600,
+          "maxSpeed": 300,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6265,10 +6277,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 600,
-          "maxSpeed": 300,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 600,
+          "maxSpeed": 300,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6480,10 +6492,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 1100,
-          "maxSpeed": 550,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 1100,
+          "maxSpeed": 550,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6767,10 +6779,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 300,
-          "maxSpeed": 250,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 300,
+          "maxSpeed": 250,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -7282,10 +7294,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 700,
-          "maxSpeed": 350,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 700,
+          "maxSpeed": 350,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -8864,7 +8876,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/level"
+0      "referenceTo": "/externalEvents/level"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
