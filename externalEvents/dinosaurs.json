@@ -487,10 +487,9 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Player",
                     "Gold",
                     "+",
                     "ceil(RandomFloatInRange(Dinosaurs.MinGoldDrop, Dinosaurs.MaxGoldDrop))"
