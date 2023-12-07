@@ -1598,6 +1598,16 @@
         "name": "assets\\ShopfrontBg1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/slash-21834.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\slash-21834.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2630,12 +2640,6 @@
       "variables": [
         {
           "folded": true,
-          "name": "Gold",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "folded": true,
           "name": "EquippedSword",
           "type": "string",
           "value": "Sword"
@@ -2646,9 +2650,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 10000,
+          "Health": 100,
           "CurrentHealth": 0,
-          "MaxHealth": 10000,
+          "MaxHealth": 100,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 5,
