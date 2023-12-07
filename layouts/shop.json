@@ -22,7 +22,14 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "LayerZoom",
+      "type": "number",
+      "value": 1.5
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -419,7 +426,7 @@
             "Tween",
             "\"blur\"",
             "Blur",
-            "15",
+            "11",
             "\"easeInOutCirc\"",
             "0.333",
             ""
@@ -479,6 +486,19 @@
             "\"easeInOutCirc\"",
             "0.333",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenSceneVariableNumber3"
+          },
+          "parameters": [
+            "",
+            "\"zoom\"",
+            "LayerZoom",
+            "1",
+            "\"easeOutQuad\"",
+            "0.333"
           ]
         }
       ]
@@ -545,6 +565,17 @@
             "\"Blur\"",
             "\"blur\"",
             "ShopfrontBg1.Blur"
+          ]
+        },
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "LayerZoom",
+            "\"Background Layers\"",
+            "0"
           ]
         }
       ]

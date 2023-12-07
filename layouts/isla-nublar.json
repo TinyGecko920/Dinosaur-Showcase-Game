@@ -9173,8 +9173,6 @@
     {
       "type": "BuiltinCommonInstructions::JsCode",
       "inlineCode": [
-        "const topDownPlayer = runtimeScene.getObjects('TopDownPlayer')[0];",
-        "",
         "if (!(objects.length > 0)) return;",
         "",
         "objects[0].setBBText(`[b][outline=black][spacing=8]${('0000000000' + runtimeScene.getGame().getVariables().get('Gold').getAsNumber()).substr(-6)}[/spacing][/outline][/b][outline=black]`);"

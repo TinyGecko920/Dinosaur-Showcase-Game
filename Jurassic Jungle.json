@@ -1720,12 +1720,12 @@
       "content": {
         "text": "[b][outline=black][spacing=32]100[/spacing][/outline][/b]",
         "opacity": 255,
-        "fontSize": 24,
+        "fontSize": 48,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "ChelseaMarket-Regular.ttf",
         "align": "center",
-        "wordWrap": true
+        "wordWrap": false
       }
     },
     {
