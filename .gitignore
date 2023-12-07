@@ -1,6 +1,6 @@
 *.json.autosave
 assets/Wood Bar Border.png
 export/*
-!export/buildResources/
 !export/package.json
+!export/icon.ico
 eventsFunctionsExtensions/untitledextension.json
