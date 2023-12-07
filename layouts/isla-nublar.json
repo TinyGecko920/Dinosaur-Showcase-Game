@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.253141400129866,
+    "zoomFactor": 0.28905162031349624,
     "windowMask": false
   },
   "objectsGroups": [
@@ -79,6 +79,18 @@
       "name": "ForceDialogueChoices",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "ProcessNextDialogueIndex",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "SceneToQueue",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -8041,6 +8053,193 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "TransitioningToLevel",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "TransitioningToShop",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "Transitioning",
+            "False"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"jumpIn\"",
+            "DialogueBackground.Y()",
+            "\"easeInBack\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "DialogueCharacter",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueBackground"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueSpeakerText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueNext"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueChoice1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DialogueChoice2"
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "",
+            "\"Blur\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "EnableLayerEffect"
+          },
+          "parameters": [
+            "",
+            "\"Water\"",
+            "\"Blur\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "Tween",
+            "\"zoomIn\"",
+            "OutlineSize",
+            "SceneWindowWidth()",
+            "\"easeOutCirc\"",
+            "0.667",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "SceneToQueue",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
@@ -9712,12 +9911,20 @@
           "conditions": [
             {
               "type": {
-                "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
+                "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "DialogueText",
-                "BBText_AutoTyping",
-                ""
+                "TransitioningToLevel",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "TransitioningToShop",
+                "False"
               ]
             }
           ],
@@ -9728,37 +9935,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+                    "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
                   },
                   "parameters": [
-                    "DialogueCharacter",
-                    "Animation"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-                  },
-                  "parameters": [
-                    "DialogueCharacter",
-                    "Animation"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "ForceDialogueChoices",
-                    "True"
+                    "DialogueText",
+                    "BBText_AutoTyping",
+                    ""
                   ]
                 }
               ],
@@ -9770,21 +9952,22 @@
                     {
                       "type": {
                         "inverted": true,
-                        "value": "Visible"
+                        "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
                       },
                       "parameters": [
-                        "DialogueChoice1"
+                        "DialogueCharacter",
+                        "Animation"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Montre"
+                        "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
                       },
                       "parameters": [
-                        "DialogueChoice1",
-                        ""
+                        "DialogueCharacter",
+                        "Animation"
                       ]
                     }
                   ]
@@ -9794,22 +9977,106 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Visible"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "DialogueChoice2"
+                        "ForceDialogueChoices",
+                        "True"
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "DialogueChoice1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "DialogueChoice1",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "DialogueChoice2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "DialogueChoice2",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "Montre"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "DialogueChoice2",
-                        ""
+                        "ForceDialogueChoices",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Visible"
+                          },
+                          "parameters": [
+                            "DialogueNext"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "DialogueNext",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -9821,11 +10088,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SceneVariableAsBoolean"
+                    "inverted": true,
+                    "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
                   },
                   "parameters": [
-                    "ForceDialogueChoices",
-                    "False"
+                    "DialogueText",
+                    "BBText_AutoTyping",
+                    ""
                   ]
                 }
               ],
@@ -9836,7 +10105,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
+                      },
+                      "parameters": [
+                        "DialogueCharacter",
+                        "Animation"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                      },
+                      "parameters": [
+                        "DialogueCharacter",
+                        "Animation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "Visible"
                       },
                       "parameters": [
@@ -9847,126 +10140,58 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Montre"
+                        "value": "Cache"
                       },
                       "parameters": [
-                        "DialogueNext",
-                        ""
+                        "DialogueNext"
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "AutoTyping::BBText_AutoTyping::TypingFinished"
-              },
-              "parameters": [
-                "DialogueText",
-                "BBText_AutoTyping",
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::IsAnimationPaused"
-                  },
-                  "parameters": [
-                    "DialogueCharacter",
-                    "Animation"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "DialogueChoice1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "DialogueChoice1"
+                      ]
+                    }
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
-                  },
-                  "parameters": [
-                    "DialogueCharacter",
-                    "Animation"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "DialogueNext"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "DialogueNext"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "DialogueChoice1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "DialogueChoice1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "DialogueChoice2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "DialogueChoice2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "DialogueChoice2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "DialogueChoice2"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -13343,6 +13568,15 @@
           "actions": [
             {
               "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ProcessNextDialogueIndex",
+                "True"
+              ]
+            },
+            {
+              "type": {
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -13359,7 +13593,32 @@
                 "0.1"
               ]
             }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "DialogueIndex",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ProcessNextDialogueIndex",
+                "True"
+              ]
+            }
           ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -13426,7 +13685,7 @@
                       "parameters": [
                         "DialogueText",
                         "=",
-                        "\"[outline=black]The dinosaurs in [b]Isla Nublar[/b] are...[b][/b][b][/b]lets put it out of control.[/outline]\""
+                        "\"[outline=black]The dinosaurs in [b]Isla Nublar[/b] are... [b][/b][b][/b]lets put it out of control.[/outline]\""
                       ]
                     }
                   ]
@@ -13462,7 +13721,7 @@
                       "parameters": [
                         "DialogueText",
                         "=",
-                        "\"[outline=black]I need you to put a stop to this \\\"dino siege.\\\" Would you like to get started?[/outline]\""
+                        "\"[outline=black]I need you to put a stop to this \\\"dino siege.\\\" [b][/b][b][/b]Would you like to get started?[/outline]\""
                       ]
                     }
                   ]
@@ -13500,12 +13759,21 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Scene"
+                            "value": "ModVarSceneTxt"
                           },
                           "parameters": [
-                            "",
-                            "\"Isla Nublar\"",
-                            ""
+                            "SceneToQueue",
+                            "=",
+                            "\"Level1\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "TransitioningToLevel",
+                            "True"
                           ]
                         }
                       ]
@@ -13640,7 +13908,7 @@
                           "parameters": [
                             "DialogueText",
                             "=",
-                            "\"[outline=black]Unfortunately, I cannot have you proceed until you have earned [color=FFB25D][b]1000 gold[/b][/color] or more.[/outline]\""
+                            "\"[outline=black]Unfortunately, [b][/b]I cannot have you proceed until you have earned [color=FFB25D][b]1000 gold[/b][/color] or more.[/outline]\""
                           ]
                         }
                       ]
@@ -13748,7 +14016,7 @@
                           "parameters": [
                             "DialogueText",
                             "=",
-                            "\"[outline=black]I task you with defeating the master dinosaur inside the region.[/outline]\""
+                            "\"[outline=black]I task you with defeating the boss dinosaur inside this region of [b]Isla Nublar[/b].[/outline]\""
                           ]
                         }
                       ]
@@ -13854,8 +14122,152 @@
                       },
                       "parameters": [
                         "DialogueIndex",
+                        "=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "2500"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "SceneToQueue",
+                                "=",
+                                "\"Level2\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "TransitioningToLevel",
+                                "True"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "ForceDialogueChoices",
+                                "False"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BBText::SetBBText"
+                              },
+                              "parameters": [
+                                "DialogueText",
+                                "=",
+                                "\"[outline=black]I will leave you time to make your decision. [b][/b][b][/b]Fairwell![/outline]\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
                         ">",
-                        "3"
+                        "4"
                       ]
                     }
                   ],
@@ -14151,8 +14563,152 @@
                       },
                       "parameters": [
                         "DialogueIndex",
+                        "=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "4000"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "SceneToQueue",
+                                "=",
+                                "\"Level3\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "TransitioningToLevel",
+                                "True"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "ForceDialogueChoices",
+                                "False"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BBText::SetBBText"
+                              },
+                              "parameters": [
+                                "DialogueText",
+                                "=",
+                                "\"[outline=black]Come back to me once you are ready![/outline]\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "DialogueIndex",
                         ">",
-                        "3"
+                        "4"
                       ]
                     }
                   ],
@@ -14291,26 +14847,149 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Dialogue\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            "<",
+                            "1000"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "HideLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Dialogue\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "CurrentSpeaker",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarSceneTxt"
-                      },
-                      "parameters": [
-                        "CurrentSpeaker",
-                        "=",
-                        "\"0\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "Gold",
+                            ">=",
+                            "1000"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "SceneToQueue",
+                                "=",
+                                "\"Shopfront\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "TransitioningToShop",
+                                "True"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "LastDialogueChoice",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "HideLayer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Dialogue\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "CurrentSpeaker",
+                                "=",
+                                "\"0\""
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ProcessNextDialogueIndex",
+                    "False"
                   ]
                 }
               ]
@@ -15244,6 +15923,15 @@
             },
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
@@ -15254,6 +15942,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ProcessNextDialogueIndex",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -15317,6 +16014,15 @@
             },
             {
               "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Transitioning",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
               },
               "parameters": [
@@ -15327,6 +16033,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ProcessNextDialogueIndex",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"

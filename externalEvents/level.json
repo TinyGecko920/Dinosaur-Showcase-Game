@@ -676,18 +676,6 @@
               "parameters": [
                 "",
                 "=",
-                "lerp(CameraX(), Player.X(), 0.25)",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCameraCenterX"
-              },
-              "parameters": [
-                "",
-                "=",
                 "Player.X() / 0.95",
                 "\"Layer1\"",
                 ""
@@ -727,6 +715,18 @@
                 "Player.X() / 3",
                 "\"Layer4\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Player.CenterX()",
+                "",
+                "0"
               ]
             }
           ]

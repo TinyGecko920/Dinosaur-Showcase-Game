@@ -1,0 +1,148 @@
+{
+  "associatedLayout": "Level1",
+  "lastChangeTimeStamp": 0,
+  "name": "Transition",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Responsible for making the transition from Isla Nublar to the level seamless."
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "TransitionPainter",
+            "-9999",
+            "-9999",
+            "\"Transition\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::OutlineSize"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "TransitionPainter.OutlineSize"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::Circle"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "0",
+            "0",
+            "SceneWindowWidth() / 2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::OutlineSize"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "=",
+            "TransitionPainter.OutlineSize"
+          ]
+        },
+        {
+          "type": {
+            "value": "PrimitiveDrawing::Circle"
+          },
+          "parameters": [
+            "TransitionPainter",
+            "0",
+            "0",
+            "SceneWindowWidth() / 2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "// Change this if you want (cannot be 0)",
+        "const SPEED = 500;",
+        "",
+        "const transitionPainter = objects[0];",
+        "const outlineSize = transitionPainter.getVariables().get('OutlineSize');",
+        "",
+        "if (outlineSize.getAsNumber() <= 0) {",
+        "    return;",
+        "}",
+        "",
+        "const timeManager = runtimeScene.getTimeManager();",
+        "",
+        "if (!timeManager.hasTimer('transitionTimer')) {",
+        "    timeManager.addTimer('transitionTimer');",
+        "}",
+        "",
+        "function easeTransition(x) {",
+        "    return Math.pow(x, 7) - (1.3 * Math.pow(x, 2)) + x;",
+        "}",
+        "",
+        "outlineSize.setNumber((1 - easeTransition(timeManager.getTimer('transitionTimer').getTime() / SPEED)) * runtimeScene.getViewportWidth());",
+        ""
+      ],
+      "parameterObjects": "TransitionPainter",
+      "useStrict": true,
+      "eventsSheetExpanded": true
+    }
+  ]
+}

@@ -2692,6 +2692,77 @@
           "Right": "d",
           "Jump": "",
           "Platformer": "PlatformerObject"
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": false,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 0,
+          "LogRightwardSpeed": 0,
+          "LogDownwardSpeed": 0,
+          "LogUpwardSpeed": 0,
+          "DelayedCenterX": 0,
+          "DelayedCenterY": 0,
+          "ForecastHistoryMeanX": 0,
+          "ForecastHistoryMeanY": 0,
+          "ForecastHistoryVarianceX": 0,
+          "ForecastHistoryCovariance": 0,
+          "ForecastHistoryLinearA": 0,
+          "ForecastHistoryLinearB": 0,
+          "ForecastedX": 0,
+          "ForecastedY": 0,
+          "ProjectedNewestX": 0,
+          "ProjectedNewestY": 0,
+          "ProjectedOldestX": 0,
+          "ProjectedOldestY": 0,
+          "ForecastHistoryVarianceY": 0,
+          "Index": 0,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 0,
+          "WaitingSpeedXMax": 0,
+          "WaitingSpeedYMax": 0,
+          "WaitingEnd": 0,
+          "CameraDelayCatchUpDuration": 0,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000,
+          "OldY": 9000,
+          "IsCalledManually": false
+        },
+        {
+          "name": "SmoothPlatformerCamera",
+          "type": "SmoothCamera::SmoothPlatformerCamera",
+          "PlatformerCharacter": "PlatformerObject",
+          "SmoothCamera": "SmoothCamera",
+          "JumpOriginY": 3.1179689450262014e-307,
+          "AirFollowFreeAreaTop": 0,
+          "AirFollowFreeAreaBottom": 0,
+          "FloorFollowFreeAreaTop": 0,
+          "FloorFollowFreeAreaBottom": 0,
+          "AirUpwardSpeed": 0.95,
+          "AirDownwardSpeed": 0.95,
+          "FloorUpwardSpeed": 0.9,
+          "FloorDownwardSpeed": 0.9,
+          "AirUpwardSpeedMax": 9000,
+          "AirDownwardSpeedMax": 9000,
+          "FloorUpwardSpeedMax": 9000,
+          "FloorDownwardSpeedMax": 9000
         }
       ],
       "animations": [
@@ -2712,6 +2783,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -2754,6 +2830,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -2796,6 +2877,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -2838,6 +2924,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -2880,6 +2971,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -2922,6 +3018,11 @@
                       "name": "RightHand",
                       "x": 92.5,
                       "y": 101
+                    },
+                    {
+                      "name": "Face",
+                      "x": 70.5,
+                      "y": 26.5
                     }
                   ],
                   "originPoint": {
@@ -3701,7 +3802,7 @@
           "folded": true,
           "name": "OutlineSize",
           "type": "number",
-          "value": 0
+          "value": 9999
         }
       ],
       "effects": [],
@@ -3712,7 +3813,7 @@
         }
       ],
       "fillOpacity": 0,
-      "outlineSize": 9999,
+      "outlineSize": 1,
       "outlineOpacity": 255,
       "fillColor": {
         "b": 255,
@@ -6244,10 +6345,10 @@
           "HealToBeApplied": 0
         },
         {
-          "acceleration": 1100,
-          "maxSpeed": 550,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 1100,
+          "maxSpeed": 550,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -8534,7 +8635,7 @@
       "folded": true,
       "name": "Gold",
       "type": "number",
-      "value": 100000
+      "value": 0
     },
     {
       "folded": true,
@@ -8570,10 +8671,6 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/intro"
     },
     {
@@ -8599,6 +8696,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/credits"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/shop"
     }
   ],
   "externalEvents": [
@@ -8613,6 +8714,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/level"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/transition"
     }
   ],
   "eventsFunctionsExtensions": [
