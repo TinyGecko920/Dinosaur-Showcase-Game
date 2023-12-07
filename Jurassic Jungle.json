@@ -1608,6 +1608,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/footsteps_grass_1-6810.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\footsteps_grass_1-6810.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4708,13 +4718,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 25
+          "value": 30
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 40
+          "value": 55
         },
         {
           "folded": true,
@@ -5259,13 +5269,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 60
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 90
         },
         {
           "folded": true,
@@ -5295,13 +5305,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 100
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 150
         },
         {
           "folded": true,
@@ -5341,10 +5351,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 500,
+          "maxSpeed": 250,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6160,10 +6170,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 600,
+          "maxSpeed": 300,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 500,
-          "maxSpeed": 250,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6341,9 +6351,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 800,
+          "Health": 700,
           "CurrentHealth": 0,
-          "MaxHealth": 800,
+          "MaxHealth": 700,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -6367,10 +6377,10 @@
           "HealToBeApplied": 0
         },
         {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 1100,
           "maxSpeed": 550,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,

@@ -1631,10 +1631,6 @@
       "type": "SmoothCamera::SmoothPlatformerCamera"
     },
     {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
-    },
-    {
       "name": "Tooltip",
       "type": "Tooltip::Tooltip"
     },
