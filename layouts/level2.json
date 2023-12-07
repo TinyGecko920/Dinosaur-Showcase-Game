@@ -1579,6 +1579,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },

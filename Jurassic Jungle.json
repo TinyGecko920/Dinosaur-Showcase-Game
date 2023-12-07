@@ -1819,6 +1819,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 2500,
@@ -3992,6 +4000,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 300,
@@ -4227,6 +4243,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -4500,6 +4524,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 700,
@@ -4771,6 +4803,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -5050,6 +5090,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 100,
@@ -5322,6 +5370,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -5596,6 +5652,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 2500,
@@ -5868,6 +5932,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -6142,6 +6214,14 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 550,
@@ -6348,6 +6428,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -6627,6 +6715,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -7134,6 +7230,14 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -8753,6 +8857,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/extendedmath"

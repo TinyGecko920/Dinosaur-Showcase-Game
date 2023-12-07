@@ -737,6 +737,18 @@
                 },
                 {
                   "type": {
+                    "value": "Flash::FlashColor::Flash"
+                  },
+                  "parameters": [
+                    "Dinosaurs",
+                    "FlashColor",
+                    "0.1",
+                    "\"231;97;97\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
