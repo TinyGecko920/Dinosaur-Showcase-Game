@@ -1759,25 +1759,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 200
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 450
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 2
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 3.1
+          "value": 2.7
         },
         {
           "folded": true,
@@ -1795,13 +1795,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 1500
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 2500
         },
         {
           "folded": true,
@@ -2665,7 +2665,7 @@
           "MaxHealth": 100,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
-          "HealthRegenRate": 5,
+          "HealthRegenRate": 2,
           "HealthRegenDelay": 7,
           "AllowOverHealing": false,
           "HitAtLeastOnce": false,
@@ -4230,9 +4230,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 200,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 200,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -4446,13 +4446,13 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 50
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 80
         },
         {
           "folded": true,
@@ -4482,13 +4482,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 100
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 150
         },
         {
           "folded": true,
@@ -4502,9 +4502,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 700,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 700,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5325,9 +5325,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 500,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 500,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5542,25 +5542,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 35
+          "value": 150
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 60
+          "value": 250
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 4
+          "value": 7
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 7
+          "value": 12
         },
         {
           "folded": true,
@@ -5578,13 +5578,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 75
+          "value": 200
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 350
         },
         {
           "folded": true,
@@ -5598,9 +5598,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 3000,
+          "Health": 2500,
           "CurrentHealth": 0,
-          "MaxHealth": 3000,
+          "MaxHealth": 2500,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5624,10 +5624,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 200,
+          "maxSpeed": 100,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5815,25 +5815,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 160
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 240
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 1.8
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 3.1
+          "value": 2.8
         },
         {
           "folded": true,
@@ -5851,13 +5851,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 400
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 700
         },
         {
           "folded": true,
@@ -5871,9 +5871,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 1000,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 1000,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -5897,10 +5897,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 600,
+          "maxSpeed": 300,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -6568,25 +6568,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 90
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 160
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 2
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 3.1
+          "value": 3.5
         },
         {
           "folded": true,
@@ -6604,13 +6604,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 750
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 1250
         },
         {
           "folded": true,
@@ -6630,9 +6630,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 1300,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 1300,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -6656,10 +6656,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 300,
+          "maxSpeed": 250,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -7081,25 +7081,25 @@
           "folded": true,
           "name": "MinDamage",
           "type": "number",
-          "value": 20
+          "value": 180
         },
         {
           "folded": true,
           "name": "MaxDamage",
           "type": "number",
-          "value": 32
+          "value": 280
         },
         {
           "folded": true,
           "name": "MinAttackCooldown",
           "type": "number",
-          "value": 2.5
+          "value": 1.5
         },
         {
           "folded": true,
           "name": "MaxAttackCooldown",
           "type": "number",
-          "value": 3.1
+          "value": 2.5
         },
         {
           "folded": true,
@@ -7117,13 +7117,13 @@
           "folded": true,
           "name": "MinGoldDrop",
           "type": "number",
-          "value": 50
+          "value": 600
         },
         {
           "folded": true,
           "name": "MaxGoldDrop",
           "type": "number",
-          "value": 100
+          "value": 1000
         },
         {
           "folded": true,
@@ -7137,9 +7137,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 1500,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 1500,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -7163,10 +7163,10 @@
           "HealToBeApplied": 0
         },
         {
+          "acceleration": 700,
+          "maxSpeed": 350,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 240,
-          "maxSpeed": 120,
           "allowDiagonals": false,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
