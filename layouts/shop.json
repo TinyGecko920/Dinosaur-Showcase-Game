@@ -6,7 +6,7 @@
   "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
+  "title": "Shop",
   "v": 0,
   "uiSettings": {
     "grid": false,
@@ -34,6 +34,69 @@
       "name": "TransitionBack",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "ShopItems",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Cost",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Damage",
+              "persistentUuid": "6187674c-2667-4208-95fb-a6ddf3e0187d",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Description",
+              "persistentUuid": "ec20caf3-6a4f-485a-82f6-e9fb4c5ca331",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "persistentUuid": "46cfbdba-32aa-4a45-81dd-dbe212cb5907",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Cost",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Damage",
+              "persistentUuid": "6187674c-2667-4208-95fb-a6ddf3e0187d",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "Description",
+              "persistentUuid": "ec20caf3-6a4f-485a-82f6-e9fb4c5ca331",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "0"
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -366,9 +429,39 @@
       "name": "ShopItem",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Item",
+          "type": "string",
+          "value": "sword"
+        },
+        {
+          "folded": true,
+          "name": "Damage",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Cost",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Description",
+          "type": "string",
+          "value": "Just a very well rounded sword."
+        }
+      ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "Better Sword",

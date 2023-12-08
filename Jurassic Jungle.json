@@ -3902,7 +3902,20 @@
       "name": "Coins",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "CenterX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "CenterY",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [

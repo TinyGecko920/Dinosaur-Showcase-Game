@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.1,
     "snap": false,
-    "zoomFactor": 0.2705012603962596,
+    "zoomFactor": 0.3088741216342705,
     "windowMask": false
   },
   "objectsGroups": [
@@ -12832,6 +12832,16 @@
                 "Transitioning",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
             }
           ],
           "actions": [
@@ -13021,6 +13031,16 @@
               "parameters": [
                 "Transitioning",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
               ]
             }
           ],
@@ -13212,6 +13232,16 @@
                 "Transitioning",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
+              ]
             }
           ],
           "actions": [
@@ -13401,6 +13431,16 @@
               "parameters": [
                 "Transitioning",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Dialogue\""
               ]
             }
           ],

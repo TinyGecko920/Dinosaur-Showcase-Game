@@ -84,6 +84,12 @@
       "name": "SavedName",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "SavedGold",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -1798,15 +1804,42 @@
                 "=",
                 "SavedName"
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"playerStorage\"",
+                "\"gold\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"playerStorage\"",
+                "\"gold\"",
+                "",
+                "SavedGold"
+              ]
             },
             {
               "type": {
-                "value": "DebuggerTools::ConsoleLog"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
-                "SavedName",
-                "\"info\"",
-                ""
+                "Gold",
+                "=",
+                "SavedGold"
               ]
             }
           ]
@@ -4503,7 +4536,7 @@
                   "parameters": [
                     "Tooltip",
                     "=",
-                    "\"[outline=black]Continue as [b]\" + SavedName + \"[/b][/outline]\""
+                    "\"[outline=black]Continue as [b]\" + SavedName + \"[/b]\n[size=16][b][color=FFB25D]\" + ToString(SavedGold) + \"[/color] gold[/b][/size][/outline]\""
                   ]
                 }
               ]
