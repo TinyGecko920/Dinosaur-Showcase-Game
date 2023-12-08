@@ -509,58 +509,12 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "EcrireFichierExp"
                   },
                   "parameters": [
-                    "Coins",
-                    "CenterX",
-                    "=",
-                    "Coins.CenterX()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "Coins",
-                    "CenterY",
-                    "=",
-                    "Coins.CenterY()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetX"
-                  },
-                  "parameters": [
-                    "Coins",
-                    "Scale",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetY"
-                  },
-                  "parameters": [
-                    "Coins",
-                    "Scale",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetCenter"
-                  },
-                  "parameters": [
-                    "Coins",
-                    "=",
-                    "Coins.CenterX",
-                    "=",
-                    "Coins.CenterY"
+                    "\"playerStorage\"",
+                    "\"gold\"",
+                    "Gold"
                   ]
                 }
               ]
