@@ -263,7 +263,7 @@
           "height": 42,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonPrimary.png",
+          "texture": "assets\\ButtonPrimary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 42
@@ -273,7 +273,7 @@
           "height": 42,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonPrimary.png",
+          "texture": "assets\\ButtonPrimary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 42
@@ -298,7 +298,7 @@
           "height": 42,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonPrimary.png",
+          "texture": "assets\\ButtonPrimary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 42

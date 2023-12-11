@@ -533,7 +533,7 @@
           "height": 32,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 32
@@ -543,7 +543,7 @@
           "height": 42,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 42
@@ -554,7 +554,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Play",
-          "font": "ChelseaMarket-Regular.ttf",
+          "font": "assets\\ChelseaMarket-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 64,
           "color": {
@@ -568,7 +568,7 @@
           "height": 32,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 32
@@ -598,7 +598,7 @@
           "height": 32,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 32
@@ -608,7 +608,7 @@
           "height": 42,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 42
@@ -633,7 +633,7 @@
           "height": 32,
           "leftMargin": 21,
           "rightMargin": 21,
-          "texture": "ButtonSecondary.png",
+          "texture": "assets\\ButtonSecondary.png",
           "tiled": false,
           "topMargin": 21,
           "width": 32

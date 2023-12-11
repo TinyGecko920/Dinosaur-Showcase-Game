@@ -103,10 +103,10 @@
         "userAdded": true
       },
       {
-        "file": "ChelseaMarket-Regular.ttf",
+        "file": "assets/ChelseaMarket-Regular.ttf",
         "kind": "font",
         "metadata": "",
-        "name": "ChelseaMarket-Regular.ttf",
+        "name": "assets\\ChelseaMarket-Regular.ttf",
         "userAdded": false
       },
       {
@@ -412,19 +412,19 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "ButtonPrimary.png",
+        "file": "assets/ButtonPrimary.png",
         "kind": "image",
         "metadata": "",
-        "name": "ButtonPrimary.png",
+        "name": "assets\\ButtonPrimary.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "ButtonSecondary.png",
+        "file": "assets/ButtonSecondary.png",
         "kind": "image",
         "metadata": "",
-        "name": "ButtonSecondary.png",
+        "name": "assets\\ButtonSecondary.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -601,10 +601,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Back.png",
+        "file": "assets/Back.png",
         "kind": "image",
         "metadata": "",
-        "name": "Back.png",
+        "name": "assets\\Back.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -925,10 +925,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Forward.png",
+        "file": "assets/Forward.png",
         "kind": "image",
         "metadata": "",
-        "name": "Forward.png",
+        "name": "assets\\Forward.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1720,7 +1720,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "233;121;135",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -1762,7 +1762,7 @@
         "fontSize": 48,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -2640,7 +2640,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "255;178;93",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -3820,7 +3820,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Forward.png",
+                  "image": "assets\\Forward.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -7767,7 +7767,7 @@
       "leftMargin": 21,
       "name": "DialogueBackground",
       "rightMargin": 21,
-      "texture": "ButtonPrimary.png",
+      "texture": "assets\\ButtonPrimary.png",
       "tiled": false,
       "topMargin": 21,
       "type": "PanelSpriteObject::PanelSprite",
