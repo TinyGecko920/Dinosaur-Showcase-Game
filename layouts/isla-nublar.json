@@ -7182,6 +7182,19 @@
         },
         {
           "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\IslaNublar.wav",
+            "101",
+            "yes",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
@@ -7736,6 +7749,40 @@
       "conditions": [
         {
           "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "101",
+            "33",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "LayerVisible"
           },
           "parameters": [
@@ -7895,6 +7942,17 @@
             "BBText_AutoTyping",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "101",
+            "15",
+            "0.5"
+          ]
         }
       ]
     },
@@ -8047,6 +8105,17 @@
             "TopDownMovement",
             "=",
             "200"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "101",
+            "33",
+            "0.5"
           ]
         }
       ]
@@ -8216,6 +8285,17 @@
             "\"easeOutCirc\"",
             "0.667",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "101",
+            "0",
+            "1"
           ]
         },
         {

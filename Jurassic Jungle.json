@@ -1637,6 +1637,16 @@
         "name": "assets\\Close.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/IslaNublar.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\IslaNublar.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
