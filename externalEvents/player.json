@@ -753,7 +753,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\slash-21834.mp3",
+                    "assets\\hit.mp3",
                     "",
                     "100",
                     ""
@@ -1143,7 +1143,7 @@
               },
               "parameters": [
                 "",
-                "assets\\footsteps_grass_1-6810.mp3",
+                "assets\\footsteps.mp3",
                 "101",
                 "yes",
                 "100",

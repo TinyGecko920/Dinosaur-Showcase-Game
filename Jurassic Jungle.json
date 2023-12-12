@@ -1572,10 +1572,10 @@
         "userAdded": true
       },
       {
-        "file": "assets/new-level-142995.mp3",
+        "file": "assets/level.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\new-level-142995.mp3",
+        "name": "assets\\level.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -1600,20 +1600,20 @@
         "userAdded": true
       },
       {
-        "file": "assets/slash-21834.mp3",
+        "file": "assets/hit.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\slash-21834.mp3",
+        "name": "assets\\hit.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
       },
       {
-        "file": "assets/footsteps_grass_1-6810.mp3",
+        "file": "assets/footsteps.mp3",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\footsteps_grass_1-6810.mp3",
+        "name": "assets\\footsteps.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
