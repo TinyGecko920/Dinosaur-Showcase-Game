@@ -5157,7 +5157,7 @@
         "fontSize": 52,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -6102,7 +6102,7 @@
         "fontSize": 16,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }

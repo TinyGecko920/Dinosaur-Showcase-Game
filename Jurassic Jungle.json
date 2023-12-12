@@ -2663,7 +2663,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": false
       }
@@ -8456,7 +8456,7 @@
         "fontSize": 36,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -8474,7 +8474,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": false
       }
@@ -8506,7 +8506,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -8538,7 +8538,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -8561,7 +8561,7 @@
         "fontSize": 60,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -8584,7 +8584,7 @@
         "fontSize": 120,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -8607,7 +8607,7 @@
         "fontSize": 120,
         "visible": true,
         "color": "255;0;0",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }

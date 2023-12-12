@@ -507,7 +507,7 @@
         "fontSize": 28,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "left",
         "wordWrap": true
       }
@@ -619,7 +619,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Credits",
-          "font": "ChelseaMarket-Regular.ttf",
+          "font": "assets\\ChelseaMarket-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 48,
           "color": {
@@ -657,7 +657,7 @@
         }
       ],
       "string": "Jurassic Jungle is a showcase project for the Center for Advanced Research and Technology (2023)",
-      "font": "ChelseaMarket-Regular.ttf",
+      "font": "assets\\ChelseaMarket-Regular.ttf",
       "textAlignment": "center",
       "characterSize": 20,
       "color": {
@@ -691,7 +691,7 @@
         "fontSize": 52,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "ChelseaMarket-Regular.ttf",
+        "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
         "align": "center",
         "wordWrap": false
       }
@@ -721,7 +721,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Back.png",
+                  "image": "assets\\Back.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
