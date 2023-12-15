@@ -574,15 +574,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Run5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Run2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/GamepadCursorIdle.png",
         "kind": "image",
         "metadata": "",
