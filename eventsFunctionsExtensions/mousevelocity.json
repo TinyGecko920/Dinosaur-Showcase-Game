@@ -1,0 +1,102 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "MouseVelocity",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "eventsFunctions": [
+    {
+      "fullName": "Mouse velocity X",
+      "functionType": "Expression",
+      "name": "GetMouseVelocityX",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = gdjs.mouseVelocityExt.mouseVel.x;",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "Mouse velocity Y",
+      "functionType": "Expression",
+      "name": "GetMouseVelocityY",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = gdjs.mouseVelocityExt.mouseVel.y;",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onScenePreEvents",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "if (!(\"mouseVelocityExt\" in gdjs)) {",
+            "    gdjs.mouseVelocityExt = {",
+            "        mouseVel: {",
+            "            x: 0,",
+            "            y: 0",
+            "        },",
+            "        lastRecordedMousePos: {",
+            "            x: 0,",
+            "            y: 0",
+            "        }",
+            "    }",
+            "    return;",
+            "}",
+            "",
+            "const inputManager = runtimeScene.getGame().getInputManager();",
+            "",
+            "const x = inputManager.getCursorX();",
+            "const y = inputManager.getCursorY();",
+            "",
+            "gdjs.mouseVelocityExt.mouseVel.x = Math.abs(x - gdjs.mouseVelocityExt.lastRecordedMousePos.x);",
+            "gdjs.mouseVelocityExt.mouseVel.y = Math.abs(y - gdjs.mouseVelocityExt.lastRecordedMousePos.y);",
+            "",
+            "gdjs.mouseVelocityExt.lastRecordedMousePos.x = x;",
+            "gdjs.mouseVelocityExt.lastRecordedMousePos.y = y;"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}

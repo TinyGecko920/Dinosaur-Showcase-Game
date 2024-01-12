@@ -90,6 +90,12 @@
       "name": "SavedGold",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "ShowLogoInSelect",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -103,7 +109,7 @@
       "width": 0,
       "x": -2376,
       "y": 442,
-      "zOrder": 1,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -195,6 +201,21 @@
       "width": 1500,
       "x": -1414,
       "y": -583,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Background Layers",
+      "name": "LoadingScreenBg4",
+      "persistentUuid": "cfa116a3-aebe-4d80-968c-78d4482a9bb9",
+      "width": 0,
+      "x": 4257,
+      "y": 1495,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -233,7 +254,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg0.png",
+                  "image": "assets\\IMG_1358.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -280,7 +301,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "MotionBlur",
+          "name": "Effect",
+          "doubleParameters": {
+            "kernelSize": 13,
+            "offset": 1,
+            "velocityX": 0,
+            "velocityY": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Background_ParallaxMouse",
@@ -305,7 +339,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg1.png",
+                  "image": "assets\\IMG_1354.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -322,11 +356,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 187
+                        "y": 606
                       },
                       {
                         "x": 1920,
-                        "y": 187
+                        "y": 606
                       },
                       {
                         "x": 1920,
@@ -352,13 +386,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "MotionBlur",
+          "name": "Effect",
+          "doubleParameters": {
+            "kernelSize": 13,
+            "offset": 1,
+            "velocityX": 0,
+            "velocityY": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Background_ParallaxMouse",
           "type": "Backgrounds::Background_ParallaxFromPosition",
-          "Scale": 1.03,
-          "Intensity": -0.015,
+          "Scale": 1.032,
+          "Intensity": -0.016,
           "L_t": 0.07
         },
         {
@@ -377,7 +424,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg2.png",
+                  "image": "assets\\IMG_1355.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -394,11 +441,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 657
+                        "y": 647
                       },
                       {
                         "x": 1920,
-                        "y": 657
+                        "y": 647
                       },
                       {
                         "x": 1920,
@@ -424,13 +471,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "MotionBlur",
+          "name": "Effect",
+          "doubleParameters": {
+            "kernelSize": 13,
+            "offset": 1,
+            "velocityX": 0,
+            "velocityY": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Background_ParallaxMouse",
           "type": "Backgrounds::Background_ParallaxFromPosition",
-          "Scale": 1.06,
-          "Intensity": -0.03,
+          "Scale": 1.05,
+          "Intensity": -0.025,
           "L_t": 0.07
         },
         {
@@ -449,7 +509,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\LoadingScreenBg3.png",
+                  "image": "assets\\IMG_1356.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -466,14 +526,14 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 7
                       },
                       {
-                        "x": 1886,
-                        "y": 0
+                        "x": 1920,
+                        "y": 7
                       },
                       {
-                        "x": 1886,
+                        "x": 1920,
                         "y": 1080
                       },
                       {
@@ -502,14 +562,14 @@
         }
       ],
       "content": {
-        "text": "[outline=black][b][size=60]Jurassic Jungle[/size][/b]\n\n[b][size=40]Changelog[/size][/b]\n\n[b]The First Release![/b]\n\n- Initial release\n- Your progress automatically saves across sessions\n- Enjoy your visit in [b]Isla Nublar[/b]\n- Interact with Ellie, Ian, and Malcolm and finish quests\n- Talk to the shopkeeper to upgrade your gear\n\n- This game is (very clearly) in early alpha[/outline]",
+        "text": "[outline=black]The CART Showcase release![/outline]",
         "opacity": 255,
-        "fontSize": 28,
+        "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "assets\\ChelseaMarket-Regular.ttf",
-        "align": "left",
-        "wordWrap": true
+        "align": "center",
+        "wordWrap": false
       }
     },
     {
@@ -553,7 +613,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Play",
+          "string": "PLAY",
           "font": "assets\\ChelseaMarket-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 64,
@@ -621,7 +681,7 @@
           "string": "Credits",
           "font": "assets\\ChelseaMarket-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 48,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
@@ -1568,6 +1628,91 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LoadingScreenBg4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "MotionBlur",
+          "name": "Effect",
+          "doubleParameters": {
+            "kernelSize": 13,
+            "offset": 1,
+            "velocityX": 0,
+            "velocityY": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Background_ParallaxMouse",
+          "type": "Backgrounds::Background_ParallaxFromPosition",
+          "Scale": 1.09,
+          "Intensity": -0.045,
+          "L_t": 0.07
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\IMG_1401.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 51
+                      },
+                      {
+                        "x": 1920,
+                        "y": 51
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1584,6 +1729,9 @@
       },
       {
         "objectName": "LoadingScreenBg3"
+      },
+      {
+        "objectName": "LoadingScreenBg4"
       },
       {
         "objectName": "Changelog"
@@ -1911,7 +2059,7 @@
                 "0",
                 "\"easeOutQuad\"",
                 "0.25",
-                "yes"
+                "no"
               ]
             }
           ]
@@ -2046,16 +2194,11 @@
         },
         {
           "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+            "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
-            "Changelog",
-            "Tween",
-            "\"fadeIn\"",
-            "255",
-            "\"easeOutQuad\"",
-            "0.25",
-            ""
+            "ShowLogoInSelect",
+            "True"
           ]
         },
         {
@@ -2074,6 +2217,34 @@
           "parameters": [
             "CreditsButton",
             "Tween"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.5",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Changelog",
+            "Tween",
+            "\"fadeIn\"",
+            "255",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
           ]
         }
       ],
@@ -2232,6 +2403,30 @@
             "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
           },
           "parameters": [
+            "LoadingScreenBg4",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterX()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetYPosition"
+          },
+          "parameters": [
+            "LoadingScreenBg4",
+            "Background_ParallaxMouse",
+            "=",
+            "Cursor.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Backgrounds::Background_ParallaxFromPosition::SetXPosition"
+          },
+          "parameters": [
             "Constellation",
             "Background_ParallaxFromPosition",
             "=",
@@ -2312,33 +2507,10 @@
         },
         {
           "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetSize"
-          },
-          "parameters": [
-            "JurassicJungle",
-            "Resizable",
-            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoWidthScale",
-            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoHeightScale"
-          ]
-        },
-        {
-          "type": {
             "value": "SetCenter"
           },
           "parameters": [
             "BitByBitStudios",
-            "=",
-            "SceneWindowWidth() / 2",
-            "=",
-            "SceneWindowHeight() / 2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCenter"
-          },
-          "parameters": [
-            "JurassicJungle",
             "=",
             "SceneWindowWidth() / 2",
             "=",
@@ -2406,6 +2578,106 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "ShowLogoInSelect",
+            "False"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Resizable",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoWidthScale",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * MaxLogoHeightScale"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 2"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Effect",
+            "\"Effect\"",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "ShowLogoInSelect",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetSize"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Resizable",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * 0.667",
+            "min(SceneWindowWidth(), SceneWindowHeight()) * 0.667"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "=",
+            "SceneWindowWidth() / 2",
+            "=",
+            "SceneWindowHeight() / 3.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Effect",
+            "\"Effect\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
@@ -2415,9 +2687,9 @@
           "parameters": [
             "PlayButton",
             "=",
-            "SceneWindowWidth() - PlayButton.Width() - 80",
+            "(SceneWindowWidth() / 2) - (PlayButton.Width() / 2)",
             "=",
-            "SceneWindowHeight() - PlayButton.Height() - 224"
+            "SceneWindowHeight() / 1.65"
           ]
         },
         {
@@ -2427,9 +2699,9 @@
           "parameters": [
             "CreditsButton",
             "=",
-            "SceneWindowWidth() - CreditsButton.Width() - 80",
+            "(SceneWindowWidth() / 2) - (CreditsButton.Width() / 2)",
             "=",
-            "SceneWindowHeight() - CreditsButton.Height() - 80"
+            "PlayButton.Y() + PlayButton.Height() + 12"
           ]
         },
         {
@@ -2442,6 +2714,18 @@
             "\"Effect\"",
             "\"outerStrength\"",
             "Constellation.GlowOuterStrength"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Changelog",
+            "=",
+            "(SceneWindowWidth() / 2) - (Changelog.Width() / 2)",
+            "=",
+            "CreditsButton.Y() + CreditsButton.Height() + 36"
           ]
         }
       ]
@@ -2736,10 +3020,35 @@
         },
         {
           "type": {
+            "value": "Tween::StopTween"
+          },
+          "parameters": [
+            "JurassicJungle",
+            "Tween",
+            "\"fadeIn\"",
+            "yes"
+          ]
+        },
+        {
+          "type": {
             "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
             "Changelog",
+            "Tween",
+            "\"fadeOut\"",
+            "0",
+            "\"easeOutQuad\"",
+            "0.25",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "JurassicJungle",
             "Tween",
             "\"fadeOut\"",
             "0",
@@ -2801,7 +3110,7 @@
             "LoadingScreenBg0",
             "Tween",
             "\"fadeOut\"",
-            "\"4;14;41\"",
+            "\"2;7;19\"",
             "\"easeOutQuad\"",
             "2",
             "",
@@ -5492,7 +5801,21 @@
                 "\"fadeIn\"",
                 "255",
                 "\"easeOutQuad\"",
-                "0.25",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "JurassicJungle",
+                "Tween",
+                "\"fadeIn\"",
+                "255",
+                "\"easeOutQuad\"",
+                "0.5",
                 ""
               ]
             },
